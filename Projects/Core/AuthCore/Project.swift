@@ -12,6 +12,7 @@ let project = Project.module(
         .implementation(
             core: .AuthCore,
             dependencies: [
+                .SPM.swinject,
                 .core(target: .AuthCore, type: .interface),
             ]
         ),
