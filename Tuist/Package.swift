@@ -15,7 +15,7 @@ import PackageDescription
 let package = Package(
     name: "GithubSearch",
     platforms: [
-        .iOS(.v14)
+        .iOS(.v16)
     ],
     dependencies: [
         .package(url: "https://github.com/SnapKit/SnapKit.git", .upToNextMajor(from: "5.7.1")),
@@ -28,5 +28,6 @@ let package = Package(
         .package(url: "https://github.com/vadymmarkov/Fakery", from: "5.0.0"),
         .package(url: "https://github.com/noahkamara/swiftdotenv", from: "1.0.0"),
         .package(url: "https://github.com/realm/realm-swift.git", from: "10.54.0"),
+        .package(url: "https://github.com/firebase/firebase-ios-sdk", exact: "11.5.0"),
     ]
 )
