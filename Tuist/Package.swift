@@ -13,7 +13,7 @@ import PackageDescription
 #endif
 
 let package = Package(
-    name: "GithubSearch",
+    name: "Monory",
     platforms: [
         .iOS(.v16)
     ],
