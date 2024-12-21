@@ -1,0 +1,73 @@
+name: develop build test
+
+on:
+  pull_request:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-test:
+    runs-on: macos-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Setup mise
+      run: |
+        # Install mise
+        curl https://mise.jdx.dev/install.sh | sh
+        
+        # Update PATH for CI environment
+        export PATH="$HOME/.local/bin:$HOME/.local/share/mise/shims:$PATH"
+        
+        # Activate mise for the current shell
+        eval "$(~/.local/bin/mise activate bash)"
+        
+        # Verify mise setup
+        mise doctor
+
+    - name: Install Tuist CLI  
+      run: |
+        # Re-export PATH and activate mise in this step
+        export PATH="$HOME/.local/bin:$HOME/.local/share/mise/shims:$HOME/.local/share/mise/plugins/tuist/bin:$PATH"
+        eval "$(~/.local/bin/mise activate bash)"
+        
+        # Install Tuist
+        mise install tuist
+
+        mise use -g tuist@4.34.3
+
+    - name: Tuist clean
+      run: |
+        
+        export PATH="$HOME/.local/bin:$HOME/.local/share/mise/shims:$HOME/.local/share/mise/plugins/tuist/bin:$PATH"
+        eval "$(~/.local/bin/mise activate bash)"
+
+        tuist clean
+
+    - name: Tuist install
+      run: |
+
+        export PATH="$HOME/.local/bin:$HOME/.local/share/mise/shims:$HOME/.local/share/mise/plugins/tuist/bin:$PATH"
+        eval "$(~/.local/bin/mise activate bash)"
+
+        tuist install
+    
+    - name: Tuist build
+      run: |
+
+        export PATH="$HOME/.local/bin:$HOME/.local/share/mise/shims:$HOME/.local/share/mise/plugins/tuist/bin:$PATH"
+        eval "$(~/.local/bin/mise activate bash)"
+
+        tuist build
+
+    - name: Tuist Test
+      if: ${{ vars.TUIST_TEST_ON_OFF == 'true' }}
+      run: |
+
+        export PATH="$HOME/.local/bin:$HOME/.local/share/mise/shims:$HOME/.local/share/mise/plugins/tuist/bin:$PATH"
+        eval "$(~/.local/bin/mise activate bash)"
+
+        tuist test
