@@ -2,7 +2,7 @@
 import ProjectDescription
 
 let workspace = Workspace(
-    name: "GithubSearch",
+    name: "Monory",
     projects: [
         "Projects/**"
     ]
