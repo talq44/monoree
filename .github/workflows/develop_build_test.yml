@@ -19,46 +19,57 @@ jobs:
         # Install mise
         curl https://mise.jdx.dev/install.sh | sh
         
-        # Update PATH for CI environment
-        export PATH="$HOME/.local/bin:$HOME/.local/share/mise/shims:$PATH"
-        
         # Activate mise for the current shell
         eval "$(~/.local/bin/mise activate bash)"
-        
+
         # Verify mise setup
         mise doctor
 
     - name: Install Tuist CLI  
       run: |
-        # Re-export PATH and activate mise in this step
-        export PATH="$HOME/.local/bin:$HOME/.local/share/mise/shims:$HOME/.local/share/mise/plugins/tuist/bin:$PATH"
+        # Activate mise
         eval "$(~/.local/bin/mise activate bash)"
         
         # Install Tuist
         mise install tuist
 
-        mise use -g tuist@4.34.3
-
-    - name: Tuist clean
+    - name: Cache Tuist and Dependencies
+      uses: actions/cache@v4
+      with:
+        path: |
+          ~/.tuist
+          ~/.local/share/mise/plugins/tuist
+          ~/Library/Caches/tuist
+        key: tuist-cache-${{ runner.os }}-${{ hashFiles('**/Tuist/*.lock', '**/Tuist/Dependencies.swift', '**/Project.swift') }}
+        restore-keys: |
+          tuist-cache-${{ runner.os }}-
+  
+    - name: Conditional Tuist Clean
+      id: check-clean
       run: |
-        
-        export PATH="$HOME/.local/bin:$HOME/.local/share/mise/shims:$HOME/.local/share/mise/plugins/tuist/bin:$PATH"
-        eval "$(~/.local/bin/mise activate bash)"
+        # Check if Tuist-related files changed
+        if git diff --name-only ${{ github.base_ref }}..${{ github.head_ref }} | grep -qE "Tuist/Dependencies.swift|Tuist/Project.swift|Tuist.lock"; then
+          echo "run_clean=true" >> $GITHUB_ENV
+        else
+          echo "run_clean=false" >> $GITHUB_ENV
+        fi
 
+    - name: Tuist Clean
+      if: env.run_clean == 'true'
+      run: |
+        eval "$(~/.local/bin/mise activate bash)"
         tuist clean
 
     - name: Tuist install
       run: |
-
-        export PATH="$HOME/.local/bin:$HOME/.local/share/mise/shims:$HOME/.local/share/mise/plugins/tuist/bin:$PATH"
+        # Activate mise
         eval "$(~/.local/bin/mise activate bash)"
 
         tuist install
-    
+
     - name: Tuist build
       run: |
-
-        export PATH="$HOME/.local/bin:$HOME/.local/share/mise/shims:$HOME/.local/share/mise/plugins/tuist/bin:$PATH"
+        # Activate mise
         eval "$(~/.local/bin/mise activate bash)"
 
         tuist build
@@ -66,8 +77,7 @@ jobs:
     - name: Tuist Test
       if: ${{ vars.TUIST_TEST_ON_OFF == 'true' }}
       run: |
-
-        export PATH="$HOME/.local/bin:$HOME/.local/share/mise/shims:$HOME/.local/share/mise/plugins/tuist/bin:$PATH"
+        # Activate mise
         eval "$(~/.local/bin/mise activate bash)"
 
         tuist test
