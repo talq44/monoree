@@ -1,12 +1,6 @@
-//
-//  UserAPICoreImpl.swift
-//  UserAPICoreInterface
-//
-//  Created by 박창규 on 11/23/24.
-//
-
 import Foundation
 
+import RestAPIErrorCoreInterface
 import StatusCodeCoreInterface
 import UserAPICoreInterface
 
@@ -39,13 +33,13 @@ public class UserAPICoreImpl {
     
     func requestJson<T: Decodable>(_ target: API, type: T.Type) async throws -> T {
         guard NetworkReachabilityManager()?.isReachable == true else {
-            throw UserAPICoreError.networkNotConnect
+            throw RestAPIError.networkNotConnect
         }
         
         return try await withCheckedThrowingContinuation { [weak self] continuation in
             
             guard let self = self else {
-                continuation.resume(throwing: UserAPICoreError.unDefined)
+                continuation.resume(throwing: RestAPIError.unDefined)
                 return
             }
             
@@ -95,42 +89,24 @@ public class UserAPICoreImpl {
     }
 }
 
-extension Error {
-    internal var apiError: UserAPICoreError {
-        do {
-            throw self
-        } catch DecodingError.dataCorrupted(_) {
-            return .serializationFailed
-        } catch DecodingError.keyNotFound(_, _) {
-            return .serializationFailed
-        } catch DecodingError.valueNotFound(_, _) {
-            return .serializationFailed
-        } catch DecodingError.typeMismatch(_, _)  {
-            return .serializationFailed
-        } catch {
-            return .unDefined
-        }
-    }
-}
-
 extension Response {
     private var statusCodeType: HTTPStatusCode? {
         return HTTPStatusCode(rawValue: self.statusCode)
     }
 
-    internal var convertError: UserAPICoreError {
+    internal var convertError: RestAPIError {
         guard let statusCode = self.statusCodeType else {
-            return UserAPICoreError.serializationFailed
+            return RestAPIError.serializationFailed
         }
 
         guard statusCode.responseType != .success else {
-            return UserAPICoreError.serializationFailed
+            return RestAPIError.serializationFailed
         }
 
         guard statusCode.responseType == .clientError else {
-            return UserAPICoreError.unDefined
+            return RestAPIError.unDefined
         }
 
-        return UserAPICoreError.restAPIError(statusCode: statusCode.rawValue)
+        return RestAPIError.restAPIError(statusCode: statusCode.rawValue)
     }
 }

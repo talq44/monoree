@@ -1,6 +1,6 @@
 import Foundation
 
-public enum UserAPICoreError: Error, Equatable {
+public enum RestAPIError: Error, Equatable {
     case restAPIError(statusCode: Int)
     /// mapping 실패
     case serializationFailed
