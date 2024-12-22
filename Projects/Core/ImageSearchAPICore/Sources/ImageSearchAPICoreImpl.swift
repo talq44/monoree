@@ -1,16 +1,14 @@
 import Foundation
 
 import RestAPIErrorCoreInterface
-import UserAPICoreInterface
+import ImageSearchAPICoreInterface
 
 import Alamofire
 import Moya
 
-public class UserAPICoreImpl {
+class ImageSearchAPICoreImpl {
     
-    public init(baseURL: String) {
-        Constants.baseURL = baseURL
-    }
+    init() { }
     
     private let provider: MoyaProvider<API> = {
         var plugins: [PluginType] = []

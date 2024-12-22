@@ -1,10 +1,3 @@
-//
-//  HTTPStatusCode.swift
-//  API
-//
-//  Created by 박창규 on 2023/09/17.
-//
-
 import Foundation
 
 enum HTTPStatusCode: Int, Error {
@@ -272,7 +265,6 @@ enum HTTPStatusCode: Int, Error {
             
         default:
             return .undefined
-            
         }
     }
 }

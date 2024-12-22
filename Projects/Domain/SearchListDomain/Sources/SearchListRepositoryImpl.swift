@@ -1,5 +1,6 @@
 import Foundation
 
+import RestAPIErrorCoreInterface
 import SearchListDomainInterface
 import UserAPICoreInterface
 import AuthCoreInterface
@@ -40,7 +41,7 @@ final class SearchListRepositoryImpl: SearchListRepository {
             return .success(self.toDomain(response))
             
         } catch {
-            guard let apiError = error as? UserAPICoreError else {
+            guard let apiError = error as? RestAPIError else {
                 return .failure(.unKnown)
             }
             return .failure(.restAPI(statusCode: apiError.statusCode))

@@ -1,13 +1,27 @@
-//
-//  UserAPICoreError.swift
-//  UserAPICoreInterface
-//
-//  Created by 박창규 on 11/23/24.
-//
-
 import Foundation
 
-public enum UserAPICoreError: Error, Equatable {
+public enum RestAPIError: Error, Equatable {
+    
+    public init(statusCode: Int) {
+        guard let statusCodeType = HTTPStatusCode(rawValue: statusCode) else {
+            self = .serializationFailed
+            return
+        }
+        
+        guard statusCodeType.responseType != .success else {
+            self = .serializationFailed
+            return
+        }
+        
+        guard statusCodeType.responseType == .clientError else {
+            self = .unDefined
+            return
+        }
+        
+        self = .restAPIError(statusCode: statusCode)
+    }
+    
+    /// status code 유형에 따른 실패
     case restAPIError(statusCode: Int)
     /// mapping 실패
     case serializationFailed
