@@ -1,4 +1,4 @@
-name: develop build test
+name: develop build test pass
 
 on:
   pull_request:
