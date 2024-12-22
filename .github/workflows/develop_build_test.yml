@@ -7,7 +7,6 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
-
 jobs:
   build-test:
     runs-on: macos-latest
@@ -19,47 +18,48 @@ jobs:
       run: |
         # Install mise
         curl https://mise.jdx.dev/install.sh | sh
-        
-        # Activate mise for the current shell
         eval "$(~/.local/bin/mise activate bash)"
-
-        # Verify mise setup
         mise doctor
 
-    - name: Install Tuist CLI  
-      run: |
-        # Activate mise
-        eval "$(~/.local/bin/mise activate bash)"
-        
-        # Install Tuist
-        mise install tuist
-        mise use -g tuist@4.34.3
+    - name: Cache Tuist and Dependencies
+      uses: actions/cache@v3
+      with:
+        path: |
+          ~/.tuist
+          ~/.local/share/mise/plugins/tuist
+          ~/Library/Caches/tuist
+        key: tuist-cache-${{ runner.os }}-${{ hashFiles('**/Tuist/*.lock', '**/Tuist/Dependencies.swift', '**/Project.swift') }}
+        restore-keys: |
+          tuist-cache-${{ runner.os }}-
 
-    - name: Tuist clean
+    - name: Conditional Tuist Clean
+      id: check-clean
       run: |
-        # Activate mise
-        eval "$(~/.local/bin/mise activate bash)"
+        # Check if Tuist-related files changed
+        if git diff --name-only ${{ github.base_ref }}..${{ github.head_ref }} | grep -qE "Tuist/Dependencies.swift|Tuist/Project.swift|Tuist.lock"; then
+          echo "run_clean=true" >> $GITHUB_ENV
+        else
+          echo "run_clean=false" >> $GITHUB_ENV
+        fi
 
+    - name: Tuist Clean
+      if: env.run_clean == 'true'
+      run: |
+        eval "$(~/.local/bin/mise activate bash)"
         tuist clean
 
-    - name: Tuist install
+    - name: Tuist Install
       run: |
-        # Activate mise
         eval "$(~/.local/bin/mise activate bash)"
-
         tuist install
 
-    - name: Tuist build
+    - name: Tuist Build
       run: |
-        # Activate mise
         eval "$(~/.local/bin/mise activate bash)"
-
         tuist build
 
     - name: Tuist Test
       if: ${{ vars.TUIST_TEST_ON_OFF == 'true' }}
       run: |
-        # Activate mise
         eval "$(~/.local/bin/mise activate bash)"
-
         tuist test
