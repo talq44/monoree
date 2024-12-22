@@ -13,7 +13,6 @@ let project = Project.module(
 			core: .UserAPICore,
 			dependencies: [
 				.core(target: .UserAPICore, type: .interface),
-                .core(target: .StatusCodeCore, type: .interface),
                 .core(target: .RestAPIErrorCore, type: .interface),
                 .SPM.alamofire,
                 .SPM.moya,

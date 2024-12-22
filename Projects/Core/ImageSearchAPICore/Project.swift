@@ -13,7 +13,6 @@ let project = Project.module(
             core: .ImageSearchAPICore,
             dependencies: [
                 .core(target: .ImageSearchAPICore, type: .interface),
-                .core(target: .StatusCodeCore, type: .interface),
                 .core(target: .RestAPIErrorCore, type: .interface),
                 .SPM.alamofire,
                 .SPM.moya,

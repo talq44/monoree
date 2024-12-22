@@ -1,7 +1,6 @@
 import Foundation
 
 import RestAPIErrorCoreInterface
-import StatusCodeCoreInterface
 import UserAPICoreInterface
 
 import Alamofire
@@ -55,7 +54,9 @@ public class UserAPICoreImpl {
                     }
                     catch {
                         self.printError(error: error)
-                        let amondzError = response.convertError
+                        let amondzError = RestAPIError(
+                            statusCode: response.statusCode
+                        )
                         continuation.resume(throwing: amondzError)
                     }
                     
@@ -86,27 +87,5 @@ public class UserAPICoreImpl {
             print("error: ", error)
         }
 #endif
-    }
-}
-
-extension Response {
-    private var statusCodeType: HTTPStatusCode? {
-        return HTTPStatusCode(rawValue: self.statusCode)
-    }
-
-    internal var convertError: RestAPIError {
-        guard let statusCode = self.statusCodeType else {
-            return RestAPIError.serializationFailed
-        }
-
-        guard statusCode.responseType != .success else {
-            return RestAPIError.serializationFailed
-        }
-
-        guard statusCode.responseType == .clientError else {
-            return RestAPIError.unDefined
-        }
-
-        return RestAPIError.restAPIError(statusCode: statusCode.rawValue)
     }
 }
