@@ -11,6 +11,7 @@ public enum CoreModule: String, CaseIterable {
 	case AuthCore
 	case LocalDataCore
     case ImageSearchAPICore
+    case StatusCodeCore
 	case UserAPICore
     
     public var name: String {
