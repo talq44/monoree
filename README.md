@@ -1,6 +1,3 @@
-# remember
-리멤버 과제
-
 # Architecture
 ### Clean Architecture
 
