@@ -15,6 +15,7 @@ let project = Project.module(
                 .SPM.swinject,
                 .core(target: .UserAPICore, type: .interface),
                 .core(target: .AuthCore, type: .interface),
+                .core(target: .RestAPIErrorCore, type: .interface),
                 .domain(target: .SearchListDomain, type: .interface),
             ]
         ),
