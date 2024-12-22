@@ -11,6 +11,7 @@ public enum CoreModule: String, CaseIterable {
 	case AuthCore
 	case LocalDataCore
     case ImageSearchAPICore
+    case RestAPIErrorCore
     case StatusCodeCore
 	case UserAPICore
     
