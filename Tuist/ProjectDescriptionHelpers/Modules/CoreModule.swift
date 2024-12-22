@@ -10,6 +10,7 @@ import ProjectDescription
 public enum CoreModule: String, CaseIterable {
 	case AuthCore
 	case LocalDataCore
+    case ImageSearchAPICore
 	case UserAPICore
     
     public var name: String {
