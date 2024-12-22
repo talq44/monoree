@@ -18,11 +18,23 @@ jobs:
       run: |
         # Install mise
         curl https://mise.jdx.dev/install.sh | sh
+        
+        # Activate mise for the current shell
         eval "$(~/.local/bin/mise activate bash)"
+
+        # Verify mise setup
         mise doctor
 
+    - name: Install Tuist CLI  
+      run: |
+        # Activate mise
+        eval "$(~/.local/bin/mise activate bash)"
+        
+        # Install Tuist
+        mise install tuist
+
     - name: Cache Tuist and Dependencies
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         path: |
           ~/.tuist
@@ -31,7 +43,7 @@ jobs:
         key: tuist-cache-${{ runner.os }}-${{ hashFiles('**/Tuist/*.lock', '**/Tuist/Dependencies.swift', '**/Project.swift') }}
         restore-keys: |
           tuist-cache-${{ runner.os }}-
-
+  
     - name: Conditional Tuist Clean
       id: check-clean
       run: |
@@ -48,18 +60,24 @@ jobs:
         eval "$(~/.local/bin/mise activate bash)"
         tuist clean
 
-    - name: Tuist Install
+    - name: Tuist install
       run: |
+        # Activate mise
         eval "$(~/.local/bin/mise activate bash)"
+
         tuist install
 
-    - name: Tuist Build
+    - name: Tuist build
       run: |
+        # Activate mise
         eval "$(~/.local/bin/mise activate bash)"
+
         tuist build
 
     - name: Tuist Test
       if: ${{ vars.TUIST_TEST_ON_OFF == 'true' }}
       run: |
+        # Activate mise
         eval "$(~/.local/bin/mise activate bash)"
+
         tuist test
