@@ -7,10 +7,10 @@
 
 import Foundation
 
+import StatusCodeCoreInterface
 import UserAPICoreInterface
 
 import Alamofire
-
 import Moya
 
 public class UserAPICoreImpl {
