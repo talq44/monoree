@@ -17,8 +17,8 @@ extension ItemList {
         return nil
     }
     
-    private var content: ItemListItem? {
-        guard let content: ItemListItem = self.getChildren(self) else {
+    private var content: ItemListInfo? {
+        guard let content: ItemListInfo = self.getChildren(self) else {
             return nil
         }
         return content
@@ -28,13 +28,23 @@ extension ItemList {
         guard let content else {
             return self.name
         }
-        return self.name + "=" + content.id
+        
+        guard let id = content.id else {
+            return self.name
+        }
+        
+        return self.name + "=" + id
     }
     
     public var itemListName: String? {
         guard let content else {
             return self.name
         }
-        return self.name + "=" + content.name
+        
+        guard let name = content.name else {
+            return self.name
+        }
+        
+        return self.name + "=" + name
     }
 }
