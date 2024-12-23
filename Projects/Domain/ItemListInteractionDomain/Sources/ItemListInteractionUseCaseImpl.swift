@@ -9,7 +9,7 @@ final class ItemListInteractionUseCaseImpl: ItemListIntercationUseCase {
         self.repository = repository
     }
     
-    func send(input: any ItemListIntercationInput) {
+    func send(input: any ItemListInteractionInput) {
         guard input.items.count > 0 else { return }
         
         switch input.sendType {
