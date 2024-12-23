@@ -2,7 +2,7 @@ import Foundation
 
 import ItemListInteractionDomainInterface
 
-final class ItemListInteractionRepositoryImplementation: ItemListIntercationRepository {
+final class ItemListInteractionRepositoryImplementation: ItemListInteractionRepository {
     
     func sendViewItemList(
         items: [any ItemListInteractionDomainInterface.ItemListItem],

@@ -1,6 +1,6 @@
 import Foundation
 
-public protocol ItemListIntercationRepository {
+public protocol ItemListInteractionRepository {
     func sendViewItemList(
         items: [ItemListItem],
         itemList: ItemList
