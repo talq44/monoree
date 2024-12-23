@@ -37,7 +37,7 @@ struct StubItemListInteractionInput: ItemListInteractionInput {
         return StubItemListInteractionInput(
             items: items,
             itemList: .category(ItemListInfo(id: nil, name: nil)),
-            sendType: .viewItemList
+            sendType: .selectItem
         )
     }
     
