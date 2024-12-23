@@ -3,6 +3,7 @@ import Foundation
 public enum AnalyticsEvent {
     case add_to_wishlist(AddToWishlist)
     case login(Login)
+    case post_score(PostScore)
     case screen_view(ScreenView)
     case search(Search)
     case select_content(SelectContent)
