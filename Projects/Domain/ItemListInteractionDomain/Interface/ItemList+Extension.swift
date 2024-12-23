@@ -1,6 +1,6 @@
 import Foundation
 
-extension ItemListIntercationInput {
+extension ItemList {
     private var name: String {
         return String(describing: self)
             .components(separatedBy: "(")
@@ -24,14 +24,14 @@ extension ItemListIntercationInput {
         return content
     }
     
-    public var item_list_id: String? {
+    public var itemListId: String? {
         guard let content else {
             return self.name
         }
         return self.name + "=" + content.id
     }
     
-    public var item_list_name: String? {
+    public var itemListName: String? {
         guard let content else {
             return self.name
         }
