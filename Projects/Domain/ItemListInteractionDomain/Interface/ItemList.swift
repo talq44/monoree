@@ -14,4 +14,5 @@ public enum ItemList {
     case category(ItemListInfo)
     case search(ItemListInfo)
     case wishlist(ItemListInfo)
+    case tbd
 }

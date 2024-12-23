@@ -4,5 +4,6 @@ import Foundation
 /// https://firebase.google.com/docs/reference/android/com/google/firebase/analytics/FirebaseAnalytics.Event#SELECT_ITEM()
 public protocol ItemListIntercationInput {
     var items: [ItemListItem] { get }
-    var itemList: ItemList? { get }
+    var itemList: ItemList { get }
+    var sendType: ItemListSendType { get }
 }
