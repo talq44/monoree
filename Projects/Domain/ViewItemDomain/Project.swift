@@ -2,34 +2,34 @@ import ProjectDescription
 import ProjectDescriptionHelpers
 
 let project = Project.module(
-    name: DomainModule.ItemListInteractionDomain.name,
+    name: DomainModule.ViewItemDomain.name,
     settings: .Module.default,
     targets: [
         .interface(
-            domain: .ItemListInteractionDomain,
+            domain: .ViewItemDomain,
             dependencies: [
                 .domain(target: .DomainModelsDomain, type: .interface),
             ]
         ),
         .implementation(
-            domain: .ItemListInteractionDomain,
+            domain: .ViewItemDomain,
             dependencies: [
                 .domain(target: .DomainModelsDomain, type: .interface),
-                .domain(target: .ItemListInteractionDomain, type: .interface),
+                .domain(target: .ViewItemDomain, type: .interface),
             ]
         ),
         .testing(
-            domain: .ItemListInteractionDomain,
+            domain: .ViewItemDomain,
             dependencies: [
                 .domain(target: .DomainModelsDomain, type: .interface),
-                .domain(target: .ItemListInteractionDomain, type: .interface),
+                .domain(target: .ViewItemDomain, type: .interface),
             ]
         ),
         .tests(
-            domain: .ItemListInteractionDomain,
+            domain: .ViewItemDomain,
             dependencies: [
-                .domain(target: .ItemListInteractionDomain, type: .implementation),
-                .domain(target: .ItemListInteractionDomain, type: .testing),
+                .domain(target: .ViewItemDomain, type: .implementation),
+                .domain(target: .ViewItemDomain, type: .testing),
             ]
         ),
     ]

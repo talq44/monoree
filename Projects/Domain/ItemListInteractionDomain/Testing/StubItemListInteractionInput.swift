@@ -1,16 +1,17 @@
 import Foundation
 
+import DomainModelsDomainInterface
 import ItemListInteractionDomainInterface
 
 struct StubItemListInteractionInput: ItemListInteractionInput {
     var items: [any ItemListInteractionDomainInterface.ItemListItem]
-    var itemList: ItemList
+    var itemList: any ItemList
     var sendType: ItemListSendType
         
     static var selectItemNormal: StubItemListInteractionInput {
         StubItemListInteractionInput(
             items: [StubItemListItem.mock()],
-            itemList: .category(ItemListInfo(id: nil, name: nil)),
+            itemList: ItemListType.tbd,
             sendType: .selectItem
         )
     }
@@ -18,7 +19,7 @@ struct StubItemListInteractionInput: ItemListInteractionInput {
     static var selectItemEmpty: StubItemListInteractionInput {
         StubItemListInteractionInput(
             items: [],
-            itemList: .category(ItemListInfo(id: nil, name: nil)),
+            itemList: ItemListType.tbd,
             sendType: .selectItem
         )
     }
@@ -36,7 +37,7 @@ struct StubItemListInteractionInput: ItemListInteractionInput {
         
         return StubItemListInteractionInput(
             items: items,
-            itemList: .category(ItemListInfo(id: nil, name: nil)),
+            itemList: ItemListType.tbd,
             sendType: .selectItem
         )
     }
@@ -44,7 +45,7 @@ struct StubItemListInteractionInput: ItemListInteractionInput {
     static var viewItemListNormal: StubItemListInteractionInput {
         StubItemListInteractionInput(
             items: [StubItemListItem.mock()],
-            itemList: .category(ItemListInfo(id: nil, name: nil)),
+            itemList: ItemListType.tbd,
             sendType: .viewItemList
         )
     }
@@ -52,7 +53,7 @@ struct StubItemListInteractionInput: ItemListInteractionInput {
     static var viewitemListEmpty: StubItemListInteractionInput {
         StubItemListInteractionInput(
             items: [],
-            itemList: .category(ItemListInfo(id: nil, name: nil)),
+            itemList: ItemListType.tbd,
             sendType: .viewItemList
         )
     }
@@ -70,7 +71,7 @@ struct StubItemListInteractionInput: ItemListInteractionInput {
         
         return StubItemListInteractionInput(
             items: items,
-            itemList: .category(ItemListInfo(id: nil, name: nil)),
+            itemList: ItemListType.tbd,
             sendType: .viewItemList
         )
     }

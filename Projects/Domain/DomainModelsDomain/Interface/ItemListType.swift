@@ -10,7 +10,7 @@ public struct ItemListInfo {
     }
 }
 
-public enum ItemList {
+public enum ItemListType: ItemList {
     case category(ItemListInfo)
     case search(ItemListInfo)
     case wishlist(ItemListInfo)

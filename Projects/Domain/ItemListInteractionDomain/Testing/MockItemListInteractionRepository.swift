@@ -1,5 +1,6 @@
 import Foundation
 
+import DomainModelsDomainInterface
 import ItemListInteractionDomainInterface
 
 final class MockItemListInteractionRepository: ItemListInteractionRepository {
@@ -15,17 +16,11 @@ final class MockItemListInteractionRepository: ItemListInteractionRepository {
         return self.sendSelectItemItems.count
     }
     
-    func sendViewItemList(
-        items: [any ItemListInteractionDomainInterface.ItemListItem],
-        itemList: ItemListInteractionDomainInterface.ItemList
-    ) {
-        self.sendViewItemListItems += items
+    func sendViewItemList(_ input: any ItemListInteractionInput) {
+        self.sendViewItemListItems += input.items
     }
     
-    func sendSelectItem(
-        items: [any ItemListInteractionDomainInterface.ItemListItem],
-        itemList: ItemListInteractionDomainInterface.ItemList
-    ) {
-        self.sendSelectItemItems += items
+    func sendSelectItem(_ input: any ItemListInteractionInput) {   
+        self.sendSelectItemItems += input.items
     }
 }

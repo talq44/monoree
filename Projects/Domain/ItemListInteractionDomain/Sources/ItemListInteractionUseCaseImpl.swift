@@ -9,21 +9,15 @@ final class ItemListInteractionUseCaseImpl: ItemListIntercationUseCase {
         self.repository = repository
     }
     
-    func send(input: any ItemListInteractionInput) {
+    func send(_ input: any ItemListInteractionInput) {
         guard input.items.count > 0 else { return }
         
         switch input.sendType {
         case .selectItem:
-            self.repository.sendSelectItem(
-                items: input.items,
-                itemList: input.itemList
-            )
+            self.repository.sendSelectItem(input)
             
         case .viewItemList:
-            self.repository.sendViewItemList(
-                items: input.items,
-                itemList: input.itemList
-            )
+            self.repository.sendViewItemList(input)
         }
     }
 }
