@@ -1,6 +1,5 @@
 import Foundation
 
-import DomainModelsDomainInterface
 import ItemListInteractionDomainInterface
 
 final class MockItemListInteractionRepository: ItemListInteractionRepository {
