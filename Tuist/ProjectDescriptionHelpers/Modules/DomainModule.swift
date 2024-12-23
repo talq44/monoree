@@ -10,6 +10,7 @@ import ProjectDescription
 public enum DomainModule: String, CaseIterable {
     case BookmarkListDomain
 	case BookmarkUpdateDomain
+    case ItemListInteractionDomain
 	case SearchListDomain
     
     public var name: String {
