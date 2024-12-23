@@ -7,17 +7,21 @@ let project = Project.module(
     targets: [
         .interface(
             domain: .ItemListInteractionDomain,
-            dependencies: []
+            dependencies: [
+                .domain(target: .DomainModelsDomain, type: .interface),
+            ]
         ),
         .implementation(
             domain: .ItemListInteractionDomain,
             dependencies: [
+                .domain(target: .DomainModelsDomain, type: .interface),
                 .domain(target: .ItemListInteractionDomain, type: .interface),
             ]
         ),
         .testing(
             domain: .ItemListInteractionDomain,
             dependencies: [
+                .domain(target: .DomainModelsDomain, type: .interface),
                 .domain(target: .ItemListInteractionDomain, type: .interface),
             ]
         ),
