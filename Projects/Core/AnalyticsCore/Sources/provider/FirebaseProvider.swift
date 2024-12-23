@@ -7,7 +7,8 @@ final class FirebaseProvider: AnalyticsProtocol {
         
     }
     
-    func sendEvent(_ event: AnalyticsCoreInterface.AnalyticsEvent) {
-        
+    func sendEvent(_ event: AnalyticsEvent) {
+        guard let eventName = event.name else { return }
+        print("FirebaseProvider: \(eventName)")
     }
 }
