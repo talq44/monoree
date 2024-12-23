@@ -7,7 +7,7 @@ public enum AnalyticsEvent {
     case screen_view(ScreenView)
     case search(Search)
     case select_content(SelectContent)
-    case selct_item(SelectItem)
+    case select_item(SelectItem)
     case share(Share)
     case sign_up(SignUp)
     case view_item(ViewItem)

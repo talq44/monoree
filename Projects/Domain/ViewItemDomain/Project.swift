@@ -16,6 +16,7 @@ let project = Project.module(
             dependencies: [
                 .domain(target: .DomainModelsDomain, type: .interface),
                 .domain(target: .ViewItemDomain, type: .interface),
+                .core(target: .AnalyticsCore, type: .interface),
             ]
         ),
         .testing(
