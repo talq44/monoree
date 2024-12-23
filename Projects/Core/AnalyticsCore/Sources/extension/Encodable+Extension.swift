@@ -8,7 +8,7 @@ extension Encodable {
     
     func jsonString() -> String {
         guard let data = jsonData() else { return "" }
-        return String.init(data: data, encoding: .utf8) ?? ""
+        return String(data: data, encoding: .utf8) ?? ""
     }
     
     /// 파라미터로 컨버팅

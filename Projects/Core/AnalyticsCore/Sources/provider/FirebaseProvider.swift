@@ -2,7 +2,7 @@ import Foundation
 
 import AnalyticsCoreInterface
 
-final class FirebaseAnalyticsProvider: AnalyticsProtocol {
+final class FirebaseProvider: AnalyticsProtocol {
     func setUserId(id: String) {
         
     }
