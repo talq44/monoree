@@ -26,7 +26,7 @@ final class ItemListInteractionDomainTests: XCTestCase {
         let input = StubItemListInteractionInput.selectItemEmpty
 
         // when
-        self.sut.send(input: input)
+        self.sut.send(input)
 
         // then
         XCTAssertEqual(
@@ -41,7 +41,7 @@ final class ItemListInteractionDomainTests: XCTestCase {
         let input = StubItemListInteractionInput.selectItemNormal
         
         // when
-        self.sut.send(input: input)
+        self.sut.send(input)
         
         // then
         XCTAssertEqual(
@@ -57,7 +57,7 @@ final class ItemListInteractionDomainTests: XCTestCase {
         let input = StubItemListInteractionInput.selectItemMultiple(count: count)
         
         // when
-        self.sut.send(input: input)
+        self.sut.send(input)
         
         // then
         XCTAssertEqual(
@@ -72,7 +72,7 @@ final class ItemListInteractionDomainTests: XCTestCase {
         let input = StubItemListInteractionInput.viewitemListEmpty
         
         // when
-        self.sut.send(input: input)
+        self.sut.send(input)
         
         // then
         XCTAssertEqual(
@@ -87,7 +87,7 @@ final class ItemListInteractionDomainTests: XCTestCase {
         let input = StubItemListInteractionInput.viewItemListNormal
         
         // when
-        self.sut.send(input: input)
+        self.sut.send(input)
         
         // then
         XCTAssertEqual(
@@ -103,7 +103,7 @@ final class ItemListInteractionDomainTests: XCTestCase {
         let input = StubItemListInteractionInput.viewItemListMultiple(count: count)
         
         // when
-        self.sut.send(input: input)
+        self.sut.send(input)
         
         // then
         XCTAssertEqual(

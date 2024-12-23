@@ -1,5 +1,5 @@
 import Foundation
 
 public protocol ItemListIntercationUseCase {
-    func send(input: ItemListInteractionInput)
+    func send(_ input: ItemListInteractionInput)
 }

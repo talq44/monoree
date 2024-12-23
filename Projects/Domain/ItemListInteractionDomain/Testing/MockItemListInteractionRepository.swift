@@ -16,17 +16,11 @@ final class MockItemListInteractionRepository: ItemListInteractionRepository {
         return self.sendSelectItemItems.count
     }
     
-    func sendViewItemList(
-        items: [any ItemListInteractionDomainInterface.ItemListItem],
-        itemList: any ItemList
-    ) {
-        self.sendViewItemListItems += items
+    func sendViewItemList(_ input: any ItemListInteractionInput) {
+        self.sendViewItemListItems += input.items
     }
     
-    func sendSelectItem(
-        items: [any ItemListInteractionDomainInterface.ItemListItem],
-        itemList: any ItemList
-    ) {
-        self.sendSelectItemItems += items
+    func sendSelectItem(_ input: any ItemListInteractionInput) {   
+        self.sendSelectItemItems += input.items
     }
 }

@@ -1,29 +1,23 @@
 import Foundation
 
-import DomainModelsDomainInterface
 import ItemListInteractionDomainInterface
 
 final class ItemListInteractionRepositoryImplementation: ItemListInteractionRepository {
-    
-    func sendViewItemList(
-        items: [any ItemListInteractionDomainInterface.ItemListItem],
-        itemList: any ItemList
-    ) {
+    func sendViewItemList(_ input: any ItemListInteractionInput) {
+        
         self.fakeSend(
-            items: items,
-            itemListId: itemList.itemListId,
-            itemListName: itemList.itemListId
+            items: input.items,
+            itemListId: input.itemList.itemListId,
+            itemListName: input.itemList.itemListId
         )
     }
     
-    func sendSelectItem(
-        items: [any ItemListInteractionDomainInterface.ItemListItem],
-        itemList: any ItemList
-    ) {
+    func sendSelectItem(_ input: any ItemListInteractionInput) {
+        
         self.fakeSend(
-            items: items,
-            itemListId: itemList.itemListId,
-            itemListName: itemList.itemListId
+            items: input.items,
+            itemListId: input.itemList.itemListId,
+            itemListName: input.itemList.itemListId
         )
     }
     

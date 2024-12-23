@@ -1,14 +1,6 @@
 import Foundation
 
-import DomainModelsDomainInterface
-
 public protocol ItemListInteractionRepository {
-    func sendViewItemList(
-        items: [ItemListItem],
-        itemList: ItemList
-    )
-    func sendSelectItem(
-        items: [ItemListItem],
-        itemList: ItemList
-    )
+    func sendViewItemList(_ input: ItemListInteractionInput)
+    func sendSelectItem(_ input: ItemListInteractionInput)
 }
