@@ -5,10 +5,10 @@ import DomainModelsDomainInterface
 public protocol ItemListInteractionRepository {
     func sendViewItemList(
         items: [ItemListItem],
-        itemList: ItemListType
+        itemList: ItemList
     )
     func sendSelectItem(
         items: [ItemListItem],
-        itemList: ItemListType
+        itemList: ItemList
     )
 }
