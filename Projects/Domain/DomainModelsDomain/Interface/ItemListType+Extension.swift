@@ -1,6 +1,6 @@
 import Foundation
 
-extension ItemList {
+extension ItemListType {
     private var name: String {
         return String(describing: self)
             .components(separatedBy: "(")
@@ -17,7 +17,7 @@ extension ItemList {
         return nil
     }
     
-    private var content: ItemListInfo? {
+    private var info: ItemListInfo? {
         guard let content: ItemListInfo = self.getChildren(self) else {
             return nil
         }
@@ -25,11 +25,11 @@ extension ItemList {
     }
     
     public var itemListId: String? {
-        guard let content else {
+        guard let info else {
             return self.name
         }
         
-        guard let id = content.id else {
+        guard let id = info.id else {
             return self.name
         }
         
@@ -37,11 +37,11 @@ extension ItemList {
     }
     
     public var itemListName: String? {
-        guard let content else {
+        guard let info else {
             return self.name
         }
         
-        guard let name = content.name else {
+        guard let name = info.name else {
             return self.name
         }
         

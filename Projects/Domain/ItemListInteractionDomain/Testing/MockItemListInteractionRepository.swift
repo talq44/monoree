@@ -18,14 +18,14 @@ final class MockItemListInteractionRepository: ItemListInteractionRepository {
     
     func sendViewItemList(
         items: [any ItemListInteractionDomainInterface.ItemListItem],
-        itemList: ItemList
+        itemList: ItemListType
     ) {
         self.sendViewItemListItems += items
     }
     
     func sendSelectItem(
         items: [any ItemListInteractionDomainInterface.ItemListItem],
-        itemList: ItemList
+        itemList: ItemListType
     ) {
         self.sendSelectItemItems += items
     }

@@ -5,7 +5,7 @@ import ItemListInteractionDomainInterface
 
 struct StubItemListInteractionInput: ItemListInteractionInput {
     var items: [any ItemListInteractionDomainInterface.ItemListItem]
-    var itemList: ItemList
+    var itemList: ItemListType
     var sendType: ItemListSendType
         
     static var selectItemNormal: StubItemListInteractionInput {

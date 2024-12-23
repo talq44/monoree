@@ -6,6 +6,6 @@ import DomainModelsDomainInterface
 /// https://firebase.google.com/docs/reference/android/com/google/firebase/analytics/FirebaseAnalytics.Event#SELECT_ITEM()
 public protocol ItemListInteractionInput {
     var items: [ItemListItem] { get }
-    var itemList: ItemList { get }
+    var itemList: ItemListType { get }
     var sendType: ItemListSendType { get }
 }

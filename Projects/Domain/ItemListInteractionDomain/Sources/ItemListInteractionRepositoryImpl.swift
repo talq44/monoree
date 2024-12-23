@@ -7,7 +7,7 @@ final class ItemListInteractionRepositoryImplementation: ItemListInteractionRepo
     
     func sendViewItemList(
         items: [any ItemListInteractionDomainInterface.ItemListItem],
-        itemList: ItemList
+        itemList: ItemListType
     ) {
         self.fakeSend(
             items: items,
@@ -18,7 +18,7 @@ final class ItemListInteractionRepositoryImplementation: ItemListInteractionRepo
     
     func sendSelectItem(
         items: [any ItemListInteractionDomainInterface.ItemListItem],
-        itemList: ItemList
+        itemList: ItemListType
     ) {
         self.fakeSend(
             items: items,
