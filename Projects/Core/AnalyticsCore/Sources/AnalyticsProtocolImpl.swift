@@ -8,7 +8,7 @@ final class AnalyticsProtocolImpl: AnalyticsProtocol {
         
     }
     
-    func sendEvent(_ event: AnalyticsCoreInterface.AnalyticsEvent) {
+    func sendEvent(_ event: AnalyticsEvent) {
         
     }
 }
