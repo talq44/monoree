@@ -8,6 +8,7 @@
 import ProjectDescription
 
 public enum CoreModule: String, CaseIterable {
+	case AnalyticsCore
 	case AuthCore
 	case LocalDataCore
     case ImageSearchAPICore
