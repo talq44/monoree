@@ -1,5 +1,6 @@
 import Foundation
 
+import DomainModelsDomainInterface
 import ItemListInteractionDomainInterface
 
 final class MockItemListInteractionRepository: ItemListInteractionRepository {
@@ -17,14 +18,14 @@ final class MockItemListInteractionRepository: ItemListInteractionRepository {
     
     func sendViewItemList(
         items: [any ItemListInteractionDomainInterface.ItemListItem],
-        itemList: ItemListInteractionDomainInterface.ItemList
+        itemList: ItemList
     ) {
         self.sendViewItemListItems += items
     }
     
     func sendSelectItem(
         items: [any ItemListInteractionDomainInterface.ItemListItem],
-        itemList: ItemListInteractionDomainInterface.ItemList
+        itemList: ItemList
     ) {
         self.sendSelectItemItems += items
     }

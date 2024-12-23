@@ -1,12 +1,13 @@
 import Foundation
 
+import DomainModelsDomainInterface
 import ItemListInteractionDomainInterface
 
 final class ItemListInteractionRepositoryImplementation: ItemListInteractionRepository {
     
     func sendViewItemList(
         items: [any ItemListInteractionDomainInterface.ItemListItem],
-        itemList: ItemListInteractionDomainInterface.ItemList
+        itemList: ItemList
     ) {
         self.fakeSend(
             items: items,
@@ -17,7 +18,7 @@ final class ItemListInteractionRepositoryImplementation: ItemListInteractionRepo
     
     func sendSelectItem(
         items: [any ItemListInteractionDomainInterface.ItemListItem],
-        itemList: ItemListInteractionDomainInterface.ItemList
+        itemList: ItemList
     ) {
         self.fakeSend(
             items: items,

@@ -1,5 +1,6 @@
 import Foundation
 
+import DomainModelsDomainInterface
 import ItemListInteractionDomainInterface
 
 struct StubItemListInteractionInput: ItemListInteractionInput {
