@@ -13,8 +13,6 @@ let project = Project.module(
             core: .LocalDataCore,
             dependencies: [
                 .core(target: .LocalDataCore, type: .interface),
-                .SPM.realm,
-                .SPM.realmSwift,
             ]
         ),
         .testing(
@@ -29,8 +27,6 @@ let project = Project.module(
                 .core(target: .LocalDataCore, type: .interface),
                 .core(target: .LocalDataCore, type: .implementation),
                 .core(target: .LocalDataCore, type: .testing),
-                .SPM.realm,
-                .SPM.realmSwift,
             ]
         ),
     ]

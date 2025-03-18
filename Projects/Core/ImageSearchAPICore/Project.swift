@@ -17,7 +17,6 @@ let project = Project.module(
                 .SPM.alamofire,
                 .SPM.moya,
                 .SPM.swinject,
-                .SPM.swiftDotEnv,
             ]
         ),
         .testing(

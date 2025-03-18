@@ -14,9 +14,7 @@ final class BookmarkListRepositoryImpl: BookmarkListRepository {
         _ request: any BookmarkListRequest
     ) -> Result<any BookmarkListResponse, BookmarkListError> {
         let request = BookmarkListRequestDTOImpl()
-        let response = self.localDatasource.get_bookmarks(request: request)
-        
-        return .success(self.toDomain(response))
+        return .failure(.unKnown)
     }
     
     private func toDomain(

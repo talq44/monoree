@@ -10,18 +10,14 @@ import Foundation
 import LocalDataCoreInterface
 
 import Swinject
-import RealmSwift
 
 final public class LocalDataAssembly: Assembly {
-    private let realm: Realm
     
-    public init(realm: Realm) {
-        self.realm = realm
-    }
+    public init() { }
     
     public func assemble(container: Swinject.Container) {
         container.register(
             LocalDataProtocol.self
-        ) { _ in LocalDataProtocolImpl(realm: self.realm) }
+        ) { _ in LocalDataProtocolImpl() }
     }
 }

@@ -22,14 +22,14 @@ public extension TargetDependency {
         public static let rxCocoa: TargetDependency = .external(name: "RxCocoa")
         public static let reactorKit: TargetDependency = .external(name: "ReactorKit")
         
+        // TCA
+        public static let tca: TargetDependency = .external(name: "swift-composable-architecture")
+        
         // Data
         public static let alamofire: TargetDependency = .external(name: "Alamofire")
         public static let moya: TargetDependency = .external(name: "Moya")
-        public static let realmSwift: TargetDependency = .external(name: "RealmSwift")
-        public static let realm: TargetDependency = .external(name: "Realm")
-        
+                
         // Testable
         public static let fakery: TargetDependency = .external(name: "Fakery")
-        public static let swiftDotEnv: TargetDependency = .external(name: "SwiftDotEnv")
     }
 }
