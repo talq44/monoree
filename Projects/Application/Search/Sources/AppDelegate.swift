@@ -12,8 +12,6 @@ import SearchFeatureInterface
 import AuthCore
 
 import Swinject
-import Realm
-import RealmSwift
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -39,7 +37,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     private func diContainer() {
         do {
-            let realm = try Realm()
             // dependency injection
             self.assembler = Assembler(
                 [
@@ -47,7 +44,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                         baseURL: "https://api.github.com"
                     ),
                     AuthCoreAssembly(githubToken: ""),
-                    LocalDataAssembly(realm: realm),
                     BookmarkListAssembly(),
                     BookmarkUpdateAssembly(),
                     SearchListAssembly(),

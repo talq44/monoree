@@ -39,8 +39,6 @@ let project = Project.module(
             feature: .SearchFeature,
             dependencies: [
                 .SPM.swinject,
-                .SPM.realm,
-                .SPM.realmSwift,
                 .feature(target: .SearchFeature, type: .implementation),
                 .feature(target: .SearchFeature, type: .testing),
                 .domain(target: .SearchListDomain, type: .implementation),

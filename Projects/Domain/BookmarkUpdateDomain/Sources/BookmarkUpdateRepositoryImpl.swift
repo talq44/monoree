@@ -15,24 +15,7 @@ final class BookmarkUpdateRepositoryImpl: BookmarkUpdateRepository {
     func update(
         _ request: BookmarkUpdateRequest
     ) -> Result<BookmarkUpdateResponse, BookmarkUpdateError> {
-        do {
-            let response = try self.localDataSource.patch_bookmarks(
-                request: BookmarkUpdateRequestDTOImpl(
-                    id: request.id,
-                    isAdd: request.isAdd,
-                    name: request.name,
-                    avatarUrl: request.avatarUrl
-                )
-            )
-            
-            return .success(BookmarkUpdateResponseImpl(
-                id: response.id,
-                isBookMark: response.isBookmarked
-            ))
-            
-        } catch {
-            return .failure(.unKnown)
-        }
+        return .failure(.unKnown)
     }
 }
 

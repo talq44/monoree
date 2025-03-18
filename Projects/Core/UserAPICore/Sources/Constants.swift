@@ -7,8 +7,6 @@
 
 import Foundation
 
-import SwiftDotEnv
-
 struct Constants {
     static var baseURL: String = "https://api.github.com"
     

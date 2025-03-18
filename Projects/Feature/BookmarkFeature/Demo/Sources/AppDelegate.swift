@@ -7,8 +7,6 @@ import BookmarkFeature
 import BookmarkFeatureInterface
 
 import Swinject
-import Realm
-import RealmSwift
 
 @main
 final class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -37,13 +35,11 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     
     private func diContainer() {
         do {
-            let realm = try Realm()
             // dependency injection
             self.assembler = Assembler(
                 [
                     BookmarkListAssembly(),
                     BookmarkUpdateAssembly(),
-                    LocalDataAssembly(realm: realm),
                     BookmarkAssembly(),
                 ],
                 container: self.container

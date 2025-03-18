@@ -35,8 +35,6 @@ let project = Project(
             dependencies: [
                 .SPM.fakery,
                 .SPM.swinject,
-                .SPM.realm,
-                .SPM.realmSwift,
                 .feature(target: .SearchFeature, type: .implementation),
                 .feature(target: .BookmarkFeature, type: .implementation),
                 .feature(target: .SearchFeature, type: .interface),

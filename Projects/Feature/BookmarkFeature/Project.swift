@@ -50,8 +50,6 @@ let project = Project.module(
             feature: .BookmarkFeature,
             dependencies: [
                 .SPM.swinject,
-                .SPM.realm,
-                .SPM.realmSwift,
                 .SPM.fakery,
                 .feature(target: .BookmarkFeature, type: .implementation),
                 .feature(target: .BookmarkFeature, type: .testing),
