@@ -1,6 +1,6 @@
 import Foundation
 
-public enum StaticTimeInterval: Equatable {
+public enum TimeType: Equatable {
     case seconds_3
     case seconds_5
     case seconds_10

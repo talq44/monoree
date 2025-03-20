@@ -12,7 +12,7 @@ let project = Project.module(
         .implementation(
             feature: .TimerFeature,
             dependencies: [
-                .SPM.TCAArchitecture,
+                .SPM.ComposableArchitecture,
                 .feature(target: .TimerFeature, type: .interface),
             ]
         ),
