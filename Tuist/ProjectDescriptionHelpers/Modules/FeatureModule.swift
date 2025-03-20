@@ -8,6 +8,7 @@
 import ProjectDescription
 
 public enum FeatureModule: String, CaseIterable {
+	case TimerFeature
 	case BookmarkFeature
 	case SearchFeature
     
