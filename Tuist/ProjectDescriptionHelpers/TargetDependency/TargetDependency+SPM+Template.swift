@@ -23,7 +23,13 @@ public extension TargetDependency {
         public static let reactorKit: TargetDependency = .external(name: "ReactorKit")
         
         // TCA
-        public static let tca: TargetDependency = .external(name: "swift-composable-architecture")
+        public static let TCAArchitecture: TargetDependency = .package(
+            product: "ComposableArchitecture"
+        )
+        public static let TCACoordinator: TargetDependency = .package(
+            product: "TCACoordinators"
+        )
+            
         
         // Data
         public static let alamofire: TargetDependency = .external(name: "Alamofire")
