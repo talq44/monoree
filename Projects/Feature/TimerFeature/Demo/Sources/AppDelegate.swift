@@ -2,33 +2,22 @@ import SwiftUI
 
 import ComposableArchitecture
 
+import TimerFeatureInterface
 import TimerFeature
 
 @main
 struct DemoView: App {
+    private let service: TimerService = TimerServiceImpl(initialTime: .seconds_5)
     
     var body: some Scene {
         WindowGroup {
-            TimerContainer().build().view
-//            ZStack {
-//                Text("Hi")
-//            }
+            service.view()
+            Button(
+                "타이머 시작",
+                action: {
+                    _ = service.start()
+                }
+            )
         }
     }
 }
-//final class AppDelegate: UIResponder, UIApplicationDelegate {
-//    var window: UIWindow?
-//
-//    func application(
-//        _ application: UIApplication,
-//        didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil
-//    ) -> Bool {
-//        window = UIWindow(frame: UIScreen.main.bounds)
-//        let viewController = UIViewController()
-//        let navigationController = UINavigationController(rootViewController: viewController)
-//        window?.rootViewController = navigationController
-//        window?.makeKeyAndVisible()
-//
-//        return true
-//    }
-//}
