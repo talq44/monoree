@@ -10,14 +10,18 @@ struct TimerView: View {
         Text(store.currentTime)
             .font(.largeTitle)
             .bold()
+            .foregroundStyle(store.textColor)
             .padding()
+            .onTapGesture {
+                store.send(.start)
+            }
     }
 }
 
 #Preview {
     TimerView(
         store: Store(
-            initialState: TimerReducer.State(totalTime: 3.0),
+            initialState: TimerReducer.State(),
             reducer: {
                 TimerReducer()
             }
