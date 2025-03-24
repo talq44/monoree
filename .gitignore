@@ -71,3 +71,6 @@ Tuist/.build
 
 ### Github
 .env
+
+### cursor
+buildServer.json
