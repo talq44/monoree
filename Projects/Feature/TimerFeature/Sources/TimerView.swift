@@ -12,9 +12,6 @@ struct TimerView: View {
             .bold()
             .foregroundStyle(store.textColor)
             .padding()
-            .onTapGesture {
-                store.send(.start)
-            }
     }
 }
 
