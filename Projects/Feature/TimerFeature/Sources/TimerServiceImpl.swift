@@ -7,7 +7,7 @@ import TimerFeatureInterface
 // MARK: - TimerFeature.Service (TMA 구조 적용)
 final public class TimerServiceImpl: TimerService {
     private let store: StoreOf<TimerReducer>
-    private var finishedSubject = PassthroughSubject<Bool, Never>()
+    private let finishedSubject = PassthroughSubject<Bool, Never>()
     private var cancellables = Set<AnyCancellable>()
     
     public init(initialTime: TimerFeatureInterface.TimeType = .seconds_3) {
@@ -19,7 +19,7 @@ final public class TimerServiceImpl: TimerService {
         )
         
         // isComplete 상태 변화 감지
-        store.publisher.isComplete
+        self.store.publisher.isComplete
             .sink { [weak self] isComplete in
                 self?.finishedSubject.send(isComplete)
             }
@@ -27,16 +27,16 @@ final public class TimerServiceImpl: TimerService {
     }
     
     public func setTime(_ time: TimerFeatureInterface.TimeType) {
-        store.send(.setTime(time.timeInterval))
+        self.store.send(.setTime(time.timeInterval))
     }
     
     public func start() -> AnyPublisher<Bool, Never> {
-        store.send(.start)
+        self.store.send(.start)
         return self.finishedSubject.eraseToAnyPublisher()
     }
     
     public func stop() {
-        store.send(.stop)
+        self.store.send(.stop)
     }
     
     public func view() -> AnyView {
