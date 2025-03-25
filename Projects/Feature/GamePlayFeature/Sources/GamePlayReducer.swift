@@ -40,16 +40,6 @@ struct GamePlayReducer {
         var score: Int {
             results.filter { $0 }.count
         }
-        
-        var timerOpacity: Double {
-            let percentage = remainingTime / timeInterval
-            switch percentage {
-            case 0.5...1.0: return 0.5
-            case 0.25...0.5: return 0.7
-            case 0.00..<0.25: return 0.85
-            default: return 0.5
-            }
-        }
     }
     
     // MARK: - Action
@@ -86,6 +76,7 @@ struct GamePlayReducer {
                         await send(.timerTick)
                     }
                 }
+                .cancellable(id: GamePlayID.timer)
                 
             case .timerTick:
                 if state.remainingTime > 0.1 {
@@ -99,7 +90,12 @@ struct GamePlayReducer {
             case .answerSelected(let isCorrect):
                 state.results.append(isCorrect)
                 state.currentStage += 1
-                return .send(.showStage)
+                state.remainingTime = state.timeInterval
+                state.isTimerComplete = false
+                return .merge(
+                    .cancel(id: GamePlayID.timer),
+                    .send(.showStage)
+                )
                 
             case .showResult:
                 state.isShowingResult = true
@@ -107,4 +103,8 @@ struct GamePlayReducer {
             }
         }
     }
+}
+
+private enum GamePlayID: Hashable {
+    case timer
 }
