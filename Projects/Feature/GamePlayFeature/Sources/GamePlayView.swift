@@ -20,8 +20,6 @@ struct GamePlayView: View {
                         Text(String(format: "%.1f", viewStore.remainingTime))
                             .font(.system(size: 60, weight: .bold))
                             .foregroundStyle(.blue)
-                            .opacity(viewStore.timerOpacity)
-                            .animation(.easeInOut, value: viewStore.timerOpacity)
                         
                         // Problem Content
                         if let problem = viewStore.currentProblem {
@@ -109,7 +107,9 @@ struct ResultView: View {
             Text("맞춘 개수: \(results.filter { $0 }.count) / \(totalStages)")
                 .font(.title2)
             
-            LazyVGrid(columns: [GridItem(.adaptive(minimum: 44))], spacing: 10) {
+            LazyVGrid(
+                columns: Array(repeating: GridItem(.flexible(), spacing: 10), count: 5), spacing: 10
+            ) {
                 ForEach(0..<results.count, id: \.self) { index in
                     Circle()
                         .fill(results[index] ? Color.green : Color.red)
