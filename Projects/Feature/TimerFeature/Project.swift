@@ -25,6 +25,7 @@ let project = Project.module(
         .tests(
             feature: .TimerFeature,
             dependencies: [
+                .SPM.ComposableArchitecture,
                 .feature(target: .TimerFeature, type: .implementation),
                 .feature(target: .TimerFeature, type: .testing),
             ]
