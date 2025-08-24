@@ -13,10 +13,9 @@ let project = Project.module(
             shared: .FirebaseShared,
             dependencies: [
                 .shared(target: .FirebaseShared, type: .interface),
-                .SPM.firebaseAuth,
                 .SPM.firebaseAnalytics,
+                .SPM.firebaseCore,
                 .SPM.firebaseCrashlytics,
-                .SPM.firebaseFirestore,
                 .SPM.firebaseMessaging,
                 .SPM.firebasePerformance,
                 .SPM.firebaseRemoteConfig,

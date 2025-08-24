@@ -54,6 +54,9 @@ extension TargetDependency {
         public static let firebaseAnalytics: TargetDependency = .external(
             name: "FirebaseAnalytics"
         )
+        public static let firebaseCore: TargetDependency = .external(
+            name: "FirebaseRemoteCore"
+        )
         public static let firebaseRemoteConfig: TargetDependency = .external(
             name: "FirebaseRemoteConfig"
         )

@@ -3,8 +3,6 @@ import FirebaseSharedInterface
 import Foundation
 
 public class FirebaseService: FirebaseServiceProtocol {
-    private var isConfiguredFlag = false
-    
     public init() {}
     
     public func configure() {
@@ -13,14 +11,11 @@ public class FirebaseService: FirebaseServiceProtocol {
             return
         }
         
-        let firebaseService = FirebaseService()
-        // 여러 인스턴스에서도 중복 초기화를 방지하도록 플래그 검사
-        if !firebaseService.isConfigured() {
-            firebaseService.configure()
-        }
-    }
-    
-    public func isConfigured() -> Bool {
-        return isConfiguredFlag
+        // 이미 구성되어 있으면 즉시 반환 (외부에서 선행 구성된 경우 포함)
+        guard FirebaseApp.app() == nil else { return }
+        FirebaseApp.configure()
+#if DEBUG
+        print("Firebase configured successfully")
+#endif
     }
 }
