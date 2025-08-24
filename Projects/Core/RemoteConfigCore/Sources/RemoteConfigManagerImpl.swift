@@ -16,7 +16,7 @@ final class RemoteConfigManagerImpl: RemoteConfigManager {
         settings.minimumFetchInterval = 3600
 #endif
         remoteConfig.configSettings = settings
-        
+        remoteConfig.setDefaults(fromPlist: "remote_config_defaults")
     }
     
     private func configureAppFeatures() {
