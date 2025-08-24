@@ -1,5 +1,3 @@
 import Foundation
 
-public protocol FirebaseServiceProtocol {
-  func configure()
-}
+public protocol FirebaseServiceProtocol { }
