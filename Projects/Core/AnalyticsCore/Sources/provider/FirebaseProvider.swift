@@ -3,6 +3,8 @@ import AnalyticsCoreInterface
 import FirebaseAnalytics
 
 final class FirebaseProvider: AnalyticsProtocol {
+    init() { }
+    
     func setUserId(id: String?) {
         Analytics.setUserID(id)
     }
