@@ -12,7 +12,7 @@ public class BookmarkListAssembly: Assembly {
         container.register(
             BookmarkListUseCase.self
         ) { r in
-            let local = r.resolve(LocalDataProtocol.self)!
+            let local = r.resolve(LocalDataProtocol.self)
             let repository = BookmarkListRepositoryImpl(
                 localDatasource: local
             )

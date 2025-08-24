@@ -6,9 +6,9 @@ import LocalDataCoreInterface
 
 final class BookmarkUpdateRepositoryImpl: BookmarkUpdateRepository {
     
-    private let localDataSource: LocalDataProtocol
+    private let localDataSource: LocalDataProtocol?
     
-    init(localDataSource: LocalDataProtocol) {
+    init(localDataSource: LocalDataProtocol?) {
         self.localDataSource = localDataSource
     }
     

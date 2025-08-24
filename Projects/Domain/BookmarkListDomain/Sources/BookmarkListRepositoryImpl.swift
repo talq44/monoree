@@ -4,9 +4,9 @@ import BookmarkListDomainInterface
 import LocalDataCoreInterface
 
 final class BookmarkListRepositoryImpl: BookmarkListRepository {
-    private let localDatasource: LocalDataProtocol
+    private let localDatasource: LocalDataProtocol?
     
-    init(localDatasource: LocalDataProtocol) {
+    init(localDatasource: LocalDataProtocol?) {
         self.localDatasource = localDatasource
     }
     
