@@ -1,14 +1,19 @@
 import Foundation
-
 import AnalyticsCoreInterface
+import FirebaseAnalytics
 
 final class FirebaseProvider: AnalyticsProtocol {
-    func setUserId(id: String) {
-        
+    init() { }
+    
+    func setUserId(id: String?) {
+        Analytics.setUserID(id)
     }
     
     func sendEvent(_ event: AnalyticsEvent) {
-        guard let eventName = event.name else { return }
-        print("FirebaseProvider: \(eventName)")
+        guard let name = event.name else { return }
+        
+        let parameters = event.parameters
+        
+        Analytics.logEvent(name, parameters: parameters)
     }
 }
