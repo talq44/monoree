@@ -1,19 +1,15 @@
-import UIKit
-
-import UserAPICore
-import LocalDataCore
-import BookmarkListDomain
-import BookmarkUpdateDomain
+import AuthCore
 import BookmarkFeature
 import BookmarkFeatureInterface
-import SearchListDomain
+import BookmarkListDomain
+import BookmarkUpdateDomain
+import LocalDataCore
 import SearchFeature
 import SearchFeatureInterface
-import AuthCore
-import FirebaseShared
-import FirebaseSharedInterface
-
+import SearchListDomain
 import Swinject
+import UIKit
+import UserAPICore
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -26,9 +22,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
-        // Firebase 초기화
-        configureFirebase()
-        
         // UIWindow 설정
         window = UIWindow(frame: UIScreen.main.bounds)
         diContainer()
@@ -39,11 +32,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         )
         
         return true
-    }
-    
-    private func configureFirebase() {
-        let firebaseService = FirebaseService()
-        firebaseService.configure()
     }
     
     private func diContainer() {
@@ -59,7 +47,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     BookmarkUpdateAssembly(),
                     SearchListAssembly(),
                     SearchViewAssembly(),
-                    BookmarkAssembly()
+                    BookmarkAssembly(),
                 ],
                 container: self.container
             )
