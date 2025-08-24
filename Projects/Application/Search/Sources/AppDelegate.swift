@@ -10,6 +10,8 @@ import SearchListDomain
 import SearchFeature
 import SearchFeatureInterface
 import AuthCore
+import FirebaseShared
+import FirebaseSharedInterface
 
 import Swinject
 
@@ -19,10 +21,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     internal var container = Swinject.Container()
     private var assembler: Assembler?
+    
     func application(
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
+        // Firebase 초기화
+        configureFirebase()
+        
         // UIWindow 설정
         window = UIWindow(frame: UIScreen.main.bounds)
         diContainer()
@@ -33,6 +39,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         )
         
         return true
+    }
+    
+    private func configureFirebase() {
+        let firebaseService = FirebaseService()
+        firebaseService.configure()
     }
     
     private func diContainer() {

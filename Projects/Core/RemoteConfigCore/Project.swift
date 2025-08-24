@@ -12,6 +12,7 @@ let project = Project.module(
 		.implementation(
 			core: .RemoteConfigCore,
 			dependencies: [
+                .shared(target: .FirebaseShared),
 				.core(target: .RemoteConfigCore, type: .interface),
 			]
 		),

@@ -48,6 +48,7 @@ let project = Project(
                 .shared(target: .FoundationShared),
                 .shared(target: .DesignSystem),
                 .shared(target: .ReactiveXShared),
+                .shared(target: .FirebaseShared, type: .implementation),
             ]
         ),
         .target(
@@ -55,10 +56,12 @@ let project = Project(
             destinations: .iOS,
             product: .unitTests,
             bundleId: "io.tuist.\(appName)Tests",
+            deploymentTargets: .appVersion,
             infoPlist: .default,
             sources: ["Tests/**"],
-            resources: [],
-            dependencies: [.target(name: appName)]
+            dependencies: [
+                .target(name: appName),
+            ]
         ),
     ]
 )
