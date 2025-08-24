@@ -1,4 +1,5 @@
 import RemoteConfigCoreInterface
+
 import FirebaseSPMShared
 import FirebaseRemoteConfig
 
@@ -40,13 +41,29 @@ final class RemoteConfigManagerImpl: RemoteConfigManager {
         }
     }
     
-    func fetchVersion() throws -> any RemoteConfigCoreInterface.VersionDTO {
-        let key = RemoteConfigKeys.version
-        
+    private func fetchRemoteConfig<T: Decodable>(_ type: T.Type, key: RemoteConfigKeys) throws -> T {
         do {
-            let response = try remoteConfig
-                .configValue(forKey: key.rawValue)
-                .decoded(asType: VersionDTOImpl.self)
+            let value = remoteConfig.value(forKey: key.rawValue)
+            
+            if let data = value as? Data {
+                let decoder = JSONDecoder()
+                let decodedValue = try decoder.decode(T.self, from: data)
+                
+                return decodedValue
+            } else {
+                fatalError("Could not decode remote config value for key \(key)")
+            }
+        } catch {
+            throw error
+        }
+    }
+    
+    func fetchVersion() throws -> any RemoteConfigCoreInterface.VersionDTO {
+        do {
+            let response = try fetchRemoteConfig(
+                VersionDTOImpl.self,
+                key: .version
+            )
             
             return response
         } catch {
