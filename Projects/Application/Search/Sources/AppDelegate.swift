@@ -1,17 +1,15 @@
-import UIKit
-
-import UserAPICore
-import LocalDataCore
-import BookmarkListDomain
-import BookmarkUpdateDomain
+import AuthCore
 import BookmarkFeature
 import BookmarkFeatureInterface
-import SearchListDomain
+import BookmarkListDomain
+import BookmarkUpdateDomain
+import LocalDataCore
 import SearchFeature
 import SearchFeatureInterface
-import AuthCore
-
+import SearchListDomain
 import Swinject
+import UIKit
+import UserAPICore
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     internal var container = Swinject.Container()
     private var assembler: Assembler?
+    
     func application(
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
@@ -48,7 +47,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     BookmarkUpdateAssembly(),
                     SearchListAssembly(),
                     SearchViewAssembly(),
-                    BookmarkAssembly()
+                    BookmarkAssembly(),
                 ],
                 container: self.container
             )

@@ -19,7 +19,7 @@ public class BookmarkUpdateAssembly: Assembly {
         container.register(
             BookmarkUpdateUseCase.self
         ) { r in
-            let local = r.resolve(LocalDataProtocol.self)!
+            let local = r.resolve(LocalDataProtocol.self)
             let repository = BookmarkUpdateRepositoryImpl(
                 localDataSource: local
             )
