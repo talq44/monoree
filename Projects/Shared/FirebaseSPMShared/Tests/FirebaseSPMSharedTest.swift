@@ -1,6 +1,6 @@
 import XCTest
 
-final class FirebaseSharedTests: XCTestCase {
+final class FirebaseSPMSharedTests: XCTestCase {
     override func setUpWithError() throws {}
 
     override func tearDownWithError() throws {}

@@ -1,8 +1,8 @@
 import ProjectDescription
 
 public enum SharedModule: String, CaseIterable {
-	case FirebaseShared
 	case DesignSystem
+    case FirebaseSPMShared
 	case FoundationShared
     case ReactiveXShared
     

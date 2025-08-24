@@ -12,7 +12,7 @@ let project = Project.module(
 		.implementation(
 			core: .RemoteConfigCore,
 			dependencies: [
-                .shared(target: .FirebaseShared),
+                .shared(target: .FirebaseSPMShared),
 				.core(target: .RemoteConfigCore, type: .interface),
 			]
 		),
