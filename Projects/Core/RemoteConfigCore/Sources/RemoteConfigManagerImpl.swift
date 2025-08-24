@@ -43,16 +43,14 @@ final class RemoteConfigManagerImpl: RemoteConfigManager {
     
     private func fetchRemoteConfig<T: Decodable>(_ type: T.Type, key: RemoteConfigKeys) throws -> T {
         do {
-            let value = remoteConfig.value(forKey: key.rawValue)
-            
-            if let data = value as? Data {
-                let decoder = JSONDecoder()
-                let decodedValue = try decoder.decode(T.self, from: data)
-                
-                return decodedValue
-            } else {
-                fatalError("Could not decode remote config value for key \(key)")
+            let rcValue = remoteConfig.configValue(forKey: key.rawValue)
+            let data = rcValue.dataValue
+            guard !data.isEmpty else {
+                // TODO: 필요 시 전용 에러 케이스(keyNotFound/invalidData 등)로 세분화
+                throw RemoteConfigError.unknown
             }
+            let decoder = JSONDecoder()
+            return try decoder.decode(T.self, from: data)
         } catch {
             throw error
         }
