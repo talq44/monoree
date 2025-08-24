@@ -1,6 +1,6 @@
+import Foundation
 import FirebaseCore
 import FirebaseSharedInterface
-import Foundation
 
 public class FirebaseService: FirebaseServiceProtocol {
     public init() {}
