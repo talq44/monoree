@@ -14,9 +14,6 @@ let project = Project.module(
             dependencies: [
                 .shared(target: .FirebaseSPMShared),
                 .core(target: .RemoteConfigCore, type: .interface),
-            ],
-            resources: [
-                .file(path: "Projects/Core/RemoteConfigCore/Sources/remote_config_defaults.plist")
             ]
         ),
         .testing(
