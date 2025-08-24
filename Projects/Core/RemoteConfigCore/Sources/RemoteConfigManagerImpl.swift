@@ -1,5 +1,5 @@
 import RemoteConfigCoreInterface
-import FirebaseShared
+import FirebaseSPMShared
 import FirebaseRemoteConfig
 
 final class RemoteConfigManagerImpl: RemoteConfigManager {
