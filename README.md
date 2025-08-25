@@ -85,6 +85,9 @@ $ tuist edit
 ### DI
 - [Swinject](https://github.com/Swinject/Swinject.git)
 
+### Firebase
+- [Firebase](https://github.com/firebase/firebase-ios-sdk)
+
 ### Testable
 - [Fakery](https://github.com/vadymmarkov/Fakery)
 - [swiftdotenv](https://github.com/noahkamara/swiftdotenv)
