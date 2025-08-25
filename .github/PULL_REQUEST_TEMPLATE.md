@@ -7,7 +7,7 @@
 ## Etc 
 - 
 
-## ScreenShot 📷 (선택사항)
+## ScreenShot 📷 (Optional)
 
 <table>
 <tr>
@@ -26,7 +26,7 @@
 
 </table>
 
-## Before & After 📷 (선택사항)
+## Before & After 📷 (Optional)
 
 <table>
 <tr>
