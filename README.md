@@ -32,7 +32,7 @@ flowchart TD
   Application --> Feature
   Feature["Feature Layer"] --> Domain
   Domain["Domain Layer"] --> Core
-  Core["Core Layer"] ~~~ Shared["Shared Layer"]
+  Core["Core Layer"] --> Shared["Shared/Third Layer"]
 ```
 
 ### TMA
@@ -84,6 +84,9 @@ $ tuist edit
 
 ### DI
 - [Swinject](https://github.com/Swinject/Swinject.git)
+
+### Firebase
+- [Firebase](https://github.com/firebase/firebase-ios-sdk)
 
 ### Testable
 - [Fakery](https://github.com/vadymmarkov/Fakery)
