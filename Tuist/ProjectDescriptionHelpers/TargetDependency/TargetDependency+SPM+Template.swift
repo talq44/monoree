@@ -38,9 +38,6 @@ extension TargetDependency {
         public static let ComposableArchitecture: TargetDependency = .external(
             name: "ComposableArchitecture"
         )
-        public static let TCACoordinator: TargetDependency = .external(
-            name: "TCACoordinators"
-        )
         
         // Data
         public static let alamofire: TargetDependency = .external(
