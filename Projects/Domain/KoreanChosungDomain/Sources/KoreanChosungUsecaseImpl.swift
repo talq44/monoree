@@ -74,7 +74,6 @@ extension KoreanChosungUsecaseImpl {
     }
     
     private func extractJungseong(from text: String) -> String {
-        // Jungseong (21 vowels) ordered per Unicode Hangul composition table
         let jungseongTable: [Character] = [
             "ㅏ","ㅐ","ㅑ","ㅒ","ㅓ","ㅔ","ㅕ","ㅖ","ㅗ","ㅘ","ㅙ","ㅚ","ㅛ","ㅜ","ㅝ","ㅞ","ㅟ","ㅠ","ㅡ","ㅢ","ㅣ"
         ]
