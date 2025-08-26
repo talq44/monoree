@@ -1,6 +1,11 @@
 import Foundation
 
-public protocol KoreanChosungInput {
-    var id: String { get }
-    var origin: String { get }
+public struct KoreanChosungInput {
+    public let id: String
+    public let origin: String
+    
+    public init(id: String, origin: String) {
+        self.id = id
+        self.origin = origin
+    }
 }

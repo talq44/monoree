@@ -1,7 +1,7 @@
 import Foundation
 import KoreanChosungDomainInterface
 
-struct KoreaChosungItemImpl: KoreanChosungItem {
+struct KoreanChosungItemImpl: KoreanChosungItem, Equatable {
     let id: String
     let origin: String
     let answer: String
