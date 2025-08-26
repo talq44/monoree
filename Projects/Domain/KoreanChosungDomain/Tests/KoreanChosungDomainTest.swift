@@ -112,7 +112,7 @@ final class KoreanChosungDomainTests: XCTestCase {
             "원숭이도 나무에서 떨어진다",
             "티끌 모아 태산",
             "가는 말이 고와야 오는 말이 곱다",
-            "하늘의 별 따기"
+            "아메리카노"
         ]
 
         // 앞글자 기준 (makeHalfMaskedHint)
@@ -126,7 +126,7 @@ final class KoreanChosungDomainTests: XCTestCase {
             "원숭이도 나무에서 OOOO",
             "티끌 모아 OO",
             "가는 말이 고와야 OO OO OO",
-            "하늘의 별 OO"
+            "아메리OO"
         ]
         
         // when
@@ -157,7 +157,7 @@ final class KoreanChosungDomainTests: XCTestCase {
             "원숭이도 나무에서 떨어진다",
             "티끌 모아 태산",
             "가는 말이 고와야 오는 말이 곱다",
-            "하늘의 별 따기"
+            "아메리카노"
         ]
 
         // 뒷글자 기준 (makeHalfMaskedHintFromEnd)
@@ -171,7 +171,7 @@ final class KoreanChosungDomainTests: XCTestCase {
             "OOOO 나무에서 떨어진다",
             "OO 모아 태산",
             "OO OO OOO 오는 말이 곱다",
-            "OOO 별 따기"
+            "OO리카노"
         ]
         
         // when
