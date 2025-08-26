@@ -8,7 +8,7 @@ final class LocalDataCoreTests: XCTestCase {
     private var sut: LocalDataProtocolImpl!
     
     override func setUpWithError() throws {
-        self.sut = try LocalDataProtocolImpl()
+        self.sut = LocalDataProtocolImpl()
     }
     
     override func tearDownWithError() throws {
