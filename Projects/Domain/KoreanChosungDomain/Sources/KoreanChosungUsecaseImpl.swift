@@ -11,6 +11,10 @@ final class KoreanChosungUsecaseImpl: KoreanChosungUsecase {
             return chosungDivider(inputs: inputs)
         case .jungsung:
             return jungsungDivider(inputs: inputs)
+        case .frontHalf:
+            return frontDivider(inputs: inputs)
+        case .backHalf:
+            return backDivider(inputs: inputs)
         }
     }
 }
@@ -95,5 +99,106 @@ extension KoreanChosungUsecaseImpl {
             }
         }
         return String(result)
+    }
+}
+
+// MARK: - Hint Masking (Whitespace or Continuous)
+extension KoreanChosungUsecaseImpl {
+    private func frontDivider(
+        inputs: [KoreanChosungInput]
+    ) -> [KoreanChosungItemImpl] {
+        let convertItems: [KoreanChosungItemImpl] = inputs.map { input in
+            KoreanChosungItemImpl(
+                id: input.id,
+                origin: input.origin,
+                answer: input.origin,
+                question: makeHalfMaskedHint(from: input.origin)
+            )
+        }
+        return convertItems
+    }
+    
+    /// Returns a hint string where only the first half is revealed and the rest is masked with "O".
+    /// - Rules:
+    ///   - If the text contains spaces: split by single spaces, show the first half (ceil), mask the remaining tokens with "O" repeated by each token's character count, then join using a single space.
+    ///   - If the text has no spaces (e.g., 사자성어): reveal first half (ceil) characters, mask the rest with "O".
+    ///   - Examples:
+    ///     - "까마귀 날자 배 떨어진다" -> "까마귀 날자 O OOOO"
+    ///     - "식은 죽 먹기"           -> "식은 죽 OO"
+    ///     - "고진감래"               -> "고진OO"
+    private func makeHalfMaskedHint(from text: String) -> String {
+        // Fast-path: empty
+        guard !text.isEmpty else { return text }
+        
+        // Determine if we treat as spaced phrase or continuous word
+        if text.contains(" ") {
+            // Split by a single space; join with a single space to keep consistency with examples
+            let parts = text.split(separator: " ", omittingEmptySubsequences: true).map(String.init)
+            guard !parts.isEmpty else { return text }
+            
+            let keepCount = (parts.count + 1) / 2 // ceil
+            let masked = parts.enumerated().map { idx, token -> String in
+                if idx < keepCount { return token }
+                // Mask token length with "O"
+                return String(repeating: "O", count: token.count)
+            }
+            return masked.joined(separator: " ")
+        } else {
+            // Continuous string (e.g., 사자성어)
+            let count = text.count
+            let keepCount = (count + 1) / 2 // ceil
+            let prefixStr = String(text.prefix(keepCount))
+            let maskedTail = String(repeating: "O", count: max(0, count - keepCount))
+            return prefixStr + maskedTail
+        }
+    }
+    
+    private func backDivider(
+        inputs: [KoreanChosungInput]
+    ) -> [KoreanChosungItemImpl] {
+        let convertItems: [KoreanChosungItemImpl] = inputs.map { input in
+            KoreanChosungItemImpl(
+                id: input.id,
+                origin: input.origin,
+                answer: input.origin,
+                question: makeHalfMaskedHintFromEnd(from: input.origin)
+            )
+        }
+        return convertItems
+    }
+
+    /// Returns a hint string where only the **last** half is revealed and the **front** is masked with "O".
+    /// - Rules:
+    ///   - If the text contains spaces: split by single spaces, show the last half (ceil), mask the preceding tokens with "O" repeated by each token's character count, then join using a single space.
+    ///   - If the text has no spaces (e.g., 사자성어): reveal last half (ceil) characters, mask the front with "O".
+    ///   - Examples:
+    ///     - "까마귀 날자 배 떨어진다" -> "OOO OO 배 떨어진다"
+    ///     - "식은 죽 먹기"           -> "OO 죽 먹기"
+    ///     - "고진감래"               -> "OO감래"
+    private func makeHalfMaskedHintFromEnd(from text: String) -> String {
+        guard !text.isEmpty else { return text }
+        
+        if text.contains(" ") {
+            let parts = text.split(separator: " ", omittingEmptySubsequences: true).map(String.init)
+            guard !parts.isEmpty else { return text }
+            
+            let keepCount = (parts.count + 1) / 2 // ceil
+            let threshold = parts.count - keepCount
+            
+            let masked = parts.enumerated().map { idx, token -> String in
+                if idx < threshold {
+                    return String(repeating: "O", count: token.count)
+                } else {
+                    return token
+                }
+            }
+            return masked.joined(separator: " ")
+        } else {
+            let count = text.count
+            let keepCount = (count + 1) / 2 // ceil
+            let suffixStr = String(text.suffix(keepCount))
+            let maskedHead = String(repeating: "O", count: max(0, count - keepCount))
+            return maskedHead + suffixStr
+        }
     }
 }
