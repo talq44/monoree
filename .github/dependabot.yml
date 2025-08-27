@@ -6,7 +6,6 @@
 version: 2
 updates:
     - package-ecosystem: "github-actions"
-    # Workflow files stored in the default location of `.github/workflows`. (You don't need to specify `/.github/workflows` for `directory`. You can use `directory: "/"`.)
     directory: "/"
     schedule:
       interval: "monthly"
@@ -17,7 +16,7 @@ updates:
       prefix: "[Dependabot] "
 
   - package-ecosystem: "swift" # See documentation for possible values
-    directory: "/appstore/Tuist" # Location of package manifests
+    directory: "/Tuist" # Location of package manifests
     schedule:
       interval: "monthly"
       time: "09:00"
