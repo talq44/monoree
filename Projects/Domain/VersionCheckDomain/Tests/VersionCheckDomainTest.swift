@@ -18,7 +18,7 @@ struct VersionCheckDomainTest {
         #expect(result == .none)
     }
     
-    @Test("min 1.0.0 max 2.0.0 케이스 망라") func min또는max그어딘가() {
+    @Test("min 1.0.0 max 2.0.0 케이스 망라") func testVersionComparisonScenarios() {
         // given
         let remoteConfig = MockVersionConfigManager()
         let usecase = VersionCheckUsecaseImpl(remoteVersionConfig: remoteConfig)
@@ -35,7 +35,7 @@ struct VersionCheckDomainTest {
         #expect(usecase.checkVersion("3.0.0") == .none)
     }
     
-    @Test("min max 거꾸로 넣음 = min version이 우선순위 높음") func 거꾸로() {
+    @Test("min max 거꾸로 넣음 = min version이 우선순위 높음") func testReversedMinMaxVersions() {
         // given
         let remoteConfig = MockVersionConfigManager()
         let usecase = VersionCheckUsecaseImpl(remoteVersionConfig: remoteConfig)
@@ -50,7 +50,7 @@ struct VersionCheckDomainTest {
         #expect(usecase.checkVersion("2.0.0") == .none, "min버전이 우선순위가 높음")
     }
     
-    @Test("currentVersion을 이상한걸 넣음") func 세상맘대로다() {
+    @Test("currentVersion을 이상한걸 넣음") func testInvalidCurrentVersionFormat() {
         // given
         let remoteConfig = MockVersionConfigManager()
         let usecase = VersionCheckUsecaseImpl(remoteVersionConfig: remoteConfig)
