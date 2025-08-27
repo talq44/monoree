@@ -1,6 +1,6 @@
 import Foundation
 
-public enum VersionUpdateResult {
+public enum VersionUpdateResult: Equatable {
     /// 유지(별도 동작 없음)
     case none
     /// 선택 업
