@@ -8,5 +8,5 @@
 import Foundation
 
 public protocol VersionConfigManager {
-    func fetchVersion() throws -> VersionDTO
+    func fetchVersion() throws -> any VersionDTO
 }
