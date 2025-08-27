@@ -17,6 +17,8 @@ final class VersionCheckUsecaseImpl: VersionCheckUsecase {
             let min = SemVer(versionConfig.minVersion)
             let max = SemVer(versionConfig.maxVersion)
             
+            guard cur != SemVer("0.0.0") else { return .none }
+            
             // Rules:
             // - cur < min  => required update
             // - min <= cur < max => optional update (recommended)
