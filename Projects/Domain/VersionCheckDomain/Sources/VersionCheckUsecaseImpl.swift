@@ -3,7 +3,7 @@ import VersionCheckDomainInterface
 import RemoteConfigCoreInterface
 
 final class VersionCheckUsecaseImpl: VersionCheckUsecase {
-    private let remoteVersionConfig: VersionConfigManager
+    private let remoteVersionConfig: any VersionConfigManager
     
     init(remoteVersionConfig: any VersionConfigManager) {
         self.remoteVersionConfig = remoteVersionConfig
