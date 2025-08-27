@@ -3,15 +3,15 @@ import VersionCheckDomainInterface
 import RemoteConfigCoreInterface
 
 final class VersionCheckUsecaseImpl: VersionCheckUsecase {
-    private let remoteConfig: RemoteConfigManager
+    private let remoteVersionConfig: VersionConfigManager
     
-    init(remoteConfig: any RemoteConfigCoreInterface.RemoteConfigManager) {
-        self.remoteConfig = remoteConfig
+    init(remoteVersionConfig: any VersionConfigManager) {
+        self.remoteVersionConfig = remoteVersionConfig
     }
     
-    func checkVersion(_ currentVersion: String) -> VersionCheckDomainInterface.VersionUpdateResult {
+    func checkVersion(_ currentVersion: String) -> VersionUpdateResult {
         do {
-            let versionConfig = try remoteConfig.fetchVersion()
+            let versionConfig = try remoteVersionConfig.fetchVersion()
             
             let cur = SemVer(currentVersion)
             let min = SemVer(versionConfig.minVersion)
