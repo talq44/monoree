@@ -13,9 +13,9 @@ struct SemVer: Comparable {
             let digits = token.prefix { $0.isNumber }
             return Int(digits) ?? 0
         }
-        self.major = number(from: tokens.indices.contains(0) ? tokens[0] : nil)
-        self.minor = number(from: tokens.indices.contains(1) ? tokens[1] : nil)
-        self.patch = number(from: tokens.indices.contains(2) ? tokens[2] : nil)
+        self.major = number(from: tokens.count > 0 ? tokens[0] : nil)
+        self.minor = number(from: tokens.count > 1 ? tokens[1] : nil)
+        self.patch = number(from: tokens.count > 2 ? tokens[2] : nil)
     }
 
     static func < (lhs: SemVer, rhs: SemVer) -> Bool {
