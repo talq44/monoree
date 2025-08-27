@@ -3,5 +3,5 @@ import RemoteConfigCoreInterface
 
 public protocol VersionCheckUsecase {
     init(remoteConfig: RemoteConfigManager)
-    func checkVersion() -> VersionUpdateResult
+    func checkVersion(_ currentVersion: String) -> VersionUpdateResult
 }
