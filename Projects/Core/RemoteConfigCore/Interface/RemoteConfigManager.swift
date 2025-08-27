@@ -7,7 +7,6 @@
 
 import Foundation
 
-public protocol RemoteConfigManager {
+public protocol RemoteConfigManager: VersionConfigManager {
     func fetch() async throws -> Void
-    func fetchVersion() throws -> VersionDTO
 }
