@@ -1,11 +1,10 @@
-import XCTest
+import Testing
 
-final class VersionCheckDomainTests: XCTestCase {
-    override func setUpWithError() throws {}
+@testable import VersionCheckDomain
 
-    override func tearDownWithError() throws {}
+struct VersionCheckDomainTest {
 
-    func testExample() {
-        XCTAssertEqual(1, 1)
+    @Test("버전비교") func versionCheck() {
+        #expect(true)
     }
 }

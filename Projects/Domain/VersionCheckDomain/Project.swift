@@ -14,7 +14,6 @@ let project = Project.module(
         .implementation(
             domain: .VersionCheckDomain,
             dependencies: [
-                .core(target: .RemoteConfigCore, type: .interface),
                 .domain(target: .VersionCheckDomain, type: .interface),
             ]
         ),
