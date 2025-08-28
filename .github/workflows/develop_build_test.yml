@@ -79,7 +79,7 @@ jobs:
 
     - name: Tuist build
       run: |
-        tuist build
+        tuist build Monoree
 
     - name: Tuist Test
       if: ${{ vars.TUIST_TEST_ON_OFF == 'true' }}
