@@ -95,10 +95,12 @@ private struct HeroCard: View {
                 Text("지금 바로 즐겨요")
                     .font(.callout.weight(.semibold))
                     .foregroundStyle(.white.opacity(0.9))
+                
                 Text("모두의 놀이, 모놀이")
                     .font(.system(size: 34, weight: .heavy))
                     .foregroundStyle(.white)
                     .shadow(radius: 10, y: 2)
+                
                 Text("가볍지만 재밌고 즐거운 게임")
                     .font(.subheadline)
                     .foregroundStyle(.white.opacity(0.9))
