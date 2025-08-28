@@ -33,21 +33,9 @@ let project = Project(
       sources: ["Sources/**"],
       resources: ["Resources/**"],
       dependencies: [
-        .SPM.fakery,
-        .SPM.swinject,
-        .feature(target: .SearchFeature, type: .implementation),
-        .feature(target: .BookmarkFeature, type: .implementation),
-        .feature(target: .SearchFeature, type: .interface),
-        .feature(target: .BookmarkFeature, type: .interface),
-        .domain(target: .SearchListDomain, type: .implementation),
-        .domain(target: .BookmarkUpdateDomain, type: .implementation),
-        .domain(target: .BookmarkListDomain, type: .implementation),
         .core(target: .UserAPICore, type: .implementation),
-        .core(target: .LocalDataCore, type: .implementation),
-        .core(target: .AuthCore, type: .implementation),
         .shared(target: .FoundationShared),
         .shared(target: .DesignSystem),
-        .shared(target: .ReactiveXShared),
       ]
     ),
     .target(
