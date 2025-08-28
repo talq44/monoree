@@ -8,7 +8,7 @@
 import ProjectDescription
 import ProjectDescriptionHelpers
 
-let appName = "Monori"
+let appName = "Monoree"
 let project = Project(
   name: appName,
   targets: [
