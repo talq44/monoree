@@ -1,15 +1,12 @@
 import SwiftUI
 
-@main
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            Text("Hello, Monoree")
+                .padding()
+                .navigationTitle("Home")
         }
-        .padding()
     }
 }
 
