@@ -1,6 +1,5 @@
 import Foundation
 
-import RestAPIErrorCoreInterface
 import UserAPICoreInterface
 
 import Alamofire
@@ -32,13 +31,13 @@ public class UserAPICoreImpl {
     
     func requestJson<T: Decodable>(_ target: API, type: T.Type) async throws -> T {
         guard NetworkReachabilityManager()?.isReachable == true else {
-            throw RestAPIError.networkNotConnect
+            throw APIError.networkNotConnect
         }
         
         return try await withCheckedThrowingContinuation { [weak self] continuation in
             
             guard let self = self else {
-                continuation.resume(throwing: RestAPIError.unDefined)
+                continuation.resume(throwing: APIError.undefined)
                 return
             }
             
@@ -54,15 +53,12 @@ public class UserAPICoreImpl {
                     }
                     catch {
                         self.printError(error: error)
-                        let amondzError = RestAPIError(
-                            statusCode: response.statusCode
-                        )
-                        continuation.resume(throwing: amondzError)
+                        continuation.resume(throwing: APIError.statusCode(response.statusCode))
                     }
                     
                 case .failure(let error):
                     self.printError(error: error)
-                    continuation.resume(throwing: error.apiError)
+                    continuation.resume(throwing: error)
                 }
             }
         }
