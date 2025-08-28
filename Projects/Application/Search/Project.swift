@@ -35,7 +35,6 @@ let project = Project(
       dependencies: [
         .core(target: .UserAPICore, type: .implementation),
         .shared(target: .FoundationShared),
-        .shared(target: .DesignSystem),
       ]
     ),
     .target(
