@@ -15,7 +15,6 @@ let project = Project.module(
                 .core(target: .UserAPICore, type: .interface),
                 .SPM.alamofire,
                 .SPM.moya,
-                .SPM.swinject,
             ]
         ),
         .testing(
