@@ -16,56 +16,54 @@ struct HomeHorizontalStyleView: View {
     var items: [HorizontalAppItem]
     
     var body: some View {
-        NavigationStack {
-            VStack(alignment: .leading, spacing: 12) {
-                NavigationLink {
-                    SectionDetailView(title: title, items: items)
-                } label: {
-                    HStack(alignment: .center) {
-                        VStack(alignment: .leading, spacing: 4) {
-                            Text(title)
-                                .font(.title3.bold())
-                                .foregroundStyle(.primary)
-                            Text(subtitle)
-                                .font(.subheadline)
-                                .foregroundStyle(.secondary)
-                        }
-                        Spacer()
-                        
-                        if items.count > 3 {
-                            Image(systemName: "chevron.right")
-                                .font(.headline.weight(.semibold))
-                                .foregroundStyle(.secondary)
-                        }
+        VStack(alignment: .leading, spacing: 12) {
+            NavigationLink {
+                SectionDetailView(title: title, items: items)
+            } label: {
+                HStack(alignment: .center) {
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text(title)
+                            .font(.title3.bold())
+                            .foregroundStyle(.primary)
+                        Text(subtitle)
+                            .font(.subheadline)
+                            .foregroundStyle(.secondary)
                     }
-                }
-                .buttonStyle(.plain)
-                
-                let pages = items.chunked(by: 3)
-                ScrollView(.horizontal, showsIndicators: false) {
-                    HStack(alignment: .top, spacing: 12) {
-                        ForEach(Array(pages.enumerated()), id: \.offset) { _, page in
-                            VStack(spacing: 12) {
-                                ForEach(page) { item in
-                                    NavigationLink {
-                                        ItemDetailView(item: item)
-                                    } label: {
-                                        RowCard(item: item)
-                                    }
-                                    .buttonStyle(.plain)
-                                }
-                            }
-                            .frame(maxHeight: .infinity, alignment: .top)
-                        }
+                    Spacer()
+                    
+                    if items.count > 3 {
+                        Image(systemName: "chevron.right")
+                            .font(.headline.weight(.semibold))
+                            .foregroundStyle(.secondary)
                     }
-                    .padding(.vertical, 4)
                 }
             }
-            .padding(.horizontal, 16)
-            .padding(.vertical, 12)
-            .navigationTitle("")
-            .navigationBarTitleDisplayMode(.inline)
+            .buttonStyle(.plain)
+            
+            let pages = items.chunked(by: 3)
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(alignment: .top, spacing: 12) {
+                    ForEach(Array(pages.enumerated()), id: \.offset) { _, page in
+                        VStack(spacing: 12) {
+                            ForEach(page) { item in
+                                NavigationLink {
+                                    ItemDetailView(item: item)
+                                } label: {
+                                    RowCard(item: item)
+                                }
+                                .buttonStyle(.plain)
+                            }
+                        }
+                        .frame(maxHeight: .infinity, alignment: .top)
+                    }
+                }
+                .padding(.vertical, 4)
+            }
         }
+        .padding(.horizontal, 16)
+        .padding(.vertical, 12)
+        .navigationTitle("")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
