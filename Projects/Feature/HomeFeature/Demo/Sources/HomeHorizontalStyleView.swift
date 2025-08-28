@@ -1,28 +1,12 @@
-//
-//  HomeHorizontalStyleView.swift
-//  HomeFeatureDemoApp
-//
-//  Created by 박창규 on 8/28/25.
-//
-
 import SwiftUI
 
 // MARK: - Model
 struct HorizontalAppItem: Identifiable, Hashable {
     let id: String
+    var rank: Int?
     var title: String
     var subtitle: String
-    var emojiIcon: String  // MVP: 간단한 아이콘 대용. 추후 URL 이미지로 교체 가능
-}
-
-private extension Array {
-    func chunked(by size: Int) -> [[Element]] {
-        guard size > 0 else { return [Array(self)] }
-        return stride(from: 0, to: count, by: size).map { start in
-            let end = Swift.min(start + size, count)
-            return Array(self[start..<end])
-        }
-    }
+    var emojiIcon: String
 }
 
 // MARK: - View
@@ -34,7 +18,6 @@ struct HomeHorizontalStyleView: View {
     var body: some View {
         NavigationStack {
             VStack(alignment: .leading, spacing: 12) {
-                // Header (타이틀 + 서브타이틀 + 섹션 이동)
                 NavigationLink {
                     SectionDetailView(title: title, items: items)
                 } label: {
@@ -90,6 +73,13 @@ private struct RowCard: View {
     
     var body: some View {
         HStack(spacing: 12) {
+            if let rank = item.rank {
+                Text("\(rank)")
+                    .font(.title2)
+                    .foregroundStyle(.primary)
+                    .lineLimit(1)
+            }
+            
             ZStack {
                 RoundedRectangle(cornerRadius: 12)
                     .fill(Color(uiColor: .secondarySystemBackground))
@@ -123,25 +113,7 @@ private struct RowCard: View {
                     RoundedRectangle(cornerRadius: 16).stroke(Color.gray.opacity(0.15), lineWidth: 1)
                 )
         )
-        .frame(width: 300) // 가로 스크롤 카드 고정 폭
-    }
-}
-
-// MARK: - Detail Placeholders
-private struct SectionDetailView: View {
-    let title: String
-    let items: [HorizontalAppItem]
-    var body: some View {
-        List(items) { item in
-            HStack(spacing: 12) {
-                Text(item.emojiIcon).frame(width: 30)
-                VStack(alignment: .leading) {
-                    Text(item.title)
-                    Text(item.subtitle).font(.caption).foregroundStyle(.secondary)
-                }
-            }
-        }
-        .navigationTitle(title)
+        .frame(width: UIScreen.main.bounds.width * 0.8)
     }
 }
 
@@ -166,7 +138,7 @@ private struct ItemDetailView: View {
         title: "무료 게임 순위",
         subtitle: "가장 많이 다운로드된 게임",
         items: [
-            .init(id: "1", title: "비지 세이비어", subtitle: "200뽑기 증정", emojiIcon: "🪓"),
+            .init(id: "1", rank: 1, title: "비지 세이비어", subtitle: "200뽑기 증정", emojiIcon: "🪓"),
             .init(id: "2",title: "명조:워더링 웨이브", subtitle: "액션의 잔상, 끝없는 모험", emojiIcon: "⚔️"),
             .init(id: "3",title: "플랜티스와 좀비깡패", subtitle: "롤플레잉", emojiIcon: "🧟"),
             .init(id: "5",title: "어비스: 데스티니", subtitle: "신규 클래스 등장!", emojiIcon: "🕳️"),
