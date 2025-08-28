@@ -31,14 +31,16 @@ struct HomeHorizontalStyleView: View {
                                 .foregroundStyle(.secondary)
                         }
                         Spacer()
-                        Image(systemName: "chevron.right")
-                            .font(.headline.weight(.semibold))
-                            .foregroundStyle(.secondary)
+                        
+                        if items.count > 3 {
+                            Image(systemName: "chevron.right")
+                                .font(.headline.weight(.semibold))
+                                .foregroundStyle(.secondary)
+                        }
                     }
                 }
                 .buttonStyle(.plain)
                 
-                // Horizontal list (3개씩 세트로 페이징)
                 let pages = items.chunked(by: 3)
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(alignment: .top, spacing: 12) {
@@ -113,7 +115,7 @@ private struct RowCard: View {
                     RoundedRectangle(cornerRadius: 16).stroke(Color.gray.opacity(0.15), lineWidth: 1)
                 )
         )
-        .frame(width: UIScreen.main.bounds.width * 0.8)
+        .frame(width: UIScreen.main.bounds.width * 0.83)
     }
 }
 

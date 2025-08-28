@@ -10,7 +10,6 @@ struct GameCategory: Identifiable, Hashable {
     var imageURL: URL? = nil // For future remote artwork
 }
 
-// MARK: - Sample Data (MVP)
 private let sampleCategories: [GameCategory] = [
     .init(title: "커플 게임", subtitle: "둘이 동시에 골라보자", accentEmoji: "💑", tint: .pink),
     .init(title: "초성 맞추기", subtitle: "사자성어 · 속담 · 일상어", accentEmoji: "🔤", tint: .blue),
@@ -28,6 +27,18 @@ struct ContentView: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: 20) {
                     HeroCard()
+                    
+                    HomeHorizontalStyleView(
+                        title: "초성 맞추기",
+                        subtitle: "다양한 초성 맞추기 게임!",
+                        items: [
+                            .init(id: "1", title: "속담 초성 맞추기!", subtitle: "ㄱㄴ ㅁㅇ ㄱㅇㅇ ㅇㄴ ㅁㅇ ㄱㄷ", emojiIcon: "🪓"),
+                            .init(id: "2",title: "공룡 초성 맞추기!", subtitle: "ㅁㅅㅅㅇㄹㅅ", emojiIcon: "⚔️"),
+                            .init(id: "3",title: "사자성어 초성 맞추기!", subtitle: "ㄱㅈㄱㄹ", emojiIcon: "🧟"),
+                            .init(id: "4",title: "영화 초성 맞추기!", subtitle: "ㄱㅈㄱㄹ", emojiIcon: "🧟"),
+                            .init(id: "5",title: "세계 명소 초성 맞추기!", subtitle: "ㄱㅈㄱㄹ", emojiIcon: "🧟")
+                        ]
+                    )
                     
                     Text("오늘의 놀이")
                         .font(.title2.bold())
@@ -48,7 +59,6 @@ struct ContentView: View {
             }
             .navigationTitle("모놀이")
             .navigationDestination(for: GameCategory.self) { item in
-                // Placeholder detail for MVP
                 VStack(spacing: 16) {
                     Text(item.accentEmoji)
                         .font(.system(size: 72))
@@ -107,7 +117,7 @@ private struct HeroCard: View {
             }
             .padding(24)
         }
-        .frame(height: 220)
+        .frame(height: 160)
         .padding(.horizontal)
     }
 }
