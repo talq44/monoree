@@ -10,14 +10,6 @@ import ProjectDescription
 extension TargetDependency {
     
     public enum SPM {
-        // UI
-        public static let snapKit: TargetDependency = .external(
-            name: "SnapKit"
-        )
-        public static let kingfisher: TargetDependency = .external(
-            name: "Kingfisher"
-        )
-        
         // TCA
         public static let ComposableArchitecture: TargetDependency = .external(
             name: "ComposableArchitecture"
