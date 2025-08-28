@@ -1,5 +1,5 @@
 {
-  "originHash" : "e4873b8fb5b24dd8e749b60cb2bd567b3468ef07b9122428a4cf5b6a116594da",
+  "originHash" : "7deb62e31c9bc045c533115be9ba230898cbf8ccb2c4e489a8c096cf8a275502",
   "pins" : [
     {
       "identity" : "abseil-cpp-binary",
@@ -110,15 +110,6 @@
       }
     },
     {
-      "identity" : "kingfisher",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/onevcat/Kingfisher.git",
-      "state" : {
-        "revision" : "b6256f191b4c1d8d09f4df94bae69e5ac6e42c81",
-        "version" : "8.1.1"
-      }
-    },
-    {
       "identity" : "leveldb",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/firebase/leveldb.git",
@@ -170,15 +161,6 @@
       "state" : {
         "revision" : "c7c7d2cf50a3211fe2843f76869c698e4e417930",
         "version" : "6.8.0"
-      }
-    },
-    {
-      "identity" : "snapkit",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/SnapKit/SnapKit.git",
-      "state" : {
-        "revision" : "2842e6e84e82eb9a8dac0100ca90d9444b0307f4",
-        "version" : "5.7.1"
       }
     },
     {

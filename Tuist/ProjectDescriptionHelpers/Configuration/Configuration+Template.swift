@@ -12,11 +12,11 @@ public enum ConfigurationTemplate {
     public static let appConfigurations: [Configuration] = [
         .debug(
             name: .dev,
-            xcconfig: .relativeToRoot("Configurations/monory-DEV.xcconfig")
+            xcconfig: .relativeToRoot("Configurations/monori-DEV.xcconfig")
         ),
         .release(
             name: .prod,
-            xcconfig: .relativeToRoot("Configurations/monory-RELEASE.xcconfig")
+            xcconfig: .relativeToRoot("Configurations/monori-RELEASE.xcconfig")
         )
     ]
     

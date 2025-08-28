@@ -13,7 +13,7 @@ let packageSettings = PackageSettings(
 #endif
 
 let package = Package(
-    name: "Monory",
+    name: "Monori",
     platforms: [
         .iOS(.v16)
     ],
