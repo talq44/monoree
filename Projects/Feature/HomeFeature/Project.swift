@@ -15,19 +15,6 @@ let project = Project.module(
                 .feature(target: .HomeFeature, type: .interface),
             ]
         ),
-        .testing(
-            feature: .HomeFeature,
-            dependencies: [
-                .feature(target: .HomeFeature, type: .interface),
-            ]
-        ),
-        .tests(
-            feature: .HomeFeature,
-            dependencies: [
-                .feature(target: .HomeFeature, type: .implementation),
-                .feature(target: .HomeFeature, type: .testing),
-            ]
-        ),
         .demo(
             feature: .HomeFeature,
             dependencies: [
