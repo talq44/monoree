@@ -1,7 +1,7 @@
 import SwiftUI
 
 // MARK: - Model
-struct HorizontalAppItem: Identifiable, Hashable {
+struct HorizontalAppItem: HomeItemProtocol {
     let id: String
     var rank: Int?
     var title: String
