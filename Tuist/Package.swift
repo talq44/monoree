@@ -18,11 +18,18 @@ let package = Package(
         .iOS(.v16)
     ],
     dependencies: [
-        .package(url: "https://github.com/SnapKit/SnapKit.git", .upToNextMajor(from: "5.7.1")),
-        .package(url: "https://github.com/onevcat/Kingfisher.git", .upToNextMajor(from: "8.1.1")),
-        .package(url: "https://github.com/Alamofire/Alamofire.git", .upToNextMajor(from: "5.10.1")),
-        .package(url: "https://github.com/Moya/Moya.git", .upToNextMajor(from: "15.0.3")),
-        .package(url: "https://github.com/firebase/firebase-ios-sdk", .upToNextMajor(from: "11.11.0")),
+        .package(
+            url: "https://github.com/Alamofire/Alamofire.git",
+            .upToNextMajor(from: "5.10.1")
+        ),
+        .package(
+            url: "https://github.com/Moya/Moya.git",
+            .upToNextMajor(from: "15.0.3")
+        ),
+        .package(
+            url: "https://github.com/firebase/firebase-ios-sdk",
+            .upToNextMajor(from: "11.11.0")
+        ),
         .package(
             url: "https://github.com/pointfreeco/swift-composable-architecture",
             .upToNextMinor(from: "1.18.0")
