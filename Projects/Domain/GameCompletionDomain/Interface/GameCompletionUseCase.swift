@@ -6,6 +6,6 @@ public protocol GameCompletionUseCase {
     init(remoteConfig: GameConfigManager, analytics: AnalyticsProtocol)
     
     func completeGame(
-        _ input: GameCompletionInput
+        _ input: any GameCompletionInput
     ) async -> GameCompletionResultType
 }

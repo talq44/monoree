@@ -19,18 +19,28 @@ final class GameCompletionUsecaseImpl: GameCompletionUseCase {
     }
     
     func completeGame(
-        _ input: GameCompletionInput
+        _ input: any GameCompletionInput
     ) async -> GameCompletionResultType {
-        playCount += 1
         sendAnalytics(score: input.score, gameName: input.gameName)
         
-        guard playCount >= 3 else {
+        do {
+            let perAd = try remoteConfig.fetchGame().gamePlaysPerAd
+            
+            print("playCount", playCount, "perAd", perAd)
+            
+            guard perAd > 0 else { return .none }
+            guard playCount < perAd else {
+                playCount += 1
+                return .none
+            }
+            
+            playCount = 0
+            
+            return .showFullScreenAd
+            
+        } catch {
             return .none
         }
-        
-        playCount = 0
-        
-        return .showFullScreenAd
     }
 }
 
