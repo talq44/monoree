@@ -7,12 +7,13 @@ let project = Project.module(
     targets: [
         .interface(
             domain: .GameLimitCheckDomain,
-            dependencies: []
+            dependencies: [
+                .core(target: .RemoteConfigCore, type: .interface),
+            ]
         ),
         .implementation(
             domain: .GameLimitCheckDomain,
             dependencies: [
-                .core(target: .RemoteConfigCore, type: .interface),
                 .domain(target: .GameLimitCheckDomain, type: .interface),
             ]
         ),
