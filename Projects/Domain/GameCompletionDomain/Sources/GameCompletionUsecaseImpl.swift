@@ -7,6 +7,8 @@ final class GameCompletionUsecaseImpl: GameCompletionUseCase {
     private let analytics: AnalyticsCoreInterface.AnalyticsProtocol
     private let remoteConfig: RemoteConfigCoreInterface.GameConfigManager
     
+    private var playCount: Int = 0
+    
     init(
         remoteConfig: any RemoteConfigCoreInterface.GameConfigManager,
         analytics: AnalyticsCoreInterface.AnalyticsProtocol
@@ -18,11 +20,25 @@ final class GameCompletionUsecaseImpl: GameCompletionUseCase {
     func completeGame(
         _ input: GameCompletionInput
     ) async -> GameCompletionResultType {
-        analytics.sendEvent(.post_score(PostScore(
-            score: input.score,
-            character: input.gameName
-        )))
+        playCount += 1
+        sendAnalytics(score: input.score, gameName: input.gameName)
         
-        return .none
+        guard playCount >= 3 else {
+            return .none
+        }
+        
+        playCount = 0
+        
+        return .showFullScreenAd
+    }
+}
+
+// MARK: - Analytics
+extension GameCompletionUsecaseImpl {
+    private func sendAnalytics(score: Int, gameName: String) {
+        analytics.sendEvent(.post_score(PostScore(
+            score: score,
+            character: gameName
+        )))
     }
 }
