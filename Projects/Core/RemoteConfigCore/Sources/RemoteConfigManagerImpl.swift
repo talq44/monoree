@@ -40,32 +40,39 @@ final class RemoteConfigManagerImpl: RemoteConfigManager {
         }
     }
     
-    private func fetchRemoteConfig<T: Decodable>(_ type: T.Type, key: RemoteConfigKeys) throws -> T {
+    internal func fetchRemoteConfig<T: Decodable>(
+        _ type: T.Type,
+        key: RemoteConfigKeys
+    ) throws -> T {
         let rcValue = remoteConfig.configValue(forKey: key.rawValue)
 
-        // 1) Primitive fast-path
         if T.self == String.self {
             let v = rcValue.stringValue
             guard !v.isEmpty else { throw RemoteConfigError.unknown }
+            
             return v as! T
+        } else if T.self == Int.self {
+            guard let result = Int(truncating: rcValue.numberValue) as? T else {
+                throw RemoteConfigError.unknown
+            }
+            return result
+        } else if T.self == Double.self {
+            guard let result = Double(truncating: rcValue.numberValue) as? T else {
+                throw RemoteConfigError.unknown
+            }
+            return result
+        } else if T.self == Bool.self {
+            guard let result = rcValue.boolValue as? T else {
+                throw RemoteConfigError.unknown
+            }
+            return result
+        } else {
+            let data = rcValue.dataValue
+            guard !data.isEmpty else {
+                throw RemoteConfigError.unknown
+            }
+            return try JSONDecoder().decode(T.self, from: data)
         }
-        if T.self == Int.self {
-            return Int(truncating: rcValue.numberValue) as! T
-        }
-        if T.self == Double.self {
-            return Double(truncating: rcValue.numberValue) as! T
-        }
-        if T.self == Bool.self {
-            return rcValue.boolValue as! T
-        }
-
-        // 2) JSON 객체/배열 디코딩
-        let data = rcValue.dataValue
-        guard !data.isEmpty else {
-            // NOTE: 데이터가 비어 있습니다. 기본값(setDefaults) 또는 서버 설정을 확인하세요.
-            throw RemoteConfigError.unknown
-        }
-        return try JSONDecoder().decode(T.self, from: data)
     }
     
     func fetchVersion() throws -> any RemoteConfigCoreInterface.VersionDTO {
@@ -81,3 +88,4 @@ final class RemoteConfigManagerImpl: RemoteConfigManager {
         }
     }
 }
+
