@@ -1,8 +1,11 @@
 import Foundation
 import RemoteConfigCoreInterface
+import AnalyticsCoreInterface
 
 public protocol GameCompletionUseCase {
-    init(remoteConfig: GameConfigManager)
+    init(remoteConfig: GameConfigManager, analytics: AnalyticsProtocol)
     
-    func completeGame() async -> GameCompletionResultType
+    func completeGame(
+        _ input: GameCompletionInput
+    ) async -> GameCompletionResultType
 }
