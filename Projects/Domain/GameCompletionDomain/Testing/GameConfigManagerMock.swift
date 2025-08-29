@@ -1,5 +1,4 @@
 import Foundation
-import GamePlayFeatureInterface
 import RemoteConfigCoreInterface
 
 enum GameConfigTestType {
