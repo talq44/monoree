@@ -1,12 +1,12 @@
 import Foundation
 import RemoteConfigCoreInterface
 
-extension RemoteConfigManagerImpl: GameConfigManager {
-    func fetchGame() throws -> any RemoteConfigCoreInterface.GameConfigDTO {
+extension RemoteConfigManagerImpl: VersionConfigManager {
+    func fetchVersion() throws -> any RemoteConfigCoreInterface.VersionDTO {
         do {
             let response = try fetchRemoteConfig(
-                GameConfigDTOImpl.self,
-                key: .game
+                VersionDTOImpl.self,
+                key: .version
             )
             
             return response

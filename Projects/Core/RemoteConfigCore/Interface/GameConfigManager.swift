@@ -1,5 +1,5 @@
 import Foundation
 
 public protocol GameConfigManager {
-    func fetchGameConfig() throws -> GameConfigDTO
+    func fetchGame() throws -> GameConfigDTO
 }

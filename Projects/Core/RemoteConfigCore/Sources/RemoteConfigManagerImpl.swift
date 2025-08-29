@@ -74,18 +74,5 @@ final class RemoteConfigManagerImpl: RemoteConfigManager {
             return try JSONDecoder().decode(T.self, from: data)
         }
     }
-    
-    func fetchVersion() throws -> any RemoteConfigCoreInterface.VersionDTO {
-        do {
-            let response = try fetchRemoteConfig(
-                VersionDTOImpl.self,
-                key: .version
-            )
-            
-            return response
-        } catch {
-            throw error
-        }
-    }
 }
 
