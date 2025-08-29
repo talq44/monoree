@@ -2,7 +2,6 @@ import ProjectDescription
 
 public enum DomainModule: String, CaseIterable {
 	case GameCompletionDomain
-	case GameLimitCheckDomain
     case KoreanChosungDomain
     case VersionCheckDomain
     

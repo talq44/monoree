@@ -14,6 +14,7 @@ let project = Project.module(
         .implementation(
             domain: .GameCompletionDomain,
             dependencies: [
+                .core(target: .AnalyticsCore, type: .interface),
                 .domain(target: .GameCompletionDomain, type: .interface),
             ]
         ),

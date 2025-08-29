@@ -1,8 +1,8 @@
 import Foundation
 import RemoteConfigCoreInterface
 
-public protocol GameLimitCheckUsecase {
+public protocol GameCompletionUseCase {
     init(remoteConfig: GameConfigManager)
     
-    func checkGamePlay() async -> GameNextActionType
+    func completeGame() async -> GameCompletionResultType
 }
