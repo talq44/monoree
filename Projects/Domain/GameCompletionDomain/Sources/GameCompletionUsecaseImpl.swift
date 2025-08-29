@@ -7,6 +7,7 @@ final class GameCompletionUsecaseImpl: GameCompletionUseCase {
     private let analytics: AnalyticsCoreInterface.AnalyticsProtocol
     private let remoteConfig: RemoteConfigCoreInterface.GameConfigManager
     
+    // TODO: MVP에선 LocalData에 저장하도록 구현
     private var playCount: Int = 0
     
     init(
