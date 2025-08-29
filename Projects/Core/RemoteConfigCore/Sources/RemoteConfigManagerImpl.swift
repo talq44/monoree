@@ -45,28 +45,29 @@ final class RemoteConfigManagerImpl: RemoteConfigManager {
         key: RemoteConfigKeys
     ) throws -> T {
         let rcValue = remoteConfig.configValue(forKey: key.rawValue)
-
-        if T.self == String.self {
-            let v = rcValue.stringValue
-            guard !v.isEmpty else { throw RemoteConfigError.unknown }
-            
-            return v as! T
-        } else if T.self == Int.self {
+        
+        switch T.self {
+        case is String.Type:
+            guard let value = rcValue.stringValue as? T else {
+                throw RemoteConfigError.unknown
+            }
+            return value
+        case is Int.Type:
             guard let result = Int(truncating: rcValue.numberValue) as? T else {
                 throw RemoteConfigError.unknown
             }
             return result
-        } else if T.self == Double.self {
+        case is Double.Type:
             guard let result = Double(truncating: rcValue.numberValue) as? T else {
                 throw RemoteConfigError.unknown
             }
             return result
-        } else if T.self == Bool.self {
+        case is Bool.Type:
             guard let result = rcValue.boolValue as? T else {
                 throw RemoteConfigError.unknown
             }
             return result
-        } else {
+        default:
             let data = rcValue.dataValue
             guard !data.isEmpty else {
                 throw RemoteConfigError.unknown
@@ -75,4 +76,3 @@ final class RemoteConfigManagerImpl: RemoteConfigManager {
         }
     }
 }
-
