@@ -36,6 +36,7 @@ let project = Project(
                 // Core
                 .core(target: .UserAPICore, type: .implementation),
                 // Domain
+                .domain(target: .GameCompletionDomain, type: .implementation),
                 .domain(target: .KoreanChosungDomain, type: .implementation),
                 .domain(target: .VersionCheckDomain, type: .implementation),
                 // Feature
