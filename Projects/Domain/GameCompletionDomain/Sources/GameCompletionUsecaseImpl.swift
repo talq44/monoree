@@ -3,7 +3,7 @@ import GameCompletionDomainInterface
 import RemoteConfigCoreInterface
 import AnalyticsCoreInterface
 
-final class GamecompletionUsecaseImpl: GameCompletionUseCase {
+final class GameCompletionUsecaseImpl: GameCompletionUseCase {
     private let analytics: AnalyticsCoreInterface.AnalyticsProtocol
     private let remoteConfig: RemoteConfigCoreInterface.GameConfigManager
     
