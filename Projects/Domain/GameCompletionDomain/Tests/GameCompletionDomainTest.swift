@@ -7,9 +7,12 @@ struct GameCompletionDomainTests {
     @Test("한번 호출했을때") func oneCall() async {
         // given
         let analytics = AnalyticsCoreMock()
+        let localData = GameLocalDataManagerMock()
         let remoteConfig = GameConfigManagerMock()
+
         let sut = GameCompletionUsecaseImpl(
             remoteConfig: remoteConfig,
+            localData: localData,
             analytics: analytics
         )
         
@@ -26,11 +29,13 @@ struct GameCompletionDomainTests {
         let perAd = 5
         let testCount = 20
         let analytics = AnalyticsCoreMock()
+        let localData = GameLocalDataManagerMock()
         let remoteConfig = GameConfigManagerMock()
         remoteConfig.setup(.normal(perAd: perAd))
 
         let sut = GameCompletionUsecaseImpl(
             remoteConfig: remoteConfig,
+            localData: localData,
             analytics: analytics
         )
 
@@ -58,11 +63,13 @@ struct GameCompletionDomainTests {
         // given
         let perAd = 0
         let analytics = AnalyticsCoreMock()
+        let localData = GameLocalDataManagerMock()
         let remoteConfig = GameConfigManagerMock()
         remoteConfig.setup(.normal(perAd: perAd))
 
         let sut = GameCompletionUsecaseImpl(
             remoteConfig: remoteConfig,
+            localData: localData,
             analytics: analytics
         )
 
@@ -83,11 +90,13 @@ struct GameCompletionDomainTests {
         // given
         let perAd = -20
         let analytics = AnalyticsCoreMock()
+        let localData = GameLocalDataManagerMock()
         let remoteConfig = GameConfigManagerMock()
         remoteConfig.setup(.normal(perAd: perAd))
 
         let sut = GameCompletionUsecaseImpl(
             remoteConfig: remoteConfig,
+            localData: localData,
             analytics: analytics
         )
 
@@ -107,11 +116,13 @@ struct GameCompletionDomainTests {
     @Test("remoteConfig가 맛이간 경우, 광고를 보여주지 않는다.") func deadFirebaseAlwaysNone() async {
         // given
         let analytics = AnalyticsCoreMock()
+        let localData = GameLocalDataManagerMock()
         let remoteConfig = GameConfigManagerMock()
         remoteConfig.setup(.error)
 
         let sut = GameCompletionUsecaseImpl(
             remoteConfig: remoteConfig,
+            localData: localData,
             analytics: analytics
         )
 
@@ -126,5 +137,26 @@ struct GameCompletionDomainTests {
 
         // then
         #expect(types.allSatisfy { $0 != .showFullScreenAd })
+    }
+    
+    @Test("오늘 이미 5번 플레이했을때, 한번더 플레이한다면") func beforePlay5Times() async {
+        // given
+        let analytics = AnalyticsCoreMock()
+        let localData = GameLocalDataManagerMock()
+        let remoteConfig = GameConfigManagerMock()
+        localData.setup(5)
+        remoteConfig.setup(.normal(perAd: 3))
+
+        let sut = GameCompletionUsecaseImpl(
+            remoteConfig: remoteConfig,
+            localData: localData,
+            analytics: analytics
+        )
+
+        // when
+        let result = await sut.completeGame(GameCompletionInputImpl(score: 5, gameName: "안녕"))
+
+        // then
+        #expect(result == .showFullScreenAd, "5번 했었고, 6번째가 되니까")
     }
 }
