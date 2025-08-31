@@ -2,12 +2,18 @@ import Foundation
 import LocalDataCoreInterface
 
 final actor LocalDataUsecaseImpl: LocalDataUsecase {
+    private let userDefault: UserDefaults
+    
+    init(userDefault: UserDefaults = .standard) {
+        self.userDefault = userDefault
+    }
+    
     private func getLocalData<T: Decodable>(
         _ type: T.Type,
         key: LocalDataKey
     ) throws -> T {
         do {
-            guard let data = UserDefaults.standard.data(forKey: key.rawValue) else {
+            guard let data = userDefault.data(forKey: key.rawValue) else {
                 throw LocalDataError.unknown
             }
             
@@ -36,19 +42,16 @@ final actor LocalDataUsecaseImpl: LocalDataUsecase {
     ) {
         guard let data = try? JSONEncoder().encode(value) else { return }
         
-        UserDefaults.standard.set(data, forKey: key.rawValue)
+        userDefault.set(data, forKey: key.rawValue)
     }
 }
 
-extension LocalDataUsecaseImpl: @preconcurrency ConfigLocalDataManager {
-    var idfa: String? {
-        get {
-            getLocalDataOptional(String.self, key: .idfa)
-        }
-        set {
-            guard let newValue else { return }
-            
-            setLocalData(newValue, key: .idfa)
-        }
+extension LocalDataUsecaseImpl: ConfigLocalDataManager {
+    func getIDFA() async -> String? {
+        getLocalDataOptional(String.self, key: .idfa)
+    }
+    
+    func setIDFA(_ idfa: String) async {
+        setLocalData(idfa, key: .idfa)
     }
 }

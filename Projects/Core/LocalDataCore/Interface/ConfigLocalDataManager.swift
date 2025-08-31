@@ -1,5 +1,6 @@
 import Foundation
 
 public protocol ConfigLocalDataManager {
-    var idfa: String? { get set }
+    func getIDFA() async -> String?
+    func setIDFA(_ idfa: String) async
 }
