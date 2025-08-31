@@ -9,6 +9,7 @@ let project = Project.module(
             domain: .GameCompletionDomain,
             dependencies: [
                 .core(target: .RemoteConfigCore, type: .interface),
+                .core(target: .LocalDataCore, type: .interface),
                 .core(target: .AnalyticsCore, type: .interface),
             ]
         ),

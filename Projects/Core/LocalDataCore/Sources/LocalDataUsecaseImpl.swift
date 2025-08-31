@@ -8,7 +8,7 @@ final actor LocalDataUsecaseImpl: LocalDataUsecase {
         self.userDefault = userDefault
     }
     
-    private func getLocalData<T: Decodable>(
+    internal func getLocalData<T: Decodable>(
         _ type: T.Type,
         key: LocalDataKey
     ) throws -> T {
@@ -25,7 +25,7 @@ final actor LocalDataUsecaseImpl: LocalDataUsecase {
         }
     }
     
-    private func getLocalDataOptional<T: Decodable>(
+    internal func getLocalDataOptional<T: Decodable>(
         _ type: T.Type,
         key: LocalDataKey
     ) -> T? {
@@ -36,7 +36,7 @@ final actor LocalDataUsecaseImpl: LocalDataUsecase {
         }
     }
     
-    private func setLocalData<T: Encodable>(
+    internal func setLocalData<T: Encodable>(
         _ value: T,
         key: LocalDataKey
     ) {
@@ -53,5 +53,23 @@ extension LocalDataUsecaseImpl: ConfigLocalDataManager {
     
     func setIDFA(_ idfa: String) async {
         setLocalData(idfa, key: .idfa)
+    }
+}
+
+extension LocalDataUsecaseImpl: GameLocalDataManager {
+    func getPlayDates() async -> [Date] {
+        return getLocalDataOptional([Date].self, key: .gamePlayList) ?? []
+    }
+    
+    func getPlayDatesToday(_ date: Date) async -> [Date] {
+        await getPlayDates().filter { item in
+            return false
+        }
+    }
+    
+    func putPlayDate(_ date: Date) async {
+        var list = await getPlayDates()
+        list.append(date)
+        setLocalData(list, key: .gamePlayList)
     }
 }

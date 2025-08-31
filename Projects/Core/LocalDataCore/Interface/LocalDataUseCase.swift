@@ -1,3 +1,3 @@
 import Foundation
 
-public protocol LocalDataUsecase: ConfigLocalDataManager { }
+public protocol LocalDataUsecase: ConfigLocalDataManager, GameLocalDataManager { }
