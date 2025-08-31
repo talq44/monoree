@@ -42,8 +42,8 @@ struct LocalDataCoreTests {
         await sut.putPlayDate()
         let changeDates = await sut.getPlayDates()
         let todayDates = await sut.getPlayDatesToday()
-        _ = await sut.putPlayDate()
-        _ = await sut.putPlayDate()
+        await sut.putPlayDate()
+        await sut.putPlayDate()
         let todayDates2 = await sut.getPlayDatesToday()
         
         // then

@@ -20,12 +20,17 @@ final class GameCompletionUsecaseImpl: GameCompletionUseCase {
         self.analytics = analytics
         self.localData = localData
         self.remoteConfig = remoteConfig
+        
+        Task { [weak self] in
+            self?.playCount = await localData.getPlayDatesToday().count
+        }
     }
     
     func completeGame(
         _ input: any GameCompletionInput
     ) async -> GameCompletionResultType {
         playCount += 1
+        await localData.putPlayDate()
         sendAnalytics(score: input.score, gameName: input.gameName)
         
         do {
