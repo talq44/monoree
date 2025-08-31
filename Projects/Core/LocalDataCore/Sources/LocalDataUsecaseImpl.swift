@@ -12,17 +12,11 @@ final actor LocalDataUsecaseImpl: LocalDataUsecase {
         _ type: T.Type,
         key: LocalDataKey
     ) throws -> T {
-        do {
-            guard let data = userDefault.data(forKey: key.rawValue) else {
-                throw LocalDataError.unknown
-            }
-            
-            let result = try JSONDecoder().decode(T.self, from: data)
-            
-            return result
-        } catch {
-            throw error
+        guard let data = userDefault.data(forKey: key.rawValue) else {
+            throw LocalDataError.unknown
         }
+        
+        return try JSONDecoder().decode(T.self, from: data)
     }
     
     internal func getLocalDataOptional<T: Decodable>(
