@@ -3,10 +3,18 @@ import Foundation
 @testable import LocalDataCore
 
 struct LocalDataCoreTests {
-    @Test("초기값, 값변경, 값변경 확인") func firstSecondThirdSaveAndCall() async {
+    
+    private let suiteName = "com.monoree.test"
+    private var testDefaults: UserDefaults {
+        UserDefaults(suiteName: suiteName)!
+    }
+    
+    init() {
+        testDefaults.removePersistentDomain(forName: suiteName)
+    }
+    
+    @Test("광고키 초기값, 값변경, 값변경 확인") func firstSecondThirdSaveAndCall() async {
         // given
-        let suiteName = "com.monoree.test"
-        let testDefaults = UserDefaults(suiteName: suiteName)!
         let sut = LocalDataUsecaseImpl(userDefault: testDefaults)
         
         let saveData1 = "Test Data Save1"
@@ -23,7 +31,25 @@ struct LocalDataCoreTests {
         #expect(result01 == nil, "최초 호출시, 내부 데이터는 비어있어야 합니다.")
         #expect(result02 == saveData1, "\(result02 ?? "") is not equal")
         #expect(result03 == saveData2, "\(result02 ?? "") is not equal")
+    }
+    
+    @Test("게임플레이 데이트 로그 값 확인") func gamePlayDateCheck() async {
+        // given
+        let sut = LocalDataUsecaseImpl(userDefault: testDefaults)
         
-        testDefaults.removePersistentDomain(forName: suiteName)
+        // when
+        let dates = await sut.getPlayDates()
+        await sut.putPlayDate()
+        let changeDates = await sut.getPlayDates()
+        let todayDates = await sut.getPlayDatesToday()
+        _ = await sut.putPlayDate()
+        _ = await sut.putPlayDate()
+        let todayDates2 = await sut.getPlayDatesToday()
+        
+        // then
+        #expect(dates.count == 0, "최초 호출시 목록이 비어져 있어야 합니다.")
+        #expect(changeDates.count == 1, "목록이 추가되어야 합니다.")
+        #expect(todayDates.count == 1, "오늘이 추가되어야 합니다.")
+        #expect(todayDates2.count == 3, "\(todayDates2.count) 오늘이 추가되어야 합니다.")
     }
 }

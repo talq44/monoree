@@ -12,6 +12,7 @@ let project = Project.module(
         .implementation(
             core: .LocalDataCore,
             dependencies: [
+                .shared(target: .FoundationShared),
                 .core(target: .LocalDataCore, type: .interface),
             ]
         ),

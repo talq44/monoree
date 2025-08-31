@@ -55,21 +55,3 @@ extension LocalDataUsecaseImpl: ConfigLocalDataManager {
         setLocalData(idfa, key: .idfa)
     }
 }
-
-extension LocalDataUsecaseImpl: GameLocalDataManager {
-    func getPlayDates() async -> [Date] {
-        return getLocalDataOptional([Date].self, key: .gamePlayList) ?? []
-    }
-    
-    func getPlayDatesToday(_ date: Date) async -> [Date] {
-        await getPlayDates().filter { item in
-            return false
-        }
-    }
-    
-    func putPlayDate(_ date: Date) async {
-        var list = await getPlayDates()
-        list.append(date)
-        setLocalData(list, key: .gamePlayList)
-    }
-}
