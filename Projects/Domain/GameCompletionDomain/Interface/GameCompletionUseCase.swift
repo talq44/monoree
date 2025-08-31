@@ -1,9 +1,14 @@
 import Foundation
 import RemoteConfigCoreInterface
 import AnalyticsCoreInterface
+import LocalDataCoreInterface
 
 public protocol GameCompletionUseCase {
-    init(remoteConfig: GameConfigManager, analytics: AnalyticsProtocol)
+    init(
+        remoteConfig: GameConfigManager,
+        localData: GameLocalDataManager,
+        analytics: AnalyticsProtocol
+    )
     
     func completeGame(
         _ input: any GameCompletionInput
