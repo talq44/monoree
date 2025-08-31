@@ -30,7 +30,7 @@ struct LocalDataCoreTests {
         // then
         #expect(result01 == nil, "최초 호출시, 내부 데이터는 비어있어야 합니다.")
         #expect(result02 == saveData1, "\(result02 ?? "") is not equal")
-        #expect(result03 == saveData2, "\(result02 ?? "") is not equal")
+        #expect(result03 == saveData2, "\(result03 ?? "") is not equal")
     }
     
     @Test("게임플레이 데이트 로그 값 확인") func gamePlayDateCheck() async {
