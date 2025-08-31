@@ -34,5 +34,9 @@ let package = Package(
             url: "https://github.com/pointfreeco/swift-composable-architecture",
             .upToNextMinor(from: "1.18.0")
         ),
+        .package(
+            url: "https://github.com/SwifterSwift/SwifterSwift",
+            .upToNextMajor(from: "8.0.0")
+        ),
     ]
 )

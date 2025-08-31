@@ -42,5 +42,10 @@ extension TargetDependency {
         public static let firebasePerformance: TargetDependency = .external(
             name: "FirebasePerformance"
         )
+        
+        // extension
+        public static let swifterSwift: TargetDependency = .external(
+            name: "SwifterSwift"
+        )
     }
 }

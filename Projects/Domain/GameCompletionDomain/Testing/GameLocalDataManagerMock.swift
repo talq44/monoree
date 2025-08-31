@@ -1,7 +1,8 @@
 import Foundation
 import GameCompletionDomainInterface
 import LocalDataCoreInterface
-import FoundationShared
+import ExtensionsShared
+import SwifterSwift
 
 final class GameLocalDataManagerMock: GameLocalDataManager {
     var dates: [Date] = []
