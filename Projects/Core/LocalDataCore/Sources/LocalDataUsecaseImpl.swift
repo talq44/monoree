@@ -41,6 +41,14 @@ final actor LocalDataUsecaseImpl: LocalDataManager {
 }
 
 extension LocalDataUsecaseImpl: ConfigLocalDataManager {
+    func getFirstAllowedIDFADate() async -> Date? {
+        getLocalDataOptional(Date.self, key: .firstAllowedIDFA)
+    }
+    
+    func setFirstAllowedIDFADate() async {
+        setLocalData(Date(), key: .firstAllowedIDFA)
+    }
+    
     func getIDFA() async -> String? {
         getLocalDataOptional(String.self, key: .idfa)
     }

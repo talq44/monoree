@@ -27,9 +27,9 @@ public extension Notification.Name {
 final actor IDFAUsecaseImpl: IDFAUsecase {
     private let keychainService = "com.monoree.idfa"
     private let keychainAccount = "advertisingIdentifier"
-    private let localData: LocalDataCoreInterface.LocalDataManager
+    private let localData: LocalDataCoreInterface.ConfigLocalDataManager
     
-    public init(localData: LocalDataCoreInterface.LocalDataManager) {
+    public init(localData: LocalDataCoreInterface.ConfigLocalDataManager) {
         self.localData = localData
     }
     
@@ -41,7 +41,10 @@ final actor IDFAUsecaseImpl: IDFAUsecase {
             return .notAllowed
         }
         
-        guard hasKeyChaingHistory(idfa: idfa) else {
+        await localData.setIDFA(idfa)
+        
+        guard hasKeychainHistory(idfa: idfa) else {
+            await localData.setFirstAllowedIDFADate()
             return .new(id: idfa)
         }
         
@@ -70,8 +73,8 @@ final actor IDFAUsecaseImpl: IDFAUsecase {
         
         return id
     }
-    
-    private func hasKeyChaingHistory(idfa: String) -> Bool {
+
+    private func hasKeychainHistory(idfa: String) -> Bool {
         // 키체인에서 과거 값 확인
         let previous: String? = {
             guard let data = Keychain.read(service: keychainService, account: keychainAccount),
