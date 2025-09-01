@@ -38,7 +38,7 @@ final actor IDFAUsecaseImpl: IDFAUsecase {
         if current == .authorized { return true }
         guard current == .notDetermined else { return false }
 
-        let granted: Bool = await withCheckedContinuation { (cont: CheckedContinuation<Bool, Never>) in
+        let granted: Bool = await withCheckedContinuation { cont in
             DispatchQueue.main.async {
                 ATTrackingManager.requestTrackingAuthorization { status in
                     cont.resume(returning: status == .authorized)
