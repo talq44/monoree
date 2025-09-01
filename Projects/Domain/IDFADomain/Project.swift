@@ -12,6 +12,10 @@ let project = Project.module(
         .implementation(
             domain: .IDFADomain,
             dependencies: [
+                // Core
+                .core(target: .AnalyticsCore, type: .interface),
+                .core(target: .LocalDataCore, type: .interface),
+                // Domain
                 .domain(target: .IDFADomain, type: .interface),
             ]
         ),
