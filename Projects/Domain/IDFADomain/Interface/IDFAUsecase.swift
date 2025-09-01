@@ -1,5 +1,5 @@
 import Foundation
 
 public protocol IDFAUsecase {
-    func idfa() async -> String
+    func idfa() async -> IDFAResult
 }

@@ -1,7 +1,7 @@
 import Foundation
 import LocalDataCoreInterface
 
-final actor LocalDataUsecaseImpl: LocalDataUsecase {
+final actor LocalDataUsecaseImpl: LocalDataManager {
     private let userDefault: UserDefaults
     
     init(userDefault: UserDefaults = .standard) {
