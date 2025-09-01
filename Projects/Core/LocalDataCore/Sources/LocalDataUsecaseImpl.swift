@@ -1,7 +1,7 @@
 import Foundation
 import LocalDataCoreInterface
 
-final actor LocalDataUsecaseImpl: LocalDataUsecase {
+final actor LocalDataUsecaseImpl: LocalDataManager {
     private let userDefault: UserDefaults
     
     init(userDefault: UserDefaults = .standard) {
@@ -41,6 +41,14 @@ final actor LocalDataUsecaseImpl: LocalDataUsecase {
 }
 
 extension LocalDataUsecaseImpl: ConfigLocalDataManager {
+    func getFirstAllowedIDFADate() async -> Date? {
+        getLocalDataOptional(Date.self, key: .firstAllowedIDFA)
+    }
+    
+    func setFirstAllowedIDFADate() async {
+        setLocalData(Date(), key: .firstAllowedIDFA)
+    }
+    
     func getIDFA() async -> String? {
         getLocalDataOptional(String.self, key: .idfa)
     }
