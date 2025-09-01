@@ -1,13 +1,21 @@
 import SwiftUI
 
 // MARK: - Model
-struct GameCategory: Identifiable, Hashable {
-    let id = UUID()
+public struct GameCategory: Identifiable, Hashable {
+    public let id = UUID()
     var title: String
     var subtitle: String
     var accentEmoji: String
     var tint: Color
     var imageURL: URL? = nil // For future remote artwork
+    
+    public init(title: String, subtitle: String, accentEmoji: String, tint: Color, imageURL: URL? = nil) {
+        self.title = title
+        self.subtitle = subtitle
+        self.accentEmoji = accentEmoji
+        self.tint = tint
+        self.imageURL = imageURL
+    }
 }
 
 private let sampleCategories: [GameCategory] = [
@@ -21,6 +29,10 @@ private let sampleCategories: [GameCategory] = [
 // MARK: - Views
 public struct ContentView: View {
     var categories: [GameCategory] = sampleCategories
+    
+    public init(categories: [GameCategory]) {
+        self.categories = categories
+    }
     
     public var body: some View {
         NavigationStack {
@@ -164,5 +176,5 @@ private struct CategoryCard: View {
 }
 
 #Preview {
-    ContentView()
+    ContentView(categories: sampleCategories)
 }
