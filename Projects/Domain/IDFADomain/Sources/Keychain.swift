@@ -1,9 +1,3 @@
-//
-//  Keychain.swift
-//  IDFADomain
-//
-//  Created by 박창규 on 9/1/25.
-//
 import Foundation
 
 /// 키체인 헬퍼 (간단 버전)
