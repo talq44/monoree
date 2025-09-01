@@ -6,20 +6,17 @@ import Security
 import AdSupport
 import AppTrackingTransparency
 
-/// 로컬 저장 키
 private enum LocalKeys {
     static let idfaAllowedAt = "monoree.idfa.allowedAt"   // Date ISO8601 string
     static let gameCheckExemptUntil = "monoree.gamecheck.exemptUntil" // Date ISO8601 string
 }
 
-/// 단순 Date <-> String 포맷터
 private let iso8601: ISO8601DateFormatter = {
     let f = ISO8601DateFormatter()
     f.formatOptions = [.withInternetDateTime, .withFractionalSeconds]
     return f
 }()
 
-/// GameCheck 면제 알림 브로드캐스트 (로컬 통신용)
 public extension Notification.Name {
     static let gameCheckExemptUpdated = Notification.Name("monoree.gamecheck.exemptUpdated")
 }
