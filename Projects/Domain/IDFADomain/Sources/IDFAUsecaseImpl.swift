@@ -55,10 +55,12 @@ final actor IDFAUsecaseImpl: IDFAUsecase {
         let current = ATTrackingManager.trackingAuthorizationStatus
         if current == .authorized { return true }
         guard current == .notDetermined else { return false }
-        
-        let granted: Bool = await withCheckedContinuation { cont in
-            ATTrackingManager.requestTrackingAuthorization { status in
-                cont.resume(returning: status == .authorized)
+
+        let granted: Bool = await withCheckedContinuation { (cont: CheckedContinuation<Bool, Never>) in
+            DispatchQueue.main.async {
+                ATTrackingManager.requestTrackingAuthorization { status in
+                    cont.resume(returning: status == .authorized)
+                }
             }
         }
         
@@ -78,7 +80,8 @@ final actor IDFAUsecaseImpl: IDFAUsecase {
         // 키체인에서 과거 값 확인
         let previous: String? = {
             guard let data = Keychain.read(service: keychainService, account: keychainAccount),
-                  let str = String(data: data, encoding: .utf8), str.isEmpty == false else { return nil }
+                  let str = String(data: data, encoding: .utf8),
+                  str.isEmpty == false else { return nil }
             return str
         }()
         
