@@ -13,6 +13,7 @@ let project = Project.module(
             core: .UserAPICore,
             dependencies: [
                 .core(target: .UserAPICore, type: .interface),
+                .shared(target: .FoundationShared),
                 .SPM.alamofire,
                 .SPM.moya,
             ]

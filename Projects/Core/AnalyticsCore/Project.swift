@@ -14,6 +14,7 @@ let project = Project.module(
             dependencies: [
                 .core(target: .AnalyticsCore, type: .interface),
                 .shared(target: .FirebaseSPMShared),
+                .shared(target: .FoundationShared),
             ]
         )
     ]

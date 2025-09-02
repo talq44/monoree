@@ -1,4 +1,5 @@
 import AnalyticsCoreInterface
+import FoundationShared
 
 extension AnalyticsEvent {
     private func getChildren<T>(_ enumCase: Any) -> T? {
