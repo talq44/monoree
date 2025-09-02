@@ -12,9 +12,8 @@ let project = Project.module(
         .implementation(
             core: .UserAPICore,
             dependencies: [
+                .shared(target: .NetworkThridKit),
                 .core(target: .UserAPICore, type: .interface),
-                .SPM.alamofire,
-                .SPM.moya,
             ]
         ),
         .testing(
