@@ -14,6 +14,8 @@ let project = Project.module(
             dependencies: [
                 .SPM.ComposableArchitecture,
                 .feature(target: .GamePlayFeature, type: .interface),
+                .domain(target: .GameCompletionDomain, type: .interface),
+                .domain(target: .KoreanChosungDomain, type: .interface),
             ]
         ),
         .testing(
