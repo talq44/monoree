@@ -3,24 +3,15 @@ import LocalDataCoreInterface
 
 extension LocalDataUsecaseImpl: UserLocalDataManager {
     func addWishList(id: String) async throws {
-        do {
-            var list = try await getWishLists()
-            list.append(id)
-            
-            setLocalData(list, key: .wishlist)
-        } catch {
-            throw error
-        }
+        var list = (try? await getWishLists()) ?? []
+        guard !list.contains(id) else { return }
+        list.append(id)
+        setLocalData(list, key: .wishlist)
     }
     
     func deleteWishList(id: String) async throws {
-        do {
-            let list = try await getWishLists().filter { $0 != id }
-            
-            setLocalData(list, key: .wishlist)
-        } catch {
-            throw error
-        }
+        let list = ((try? await getWishLists()) ?? []).filter { $0 != id }
+        setLocalData(list, key: .wishlist)
     }
     
     func getWishLists() async throws -> [String] {
