@@ -2,11 +2,11 @@ import ProjectDescription
 import ProjectDescriptionHelpers
 
 let project = Project.module(
-    name: SharedModule.NetworkThridKit.name,
+    name: SharedModule.NetworkThirdKit.name,
     settings: .Module.default,
     targets: [
         .implementation(
-            shared: .NetworkThridKit,
+            shared: .NetworkThirdKit,
             dependencies: [
                 .SPM.alamofire,
                 .SPM.moya,

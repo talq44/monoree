@@ -12,7 +12,7 @@ let project = Project.module(
         .implementation(
             core: .UserAPICore,
             dependencies: [
-                .shared(target: .NetworkThridKit),
+                .shared(target: .NetworkThirdKit),
                 .shared(target: .FoundationShared),
                 .core(target: .UserAPICore, type: .interface),
             ]
