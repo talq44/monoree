@@ -3,9 +3,16 @@ import WishlistDomainInterface
 import AnalyticsCoreInterface
 import LocalDataCoreInterface
 
-final actor WishlistUsecaseImpl: WishlistUsecase {
+final actor WishlistUsecaseImpl: @preconcurrency WishlistUsecase {
     private let analytics: AnalyticsProtocol
     private let localData: LocalDataManager
+    private var changedContinuation: AsyncStream<WishlistUpdateType>.Continuation?
+    
+    lazy var changed: AsyncStream<WishlistUpdateType> = {
+        AsyncStream(bufferingPolicy: .bufferingNewest(64)) { continuation in
+            self.changedContinuation = continuation
+        }
+    }()
     
     init(
         analytics: AnalyticsProtocol,
@@ -13,6 +20,10 @@ final actor WishlistUsecaseImpl: WishlistUsecase {
     ) {
         self.analytics = analytics
         self.localData = localData
+    }
+    
+    deinit {
+        changedContinuation?.finish()
     }
     
     func get() async throws(WishlistError) -> [String] {
@@ -43,6 +54,8 @@ final actor WishlistUsecaseImpl: WishlistUsecase {
                     ListItem(item_id: item.id, item_name: item.name)
                 ])
             ))
+            
+            changedContinuation?.yield(.add(item))
         } catch {
             throw WishlistError.unknown
         }
@@ -53,6 +66,8 @@ final actor WishlistUsecaseImpl: WishlistUsecase {
         
         do {
             try await localData.deleteWishList(id: id)
+            
+            changedContinuation?.yield(.delete(id: id))
         } catch {
             throw WishlistError.unknown
         }
