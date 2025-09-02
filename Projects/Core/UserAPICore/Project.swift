@@ -13,21 +13,9 @@ let project = Project.module(
             core: .UserAPICore,
             dependencies: [
                 .core(target: .UserAPICore, type: .interface),
+                .shared(target: .FoundationShared),
                 .SPM.alamofire,
                 .SPM.moya,
-            ]
-        ),
-        .testing(
-            core: .UserAPICore,
-            dependencies: [
-                .core(target: .UserAPICore, type: .interface),
-            ]
-        ),
-        .tests(
-            core: .UserAPICore,
-            dependencies: [
-                .core(target: .UserAPICore, type: .implementation),
-                .core(target: .UserAPICore, type: .testing),
             ]
         ),
     ]

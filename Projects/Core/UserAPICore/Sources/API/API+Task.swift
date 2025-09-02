@@ -1,14 +1,6 @@
-//
-//  API+Task.swift
-//  API
-//
-//  Created by 박창규 on 2023/09/17.
-//
-
 import Foundation
-
+import FoundationShared
 import UserAPICoreInterface
-
 import Moya
 
 extension API {

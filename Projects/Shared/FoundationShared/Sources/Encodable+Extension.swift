@@ -7,8 +7,7 @@
 
 import Foundation
 
-extension Encodable {
-    
+public extension Encodable {
     func jsonData() -> Data? {
         return try? JSONEncoder().encode(self)
     }
@@ -18,7 +17,6 @@ extension Encodable {
         return String.init(data: data, encoding: .utf8) ?? ""
     }
     
-    /// 파라미터로 컨버팅
     func parameters() -> [String: Any] {
         guard let data = self.jsonData() else { return [:] }
         guard let json = try? JSONSerialization.jsonObject(with: data, options: []) else { return [:] }
