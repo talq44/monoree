@@ -15,6 +15,14 @@ final actor WishlistUsecaseImpl: WishlistUsecase {
         self.localData = localData
     }
     
+    func get() async throws(WishlistError) -> [String] {
+        do {
+            return try await localData.getWishLists()
+        } catch {
+            throw .unknown
+        }
+    }
+    
     func update(_ type: WishlistUpdateType) async throws(WishlistError) {
         switch type {
         case .add(let item):
