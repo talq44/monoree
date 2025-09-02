@@ -216,7 +216,7 @@ func createProject(
     let project = Project.module(
         name: \(layer.module).\(name).name,
         settings: .Module.default,
-        targets: [\(targetString)\n\(tab(1)]
+        targets: [\(targetString)\n\(tab(1))]
     )
     """
     

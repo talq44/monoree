@@ -1,3 +1,8 @@
 import Foundation
 
-public protocol LocalDataManager: ConfigLocalDataManager, GameLocalDataManager { }
+public protocol LocalDataManager:
+    ConfigLocalDataManager,
+    GameLocalDataManager,
+    UserLocalDataManager {
+    
+}
