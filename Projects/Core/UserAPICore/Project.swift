@@ -12,10 +12,9 @@ let project = Project.module(
         .implementation(
             core: .UserAPICore,
             dependencies: [
-                .core(target: .UserAPICore, type: .interface),
+                .shared(target: .NetworkThirdKit),
                 .shared(target: .FoundationShared),
-                .SPM.alamofire,
-                .SPM.moya,
+                .core(target: .UserAPICore, type: .interface),
             ]
         ),
     ]

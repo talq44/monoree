@@ -46,7 +46,7 @@ makeModule(layerType, moduleName: moduleName)
 
 func makeModule(_ layerType: ModuleLayer, moduleName: String) {
     let moduleCases: [ModuleType]
-
+    
     switch layerType {
     case .feature:
         moduleCases = ModuleType.featureCases
@@ -57,9 +57,9 @@ func makeModule(_ layerType: ModuleLayer, moduleName: String) {
     case .shared:
         moduleCases = ModuleType.sharedCases
     }
-
+    
     print("🚀 \(layerType.name) Layer에서 \(moduleName) 모듈 생성을 시작합니다.\n")
-
+    
     moduleCases.forEach { module in
         makeScaffold(target: module, layer: layerType, moduleName: moduleName)
         print("📁 \(module.name) 모듈의 구조가 생성되었습니다.")
@@ -67,17 +67,19 @@ func makeModule(_ layerType: ModuleLayer, moduleName: String) {
     
     let targetString = target(moduleTypes: moduleCases, layer: layerType, name: moduleName)
     createProject(layer: layerType, targetString: targetString, name: moduleName)
-
+    
     // Enum에 새 케이스 추가
     updateModuleEnum(layerType: layerType, moduleName: moduleName)
-
+    
     print("\n🎉 \(layerType.name) Layer에서 \(moduleName) 모듈 생성이 완료되었습니다. 모든 파일이 준비되었습니다! 😃")
 }
 
 func makeScaffold(target: ModuleType, layer: ModuleLayer, moduleName: String) {
     _ = try? bash.run(
         command: "tuist",
-        arguments: ["scaffold", "\(target.name)", "--name", "\(moduleName)", "--layer", "\(layer.name)"]
+        arguments: [
+            "scaffold", "\(target.name)", "--name", "\(moduleName)", "--layer", "\(layer.name)",
+        ]
     )
 }
 
@@ -86,7 +88,7 @@ enum ModuleLayer: String {
     case domain
     case core
     case shared
-
+    
     var module: String {
         switch self {
         case .feature: return "FeatureModule"
@@ -95,7 +97,7 @@ enum ModuleLayer: String {
         case .shared: return "SharedModule"
         }
     }
-
+    
     var name: String {
         self.rawValue.capitalized
     }
@@ -146,53 +148,53 @@ func target(
         switch moduleType {
         case .interface:
             targetString += """
-            \n\(tab(2)).interface(
-            \(tab(3))\(layer.rawValue): .\(name),
-            \(tab(2))\tdependencies: []
-            \(tab(2))),
-            """
+        \n\(tab(2)).interface(
+        \(tab(3))\(layer.rawValue): .\(name),
+        \(tab(2))\tdependencies: []
+        \(tab(2))),
+        """
             
         case .implementation:
             targetString += """
-            \n\(tab(2)).implementation(
-            \(tab(3))\(layer.rawValue): .\(name),
-            \(tab(3))dependencies: [
-            \(tab(4)).\(layer)(target: .\(name), type: .interface),
-            \(tab(3))]
-            \(tab(2))),
-            """
+        \n\(tab(2)).implementation(
+        \(tab(3))\(layer.rawValue): .\(name),
+        \(tab(3))dependencies: [
+        \(tab(4)).\(layer)(target: .\(name), type: .interface),
+        \(tab(3))]
+        \(tab(2))),
+        """
             
         case .testing:
             targetString += """
-            \n\(tab(2)).testing(
-            \(tab(3))\(layer.rawValue): .\(name),
-            \(tab(3))dependencies: [
-            \(tab(4)).\(layer)(target: .\(name), type: .interface),
-            \(tab(3))]
-            \(tab(2))),
-            """
+        \n\(tab(2)).testing(
+        \(tab(3))\(layer.rawValue): .\(name),
+        \(tab(3))dependencies: [
+        \(tab(4)).\(layer)(target: .\(name), type: .interface),
+        \(tab(3))]
+        \(tab(2))),
+        """
             
         case .tests:
             targetString += """
-            \n\(tab(2)).tests(
-            \(tab(3))\(layer.rawValue): .\(name),
-            \(tab(3))dependencies: [
-            \(tab(4)).\(layer)(target: .\(name), type: .implementation),
-            \(tab(4)).\(layer)(target: .\(name), type: .testing),
-            \(tab(3))]
-            \(tab(2))),
-            """
+        \n\(tab(2)).tests(
+        \(tab(3))\(layer.rawValue): .\(name),
+        \(tab(3))dependencies: [
+        \(tab(4)).\(layer)(target: .\(name), type: .implementation),
+        \(tab(4)).\(layer)(target: .\(name), type: .testing),
+        \(tab(3))]
+        \(tab(2))),
+        """
             
         case .demo:
             targetString += """
-            \n\(tab(2)).demo(
-            \(tab(3))\(layer.rawValue): .\(name),
-            \(tab(3))dependencies: [
-            \(tab(4)).\(layer)(target: .\(name), type: .implementation),
-            \(tab(4)).\(layer)(target: .\(name), type: .testing),
-            \(tab(3))]
-            \(tab(2))),
-            """
+        \n\(tab(2)).demo(
+        \(tab(3))\(layer.rawValue): .\(name),
+        \(tab(3))dependencies: [
+        \(tab(4)).\(layer)(target: .\(name), type: .implementation),
+        \(tab(4)).\(layer)(target: .\(name), type: .testing),
+        \(tab(3))]
+        \(tab(2))),
+        """
         }
     }
     
@@ -210,11 +212,11 @@ func createProject(
     let proejct = """
     import ProjectDescription
     import ProjectDescriptionHelpers
-
+    
     let project = Project.module(
         name: \(layer.module).\(name).name,
         settings: .Module.default,
-        targets: [\(targetString)\n]
+        targets: [\(targetString)\n\(tab(1)]
     )
     """
     
@@ -222,7 +224,7 @@ func createProject(
         path: currentPath + "Projects/\(layer.name)/\(name)/Project.swift",
         content: proejct
     )
-
+    
     print("📂 \(name) 모듈의 프로젝트 설정 파일(Project.swift)이 생성되었습니다.")
 }
 
@@ -238,7 +240,7 @@ func updateModuleEnum(layerType: ModuleLayer, moduleName: String) {
     let filePath = currentPath + "Tuist/ProjectDescriptionHelpers/Modules/\(layerType.module).swift"
     
     // 파일 읽기
-    guard var fileContent = try? String(contentsOfFile: filePath) else {
+    guard var fileContent = try? String(contentsOfFile: filePath, encoding: .utf8) else {
         print("❗️ \(filePath) 파일을 읽는 데 실패했습니다. 파일이 존재하는지 확인해 주세요.")
         return
     }
@@ -246,11 +248,13 @@ func updateModuleEnum(layerType: ModuleLayer, moduleName: String) {
     // enum 블록을 찾아서 새로운 케이스 추가
     let enumKeyword = "public enum \(layerType.module): String, CaseIterable {"
     let caseLine = "\n\(tab(1))case \(moduleName)"
-
+    
     // enum 시작 부분을 찾아서 케이스 추가
     if let enumRange = fileContent.range(of: enumKeyword) {
         // 케이스를 추가할 위치를 찾음 (enum 블록 바로 뒤)
-        if let insertIndex = fileContent.range(of: "\n", range: enumRange.upperBound..<fileContent.endIndex)?.lowerBound {
+        if let insertIndex = fileContent.range(
+            of: "\n", range: enumRange.upperBound..<fileContent.endIndex)?.lowerBound
+        {
             // 파일에 이미 해당 케이스가 있는지 확인
             if fileContent.contains(caseLine) {
                 print("⚠️ \(layerType.name) 모듈에 \(moduleName) 케이스가 이미 존재합니다.")
@@ -288,7 +292,7 @@ struct Bash: CommandExecuting {
     func run(command: String, arguments: [String] = []) throws -> String {
         return try run(resolve(command), with: arguments)
     }
-
+    
     private func resolve(_ command: String) throws -> String {
         guard var bashCommand = try? run("/bin/bash", with: ["-l", "-c", "which \(command)"]) else {
             throw BashError.commandNotFound(name: command)
@@ -296,12 +300,12 @@ struct Bash: CommandExecuting {
         bashCommand = bashCommand.trimmingCharacters(in: NSCharacterSet.whitespacesAndNewlines)
         return bashCommand
     }
-
+    
     private func run(_ command: String, with arguments: [String] = []) throws -> String {
         let process = Process()
         process.launchPath = command
         process.arguments = arguments
-
+        
         let outputPipe = Pipe()
         process.standardOutput = outputPipe
         process.launch()
