@@ -5,33 +5,20 @@ let project = Project.module(
     name: SharedModule.FirebaseSPMShared.name,
     settings: .Module.default,
     targets: [
-		.interface(
-			shared: .FirebaseSPMShared,
-			dependencies: []
-		),
-		.implementation(
-			shared: .FirebaseSPMShared,
-			dependencies: [
-				.shared(target: .FirebaseSPMShared, type: .interface),
+        .interface(
+            shared: .FirebaseSPMShared,
+            dependencies: []
+        ),
+        .implementation(
+            shared: .FirebaseSPMShared,
+            dependencies: [
+                .shared(target: .FirebaseSPMShared, type: .interface),
                 .SPM.firebaseCore,
                 .SPM.firebaseAnalytics,
                 .SPM.firebaseCrashlytics,
                 .SPM.firebasePerformance,
                 .SPM.firebaseRemoteConfig,
-			]
-		),
-		.testing(
-			shared: .FirebaseSPMShared,
-			dependencies: [
-				.shared(target: .FirebaseSPMShared, type: .interface),
-			]
-		),
-		.tests(
-			shared: .FirebaseSPMShared,
-			dependencies: [
-				.shared(target: .FirebaseSPMShared, type: .implementation),
-				.shared(target: .FirebaseSPMShared, type: .testing),
-			]
-		),
-]
+            ]
+        ),
+    ]
 )

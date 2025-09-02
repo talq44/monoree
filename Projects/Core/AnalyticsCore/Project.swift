@@ -15,19 +15,6 @@ let project = Project.module(
                 .core(target: .AnalyticsCore, type: .interface),
                 .shared(target: .FirebaseSPMShared),
             ]
-        ),
-        .testing(
-            core: .AnalyticsCore,
-            dependencies: [
-                .core(target: .AnalyticsCore, type: .interface),
-            ]
-        ),
-        .tests(
-            core: .AnalyticsCore,
-            dependencies: [
-                .core(target: .AnalyticsCore, type: .implementation),
-                .core(target: .AnalyticsCore, type: .testing),
-            ]
-        ),
+        )
     ]
 )

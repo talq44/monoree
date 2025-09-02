@@ -17,18 +17,5 @@ let project = Project.module(
                 .SPM.moya,
             ]
         ),
-        .testing(
-            core: .UserAPICore,
-            dependencies: [
-                .core(target: .UserAPICore, type: .interface),
-            ]
-        ),
-        .tests(
-            core: .UserAPICore,
-            dependencies: [
-                .core(target: .UserAPICore, type: .implementation),
-                .core(target: .UserAPICore, type: .testing),
-            ]
-        ),
     ]
 )

@@ -15,17 +15,10 @@ let project = Project.module(
                 .domain(target: .KoreanChosungDomain, type: .interface),
             ]
         ),
-        .testing(
-            domain: .KoreanChosungDomain,
-            dependencies: [
-                .domain(target: .KoreanChosungDomain, type: .interface),
-            ]
-        ),
         .tests(
             domain: .KoreanChosungDomain,
             dependencies: [
                 .domain(target: .KoreanChosungDomain, type: .implementation),
-                .domain(target: .KoreanChosungDomain, type: .testing),
             ]
         ),
     ]
