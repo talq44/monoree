@@ -13,20 +13,8 @@ let project = Project.module(
             core: .UserAPICore,
             dependencies: [
                 .shared(target: .NetworkThridKit),
+                .shared(target: .FoundationShared),
                 .core(target: .UserAPICore, type: .interface),
-            ]
-        ),
-        .testing(
-            core: .UserAPICore,
-            dependencies: [
-                .core(target: .UserAPICore, type: .interface),
-            ]
-        ),
-        .tests(
-            core: .UserAPICore,
-            dependencies: [
-                .core(target: .UserAPICore, type: .implementation),
-                .core(target: .UserAPICore, type: .testing),
             ]
         ),
     ]

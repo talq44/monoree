@@ -16,17 +16,10 @@ let project = Project.module(
                 .core(target: .LocalDataCore, type: .interface),
             ]
         ),
-        .testing(
-            core: .LocalDataCore,
-            dependencies: [
-                .core(target: .LocalDataCore, type: .interface),
-            ]
-        ),
         .tests(
             core: .LocalDataCore,
             dependencies: [
                 .core(target: .LocalDataCore, type: .implementation),
-                .core(target: .LocalDataCore, type: .testing),
             ]
         ),
     ]
