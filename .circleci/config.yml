@@ -4,7 +4,7 @@ version: 2.1
 jobs:
   build-test:
     macos:
-      xcode: "16.2.0"            # 사용 Xcode 버전(필요 시 변경)
+      xcode: "16.4.0"            # 사용 Xcode 버전(필요 시 변경)
     resource_class: m2pro.medium
     shell: /bin/bash -leo pipefail
     environment:
