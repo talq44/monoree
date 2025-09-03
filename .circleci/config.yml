@@ -24,17 +24,16 @@ jobs:
           command: |
             curl https://mise.jdx.dev/install.sh | sh
             echo 'export PATH="$HOME/.local/bin:$PATH"' >> $BASH_ENV
-            echo 'export PATH="$HOME/.local/share/mise/shims:$PATH"' >> $BASH_ENV
-            echo 'eval "$(~/.local/bin/mise activate bash)"' >> $BASH_ENV
+            echo 'eval "$($HOME/.local/bin/mise activate bash)"' >> $BASH_ENV
             source $BASH_ENV
-            ~/.local/bin/mise --version
+            mise --version
 
       - run:
           name: Install Tuist CLI
           command: |
             source $BASH_ENV
-            ~/.local/bin/mise install tuist@4.36.0
-            ~/.local/bin/mise doctor
+            mise install tuist@4.36.0
+            mise doctor
 
       # 캐시: Tuist/SwiftPM/DerivedData
       - restore_cache:
