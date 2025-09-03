@@ -1,0 +1,77 @@
+# .circleci/config.yml
+version: 2.1
+
+jobs:
+  build-test:
+    macos:
+      xcode: "16.4.0"            # CircleCI 제공 이미지 중 안정 버전 사용 (필요 시 변경)
+    resource_class: macos.m1.medium.gen1
+    shell: /bin/bash -leo pipefail
+    environment:
+      LC_ALL: en_US.UTF-8
+      LANG: en_US.UTF-8
+    steps:
+      - checkout
+
+      - run:
+          name: Show Xcode & Swift versions
+          command: |
+            xcodebuild -version
+            swift --version
+
+      - run:
+          name: Setup mise
+          command: |
+            curl https://mise.jdx.dev/install.sh | sh
+            echo 'export PATH="$HOME/.local/bin:$PATH"' >> $BASH_ENV
+            echo 'eval "$($HOME/.local/bin/mise activate bash)"' >> $BASH_ENV
+            source $BASH_ENV
+            mise --version
+
+      - run:
+          name: Install Tuist CLI
+          command: |
+            source $BASH_ENV
+            mise install tuist@4.36.0
+            mise doctor
+
+      # 캐시: Tuist/SwiftPM/DerivedData
+      - restore_cache:
+          keys:
+            # Tuist/Dependencies.swift가 없는 레포 구조이므로 Package.resolved를 키로 사용
+            - tuist-{{ arch }}-{{ .Branch }}-{{ checksum "Tuist/Package.resolved" }}
+            - tuist-{{ arch }}-
+      - run:
+          name: Tuist install
+          command: |
+            source $BASH_ENV
+            tuist install
+      - save_cache:
+          key: tuist-{{ arch }}-{{ .Branch }}-{{ checksum "Tuist/Package.resolved" }}
+          paths:
+            - ~/.tuist
+            - ~/Library/Caches/tuist
+            - ~/Library/Developer/Xcode/DerivedData
+            - ~/Library/Caches/org.swift.swiftpm
+            - ~/.local/share/mise/plugins/tuist
+
+      - run:
+          name: Tuist build (Monoree)
+          command: |
+            source $BASH_ENV
+            tuist build Monoree
+
+      - run:
+          name: Tuist test (optional by env)
+          command: |
+            if [ "${TUIST_TEST_ON_OFF}" = "true" ]; then
+              source $BASH_ENV
+              tuist test
+            else
+              echo "TUIST_TEST_ON_OFF != true → skip tests"
+            fi
+
+workflows:
+  ci:
+    jobs:
+      - build-test
