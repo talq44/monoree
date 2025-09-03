@@ -4,8 +4,8 @@ version: 2.1
 jobs:
   build-test:
     macos:
-      xcode: "16.4.0"            # 사용 Xcode 버전(필요 시 변경)
-    resource_class: m2pro.medium
+      xcode: "15.4.0"            # CircleCI 제공 이미지 중 안정 버전 사용 (필요 시 변경)
+    resource_class: macos.m1.medium.gen1
     shell: /bin/bash -leo pipefail
     environment:
       LC_ALL: en_US.UTF-8
@@ -25,6 +25,7 @@ jobs:
             curl https://mise.jdx.dev/install.sh | sh
             echo 'export PATH="$HOME/.local/bin:$PATH"' >> $BASH_ENV
             echo 'export PATH="$HOME/.local/share/mise/shims:$PATH"' >> $BASH_ENV
+            echo 'eval "$(~/.local/bin/mise activate bash)"' >> $BASH_ENV
             source $BASH_ENV
             ~/.local/bin/mise --version
 
@@ -38,7 +39,8 @@ jobs:
       # 캐시: Tuist/SwiftPM/DerivedData
       - restore_cache:
           keys:
-            - tuist-{{ arch }}-{{ .Branch }}-{{ checksum "Tuist/Dependencies.swift" }}
+            # Tuist/Dependencies.swift가 없는 레포 구조이므로 Package.resolved를 키로 사용
+            - tuist-{{ arch }}-{{ .Branch }}-{{ checksum "Tuist/Package.resolved" }}
             - tuist-{{ arch }}-
       - run:
           name: Tuist install
@@ -46,12 +48,13 @@ jobs:
             source $BASH_ENV
             tuist install
       - save_cache:
-          key: tuist-{{ arch }}-{{ .Branch }}-{{ checksum "Tuist/Dependencies.swift" }}
+          key: tuist-{{ arch }}-{{ .Branch }}-{{ checksum "Tuist/Package.resolved" }}
           paths:
             - ~/.tuist
             - ~/Library/Caches/tuist
             - ~/Library/Developer/Xcode/DerivedData
             - ~/Library/Caches/org.swift.swiftpm
+            - ~/.local/share/mise/plugins/tuist
 
       - run:
           name: Tuist build (Monoree)
@@ -79,4 +82,3 @@ workflows:
               only:
                 - develop
                 - main
-                - /feature\/.*/    # 필요 시 패턴 조정
