@@ -1,6 +1,4 @@
 import Foundation
-import LocalDataCoreInterface
-import RemoteConfigCoreInterface
 
 public protocol UserGameSettingUsecase {
     func getConfig() async -> UserGameSettingItem

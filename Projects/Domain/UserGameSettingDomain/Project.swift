@@ -8,20 +8,23 @@ let project = Project.module(
         .interface(
             domain: .UserGameSettingDomain,
             dependencies: [
-                // Core
-                .core(target: .LocalDataCore, type: .interface),
-                .core(target: .RemoteConfigCore, type: .interface),
             ]
         ),
         .implementation(
             domain: .UserGameSettingDomain,
             dependencies: [
+                // Core
+                .core(target: .LocalDataCore, type: .interface),
+                .core(target: .RemoteConfigCore, type: .interface),
                 .domain(target: .UserGameSettingDomain, type: .interface),
             ]
         ),
         .testing(
             domain: .UserGameSettingDomain,
             dependencies: [
+                // Core
+                .core(target: .LocalDataCore, type: .interface),
+                .core(target: .RemoteConfigCore, type: .interface),
                 .domain(target: .UserGameSettingDomain, type: .interface),
             ]
         ),
