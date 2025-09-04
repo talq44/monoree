@@ -17,4 +17,28 @@ extension LocalDataUsecaseImpl: UserLocalDataManager {
     func getWishLists() async throws -> [String] {
         try getLocalData([String].self, key: .wishlist)
     }
+    
+    func questionCount() async -> Int? {
+        getLocalDataOptional(Int.self, key: .questionCount)
+    }
+    
+    func setQuestionCount(_ value: Int) async {
+        setLocalData(value, key: .questionCount)
+    }
+    
+    func timePerQuestion() async -> Int? {
+        getLocalDataOptional(Int.self, key: .timePerQuestion)
+    }
+    
+    func setTimePerQuestion(_ value: Int) async {
+        setLocalData(value, key: .timePerQuestion)
+    }
+    
+    func teamCount() async -> Int? {
+        getLocalDataOptional(Int.self, key: .teamCount)
+    }
+    
+    func setTeamCount(_ value: Int) async {
+        setLocalData(value, key: .teamCount)
+    }
 }
