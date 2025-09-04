@@ -6,7 +6,7 @@ import UserGameSettingDomainInterface
 
 @Suite struct UserGameSettingDomainTests {
     @Test("getConfig: 로컬/리모트 모두 정상일 때 로컬 우선 적용")
-    func getConfig_localOverridesRemote() async {
+    func getConfigLocalOverridesRemote() async {
         // given
         let remote = GameConfigManagerMock()
         remote.setup(testType: .normal(10))  // remote default
@@ -24,7 +24,7 @@ import UserGameSettingDomainInterface
     }
     
     @Test("getConfig: 리모트 에러 시 기본 상수 적용")
-    func getConfig_remoteError_usesFallback() async {
+    func getConfigRemoteErrorUsesFallback() async {
         // given
         let remote = GameConfigManagerMock()
         remote.setup(testType: .error)  // trigger fallback constants (10,5,1)
@@ -42,7 +42,7 @@ import UserGameSettingDomainInterface
     }
     
     @Test("getConfig: 로컬 없음 -> 리모트 설정 사용")
-    func getConfig_noLocal_usesRemote() async {
+    func getConfigNoLocalUsesRemote() async {
         // given
         let remote = GameConfigManagerMock()
         remote.setup(testType: .normal(7))
@@ -60,7 +60,7 @@ import UserGameSettingDomainInterface
     }
     
     @Test("setter: questionCount 설정 후 getConfig에 반영")
-    func setter_setsQuestionCount() async {
+    func setterSetsQuestionCount() async {
         // given
         let remote = GameConfigManagerMock()
         remote.setup(testType: .normal(10))
@@ -77,7 +77,7 @@ import UserGameSettingDomainInterface
     }
     
     @Test("setter: timePerQuestion .second(n) 정상 반영")
-    func setter_setsTimePerQuestionSecond() async {
+    func setterSetsTimePerQuestionSecond() async {
         // given
         let remote = GameConfigManagerMock()
         remote.setup(testType: .normal(3))
@@ -94,7 +94,7 @@ import UserGameSettingDomainInterface
     }
     
     @Test("setter: timePerQuestion .unlimited 저장 안 함 (원래 값 유지)")
-    func setter_unlimitedDoesNotPersist() async {
+    func setterUnlimitedDoesNotPersist() async {
         // given
         let remote = GameConfigManagerMock()
         remote.setup(testType: .normal(4))  // default remote is 4 seconds
@@ -111,7 +111,7 @@ import UserGameSettingDomainInterface
     }
     
     @Test("setter: teamCount 설정 후 getConfig에 반영")
-    func setter_setsTeamCount() async {
+    func setterSetsTeamCount() async {
         // given
         let remote = GameConfigManagerMock()
         remote.setup(testType: .normal(1))
