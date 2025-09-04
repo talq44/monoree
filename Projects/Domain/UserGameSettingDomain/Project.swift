@@ -7,15 +7,15 @@ let project = Project.module(
     targets: [
         .interface(
             domain: .UserGameSettingDomain,
-            dependencies: []
-        ),
-        .implementation(
-            domain: .UserGameSettingDomain,
             dependencies: [
                 // Core
                 .core(target: .LocalDataCore, type: .interface),
                 .core(target: .RemoteConfigCore, type: .interface),
-                // Domain
+            ]
+        ),
+        .implementation(
+            domain: .UserGameSettingDomain,
+            dependencies: [
                 .domain(target: .UserGameSettingDomain, type: .interface),
             ]
         ),
