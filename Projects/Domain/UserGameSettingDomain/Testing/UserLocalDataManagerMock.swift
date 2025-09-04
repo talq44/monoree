@@ -1,7 +1,6 @@
 import UserGameSettingDomainInterface
 import LocalDataCoreInterface
 
-
 final class UserLocalDataManagerMock: UserLocalDataManager {
     private var testType: NormalIntTestType = .normal(3)
     
