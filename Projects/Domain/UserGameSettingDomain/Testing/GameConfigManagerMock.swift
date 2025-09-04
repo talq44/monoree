@@ -3,12 +3,22 @@ import UserGameSettingDomainInterface
 import RemoteConfigCoreInterface
 
 final class GameConfigManagerMock: GameConfigManager {
+    private var testType: NormalIntTestType = .normal(3)
+    
+    func setup(testType: NormalIntTestType) {
+        self.testType = testType
+    }
+    
     func fetchGame() throws -> any RemoteConfigCoreInterface.GameConfigDTO {
+        guard let value = testType.value else {
+            throw RemoteConfigError.unknown
+        }
+        
         return GameConfigDTOStub(
-            gamePlaysPerAd: 5,
-            questionCount: 10,
-            timePerQuestion: 10,
-            teamCount: 10
+            gamePlaysPerAd: value,
+            questionCount: value,
+            timePerQuestion: value,
+            teamCount: value
         )
     }
 }
