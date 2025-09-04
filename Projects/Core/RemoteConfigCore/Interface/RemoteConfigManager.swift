@@ -7,6 +7,8 @@
 
 import Foundation
 
-public protocol RemoteConfigManager: VersionConfigManager, GameConfigManager {
+public protocol RemoteConfigManager:
+    VersionConfigManager,
+    GameConfigManager {
     func fetch() async throws -> Void
 }
