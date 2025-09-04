@@ -9,5 +9,11 @@ import Foundation
 import RemoteConfigCoreInterface
 
 struct GameConfigDTOImpl: GameConfigDTO {
+    var questionCount: Int
+    
+    var timePerQuestion: Int
+    
+    var teamCount: Int
+    
     let gamePlaysPerAd: Int
 }
