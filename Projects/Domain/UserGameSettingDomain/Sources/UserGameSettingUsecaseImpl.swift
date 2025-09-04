@@ -24,11 +24,11 @@ final actor UserGameSettingUsecaseImpl: UserGameSettingUsecase {
     func getConfig() async -> UserGameSettingItem {
         let defaultConfig = getDefaultConfig()
         
-        let questionCount = await localData.questionCount()
-        let timePerQuestion = await localData.timePerQuestion()
-        let teamCount = await localData.teamCount()
+        async let questionCount = await localData.questionCount()
+        async let timePerQuestion = await localData.timePerQuestion()
+        async let teamCount = await localData.teamCount()
         
-        return UserGameSettingItem(
+        return await UserGameSettingItem(
             questionCount: questionCount ?? defaultConfig.questionCount,
             timePerQuestion: UserGameTimePerQuestionType(
                 second: timePerQuestion
