@@ -2,7 +2,7 @@ import Foundation
 import UserGameSettingDomainInterface
 import RemoteConfigCoreInterface
 
-final class GameConfigManagerImpl: GameConfigManager {
+final class GameConfigManagerMock: GameConfigManager {
     func fetchGame() throws -> any RemoteConfigCoreInterface.GameConfigDTO {
         return GameConfigDTOStub(
             gamePlaysPerAd: 5,

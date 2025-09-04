@@ -1,7 +1,7 @@
 import UserGameSettingDomainInterface
 import LocalDataCoreInterface
 
-final class UserLocalDataManagerImpl: UserLocalDataManager {
+final class UserLocalDataManagerMock: UserLocalDataManager {
     func addWishList(id: String) async throws { }
     
     func deleteWishList(id: String) async throws { }
