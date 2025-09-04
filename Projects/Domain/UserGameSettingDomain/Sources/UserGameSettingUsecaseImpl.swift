@@ -64,9 +64,7 @@ final actor UserGameSettingUsecaseImpl: UserGameSettingUsecase {
     }
     
     func setTimePerQuestion(_ time: UserGameTimePerQuestionType) async {
-        guard let value = time.value else { return }
-        
-        await localData.setTimePerQuestion(value)
+        await localData.setTimePerQuestion(time.value)
     }
     
     func setTeamCount(_ count: Int) async {
@@ -75,12 +73,12 @@ final actor UserGameSettingUsecaseImpl: UserGameSettingUsecase {
 }
 
 extension UserGameTimePerQuestionType {
-    var value: Int? {
+    var value: Int {
         switch self {
         case .second(let int):
             return int
         case .unlimited:
-            return nil
+            return -1
         }
     }
 }

@@ -6,11 +6,20 @@ public enum UserGameTimePerQuestionType: Equatable {
     
     public init?(second: Int?) {
         guard let second else { return nil }
+        guard second > 0 else {
+            self = .unlimited
+            return
+        }
         
         self = .second(second)
     }
     
     public init(second: Int) {
+        guard second > 0 else {
+            self = .unlimited
+            return
+        }
+        
         self = .second(second)
     }
 }
