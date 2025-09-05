@@ -5,7 +5,7 @@ import AnalyticsCoreInterface
 import LocalDataCoreInterface
 
 final class GameCompletionUsecaseImpl: GameCompletionUseCase {
-    private let analytics: AnalyticsProtocol
+    private let analytics: AnalyticsManager
     private let remoteConfig: GameConfigManager
     private let localData: GameLocalDataManager
     
@@ -15,7 +15,7 @@ final class GameCompletionUsecaseImpl: GameCompletionUseCase {
     init(
         remoteConfig: any GameConfigManager,
         localData: any GameLocalDataManager,
-        analytics: any AnalyticsProtocol
+        analytics: any AnalyticsManager
     ) {
         self.analytics = analytics
         self.localData = localData

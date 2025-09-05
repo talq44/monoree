@@ -4,7 +4,7 @@ import AnalyticsCoreInterface
 import LocalDataCoreInterface
 
 final actor WishlistUsecaseImpl: @preconcurrency WishlistUsecase {
-    private let analytics: AnalyticsProtocol
+    private let analytics: AnalyticsManager
     private let localData: LocalDataManager
     private var changedContinuation: AsyncStream<WishlistUpdateType>.Continuation?
     
@@ -15,7 +15,7 @@ final actor WishlistUsecaseImpl: @preconcurrency WishlistUsecase {
     }()
     
     init(
-        analytics: AnalyticsProtocol,
+        analytics: AnalyticsManager,
         localData: LocalDataManager
     ) {
         self.analytics = analytics

@@ -1,0 +1,35 @@
+import ProjectDescription
+import ProjectDescriptionHelpers
+
+let project = Project.module(
+    name: DomainModule.GameDetailAnalyticsDomain.name,
+    settings: .Module.default,
+    targets: [
+        .interface(
+            domain: .GameDetailAnalyticsDomain,
+            dependencies: []
+        ),
+        .implementation(
+            domain: .GameDetailAnalyticsDomain,
+            dependencies: [
+                .shared(target: .FoundationShared),
+                .core(target: .AnalyticsCore, type: .interface),
+                .domain(target: .GameDetailAnalyticsDomain, type: .interface),
+            ]
+        ),
+        .testing(
+            domain: .GameDetailAnalyticsDomain,
+            dependencies: [
+                .core(target: .AnalyticsCore, type: .interface),
+                .domain(target: .GameDetailAnalyticsDomain, type: .interface),
+            ]
+        ),
+        .tests(
+            domain: .GameDetailAnalyticsDomain,
+            dependencies: [
+                .domain(target: .GameDetailAnalyticsDomain, type: .implementation),
+                .domain(target: .GameDetailAnalyticsDomain, type: .testing),
+            ]
+        ),
+    ]
+)

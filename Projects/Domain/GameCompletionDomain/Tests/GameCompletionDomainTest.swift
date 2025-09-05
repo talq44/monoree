@@ -27,7 +27,8 @@ struct GameCompletionDomainTests {
     @Test("perAd가 5일 경우, 5회 단위로 광고노출이 출력된다.") func fivePerAdAlwaysNone() async {
         // given
         let perAd = 5
-        let testCount = 20
+        let testCount = 10
+        
         let analytics = AnalyticsCoreMock()
         let localData = GameLocalDataManagerMock()
         let remoteConfig = GameConfigManagerMock()

@@ -1,9 +1,9 @@
 import Foundation
 import AnalyticsCoreInterface
 
-final class AnalyticsProtocolImpl: AnalyticsProtocol {
+final class AnalyticsProtocolImpl: AnalyticsManager {
     
-    private let providers: [AnalyticsProtocol]
+    private let providers: [AnalyticsManager]
     
     init(providers: [AnalyticsProviderType]) {
         self.providers = providers.map { $0.provider }

@@ -2,7 +2,7 @@ import Foundation
 import GameCompletionDomainInterface
 import AnalyticsCoreInterface
 
-final class AnalyticsCoreMock: AnalyticsProtocol {
+final class AnalyticsCoreMock: AnalyticsManager {
     internal var callPostScore: Bool = false
     
     func setUserId(id: String?) { }

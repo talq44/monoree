@@ -16,7 +16,12 @@ final class GameConfigManagerMock: GameConfigManager {
     func fetchGame() throws -> any RemoteConfigCoreInterface.GameConfigDTO {
         switch testType {
         case .normal(let perAd):
-            return GameConfigDTOMock(gamePlaysPerAd: perAd)
+            return GameConfigDTOMock(
+                questionCount: 0,
+                timePerQuestion: 0,
+                teamCount: 0,
+                gamePlaysPerAd: perAd
+            )
         case .error:
             throw RemoteConfigError.unknown
         }
@@ -24,5 +29,11 @@ final class GameConfigManagerMock: GameConfigManager {
 }
 
 struct GameConfigDTOMock: RemoteConfigCoreInterface.GameConfigDTO {
+    var questionCount: Int
+    
+    var timePerQuestion: Int
+    
+    var teamCount: Int
+    
     let gamePlaysPerAd: Int
 }

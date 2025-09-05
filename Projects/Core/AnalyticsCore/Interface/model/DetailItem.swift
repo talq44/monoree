@@ -10,6 +10,7 @@ public struct DetailItem: Codable {
     public let item_category3: String?
     public let item_category4: String?
     public let item_category5: String?
+    public let item_variant: String?
     
     public init(
         item_id: String,
@@ -20,7 +21,8 @@ public struct DetailItem: Codable {
         item_category2: String? = nil,
         item_category3: String? = nil,
         item_category4: String? = nil,
-        item_category5: String? = nil
+        item_category5: String? = nil,
+        item_variant: String? = nil
     ) {
         self.item_id = item_id
         self.item_name = item_name
@@ -31,5 +33,6 @@ public struct DetailItem: Codable {
         self.item_category5 = item_category5
         self.item_list_id = item_list_id
         self.item_list_name = item_list_name
+        self.item_variant = item_variant
     }
 }
