@@ -7,7 +7,7 @@ public protocol GameCompletionUseCase {
     init(
         remoteConfig: GameConfigManager,
         localData: GameLocalDataManager,
-        analytics: AnalyticsProtocol
+        analytics: AnalyticsManager
     )
     
     func completeGame(

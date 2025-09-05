@@ -1,6 +1,6 @@
 import Foundation
 
-public protocol AnalyticsProtocol {
+public protocol AnalyticsManager {
     func setUserId(id: String?)
     func sendEvent(_ event: AnalyticsEvent)
 }

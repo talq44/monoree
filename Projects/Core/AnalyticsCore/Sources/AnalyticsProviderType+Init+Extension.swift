@@ -9,7 +9,7 @@ import Foundation
 import AnalyticsCoreInterface
 
 extension AnalyticsProviderType {
-    var provider: AnalyticsProtocol {
+    var provider: AnalyticsManager {
         switch self {
         case .firebase:
             return FirebaseProvider()
