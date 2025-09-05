@@ -93,7 +93,7 @@ import UserGameSettingDomainInterface
         #expect(config.timePerQuestion == .second(9))
     }
     
-    @Test("setter: timePerQuestion .unlimited 저장 안 함 (원래 값 유지)")
+    @Test("setter: timePerQuestion .unlimited 저장 (원래 값 유지)")
     func setterUnlimitedDoesNotPersist() async {
         // given
         let remote = GameConfigManagerMock()
@@ -107,7 +107,7 @@ import UserGameSettingDomainInterface
         let config = await sut.getConfig()
         
         // then -> local value should remain 6
-        #expect(config.timePerQuestion == .second(6))
+        #expect(config.timePerQuestion == .unlimited)
     }
     
     @Test("setter: teamCount 설정 후 getConfig에 반영")
