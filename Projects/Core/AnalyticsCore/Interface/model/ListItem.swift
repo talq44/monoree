@@ -3,7 +3,7 @@ import Foundation
 public struct ListItem: Codable {
     public let item_id: String
     public let item_name: String
-    public let item_category: String
+    public let item_category: String?
     public let item_category2: String?
     public let item_category3: String?
     public let item_category4: String?
@@ -13,7 +13,7 @@ public struct ListItem: Codable {
     public init(
         item_id: String,
         item_name: String,
-        item_category: String,
+        item_category: String? = nil,
         item_category2: String? = nil,
         item_category3: String? = nil,
         item_category4: String? = nil,
