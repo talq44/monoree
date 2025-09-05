@@ -9,19 +9,22 @@ let project = Project.module(
             domain: .GameCompletionDomain,
             dependencies: [
                 .core(target: .RemoteConfigCore, type: .interface),
-                .core(target: .LocalDataCore, type: .interface),
-                .core(target: .AnalyticsCore, type: .interface),
             ]
         ),
         .implementation(
             domain: .GameCompletionDomain,
             dependencies: [
+                .core(target: .LocalDataCore, type: .interface),
+                .core(target: .AnalyticsCore, type: .interface),
                 .domain(target: .GameCompletionDomain, type: .interface),
             ]
         ),
         .testing(
             domain: .GameCompletionDomain,
             dependencies: [
+                .shared(target: .ExtensionsShared),
+                .core(target: .LocalDataCore, type: .interface),
+                .core(target: .AnalyticsCore, type: .interface),
                 .domain(target: .GameCompletionDomain, type: .interface),
             ]
         ),
