@@ -28,6 +28,7 @@ struct GameCompletionDomainTests {
         // given
         let perAd = 5
         let testCount = 10
+        
         let analytics = AnalyticsCoreMock()
         let localData = GameLocalDataManagerMock()
         let remoteConfig = GameConfigManagerMock()
