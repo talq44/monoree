@@ -12,12 +12,14 @@ let project = Project.module(
         .implementation(
             domain: .GameDetailAnalyticsDomain,
             dependencies: [
+                .core(target: .AnalyticsCore, type: .interface),
                 .domain(target: .GameDetailAnalyticsDomain, type: .interface),
             ]
         ),
         .testing(
             domain: .GameDetailAnalyticsDomain,
             dependencies: [
+                .core(target: .AnalyticsCore, type: .interface),
                 .domain(target: .GameDetailAnalyticsDomain, type: .interface),
             ]
         ),
