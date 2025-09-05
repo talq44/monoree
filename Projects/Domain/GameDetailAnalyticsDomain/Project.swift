@@ -12,6 +12,7 @@ let project = Project.module(
         .implementation(
             domain: .GameDetailAnalyticsDomain,
             dependencies: [
+                .shared(target: .FoundationShared),
                 .core(target: .AnalyticsCore, type: .interface),
                 .domain(target: .GameDetailAnalyticsDomain, type: .interface),
             ]

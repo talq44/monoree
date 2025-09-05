@@ -7,7 +7,7 @@ public enum GameDetailActionType {
     case category2(id: String)
     case question(count: Int)
     case secondPerQuestion(second: Int)
-    case tema(count: Int)
+    case team(count: Int)
     case hint(Bool)
     case custom(id: String, type: String)
 }
