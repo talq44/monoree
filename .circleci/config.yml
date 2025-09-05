@@ -22,9 +22,8 @@ jobs:
       - run:
           name: Setup mise
           command: |
-            curl https://mise.jdx.dev/install.sh | sh
-            echo 'export PATH="$HOME/.local/bin:$PATH"' >> $BASH_ENV
-            echo 'eval "$($HOME/.local/bin/mise activate bash)"' >> $BASH_ENV
+            brew install mise
+            echo 'eval "$(mise activate bash)"' >> $BASH_ENV
             source $BASH_ENV
             mise --version
 
