@@ -15,10 +15,10 @@ final actor ItemsAnalyticsUsecaseImpl: ItemsAnalyticsUsecase {
         item: ItemsAnalyticsDomainInterface.ListItem
     ) async {
         let selectItem = SelectItem(
-            items: [ListItem(item_id: <#T##String#>, item_name: <#T##String#>)],
+            items: [item.convertAnalytics],
             item_list_id: item_list_id,
             item_list_name: item_list_name
-        ))
+        )
         
         analytics.sendEvent(.select_item(selectItem))
     }
@@ -28,6 +28,18 @@ final actor ItemsAnalyticsUsecaseImpl: ItemsAnalyticsUsecase {
         item_list_name: String,
         items: [ItemsAnalyticsDomainInterface.ListItem]
     ) async {
+        let viewItemList = ViewItemList(
+            items: items.map { $0.convertAnalytics },
+            item_list_id: item_list_id,
+            item_list_name: item_list_name
+        )
         
+        analytics.sendEvent(.view_item_list(viewItemList))
+    }
+}
+
+extension ItemsAnalyticsDomainInterface.ListItem {
+    var convertAnalytics: SimpleItem {
+        SimpleItem(item_id: id, item_name: name)
     }
 }
