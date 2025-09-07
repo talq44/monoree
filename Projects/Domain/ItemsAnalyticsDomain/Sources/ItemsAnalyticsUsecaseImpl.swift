@@ -10,28 +10,28 @@ final actor ItemsAnalyticsUsecaseImpl: ItemsAnalyticsUsecase {
     }
     
     func selectItem(
-        item_list_id: String,
-        item_list_name: String,
+        listId: String,
+        listName: String,
         item: ItemsAnalyticsDomainInterface.ListItem
     ) async {
         let selectItem = SelectItem(
             items: [item.convertAnalytics],
-            item_list_id: item_list_id,
-            item_list_name: item_list_name
+            item_list_id: listId,
+            item_list_name: listName
         )
         
         analytics.sendEvent(.select_item(selectItem))
     }
     
     func viewItemList(
-        item_list_id: String,
-        item_list_name: String,
+        listId: String,
+        listName: String,
         items: [ItemsAnalyticsDomainInterface.ListItem]
     ) async {
         let viewItemList = ViewItemList(
             items: items.map { $0.convertAnalytics },
-            item_list_id: item_list_id,
-            item_list_name: item_list_name
+            item_list_id: listId,
+            item_list_name: listName
         )
         
         analytics.sendEvent(.view_item_list(viewItemList))
