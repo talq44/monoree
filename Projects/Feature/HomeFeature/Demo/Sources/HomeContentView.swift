@@ -11,7 +11,7 @@ struct HomeContentView: View {
     ]
     
     var body: some View {
-        HomeFeature.ContentView(categories: sampleCategories)
+        HomeFeature.HomeView(categories: sampleCategories)
     }
 }
 

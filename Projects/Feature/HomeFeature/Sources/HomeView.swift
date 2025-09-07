@@ -27,7 +27,7 @@ private let sampleCategories: [GameCategory] = [
 ]
 
 // MARK: - Views
-public struct ContentView: View {
+public struct HomeView: View {
     var categories: [GameCategory] = sampleCategories
     
     public init(categories: [GameCategory]) {
@@ -176,5 +176,5 @@ private struct CategoryCard: View {
 }
 
 #Preview {
-    ContentView(categories: sampleCategories)
+    HomeView(categories: sampleCategories)
 }
