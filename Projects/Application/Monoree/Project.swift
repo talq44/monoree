@@ -22,7 +22,9 @@ let project = Project(
                 with: [
                     "UILaunchStoryboardName": "LaunchScreen",
                     "UISupportedInterfaceOrientations": [
-                        "UIInterfaceOrientationPortrait"
+                        "UIInterfaceOrientationPortrait",
+                        "UIInterfaceOrientationLandscapeLeft",
+                        "UIInterfaceOrientationLandscapeRight",
                     ],
                     "UILaunchScreen": [
                         "UIColorName": "",
@@ -36,11 +38,11 @@ let project = Project(
                 // Core
                 .core(target: .UserAPICore, type: .implementation),
                 // Domain
-                .domain(target: .VersionCheckDomain, type: .implementation),
                 .domain(target: .UserGameSettingDomain, type: .implementation),
                 // Feature
                 .feature(target: .HomeFeature, type: .implementation),
                 .feature(target: .GamePlayFeature, type: .implementation),
+                .feature(target: .IntroFeature, type: .implementation),
             ]
         ),
         .target(
