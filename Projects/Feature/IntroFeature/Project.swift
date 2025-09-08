@@ -14,9 +14,11 @@ let project = Project.module(
             dependencies: [
                 // SPM
                 .SPM.ComposableArchitecture,
-                // domain
+                // Core
+                .core(target: .RemoteConfigCore, type: .interface),
+                // Domain
                 .domain(target: .VersionCheckDomain, type: .interface),
-                // feature
+                // Feature
                 .feature(target: .IntroFeature, type: .interface),
             ]
         ),

@@ -22,7 +22,7 @@ final class RemoteConfigManagerImpl: RemoteConfigManager {
         
     }
     
-    func fetch() async throws {
+    func fetchAndActivate() async throws {
         do {
             let fetchAndActivate = try await remoteConfig.fetchAndActivate()
             switch fetchAndActivate {
