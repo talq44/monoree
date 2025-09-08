@@ -65,8 +65,6 @@ struct IntroFeature {
     }
     
     private func handleVersionCheck() async -> AlertState<Action>? {
-        var alert: AlertState<Action>?
-        
         do {
             _ = try await remoteConfig.fetchAndActivate()
             
@@ -75,9 +73,9 @@ struct IntroFeature {
             let type = versionCheckInteractor.checkVersion(version)
             switch type {
             case .none:
-                alert = nil
+                return nil
             case .optional(let url):
-                alert = AlertState {
+                return AlertState {
                     TextState("업데이트가 있습니다")
                 } actions: {
                     ButtonState(role: .cancel, action: .alertDismissed) {
@@ -90,7 +88,7 @@ struct IntroFeature {
                     TextState("최신 버전으로 업데이트하면 더 안정적으로 이용할 수 있어요.")
                 }
             case .required(let url):
-                alert = AlertState {
+                return AlertState {
                     TextState("업데이트 필요")
                 } actions: {
                     ButtonState(action: .updateAlertConfirmed(url)) {
@@ -101,9 +99,7 @@ struct IntroFeature {
                 }
             }
         } catch {
-            alert = nil
+            return nil
         }
-        
-        return alert
     }
 }
