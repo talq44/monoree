@@ -12,7 +12,11 @@ let project = Project.module(
         .implementation(
             feature: .IntroFeature,
             dependencies: [
+                // SPM
+                .SPM.ComposableArchitecture,
+                // domain
                 .domain(target: .VersionCheckDomain, type: .interface),
+                // feature
                 .feature(target: .IntroFeature, type: .interface),
             ]
         ),

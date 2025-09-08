@@ -8,18 +8,19 @@ let project = Project.module(
         .interface(
             domain: .VersionCheckDomain,
             dependencies: [
-                .core(target: .RemoteConfigCore, type: .interface),
             ]
         ),
         .implementation(
             domain: .VersionCheckDomain,
             dependencies: [
+                .core(target: .RemoteConfigCore, type: .interface),
                 .domain(target: .VersionCheckDomain, type: .interface),
             ]
         ),
         .testing(
             domain: .VersionCheckDomain,
             dependencies: [
+                .core(target: .RemoteConfigCore, type: .interface),
                 .domain(target: .VersionCheckDomain, type: .interface),
             ]
         ),
