@@ -37,9 +37,8 @@ struct IntroFeature {
         Reduce { state, action in
             switch action {
             case .appear:
-                let currentState = state
                 return .run { send in
-                    let alert = await handleVersionCheck(state: currentState)
+                    let alert = await handleVersionCheck()
                     await send(.versionCheckResponse(alert))
                 }
                 
@@ -65,7 +64,7 @@ struct IntroFeature {
         Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String
     }
     
-    private func handleVersionCheck(state: State) async -> AlertState<Action>? {
+    private func handleVersionCheck() async -> AlertState<Action>? {
         var alert: AlertState<Action>?
         
         do {
