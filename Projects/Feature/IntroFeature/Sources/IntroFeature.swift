@@ -2,7 +2,6 @@ import Foundation
 import UIKit
 import ComposableArchitecture
 import VersionCheckDomainInterface
-import RemoteConfigCoreInterface
 
 @Reducer
 struct IntroFeature {
@@ -22,15 +21,12 @@ struct IntroFeature {
         case versionCheckResponse(AlertState<Action>?)
     }
     
-    private let remoteConfig: RemoteConfigFetchManager
-    private let versionCheckInteractor: VersionCheckUsecase
+    private let versionCheckUsecase: VersionCheckUsecase
     
     init(
-        remoteConfig: RemoteConfigFetchManager,
-        versionCheckInteractor: VersionCheckUsecase
+        versionCheckUsecase: VersionCheckUsecase
     ) {
-        self.remoteConfig = remoteConfig
-        self.versionCheckInteractor = versionCheckInteractor
+        self.versionCheckUsecase = versionCheckUsecase
     }
     
     var body: some ReducerOf<Self> {
@@ -66,11 +62,10 @@ struct IntroFeature {
     
     private func handleVersionCheck() async -> AlertState<Action>? {
         do {
-            _ = try await remoteConfig.fetchAndActivate()
-            
             guard let version = appVersion else { return nil }
             
-            let type = versionCheckInteractor.checkVersion(version)
+            let type = await versionCheckUsecase.checkVersion(version)
+            
             switch type {
             case .none:
                 return nil
