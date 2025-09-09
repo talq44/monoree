@@ -10,7 +10,7 @@ struct IntroFeature {
     struct State {
         var backgroundImageURL: String?
         var title: String = "모놀이"
-        var subTitle: String = "가족도, 친구도, 동료도 함께 즐길 수 있는\n모두의 놀이"
+        var subTitle: String = "가족도, 친구도, 동료도 함께 즐기는 모두의 놀이"
         var isShowBanner: Bool = false
         var alert: AlertState<Action>?
     }
