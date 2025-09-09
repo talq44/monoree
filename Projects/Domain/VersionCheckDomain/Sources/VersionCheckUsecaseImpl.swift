@@ -9,9 +9,9 @@ final class VersionCheckUsecaseImpl: VersionCheckUsecase {
         self.remoteVersionConfig = remoteVersionConfig
     }
     
-    func checkVersion(_ currentVersion: String) -> VersionUpdateResult {
+    func checkVersion(_ currentVersion: String) async -> VersionUpdateResult {
         do {
-            let versionConfig = try remoteVersionConfig.fetchVersion()
+            let versionConfig = try await remoteVersionConfig.fetchVersion()
             
             let cur = SemVer(currentVersion)
             let min = SemVer(versionConfig.minVersion)
