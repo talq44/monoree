@@ -15,7 +15,7 @@ let packageSettings = PackageSettings(
 let package = Package(
     name: "Monoree",
     platforms: [
-        .iOS(.v16)
+        .iOS(.v17)
     ],
     dependencies: [
         .package(
