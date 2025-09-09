@@ -11,6 +11,7 @@ let project = Project.module(
         ),
         .implementation(
             feature: .IntroFeature,
+            hasResources: true,
             dependencies: [
                 // SPM
                 .SPM.ComposableArchitecture,
