@@ -1,20 +1,15 @@
 import SwiftUI
 
-struct IntroView: View {
-    var body: some View {
+public struct IntroView: View {
+    public init() {}
+    public var body: some View {
         ZStack {
             VStack {
-                Text("모놀이")
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
-                    .multilineTextAlignment(.center)
-                    .padding(.bottom, 32)
-                
-                Text("가족도, 친구도, 동료도 함께 즐길 수 있는\n모두의 놀이")
-                    .font(.title2)
-                    .fontWeight(.semibold)
-                    .multilineTextAlignment(.center)
-            }
+                Image(asset: IntroFeatureAsset.intro)
+                    .resizable(capInsets: EdgeInsets(top: 16.0, leading: 16.0, bottom: 16.0, trailing: 16.0))
+                    .aspectRatio(contentMode: .fit)
+                    .padding(.all)
+            }            
             VStack {
                 Spacer()
                 Text("광고 영역")

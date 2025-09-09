@@ -11,11 +11,10 @@ let project = Project.module(
         ),
         .implementation(
             feature: .IntroFeature,
+            hasResources: true,
             dependencies: [
                 // SPM
                 .SPM.ComposableArchitecture,
-                // Core
-                .core(target: .RemoteConfigCore, type: .interface),
                 // Domain
                 .domain(target: .VersionCheckDomain, type: .interface),
                 // Feature

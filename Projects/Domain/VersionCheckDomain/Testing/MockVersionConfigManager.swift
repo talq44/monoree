@@ -11,10 +11,24 @@ enum VersionCheckTestCase {
 }
 
 final class MockVersionConfigManager: VersionConfigManager {
+    
     private var testCase: VersionCheckTestCase = .error
     
     func setup(testCase: VersionCheckTestCase) {
         self.testCase = testCase
+    }
+    
+    func version() throws -> any RemoteConfigCoreInterface.VersionDTO {
+        switch testCase {
+        case .error:
+            throw RemoteConfigError.unknown
+        case .normal(let appStoreUrl, let minVersion, let maxVersion):
+            return MockVersionDTO(
+                appStoreUrl: appStoreUrl,
+                minVersion: minVersion,
+                maxVersion: maxVersion
+            )
+        }
     }
     
     func fetchVersion() throws -> any RemoteConfigCoreInterface.VersionDTO {
