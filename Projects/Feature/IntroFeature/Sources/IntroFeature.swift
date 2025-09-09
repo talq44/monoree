@@ -61,40 +61,36 @@ struct IntroFeature {
     }
     
     private func handleVersionCheck() async -> AlertState<Action>? {
-        do {
-            guard let version = appVersion else { return nil }
-            
-            let type = await versionCheckUsecase.checkVersion(version)
-            
-            switch type {
-            case .none:
-                return nil
-            case .optional(let url):
-                return AlertState {
-                    TextState("업데이트가 있습니다")
-                } actions: {
-                    ButtonState(role: .cancel, action: .alertDismissed) {
-                        TextState("나중에")
-                    }
-                    ButtonState(action: .updateAlertConfirmed(url)) {
-                        TextState("업데이트")
-                    }
-                } message: {
-                    TextState("최신 버전으로 업데이트하면 더 안정적으로 이용할 수 있어요.")
-                }
-            case .required(let url):
-                return AlertState {
-                    TextState("업데이트 필요")
-                } actions: {
-                    ButtonState(action: .updateAlertConfirmed(url)) {
-                        TextState("업데이트")
-                    }
-                } message: {
-                    TextState("최신 버전으로 반드시 업데이트해야 앱을 계속 사용할 수 있습니다.")
-                }
-            }
-        } catch {
+        guard let version = appVersion else { return nil }
+        
+        let type = await versionCheckUsecase.checkVersion(version)
+        
+        switch type {
+        case .none:
             return nil
+        case .optional(let url):
+            return AlertState {
+                TextState("업데이트가 있습니다")
+            } actions: {
+                ButtonState(role: .cancel, action: .alertDismissed) {
+                    TextState("나중에")
+                }
+                ButtonState(action: .updateAlertConfirmed(url)) {
+                    TextState("업데이트")
+                }
+            } message: {
+                TextState("최신 버전으로 업데이트하면 더 안정적으로 이용할 수 있어요.")
+            }
+        case .required(let url):
+            return AlertState {
+                TextState("업데이트 필요")
+            } actions: {
+                ButtonState(action: .updateAlertConfirmed(url)) {
+                    TextState("업데이트")
+                }
+            } message: {
+                TextState("최신 버전으로 반드시 업데이트해야 앱을 계속 사용할 수 있습니다.")
+            }
         }
     }
 }
