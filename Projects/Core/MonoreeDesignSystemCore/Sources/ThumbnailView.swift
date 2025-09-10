@@ -1,7 +1,7 @@
 import SwiftUI
 import Kingfisher
 
-public enum ThumbnailType: CaseIterable, Identifiable {
+public enum ThumbnailType: String, CaseIterable, Identifiable {
     public var id: String { String(describing: self) }
     
     case square_Large
