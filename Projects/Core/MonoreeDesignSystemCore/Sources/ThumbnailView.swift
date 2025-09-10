@@ -27,7 +27,7 @@ public struct ThumbnailView: View {
                 if type.isCircle {
                     Circle()
                 } else {
-                    RoundedRectangle(cornerRadius: 16)
+                    RoundedRectangle(cornerRadius: type.cornerRadius)
                 }
             }
             .clipped()

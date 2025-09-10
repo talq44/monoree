@@ -29,4 +29,8 @@ public enum ThumbnailType: String, CaseIterable, Identifiable {
             return false
         }
     }
+    
+    var cornerRadius: CGFloat {
+        return isCircle ? size / 2 : 16
+    }
 }
