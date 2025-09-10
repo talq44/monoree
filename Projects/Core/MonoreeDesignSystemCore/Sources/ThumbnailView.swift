@@ -1,7 +1,9 @@
 import SwiftUI
 import Kingfisher
 
-public enum ThumbnailType: CaseIterable {
+public enum ThumbnailType: CaseIterable, Identifiable {
+    public var id: String { String(describing: self) }
+    
     case square_Large
     case circle_Large
     case square_Medium
@@ -62,7 +64,7 @@ public struct ThumbnailView: View {
                 if type.isCircle {
                     Circle()
                 } else {
-                    Rectangle()
+                    RoundedRectangle(cornerRadius: 16)
                 }
             }
             .clipped()
