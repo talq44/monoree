@@ -24,11 +24,7 @@ public struct ThumbnailView: View {
             .scaledToFill()
             .frame(width: type.size, height: type.size)
             .mask {
-                if type.isCircle {
-                    Circle()
-                } else {
-                    RoundedRectangle(cornerRadius: type.cornerRadius)
-                }
+                RoundedRectangle(cornerRadius: type.cornerRadius)
             }
             .clipped()
     }
