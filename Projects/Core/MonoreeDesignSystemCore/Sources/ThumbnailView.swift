@@ -40,5 +40,5 @@ public struct ThumbnailView: View {
 }
 
 #Preview {
-    ThumbnailView(urlString: "https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png", type: .circle_Large)
+    ThumbnailView(urlString: "https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png", type: .circleLarge)
 }

@@ -3,27 +3,27 @@ import Foundation
 public enum ThumbnailType: String, CaseIterable, Identifiable {
     public var id: String { String(describing: self) }
     
-    case square_Large
-    case circle_Large
-    case square_Medium
-    case circle_Medium
-    case square_Small
-    case circle_Small
+    case squareLarge
+    case circleLarge
+    case squareMedium
+    case circleMedium
+    case squareSmall
+    case circleSmall
     
     var size: CGFloat {
         switch self {
-        case .square_Large, .circle_Large:
+        case .squareLarge, .circleLarge:
             return 120
-        case .square_Medium, .circle_Medium:
+        case .squareMedium, .circleMedium:
             return 80
-        case .square_Small, .circle_Small:
+        case .squareSmall, .circleSmall:
             return 48
         }
     }
     
     var isCircle: Bool {
         switch self {
-        case .circle_Large, .circle_Medium, .circle_Small:
+        case .circleLarge, .circleMedium, .circleSmall:
             return true
         default:
             return false
