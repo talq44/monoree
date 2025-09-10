@@ -16,17 +16,10 @@ let project = Project.module(
                 .core(target: .MonoreeDesignSystemCore, type: .interface),
             ]
         ),
-        .testing(
-            core: .MonoreeDesignSystemCore,
-            dependencies: [
-                .core(target: .MonoreeDesignSystemCore, type: .interface),
-            ]
-        ),
         .tests(
             core: .MonoreeDesignSystemCore,
             dependencies: [
                 .core(target: .MonoreeDesignSystemCore, type: .implementation),
-                .core(target: .MonoreeDesignSystemCore, type: .testing),
             ]
         ),
     ]
