@@ -22,5 +22,11 @@ let project = Project.module(
                 .core(target: .MonoreeDesignSystemCore, type: .implementation),
             ]
         ),
+        .demo(
+            core: .MonoreeDesignSystemCore,
+            dependencies: [
+                .core(target: .MonoreeDesignSystemCore, type: .implementation),
+            ]
+        )
     ]
 )
