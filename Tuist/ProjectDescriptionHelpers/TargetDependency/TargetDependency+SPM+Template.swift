@@ -10,12 +10,12 @@ import ProjectDescription
 extension TargetDependency {
     
     public enum SPM {
-        // TCA
+        // MARK: - Architecture
         public static let ComposableArchitecture: TargetDependency = .external(
             name: "ComposableArchitecture"
         )
         
-        // Data
+        // MARK: - Network
         public static let alamofire: TargetDependency = .external(
             name: "Alamofire"
         )
@@ -23,7 +23,12 @@ extension TargetDependency {
             name: "Moya"
         )
         
-        // Firebase
+        // MARK: - UI
+        public static let kingfisher: TargetDependency = .external(
+            name: "Kingfisher"
+        )
+        
+        // MARK: - Firebase
         public static let firebaseAnalytics: TargetDependency = .external(
             name: "FirebaseAnalytics"
         )
@@ -43,7 +48,7 @@ extension TargetDependency {
             name: "FirebasePerformance"
         )
         
-        // extension
+        // MARK: - extension
         public static let swifterSwift: TargetDependency = .external(
             name: "SwifterSwift"
         )

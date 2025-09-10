@@ -38,5 +38,9 @@ let package = Package(
             url: "https://github.com/SwifterSwift/SwifterSwift",
             .upToNextMajor(from: "8.0.0")
         ),
+        .package(
+            url: "https://github.com/onevcat/Kingfisher",
+            .upToNextMajor(from: "8.5.0")
+        ),
     ]
 )
