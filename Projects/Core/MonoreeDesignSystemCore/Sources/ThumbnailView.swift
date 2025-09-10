@@ -6,11 +6,7 @@ public struct ThumbnailView: View {
     let type: ThumbnailType
     
     public init(urlString: String?, type: ThumbnailType) {
-        if let urlString, let url = URL(string: urlString) {
-            self.url = url
-        } else {
-            self.url = nil
-        }
+        self.url = urlString.flatMap { URL(string: $0) }
         self.type = type
     }
     
