@@ -21,7 +21,6 @@ public struct ThumbnailView: View {
                            height: type.size * 0.5)
             }
             .resizable()
-            .cacheMemoryOnly()
             .scaledToFill()
             .frame(width: type.size, height: type.size)
             .mask {
