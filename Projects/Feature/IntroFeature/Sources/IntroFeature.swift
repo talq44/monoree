@@ -4,26 +4,30 @@ import ComposableArchitecture
 import VersionCheckDomainInterface
 
 @Reducer
-public struct IntroFeature {
+struct IntroFeature {
     @ObservableState
     struct State {
         var backgroundImageURL: String?
         var title: String = "모놀이"
         var subTitle: String = "가족도, 친구도, 동료도 함께 즐기는 모두의 놀이"
         var isShowBanner: Bool = false
-        var alert: AlertState<Action>?
+        @Presents var alert: AlertState<Action.Alert>?
     }
     
+    @CasePathable
     enum Action {
+        @CasePathable
+        enum Alert: Equatable {
+            case updateConfirmTapped(url: String)
+        }
         case appear
-        case updateAlertConfirmed(String)
-        case alertDismissed
-        case versionCheckResponse(AlertState<Action>?)
+        case alert(PresentationAction<Alert>)
+        case versionCheckResponse(AlertState<Action.Alert>?)
     }
     
     private let versionCheckUsecase: VersionCheckUsecase
     
-    public init(
+    init(
         versionCheckUsecase: VersionCheckUsecase
     ) {
         self.versionCheckUsecase = versionCheckUsecase
@@ -38,15 +42,13 @@ public struct IntroFeature {
                     await send(.versionCheckResponse(alert))
                 }
                 
-            case .updateAlertConfirmed(let url):
+            case .alert(.presented(.updateConfirmTapped(let url))):
                 if let url = URL(string: url), UIApplication.shared.canOpenURL(url) {
                     UIApplication.shared.open(url, options: [:])
                 }
-                state.alert = nil
                 return .none
-                
-            case .alertDismissed:
-                state.alert = nil
+
+            case .alert:
                 return .none
                 
             case .versionCheckResponse(let alert):
@@ -54,13 +56,14 @@ public struct IntroFeature {
                 return .none
             }
         }
+        .ifLet(\.$alert, action: \.alert)
     }
     
     private var appVersion: String? {
         Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String
     }
     
-    private func handleVersionCheck() async -> AlertState<Action>? {
+    private func handleVersionCheck() async -> AlertState<Action.Alert>? {
         guard let version = appVersion else { return nil }
         
         let type = await versionCheckUsecase.checkVersion(version)
@@ -72,10 +75,10 @@ public struct IntroFeature {
             return AlertState {
                 TextState("업데이트가 있습니다")
             } actions: {
-                ButtonState(role: .cancel, action: .alertDismissed) {
+                ButtonState(role: .cancel) {
                     TextState("나중에")
                 }
-                ButtonState(action: .updateAlertConfirmed(url)) {
+                ButtonState(action: .updateConfirmTapped(url: url)) {
                     TextState("업데이트")
                 }
             } message: {
@@ -85,7 +88,7 @@ public struct IntroFeature {
             return AlertState {
                 TextState("업데이트 필요")
             } actions: {
-                ButtonState(action: .updateAlertConfirmed(url)) {
+                ButtonState(action: .updateConfirmTapped(url: url)) {
                     TextState("업데이트")
                 }
             } message: {

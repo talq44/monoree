@@ -2,14 +2,14 @@ import SwiftUI
 import ComposableArchitecture
 import VersionCheckDomainInterface
 
-public struct IntroView: View {
-    let store: StoreOf<IntroFeature>
+struct IntroView: View {
+    @Bindable var store: StoreOf<IntroFeature>
     
-    public init(store: StoreOf<IntroFeature>) {
+    init(store: StoreOf<IntroFeature>) {
         self.store = store
     }
     
-    public var body: some View {
+    var body: some View {
         ZStack {
             VStack {
                 Image(asset: IntroFeatureAsset.intro)
@@ -26,13 +26,14 @@ public struct IntroView: View {
         .onAppear {
             store.send(.appear)
         }
+        .alert($store.scope(state: \.alert, action: \.alert))
     }
 }
 
 #Preview {
     struct VersionCheckUsecaseMock: VersionCheckUsecase {
         func checkVersion(_ currentVersion: String) async -> VersionUpdateResult {
-            return .none
+            return .optional(url: "https://www.apple.com")
         }
     }
     
