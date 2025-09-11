@@ -5,6 +5,10 @@ import VersionCheckDomainInterface
 
 @Reducer
 struct IntroFeature {
+    private enum Constants {
+        static let delayTimeInterval: TimeInterval = 2
+    }
+    
     @ObservableState
     struct State {
         var backgroundImageURL: String?
@@ -18,13 +22,19 @@ struct IntroFeature {
     enum Action {
         @CasePathable
         enum Alert: Equatable {
+            case cancelTapped
             case updateConfirmTapped(url: String)
+        }
+        enum Delegate {
+            case finished
         }
         case appear
         case alert(PresentationAction<Alert>)
-        case versionCheckResponse(AlertState<Action.Alert>?)
+        case delegate(Delegate)
+        case _internalVersionCheckResponse(AlertState<Action.Alert>?)
     }
     
+    @Dependency(\.continuousClock) var clock
     private let versionCheckUsecase: VersionCheckUsecase
     
     init(
@@ -39,20 +49,33 @@ struct IntroFeature {
             case .appear:
                 return .run { send in
                     let alert = await handleVersionCheck()
-                    await send(.versionCheckResponse(alert))
+                    await send(._internalVersionCheckResponse(alert))
                 }
+                
+            case ._internalVersionCheckResponse(let alert):
+                state.alert = alert
+                if alert == nil {
+                    return .run { send in
+                        try await self.clock.sleep(for: .seconds(Constants.delayTimeInterval))
+                        await send(.delegate(.finished))
+                    }
+                }
+                return .none
                 
             case .alert(.presented(.updateConfirmTapped(let url))):
                 if let url = URL(string: url), UIApplication.shared.canOpenURL(url) {
                     UIApplication.shared.open(url, options: [:])
                 }
                 return .none
-
-            case .alert:
-                return .none
                 
-            case .versionCheckResponse(let alert):
-                state.alert = alert
+            case .alert(.presented(.cancelTapped)), .alert(.dismiss):
+                 return .run { send in
+                    try await self.clock.sleep(for: .seconds(Constants.delayTimeInterval))
+                    print("다음 페이지로 가즈아")
+                    await send(.delegate(.finished))
+                }
+
+            case .alert, .delegate:
                 return .none
             }
         }
@@ -75,10 +98,10 @@ struct IntroFeature {
             return AlertState {
                 TextState("업데이트가 있습니다")
             } actions: {
-                ButtonState(role: .cancel) {
+                ButtonState(role: .cancel, action: .send(.cancelTapped)) {
                     TextState("나중에")
                 }
-                ButtonState(action: .updateConfirmTapped(url: url)) {
+                ButtonState(action: .send(.updateConfirmTapped(url: url))) {
                     TextState("업데이트")
                 }
             } message: {
@@ -88,7 +111,7 @@ struct IntroFeature {
             return AlertState {
                 TextState("업데이트 필요")
             } actions: {
-                ButtonState(action: .updateConfirmTapped(url: url)) {
+                ButtonState(action: .send(.updateConfirmTapped(url: url))) {
                     TextState("업데이트")
                 }
             } message: {
