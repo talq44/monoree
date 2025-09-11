@@ -1,8 +1,8 @@
-import ComposableArchitecture
 import Testing
-import VersionCheckDomainInterface
+import ComposableArchitecture
 
 @testable import IntroFeature
+@testable import IntroFeatureTesting
 
 @MainActor
 struct IntroFeatureTests {
@@ -33,18 +33,5 @@ struct IntroFeatureTests {
         await store.receive(._internalVersionCheckResponse(alertState)) { state in
             state.alert = alertState
         }
-    }
-}
-
-
-fileprivate final class MockVersionCheckUsecase: VersionCheckUsecase {
-    private let result: VersionUpdateResult
-    
-    init(result: VersionUpdateResult) {
-        self.result = result
-    }
-    
-    func checkVersion(_ currentVersion: String) async -> VersionUpdateResult {
-        return result
     }
 }
