@@ -1,6 +1,7 @@
 import SwiftUI
+
 import IntroFeature
-import VersionCheckDomainInterface
+@testable import IntroFeatureTesting
 
 @main
 struct DemoApp: App {
@@ -11,16 +12,10 @@ struct DemoApp: App {
     }
 }
 
-struct MockVersionCheckUsecase: VersionCheckUsecase {
-    func checkVersion(_ currentVersion: String) async -> VersionUpdateResult {
-        return .optional(url: "https://www.apple.com")
-    }
-}
-
 struct ContentView: View {
     var body: some View {
         NavigationStack {
-            IntroBuilder.build(usecase: MockVersionCheckUsecase())
+            IntroBuilder.build(usecase: MockVersionCheckUsecase(result: .none))
         }
     }
 }
