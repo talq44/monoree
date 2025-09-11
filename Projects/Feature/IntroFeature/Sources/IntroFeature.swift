@@ -5,22 +5,36 @@ import VersionCheckDomainInterface
 
 @Reducer
 struct IntroFeature {
+    private enum Constants {
+        static let delayTimeInterval: TimeInterval = 2
+    }
+    
     @ObservableState
-    struct State {
+    struct State: Equatable {
         var backgroundImageURL: String?
         var title: String = "모놀이"
         var subTitle: String = "가족도, 친구도, 동료도 함께 즐기는 모두의 놀이"
         var isShowBanner: Bool = false
-        var alert: AlertState<Action>?
+        @Presents var alert: AlertState<Action.Alert>?
     }
     
-    enum Action {
+    @CasePathable
+    enum Action: Equatable {
+        @CasePathable
+        enum Alert: Equatable {
+            case cancelTapped
+            case updateConfirmTapped(url: String)
+        }
+        enum Delegate {
+            case finished
+        }
         case appear
-        case updateAlertConfirmed(String)
-        case alertDismissed
-        case versionCheckResponse(AlertState<Action>?)
+        case alert(PresentationAction<Alert>)
+        case delegate(Delegate)
+        case _internalVersionCheckResponse(AlertState<Action.Alert>?)
     }
     
+    @Dependency(\.continuousClock) var clock
     private let versionCheckUsecase: VersionCheckUsecase
     
     init(
@@ -35,32 +49,43 @@ struct IntroFeature {
             case .appear:
                 return .run { send in
                     let alert = await handleVersionCheck()
-                    await send(.versionCheckResponse(alert))
+                    await send(._internalVersionCheckResponse(alert))
                 }
                 
-            case .updateAlertConfirmed(let url):
+            case ._internalVersionCheckResponse(let alert):
+                state.alert = alert
+                if alert == nil {
+                    return .run { send in
+                        try await self.clock.sleep(for: .seconds(Constants.delayTimeInterval))
+                        await send(.delegate(.finished))
+                    }
+                }
+                return .none
+                
+            case .alert(.presented(.updateConfirmTapped(let url))):
                 if let url = URL(string: url), UIApplication.shared.canOpenURL(url) {
                     UIApplication.shared.open(url, options: [:])
                 }
-                state.alert = nil
                 return .none
                 
-            case .alertDismissed:
-                state.alert = nil
-                return .none
-                
-            case .versionCheckResponse(let alert):
-                state.alert = alert
+            case .alert(.presented(.cancelTapped)), .alert(.dismiss):
+                 return .run { send in
+                    try await self.clock.sleep(for: .seconds(Constants.delayTimeInterval))
+                    await send(.delegate(.finished))
+                }
+
+            case .alert, .delegate:
                 return .none
             }
         }
+        .ifLet(\.$alert, action: \.alert)
     }
     
     private var appVersion: String? {
         Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String
     }
     
-    private func handleVersionCheck() async -> AlertState<Action>? {
+    private func handleVersionCheck() async -> AlertState<Action.Alert>? {
         guard let version = appVersion else { return nil }
         
         let type = await versionCheckUsecase.checkVersion(version)
@@ -72,10 +97,10 @@ struct IntroFeature {
             return AlertState {
                 TextState("업데이트가 있습니다")
             } actions: {
-                ButtonState(role: .cancel, action: .alertDismissed) {
+                ButtonState(role: .cancel, action: .send(.cancelTapped)) {
                     TextState("나중에")
                 }
-                ButtonState(action: .updateAlertConfirmed(url)) {
+                ButtonState(action: .send(.updateConfirmTapped(url: url))) {
                     TextState("업데이트")
                 }
             } message: {
@@ -85,7 +110,7 @@ struct IntroFeature {
             return AlertState {
                 TextState("업데이트 필요")
             } actions: {
-                ButtonState(action: .updateAlertConfirmed(url)) {
+                ButtonState(action: .send(.updateConfirmTapped(url: url))) {
                     TextState("업데이트")
                 }
             } message: {

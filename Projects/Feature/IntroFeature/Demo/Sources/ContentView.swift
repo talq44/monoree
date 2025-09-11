@@ -1,5 +1,7 @@
 import SwiftUI
+
 import IntroFeature
+@testable import IntroFeatureTesting
 
 @main
 struct DemoApp: App {
@@ -13,7 +15,7 @@ struct DemoApp: App {
 struct ContentView: View {
     var body: some View {
         NavigationStack {
-            IntroView()
+            IntroBuilder.build(usecase: MockVersionCheckUsecase(result: .none))
         }
     }
 }
