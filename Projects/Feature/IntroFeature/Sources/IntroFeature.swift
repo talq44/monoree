@@ -4,7 +4,7 @@ import ComposableArchitecture
 import VersionCheckDomainInterface
 
 @Reducer
-struct IntroFeature {
+public struct IntroFeature {
     @ObservableState
     struct State {
         var backgroundImageURL: String?
@@ -23,7 +23,7 @@ struct IntroFeature {
     
     private let versionCheckUsecase: VersionCheckUsecase
     
-    init(
+    public init(
         versionCheckUsecase: VersionCheckUsecase
     ) {
         self.versionCheckUsecase = versionCheckUsecase
