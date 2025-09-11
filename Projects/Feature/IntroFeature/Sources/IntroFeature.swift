@@ -10,7 +10,7 @@ struct IntroFeature {
     }
     
     @ObservableState
-    struct State {
+    struct State: Equatable {
         var backgroundImageURL: String?
         var title: String = "모놀이"
         var subTitle: String = "가족도, 친구도, 동료도 함께 즐기는 모두의 놀이"
@@ -19,7 +19,7 @@ struct IntroFeature {
     }
     
     @CasePathable
-    enum Action {
+    enum Action: Equatable {
         @CasePathable
         enum Alert: Equatable {
             case cancelTapped
@@ -71,7 +71,6 @@ struct IntroFeature {
             case .alert(.presented(.cancelTapped)), .alert(.dismiss):
                  return .run { send in
                     try await self.clock.sleep(for: .seconds(Constants.delayTimeInterval))
-                    print("다음 페이지로 가즈아")
                     await send(.delegate(.finished))
                 }
 
