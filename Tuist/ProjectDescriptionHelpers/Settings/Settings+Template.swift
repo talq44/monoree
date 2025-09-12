@@ -11,7 +11,7 @@ public extension Settings {
     
     enum Application {
         public static let `default`: Settings = .settings(
-            base: [:],
+            base: ["OTHER_LDFLAGS": "-ObjC"],
             configurations: ConfigurationTemplate.appConfigurations,
             defaultSettings: .recommended(excluding: ["APP_ICON_NAME"])
         )
