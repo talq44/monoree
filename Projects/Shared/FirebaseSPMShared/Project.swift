@@ -7,6 +7,7 @@ let project = Project.module(
     targets: [
         .implementation(
             shared: .FirebaseSPMShared,
+            product: .framework,
             dependencies: [
                 .SPM.firebaseCore.targetDependency,
                 .SPM.firebaseAnalytics.targetDependency,
