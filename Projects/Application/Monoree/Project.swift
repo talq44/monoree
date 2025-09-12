@@ -35,16 +35,17 @@ let targets: [Target] = [
             // SPM
             
             
-            // Core
-            .core(target: .UserAPICore, type: .implementation),
-            // Domain
-            .domain(target: .UserGameSettingDomain, type: .implementation),
-            // Feature
-            .feature(target: .HomeFeature, type: .implementation),
-            .feature(target: .GamePlayFeature, type: .implementation),
-            .feature(target: .IntroFeature, type: .implementation),
-        ] + TargetDependency.SPM.allCases
-            .map { $0.targetDependency }
+//            // Core
+//            .core(target: .UserAPICore, type: .implementation),
+//            // Domain
+//            .domain(target: .UserGameSettingDomain, type: .implementation),
+//            // Feature
+//            .feature(target: .HomeFeature, type: .implementation),
+//            .feature(target: .GamePlayFeature, type: .implementation),
+//            .feature(target: .IntroFeature, type: .implementation),
+        ]
+//        + TargetDependency.SPM.allCases
+//            .map { $0.targetDependency }
     ),
     .target(
         name: "\(appName)Tests",
@@ -66,7 +67,6 @@ let schemes: [Scheme] = MonoreeScheme.allCases
 let project = Project.module(
     name: appName,
     options: .options(
-        appIcon: "AppIcon",
         defaultKnownRegions: ["ko"],
         developmentRegion: "ko"
     ),
