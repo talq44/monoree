@@ -8,7 +8,6 @@
 import ProjectDescription
 
 extension TargetDependency {
-    
     public enum SPM {
         // MARK: - Architecture
         public static let ComposableArchitecture: TargetDependency = .external(
