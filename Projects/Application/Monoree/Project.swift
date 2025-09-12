@@ -28,7 +28,18 @@ let targets: [Target] = [
         resources: [
             .glob(
                 pattern: "Resources/**",
-                excluding: []
+                excluding: [
+                    "Resources/dev",
+                    "Resources/GoogleService-Info-Dev.plist"
+                ]
+            )
+        ],
+        scripts: [
+            .pre(
+                script: """
+                $SRCROOT/../../Scripts/GoogleService-Info.sh
+                """,
+                name: "GoogleService-Info"
             )
         ],
         dependencies: [
