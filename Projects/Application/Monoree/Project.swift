@@ -25,23 +25,7 @@ let targets: [Target] = [
             ]
         ),
         sources: ["Sources/**"],
-        resources: [
-            .glob(
-                pattern: "Resources/**",
-                excluding: [
-                    "Resources/dev",
-                    "Resources/GoogleService-Info-Dev.plist"
-                ]
-            )
-        ],
-        scripts: [
-            .pre(
-                script: """
-                $SRCROOT/../../Scripts/GoogleService-Info.sh
-                """,
-                name: "GoogleService-Info"
-            )
-        ],
+        resources: ["Resources/**"],
         dependencies: [
             // SPM
             .shared(target: .FirebaseSPMShared),
