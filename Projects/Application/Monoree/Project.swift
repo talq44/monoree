@@ -30,17 +30,20 @@ let targets: [Target] = [
             // SPM
             .shared(target: .FirebaseSPMShared),
             
-//            // Core
-//            .core(target: .UserAPICore, type: .implementation),
-//            // Domain
-//            .domain(target: .UserGameSettingDomain, type: .implementation),
-//            // Feature
-//            .feature(target: .HomeFeature, type: .implementation),
-//            .feature(target: .GamePlayFeature, type: .implementation),
-//            .feature(target: .IntroFeature, type: .implementation),
-        ]
-//        + TargetDependency.SPM.allCases
-//            .map { $0.targetDependency }
+            //            // Core
+            //            .core(target: .UserAPICore, type: .implementation),
+            //            // Domain
+            //            .domain(target: .UserGameSettingDomain, type: .implementation),
+            //            // Feature
+            //            .feature(target: .HomeFeature, type: .implementation),
+            //            .feature(target: .GamePlayFeature, type: .implementation),
+            //            .feature(target: .IntroFeature, type: .implementation),
+        ],
+        settings: .settings(
+            base: SettingsDictionary()
+                .otherLinkerFlags(["-ObjC"])
+                .debugInformationFormat(.dwarfWithDsym)
+        )
     ),
     .target(
         name: "\(appName)Tests",
