@@ -33,6 +33,7 @@ let targets: [Target] = [
         ],
         dependencies: [
             // SPM
+            .shared(target: .FirebaseSPMShared),
             
             
 //            // Core

@@ -2,9 +2,11 @@ import SwiftUI
 
 @main
 struct MonoreeApp: App {
-  var body: some Scene {
-    WindowGroup {
-      ContentView()
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delgate
+    
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+        }
     }
-  }
 }
