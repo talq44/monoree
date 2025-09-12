@@ -1,7 +1,7 @@
 import ProjectDescription
 import ProjectDescriptionHelpers
 
-let appName = "Monoree"
+public let appName = "Monoree"
 
 let targets: [Target] = [
     .target(
@@ -29,7 +29,6 @@ let targets: [Target] = [
         dependencies: [
             // SPM
             .shared(target: .FirebaseSPMShared),
-            
             
 //            // Core
 //            .core(target: .UserAPICore, type: .implementation),
