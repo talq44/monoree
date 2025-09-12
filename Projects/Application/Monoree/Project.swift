@@ -43,7 +43,8 @@ let targets: [Target] = [
             .feature(target: .HomeFeature, type: .implementation),
             .feature(target: .GamePlayFeature, type: .implementation),
             .feature(target: .IntroFeature, type: .implementation),
-        ]
+        ] + TargetDependency.SPM.allCases
+            .map { $0.targetDependency }
     ),
     .target(
         name: "\(appName)Tests",
