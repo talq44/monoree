@@ -6,6 +6,12 @@ struct ContentView: View {
             Text("Hello, Monoree")
                 .padding()
                 .navigationTitle("Home")
+         
+            Text(bundleIdentifier)
         }
+    }
+    
+    var bundleIdentifier: String {
+        Bundle.main.bundleIdentifier ?? ""
     }
 }
