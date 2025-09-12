@@ -66,6 +66,7 @@ let schemes: [Scheme] = MonoreeScheme.allCases
 let project = Project.module(
     name: appName,
     options: .options(
+        appIcon: "AppIcon",
         defaultKnownRegions: ["ko"],
         developmentRegion: "ko"
     ),
