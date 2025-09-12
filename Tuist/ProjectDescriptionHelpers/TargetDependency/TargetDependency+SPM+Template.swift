@@ -8,48 +8,66 @@
 import ProjectDescription
 
 extension TargetDependency {
-    public enum SPM {
-        // MARK: - Architecture
-        public static let ComposableArchitecture: TargetDependency = .external(
-            name: "ComposableArchitecture"
-        )
+    public enum SPM: CaseIterable {
+        case composableArchitecture
+        case alamofire
+        case moya
+        case kingfisher
+        case firebaseAnalytics
+        case firebaseCore
+        case firebaseRemoteConfig
+        case firebaseCrashlytics
+        case firebaseMessaging
+        case firebasePerformance
+        case swifterSwift
         
-        // MARK: - Network
-        public static let alamofire: TargetDependency = .external(
-            name: "Alamofire"
-        )
-        public static let moya: TargetDependency = .external(
-            name: "Moya"
-        )
-        
-        // MARK: - UI
-        public static let kingfisher: TargetDependency = .external(
-            name: "Kingfisher"
-        )
-        
-        // MARK: - Firebase
-        public static let firebaseAnalytics: TargetDependency = .external(
-            name: "FirebaseAnalytics"
-        )
-        public static let firebaseCore: TargetDependency = .external(
-            name: "FirebaseCore"
-        )
-        public static let firebaseRemoteConfig: TargetDependency = .external(
-            name: "FirebaseRemoteConfig"
-        )
-        public static let firebaseCrashlytics: TargetDependency = .external(
-            name: "FirebaseCrashlytics"
-        )
-        public static let firebaseMessaging: TargetDependency = .external(
-            name: "FirebaseMessaging"
-        )
-        public static let firebasePerformance: TargetDependency = .external(
-            name: "FirebasePerformance"
-        )
-        
-        // MARK: - extension
-        public static let swifterSwift: TargetDependency = .external(
-            name: "SwifterSwift"
-        )
+        public var targetDependency: TargetDependency {
+            switch self {
+            case .composableArchitecture:
+                return .external(
+                    name: "ComposableArchitecture"
+                )
+            case .alamofire:
+                return .external(
+                    name: "Alamofire"
+                )
+            case .moya:
+                return .external(
+                    name: "Moya"
+                )
+            case .kingfisher:
+                return .external(
+                    name: "Kingfisher"
+                )
+            case .firebaseAnalytics:
+                return .external(
+                    name: "FirebaseAnalytics"
+                )
+            case .firebaseCore:
+                return .external(
+                    name: "FirebaseCore"
+                )
+            case .firebaseRemoteConfig:
+                return .external(
+                    name: "FirebaseRemoteConfig"
+                )
+            case .firebaseCrashlytics:
+                return .external(
+                    name: "FirebaseCrashlytics"
+                )
+            case .firebaseMessaging:
+                return .external(
+                    name: "FirebaseMessaging"
+                )
+            case .firebasePerformance:
+                return .external(
+                    name: "FirebasePerformance"
+                )
+            case .swifterSwift:
+                return .external(
+                    name: "SwifterSwift"
+                )
+            }
+        }
     }
 }

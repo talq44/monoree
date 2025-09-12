@@ -8,7 +8,6 @@
 import ProjectDescription
 
 public extension TargetDependency {
- 
     static func feature(target: FeatureModule, type: ModuleType) -> TargetDependency {
         return .project(
             target: target.name + type.name,

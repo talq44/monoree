@@ -8,7 +8,7 @@ let project = Project.module(
         .implementation(
             shared: .ExtensionsShared,
             dependencies: [
-                .SPM.swifterSwift,
+                .SPM.swifterSwift.targetDependency,
             ]
         )
     ]

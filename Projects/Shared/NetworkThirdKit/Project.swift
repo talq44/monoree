@@ -8,8 +8,8 @@ let project = Project.module(
         .implementation(
             shared: .NetworkThirdKit,
             dependencies: [
-                .SPM.alamofire,
-                .SPM.moya,
+                .SPM.alamofire.targetDependency,
+                .SPM.moya.targetDependency,
             ]
         ),
     ]

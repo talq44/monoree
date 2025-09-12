@@ -12,7 +12,7 @@ let project = Project.module(
         .implementation(
             feature: .GamePlayFeature,
             dependencies: [
-                .SPM.ComposableArchitecture,
+                .SPM.composableArchitecture.targetDependency,
                 .feature(target: .GamePlayFeature, type: .interface),
                 .domain(target: .GameCompletionDomain, type: .interface),
                 .domain(target: .KoreanChosungDomain, type: .interface),
@@ -27,7 +27,7 @@ let project = Project.module(
         .tests(
             feature: .GamePlayFeature,
             dependencies: [
-                .SPM.ComposableArchitecture,
+                .SPM.composableArchitecture.targetDependency,
                 .feature(target: .GamePlayFeature, type: .implementation),
                 .feature(target: .GamePlayFeature, type: .testing),
             ]
@@ -35,7 +35,7 @@ let project = Project.module(
         .demo(
             feature: .GamePlayFeature,
             dependencies: [
-                .SPM.ComposableArchitecture,
+                .SPM.composableArchitecture.targetDependency,
                 .feature(target: .GamePlayFeature, type: .implementation),
                 .feature(target: .GamePlayFeature, type: .testing),
             ]

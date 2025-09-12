@@ -8,11 +8,11 @@ let project = Project.module(
         .implementation(
             shared: .FirebaseSPMShared,
             dependencies: [
-                .SPM.firebaseCore,
-                .SPM.firebaseAnalytics,
-                .SPM.firebaseCrashlytics,
-                .SPM.firebasePerformance,
-                .SPM.firebaseRemoteConfig,
+                .SPM.firebaseCore.targetDependency,
+                .SPM.firebaseAnalytics.targetDependency,
+                .SPM.firebaseCrashlytics.targetDependency,
+                .SPM.firebasePerformance.targetDependency,
+                .SPM.firebaseRemoteConfig.targetDependency,
             ]
         ),
     ]
