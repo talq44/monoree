@@ -8,7 +8,7 @@ let targets: [Target] = [
         name: appName,
         destinations: .iOS,
         product: .app,
-        bundleId: "io.tuist.\(appName)",
+        bundleId: "$(APP_BUNDLE_ID)",
         deploymentTargets: .appVersion,
         infoPlist: .extendingDefault(
             with: [

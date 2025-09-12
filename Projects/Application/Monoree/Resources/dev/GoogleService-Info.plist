@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>854895752856-1ommf616fcfu1s82h9hqip2a0i9vm0di.apps.googleusercontent.com</string>
+	<string>854895752856-r1hiqvlhastlegc3o5afs264f6glt0s3.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.854895752856-1ommf616fcfu1s82h9hqip2a0i9vm0di</string>
+	<string>com.googleusercontent.apps.854895752856-r1hiqvlhastlegc3o5afs264f6glt0s3</string>
 	<key>API_KEY</key>
 	<string>AIzaSyCGxwY1vwAVzzkAC-g6LKFeFsNRphTn488</string>
 	<key>GCM_SENDER_ID</key>
@@ -13,7 +13,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.talq.monorydev</string>
+	<string>com.monoree.monoreedev</string>
 	<key>PROJECT_ID</key>
 	<string>monory-dev</string>
 	<key>STORAGE_BUCKET</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:854895752856:ios:3cc330e1de7616e21582ed</string>
+	<string>1:854895752856:ios:9cdfdd985ca57d4c1582ed</string>
 </dict>
 </plist>
