@@ -55,10 +55,10 @@ jobs:
             - ~/.local/share/mise/plugins/tuist
 
       - run:
-          name: Tuist build (monoree)
+          name: Tuist build (monoree_dev)
           command: |
             source $BASH_ENV
-            tuist build monoree
+            tuist build monoree_dev
 
       - run:
           name: Tuist test (optional by env)
