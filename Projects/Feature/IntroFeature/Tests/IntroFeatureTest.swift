@@ -6,7 +6,6 @@ import ComposableArchitecture
 
 @MainActor
 struct IntroFeatureTests {
-
     @Test
     func test_필수업데이트_화면전환되지않음() async {
         let store = TestStore(
