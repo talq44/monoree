@@ -24,7 +24,7 @@ public extension Target {
             name: name,
             destinations: spec.destinations,
             product: .app,
-            bundleId: "$(PRODUCT_BUNDLE_IDENTIFIER)",
+            bundleId: "$(APP_BUNDLE_ID)",
             deploymentTargets: .appVersion,
             infoPlist: spec.infoPlist,
             sources: .sources,
