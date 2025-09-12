@@ -1,2 +1,2 @@
-APP_ICON_NAME = "AppIcon"
-APP_BUNDLE_ID = "com.monoree.monoree"
+APP_ICON_NAME = AppIcon
+APP_BUNDLE_ID = com.monoree.monoree
