@@ -54,10 +54,10 @@ jobs:
             - ~/Library/Caches/org.swift.swiftpm
             - ~/.local/share/mise/plugins/tuist
       - run:
-          name: Tuist build Firebase (FirebaseSPMSahred)
+          name: Tuist build Firebase (FirebaseSPMShared)
           command: |
             source $BASH_ENV
-            tuist build FirebaseSPMSahred
+            tuist build FirebaseSPMShared
       - run:
           name: Tuist build (monoree_dev)
           command: |
