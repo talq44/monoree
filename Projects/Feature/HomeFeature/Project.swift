@@ -12,7 +12,7 @@ let project = Project.module(
         .implementation(
             feature: .HomeFeature,
             dependencies: [
-                .SPM.ComposableArchitecture,
+                .SPM.composableArchitecture.targetDependency,
                 .feature(target: .HomeFeature, type: .interface),
             ]
         ),

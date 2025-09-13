@@ -14,7 +14,7 @@ let project = Project.module(
             hasResources: true,
             dependencies: [
                 // SPM
-                .SPM.ComposableArchitecture,
+                .SPM.composableArchitecture.targetDependency,
                 // Domain
                 .domain(target: .VersionCheckDomain, type: .interface),
                 // Feature

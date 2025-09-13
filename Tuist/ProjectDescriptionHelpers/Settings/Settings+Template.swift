@@ -13,7 +13,7 @@ public extension Settings {
         public static let `default`: Settings = .settings(
             base: [:],
             configurations: ConfigurationTemplate.appConfigurations,
-            defaultSettings: .recommended(excluding: ["ASSETCATALOG_COMPILER_APPICON_NAME"])
+            defaultSettings: .recommended(excluding: ["APP_ICON_NAME"])
         )
     }
     

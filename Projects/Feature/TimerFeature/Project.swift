@@ -12,7 +12,7 @@ let project = Project.module(
         .implementation(
             feature: .TimerFeature,
             dependencies: [
-                .SPM.ComposableArchitecture,
+                .SPM.composableArchitecture.targetDependency,
                 .feature(target: .TimerFeature, type: .interface),
             ]
         ),
@@ -25,7 +25,7 @@ let project = Project.module(
         .tests(
             feature: .TimerFeature,
             dependencies: [
-                .SPM.ComposableArchitecture,
+                .SPM.composableArchitecture.targetDependency,
                 .feature(target: .TimerFeature, type: .implementation),
                 .feature(target: .TimerFeature, type: .testing),
             ]
@@ -33,7 +33,7 @@ let project = Project.module(
         .demo(
             feature: .TimerFeature,
             dependencies: [
-                .SPM.ComposableArchitecture,
+                .SPM.composableArchitecture.targetDependency,
                 .feature(target: .TimerFeature, type: .implementation),
                 .feature(target: .TimerFeature, type: .testing),
             ]

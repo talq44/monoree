@@ -74,3 +74,6 @@ Tuist/.build
 
 ### cursor
 buildServer.json
+
+### Firebase
+**/GoogleService-Info*.plist
