@@ -20,8 +20,7 @@ extension MenuItem {
     private func viewForType() -> some View {
         switch self {
         case .banner:
-            Text("")
-//            BannerContentView(navigationTitle: self.rawValue)
+            BannerContentView(navigationTitle: self.rawValue)
 //        case .interstitial:
 //            InterstitialContentView(navigationTitle: self.rawValue)
 //        case .native:
