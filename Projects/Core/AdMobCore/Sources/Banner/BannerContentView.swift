@@ -2,12 +2,12 @@ import SwiftUI
 import GoogleMobileAds
 
 // [START create_banner_view]
-struct BannerViewContainer: UIViewRepresentable {
-    typealias UIViewType = BannerView
+public struct BannerViewContainer: UIViewRepresentable {
+    public typealias UIViewType = BannerView
     let adSize: AdSize
     let adUnitID: String
     
-    init(
+    public init(
         _ width: CGFloat,
         adUnitID: String
     ) {
@@ -15,7 +15,7 @@ struct BannerViewContainer: UIViewRepresentable {
         self.adUnitID = adUnitID
     }
     
-    func makeUIView(context: Context) -> BannerView {
+    public func makeUIView(context: Context) -> BannerView {
         let banner = BannerView(adSize: adSize)
         // [START load_ad]
         banner.adUnitID = adUnitID
@@ -27,14 +27,14 @@ struct BannerViewContainer: UIViewRepresentable {
         return banner
     }
     
-    func updateUIView(_ uiView: BannerView, context: Context) {}
+    public func updateUIView(_ uiView: BannerView, context: Context) {}
     
-    func makeCoordinator() -> BannerCoordinator {
+    public func makeCoordinator() -> BannerCoordinator {
         return BannerCoordinator(self)
     }
     // [END create_banner_view]
     
-    class BannerCoordinator: NSObject, BannerViewDelegate {
+    public class BannerCoordinator: NSObject, BannerViewDelegate {
         
         let parent: BannerViewContainer
         
@@ -44,11 +44,11 @@ struct BannerViewContainer: UIViewRepresentable {
         
         // MARK: - GADBannerViewDelegate methods
         
-        func bannerViewDidReceiveAd(_ bannerView: BannerView) {
+        public func bannerViewDidReceiveAd(_ bannerView: BannerView) {
             print("DID RECEIVE AD.")
         }
         
-        func bannerView(_ bannerView: BannerView, didFailToReceiveAdWithError error: Error) {
+        public func bannerView(_ bannerView: BannerView, didFailToReceiveAdWithError error: Error) {
             print("FAILED TO RECEIVE AD: \(error.localizedDescription)")
         }
     }

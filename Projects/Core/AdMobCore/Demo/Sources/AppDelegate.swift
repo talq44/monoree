@@ -9,6 +9,8 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         let versionNumber = string(for: MobileAds.shared.versionNumber)
         print("Google Mobile Ads SDK version: \(versionNumber)")
         
+        MobileAds.shared.start()
+        
         return true
     }
 }
