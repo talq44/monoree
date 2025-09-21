@@ -42,5 +42,9 @@ let package = Package(
             url: "https://github.com/onevcat/Kingfisher",
             .upToNextMajor(from: "8.5.0")
         ),
+        .package(
+            url: "https://github.com/googleads/swift-package-manager-google-mobile-ads",
+            .upToNextMajor(from: "12.11.0")
+        ),
     ]
 )

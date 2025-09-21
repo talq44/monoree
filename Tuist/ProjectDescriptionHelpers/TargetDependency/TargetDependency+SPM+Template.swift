@@ -9,35 +9,28 @@ import ProjectDescription
 
 extension TargetDependency {
     public enum SPM: CaseIterable {
-        case composableArchitecture
         case alamofire
-        case moya
-        case kingfisher
+        case composableArchitecture
         case firebaseAnalytics
         case firebaseCore
         case firebaseRemoteConfig
         case firebaseCrashlytics
         case firebaseMessaging
         case firebasePerformance
+        case googleMobileAds
+        case kingfisher
+        case moya
         case swifterSwift
         
         public var targetDependency: TargetDependency {
             switch self {
-            case .composableArchitecture:
-                return .external(
-                    name: "ComposableArchitecture"
-                )
             case .alamofire:
                 return .external(
                     name: "Alamofire"
                 )
-            case .moya:
+            case .composableArchitecture:
                 return .external(
-                    name: "Moya"
-                )
-            case .kingfisher:
-                return .external(
-                    name: "Kingfisher"
+                    name: "ComposableArchitecture"
                 )
             case .firebaseAnalytics:
                 return .external(
@@ -62,6 +55,18 @@ extension TargetDependency {
             case .firebasePerformance:
                 return .external(
                     name: "FirebasePerformance"
+                )
+            case .googleMobileAds:
+                return .external(
+                    name: "GoogleMobileAds"
+                )
+            case .kingfisher:
+                return .external(
+                    name: "Kingfisher"
+                )
+            case .moya:
+                return .external(
+                    name: "Moya"
                 )
             case .swifterSwift:
                 return .external(
