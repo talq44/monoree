@@ -12,12 +12,14 @@ let project = Project.module(
         .implementation(
             core: .AdMobCore,
             dependencies: [
+                .SPM.googleMobileAds.targetDependency,
                 .core(target: .AdMobCore, type: .interface),
             ]
         ),
         .demo(
             core: .AdMobCore,
             dependencies: [
+                .SPM.googleMobileAds.targetDependency,
                 .core(target: .AdMobCore, type: .implementation)
             ]
         )

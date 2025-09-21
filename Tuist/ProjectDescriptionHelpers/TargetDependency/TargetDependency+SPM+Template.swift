@@ -17,6 +17,7 @@ extension TargetDependency {
         case firebaseCrashlytics
         case firebaseMessaging
         case firebasePerformance
+        case googleMobileAds
         case kingfisher
         case moya
         case swifterSwift
@@ -54,6 +55,10 @@ extension TargetDependency {
             case .firebasePerformance:
                 return .external(
                     name: "FirebasePerformance"
+                )
+            case .googleMobileAds:
+                return .external(
+                    name: "GoogleMobileAds"
                 )
             case .kingfisher:
                 return .external(
