@@ -1,6 +1,7 @@
 import ProjectDescription
 
 public enum CoreModule: String, CaseIterable {
+	case AdMobCore
 	case MonoreeDesignSystemCore
 	case LocalDataCore
 	case RemoteConfigCore
