@@ -67,27 +67,15 @@ $ tuist edit
 ```
 
 # Framework
+### Architecture
+- [swift-composable-architecture](https://github.com/pointfreeco/swift-composable-architecture)
+
 ### UI
-- [SnapKit](https://github.com/SnapKit/SnapKit.git)
 - [Kingfisher](https://github.com/onevcat/Kingfisher.git)
 
 ### Network
 - [Alamofire](https://github.com/Alamofire/Alamofire.git)
 - [Moya](https://github.com/Moya/Moya.git)
 
-### Rx
-- [RxSwift](https://github.com/ReactiveX/RxSwift.git)
-- [ReactorKit](https://github.com/ReactorKit/ReactorKit.git)
-
-### Local
-- [realm-swift](https://github.com/realm/realm-swift.git)
-
-### DI
-- [Swinject](https://github.com/Swinject/Swinject.git)
-
 ### Firebase
 - [Firebase](https://github.com/firebase/firebase-ios-sdk)
-
-### Testable
-- [Fakery](https://github.com/vadymmarkov/Fakery)
-- [swiftdotenv](https://github.com/noahkamara/swiftdotenv)
