@@ -54,5 +54,9 @@ let package = Package(
             url: "https://github.com/ReactorKit/ReactorKit.git",
             .upToNextMajor(from: "3.2.0")
         ),
+        .package(
+            url: "https://github.com/SnapKit/SnapKit.git",
+            .upToNextMajor(from: "5.7.1")
+        ),
     ]
 )

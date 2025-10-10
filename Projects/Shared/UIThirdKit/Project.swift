@@ -9,6 +9,7 @@ let project = Project.module(
             shared: .UIThirdKit,
             dependencies: [
                 .SPM.kingfisher.targetDependency,
+                .SPM.snapKit.targetDependency,
             ]
         )
     ]

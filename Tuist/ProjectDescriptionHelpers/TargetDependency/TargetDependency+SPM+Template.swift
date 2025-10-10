@@ -23,6 +23,7 @@ extension TargetDependency {
         case reactorKit
         case rxCocoa
         case rxSwift
+        case snapKit
         case swifterSwift
         
         public var targetDependency: TargetDependency {
@@ -82,6 +83,10 @@ extension TargetDependency {
             case .rxSwift:
                 return .external(
                     name: "RxSwift"
+                )
+            case .snapKit:
+                return .external(
+                    name: "SnapKit"
                 )
             case .swifterSwift:
                 return .external(
