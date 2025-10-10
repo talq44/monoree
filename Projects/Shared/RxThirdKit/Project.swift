@@ -8,7 +8,9 @@ let project = Project.module(
         .implementation(
             shared: .RxThirdKit,
             dependencies: [
-                .shared(target: .RxThirdKit, type: .interface),
+                .SPM.reactorKit.targetDependency,
+                .SPM.rxSwift.targetDependency,
+                .SPM.rxCocoa.targetDependency,
             ]
         )
     ]

@@ -20,6 +20,9 @@ extension TargetDependency {
         case googleMobileAds
         case kingfisher
         case moya
+        case reactorKit
+        case rxCocoa
+        case rxSwift
         case swifterSwift
         
         public var targetDependency: TargetDependency {
@@ -67,6 +70,18 @@ extension TargetDependency {
             case .moya:
                 return .external(
                     name: "Moya"
+                )
+            case .reactorKit:
+                return .external(
+                    name: "ReactorKit"
+                )
+            case .rxCocoa:
+                return .external(
+                    name: "RxCocoa"
+                )
+            case .rxSwift:
+                return .external(
+                    name: "RxSwift"
                 )
             case .swifterSwift:
                 return .external(
