@@ -49,7 +49,7 @@ let targets: [Target] = [
         name: "\(appName)Tests",
         destinations: .iOS,
         product: .unitTests,
-        bundleId: "io.tuist.\(appName)Tests",
+        bundleId: "io.tuist.\(appName).Tests",
         deploymentTargets: .appVersion,
         infoPlist: .default,
         sources: ["Tests/**"],
