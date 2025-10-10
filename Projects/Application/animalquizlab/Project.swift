@@ -18,10 +18,18 @@ let targets: [Target] = [
                     "UIInterfaceOrientationLandscapeLeft",
                     "UIInterfaceOrientationLandscapeRight",
                 ],
-                "UILaunchScreen": [
-                    "UIColorName": "",
-                    "UIImageName": "",
-                ],
+                "UIApplicationSceneManifest": .dictionary([
+                    "UIApplicationSupportsMultipleScenes": .boolean(false),
+                    "UISceneConfigurations": .dictionary([
+                        "UIWindowSceneSessionRoleApplication": .array([
+                            .dictionary([
+                                "UISceneConfigurationName": .string("Default Configuration"),
+                                "UISceneDelegateClassName": .string(
+                                    "$(PRODUCT_MODULE_NAME).SceneDelegate")
+                            ])
+                        ])
+                    ])
+                ]),
             ]
         ),
         sources: ["Sources/**"],
@@ -39,7 +47,7 @@ let targets: [Target] = [
         name: "\(appName)Tests",
         destinations: .iOS,
         product: .unitTests,
-        bundleId: "com.monoree.\(appName)Tests",
+        bundleId: "com.monoree.\(appName).Tests",
         deploymentTargets: .appVersion,
         infoPlist: .default,
         sources: ["Tests/**"],
