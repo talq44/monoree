@@ -59,8 +59,8 @@ let targets: [Target] = [
     ),
 ]
 
-let schemes: [Scheme] = MonoreeScheme.allCases
-    .map { .makeScheme(type: $0) }
+let schemes: [Scheme] = SchemeTemplate.allCases
+    .map { .makeScheme(type: $0, appName: appName) }
 
 let project = Project.module(
     name: appName,
