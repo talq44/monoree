@@ -35,7 +35,7 @@ let targets: [Target] = [
         sources: ["Sources/**"],
         resources: ["Resources/**"],
         dependencies: [
-            
+            .shared(target: .RxThirdKit),
         ],
         settings: .settings(
             base: SettingsDictionary()
