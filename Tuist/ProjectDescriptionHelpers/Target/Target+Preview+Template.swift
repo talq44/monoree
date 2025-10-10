@@ -24,7 +24,7 @@ public extension Target {
             destinations: spec.destinations,
             product: .framework, // framework 타입 고정 건드리지 말 것
             bundleId: "com.talq.\(feature.rawValue)Preview",
-            deploymentTargets: .appVersion,
+            deploymentTargets: .deploymentTargetVersion,
             infoPlist: spec.infoPlist,
             sources: .sources,
             scripts: spec.scripts,
@@ -46,7 +46,7 @@ public extension Target {
             destinations: spec.destinations,
             product: .framework, // framework 타입 고정 건드리지 말 것
             bundleId: "com.talq.\(domain.rawValue)Preview",
-            deploymentTargets: .appVersion,
+            deploymentTargets: .deploymentTargetVersion,
             infoPlist: spec.infoPlist,
             sources: .sources,
             scripts: spec.scripts,
@@ -68,7 +68,7 @@ public extension Target {
             destinations: spec.destinations,
             product: .framework, // framework 타입 고정 건드리지 말 것
             bundleId: "com.talq.\(core.rawValue)Preview",
-            deploymentTargets: .appVersion,
+            deploymentTargets: .deploymentTargetVersion,
             infoPlist: spec.infoPlist,
             sources: .sources,
             scripts: spec.scripts,
@@ -90,7 +90,7 @@ public extension Target {
             destinations: spec.destinations,
             product: .framework, // framework 타입 고정 건드리지 말 것
             bundleId: "com.talq.\(shared.rawValue)Preview",
-            deploymentTargets: .appVersion,
+            deploymentTargets: .deploymentTargetVersion,
             infoPlist: spec.infoPlist,
             sources: .sources,
             scripts: spec.scripts,

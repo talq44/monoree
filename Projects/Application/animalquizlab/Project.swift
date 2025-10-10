@@ -9,7 +9,7 @@ let targets: [Target] = [
         destinations: .iOS,
         product: .app,
         bundleId: "com.monoree.animalquizlab",
-        deploymentTargets: .appVersion,
+        deploymentTargets: .deploymentTargetVersion,
         infoPlist: .extendingDefault(
             with: [
                 "UILaunchStoryboardName": "LaunchScreen",
@@ -49,7 +49,7 @@ let targets: [Target] = [
         destinations: .iOS,
         product: .unitTests,
         bundleId: "com.monoree.\(appName).Tests",
-        deploymentTargets: .appVersion,
+        deploymentTargets: .deploymentTargetVersion,
         infoPlist: .default,
         sources: ["Tests/**"],
         dependencies: [
