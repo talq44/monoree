@@ -1,14 +1,14 @@
 import ProjectDescription
 import ProjectDescriptionHelpers
 
-public let appName = "Monoree"
+private let appName = "AnimalQuizLab"
 
 let targets: [Target] = [
     .target(
         name: appName,
         destinations: .iOS,
         product: .app,
-        bundleId: "$(APP_BUNDLE_ID)",
+        bundleId: "com.monoree.animalquizlab",
         deploymentTargets: .appVersion,
         infoPlist: .extendingDefault(
             with: [
@@ -18,26 +18,24 @@ let targets: [Target] = [
                     "UIInterfaceOrientationLandscapeLeft",
                     "UIInterfaceOrientationLandscapeRight",
                 ],
-                "UILaunchScreen": [
-                    "UIColorName": "",
-                    "UIImageName": "",
-                ],
+                "UIApplicationSceneManifest": .dictionary([
+                    "UIApplicationSupportsMultipleScenes": .boolean(false),
+                    "UISceneConfigurations": .dictionary([
+                        "UIWindowSceneSessionRoleApplication": .array([
+                            .dictionary([
+                                "UISceneConfigurationName": .string("Default Configuration"),
+                                "UISceneDelegateClassName": .string(
+                                    "$(PRODUCT_MODULE_NAME).SceneDelegate")
+                            ])
+                        ])
+                    ])
+                ]),
             ]
         ),
         sources: ["Sources/**"],
         resources: ["Resources/**"],
         dependencies: [
-            // SPM
-            .shared(target: .FirebaseSPMShared),
             
-            //            // Core
-            //            .core(target: .UserAPICore, type: .implementation),
-            //            // Domain
-            //            .domain(target: .UserGameSettingDomain, type: .implementation),
-            //            // Feature
-            //            .feature(target: .HomeFeature, type: .implementation),
-            //            .feature(target: .GamePlayFeature, type: .implementation),
-            //            .feature(target: .IntroFeature, type: .implementation),
         ],
         settings: .settings(
             base: SettingsDictionary()
@@ -49,7 +47,7 @@ let targets: [Target] = [
         name: "\(appName)Tests",
         destinations: .iOS,
         product: .unitTests,
-        bundleId: "io.tuist.\(appName).Tests",
+        bundleId: "com.monoree.\(appName).Tests",
         deploymentTargets: .appVersion,
         infoPlist: .default,
         sources: ["Tests/**"],

@@ -34,35 +34,24 @@ jobs:
             mise install tuist@4.36.0
             mise doctor
 
-      # 캐시: Tuist/SwiftPM/DerivedData
-      - restore_cache:
-          keys:
-            # Tuist/Dependencies.swift가 없는 레포 구조이므로 Package.resolved를 키로 사용
-            - tuist-{{ arch }}-{{ .Branch }}-{{ checksum "Tuist/Package.resolved" }}
-            - tuist-{{ arch }}-
       - run:
           name: Tuist install
           command: |
             source $BASH_ENV
             tuist install
-      - save_cache:
-          key: tuist-{{ arch }}-{{ .Branch }}-{{ checksum "Tuist/Package.resolved" }}
-          paths:
-            - ~/.tuist
-            - ~/Library/Caches/tuist
-            - ~/Library/Developer/Xcode/DerivedData
-            - ~/Library/Caches/org.swift.swiftpm
-            - ~/.local/share/mise/plugins/tuist
+
       - run:
           name: Tuist build Firebase (FirebaseSPMShared)
           command: |
             source $BASH_ENV
             tuist build FirebaseSPMShared
+
       - run:
           name: Tuist build (monoree_dev)
           command: |
             source $BASH_ENV
-            tuist build monoree_dev
+            tuist build Monoree_dev
+            tuist build AnimalQuizLab_dev
 
       - run:
           name: Tuist test (optional by env)

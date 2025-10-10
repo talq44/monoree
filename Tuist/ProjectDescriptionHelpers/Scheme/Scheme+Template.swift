@@ -1,14 +1,14 @@
 import Foundation
 import ProjectDescription
 
-public enum MonoreeScheme: CaseIterable {
+public enum SchemeTemplate: CaseIterable {
     case dev
     case prod
     
     public var name: String {
         switch self {
-        case .dev: return "monoree_dev"
-        case .prod: return "monoree_release"
+        case .dev: return "_dev"
+        case .prod: return "_release"
         }
     }
     
@@ -35,11 +35,11 @@ public enum MonoreeScheme: CaseIterable {
 
 public extension Scheme {
     
-    static func makeScheme(type: MonoreeScheme) -> Scheme {
+    static func makeScheme(type: SchemeTemplate, appName: String) -> Scheme {
         return .scheme(
-            name: type.name,
-            buildAction: .buildAction(targets: ["Monoree"]),
-            testAction: .targets(["MonoreeTests"], configuration: .dev),
+            name: appName + type.name,
+            buildAction: .buildAction(targets: ["\(appName)"]),
+            testAction: .targets(["\(appName)Tests"], configuration: .dev),
             runAction: .runAction(
                 configuration: type.configurationName,
                 arguments: type.arguments
