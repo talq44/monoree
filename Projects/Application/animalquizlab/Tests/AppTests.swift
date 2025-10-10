@@ -1,7 +1,7 @@
-import XCTest
+import Testing
 
-final class AppTests: XCTestCase {
-    func test() {
-        XCTAssertTrue(true)
+struct AppTests {
+    @Test("정의") func example() {
+        #expect(1 + 1 == 2)
     }
 }
