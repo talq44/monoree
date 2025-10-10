@@ -5,6 +5,7 @@ public enum SharedModule: String, CaseIterable {
     case FirebaseSPMShared
 	case FoundationShared
     case NetworkThirdKit
+    case RxThirdKit
     case UIThirdKit
     
     public var name: String {
