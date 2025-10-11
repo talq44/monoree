@@ -67,7 +67,6 @@ public extension Target {
             infoPlist: .default,
             settings: .Framework.default
         ),
-        resources: ResourceFileElements? = nil,
         dependencies: [TargetDependency]
     ) -> Target {
         return .target(
@@ -78,7 +77,6 @@ public extension Target {
             deploymentTargets: .deploymentTargetVersion,
             infoPlist: spec.infoPlist,
             sources: .interface,
-            resources: resources,
             scripts: spec.scripts,
             dependencies: dependencies,
             settings: spec.settings
