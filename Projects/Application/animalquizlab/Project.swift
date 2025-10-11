@@ -35,7 +35,7 @@ let targets: [Target] = [
         sources: ["Sources/**"],
         resources: ["Resources/**"],
         dependencies: [
-            .feature(target: .AnimalQuizLabFeature, type: .implementation),
+//            .feature(target: .AnimalQuizLabFeature, type: .implementation),
         ],
         settings: .settings(
             base: SettingsDictionary()
