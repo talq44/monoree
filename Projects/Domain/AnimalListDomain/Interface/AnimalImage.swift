@@ -1,7 +1,6 @@
 import Foundation
-import UIKit
 
 public protocol AnimalImage {
-    var image: UIImage { get }
+    var imageURL: String { get }
     var style: AnimalImageStyle { get }
 }
