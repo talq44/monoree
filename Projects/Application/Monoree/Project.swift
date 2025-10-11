@@ -9,7 +9,7 @@ let targets: [Target] = [
         destinations: .iOS,
         product: .app,
         bundleId: "$(APP_BUNDLE_ID)",
-        deploymentTargets: .appVersion,
+        deploymentTargets: .deploymentTargetVersion,
         infoPlist: .extendingDefault(
             with: [
                 "UILaunchStoryboardName": "LaunchScreen",
@@ -50,7 +50,7 @@ let targets: [Target] = [
         destinations: .iOS,
         product: .unitTests,
         bundleId: "io.tuist.\(appName).Tests",
-        deploymentTargets: .appVersion,
+        deploymentTargets: .deploymentTargetVersion,
         infoPlist: .default,
         sources: ["Tests/**"],
         dependencies: [

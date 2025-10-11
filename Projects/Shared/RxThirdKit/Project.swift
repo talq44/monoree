@@ -2,14 +2,15 @@ import ProjectDescription
 import ProjectDescriptionHelpers
 
 let project = Project.module(
-    name: SharedModule.UIThirdKit.name,
+    name: SharedModule.RxThirdKit.name,
     settings: .Module.default,
     targets: [
         .implementation(
-            shared: .UIThirdKit,
+            shared: .RxThirdKit,
             dependencies: [
-                .SPM.kingfisher.targetDependency,
-                .SPM.snapKit.targetDependency,
+                .SPM.reactorKit.targetDependency,
+                .SPM.rxSwift.targetDependency,
+                .SPM.rxCocoa.targetDependency,
             ]
         )
     ]

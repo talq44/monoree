@@ -28,7 +28,7 @@ let project = Project(
             destinations: .iOS,
             product: .framework,
             bundleId: "com.monoree.FirebaseSPMShared",
-            deploymentTargets: .appVersion,
+            deploymentTargets: .deploymentTargetVersion,
             infoPlist: .default,
             sources: "Sources/**",
             dependencies: [

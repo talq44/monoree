@@ -46,5 +46,17 @@ let package = Package(
             url: "https://github.com/googleads/swift-package-manager-google-mobile-ads",
             .upToNextMajor(from: "12.11.0")
         ),
+        .package(
+            url: "https://github.com/ReactiveX/RxSwift.git",
+            .upToNextMajor(from: "6.0.0")
+        ),
+        .package(
+            url: "https://github.com/ReactorKit/ReactorKit.git",
+            .upToNextMajor(from: "3.2.0")
+        ),
+        .package(
+            url: "https://github.com/SnapKit/SnapKit.git",
+            .upToNextMajor(from: "5.7.1")
+        ),
     ]
 )
