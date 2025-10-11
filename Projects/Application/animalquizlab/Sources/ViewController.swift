@@ -1,6 +1,9 @@
 import UIKit
+//import AnimalQuizLabFeature
 
 class ViewController: UIViewController {
+    
+    private let button = UIButton(configuration: .bordered())
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,5 +18,11 @@ class ViewController: UIViewController {
             label.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
             label.centerYAnchor.constraint(equalTo: self.view.centerYAnchor)
         ])
+        
+        button.configuration?.title = "next"
+//        button.addAction(UIAction(handler: { [weak self] _ in
+//            let vc = AQLCoordinator.home()
+//            self?.navigationController?.pushViewController(vc, animated: true)
+//        }), for: .touchUpInside)
     }
 }

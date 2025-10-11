@@ -1,6 +1,7 @@
 import ProjectDescription
 
 public enum FeatureModule: String, CaseIterable {
+	case AnimalQuizLabFeature
     case GamePlayFeature
     case HomeFeature
 	case IntroFeature

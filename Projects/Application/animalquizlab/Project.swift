@@ -35,8 +35,7 @@ let targets: [Target] = [
         sources: ["Sources/**"],
         resources: ["Resources/**"],
         dependencies: [
-            .shared(target: .RxThirdKit),
-            .shared(target: .UIThirdKit),
+            .feature(target: .AnimalQuizLabFeature, type: .implementation),
         ],
         settings: .settings(
             base: SettingsDictionary()
