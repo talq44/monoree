@@ -7,11 +7,11 @@ let project = Project.module(
     targets: [
         .interface(
             domain: .AnimalListDomain,
-            resources: ["Resources/**"],
             dependencies: []
         ),
         .implementation(
             domain: .AnimalListDomain,
+            hasResources: true,
             dependencies: [
                 .domain(target: .AnimalListDomain, type: .interface),
             ]
