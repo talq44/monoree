@@ -10,6 +10,8 @@ public class HStackView: UIStackView {
         super.init(frame: frame)
         
         self.axis = .horizontal
+        self.distribution = distribution
+        self.alignment = alignment
         self.spacing = spacing
     }
     
