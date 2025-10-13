@@ -2,7 +2,7 @@ import UIKit
 import RxSwift
 
 class BaseViewController: UIViewController {
-    internal let disposeBag = DisposeBag()
+    internal var disposeBag = DisposeBag()
     
     internal func setupNavigationBar() {
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: coinButton())
