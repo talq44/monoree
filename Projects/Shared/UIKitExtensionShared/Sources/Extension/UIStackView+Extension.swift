@@ -1,0 +1,20 @@
+//
+//  UIStackView+Extension.swift
+//  UIKitExtensionShared
+//
+//  Created by 박창규 on 10/13/25.
+//
+
+import UIKit
+
+class UIStackView_Extension: UIView {
+
+    /*
+    // Only override draw() if you perform custom drawing.
+    // An empty implementation adversely affects performance during animation.
+    override func draw(_ rect: CGRect) {
+        // Drawing code
+    }
+    */
+
+}
