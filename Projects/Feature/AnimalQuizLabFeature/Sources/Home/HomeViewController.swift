@@ -15,6 +15,7 @@ final class HomeViewController: BaseViewController {
         super.loadView()
         
         self.view.addSubview(stackView)
+        
         stackView.snp.makeConstraints { make in
             make.directionalEdges.equalTo(view.safeAreaLayoutGuide)
         }
@@ -23,10 +24,12 @@ final class HomeViewController: BaseViewController {
             make.height.equalTo(Metric.bannerHeight)
         }
         
-        bannerView.backgroundColor = .green
+        stackView.addArrangedSubviews(
+            contentView,
+            bannerView
+        )
         
-        stackView.addArrangedSubview(contentView)
-        stackView.addArrangedSubview(bannerView)
+        bannerView.backgroundColor = .green
     }
     
     override func viewDidLoad() {
