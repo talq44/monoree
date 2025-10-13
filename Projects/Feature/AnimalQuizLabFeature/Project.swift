@@ -13,6 +13,7 @@ let project = Project.module(
             feature: .AnimalQuizLabFeature,
             dependencies: [
                 .shared(target: .RxThirdKit),
+                .shared(target: .UIKitExtensionShared),
                 .shared(target: .UIThirdKit),
                 .feature(target: .AnimalQuizLabFeature, type: .interface),
             ]
