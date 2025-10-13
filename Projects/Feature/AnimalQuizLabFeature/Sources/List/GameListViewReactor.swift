@@ -3,13 +3,20 @@ import ReactorKit
 import RxSwift
 
 enum GameListViewAction {
-    case selectItem(at: String)
+    case selectItem(GameListType)
 }
 
 struct GameListViewState {
-    var items: [String] = []
+    let items: [GameListType] = GameListType.allCases
 }
 
-final class GameListViewReactor {
+final class GameListViewReactor: Reactor {
+    typealias Action = GameListViewAction
+    typealias State = GameListViewState
     
+    let initialState: GameListViewState
+    
+    init() {
+        initialState = .init()
+    }
 }
