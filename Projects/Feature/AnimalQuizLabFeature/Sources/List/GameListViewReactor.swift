@@ -6,7 +6,7 @@ enum GameListViewAction {
     case selectItem(GameListType)
 }
 
-struct GameListViewState {
+struct GameListViewState: Equatable {
     let items: [GameListType] = GameListType.allCases
 }
 
