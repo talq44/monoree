@@ -7,9 +7,7 @@ let project = Project.module(
     targets: [
 		.implementation(
 			shared: .UIKitExtensionShared,
-			dependencies: [
-				.shared(target: .UIKitExtensionShared, type: .interface),
-			]
+			dependencies: [ ]
 		)
 	]
 )
