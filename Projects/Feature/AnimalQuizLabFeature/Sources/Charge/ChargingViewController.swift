@@ -12,10 +12,10 @@ final class ChargingViewController: BaseViewController {
     private let coinContentView = ContentVStackView()
     
     private let freeCoinContentStackView = HStackView(spacing: 8)
-    private let freeCoinTitleLabel = BaseLabel("무료 코인",style: .title3)
+    private let freeCoinTitleLabel = BaseLabel("🎁 무료 코인",style: .title3)
     private let freeCoinValueLabel = BaseLabel("0", style: .title3)
     private let chargeCoinContentStackView = HStackView(spacing: 8)
-    private let chargeCoinTitleLabel = BaseLabel("충전 코인",style: .title3)
+    private let chargeCoinTitleLabel = BaseLabel("💰 충전 코인",style: .title3)
     private let chargeCoinValueLabel = BaseLabel("0", style: .title3)
     private let coinDescriptionLabel = BaseLabel(
         """
@@ -33,7 +33,7 @@ final class ChargingViewController: BaseViewController {
     )
     
     private let chargeContentView = ContentVStackView()
-    private let chargeTitleLabel = BaseLabel("💰 충전하기", style: .title3)
+    private let chargeTitleLabel = BaseLabel("🎬 충전하기", style: .title3)
     private let chargeButton: UIButton = {
         var configuration = UIButton.Configuration.filled()
         configuration.title = "광고 영상 보고 충전하기 5/5"
