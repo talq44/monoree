@@ -1,20 +1,24 @@
-//
-//  BaseLabel.swift
-//  UIKitExtensionShared
-//
-//  Created by 박창규 on 10/13/25.
-//
-
 import UIKit
 
-class BaseLabel: UILabel {
-
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+public class BaseLabel: UILabel {
+    public init(
+        _ text: String? = nil,
+        style: UIFont.TextStyle = .body,
+        textColor: UIColor = .darkText,
+        alignment: NSTextAlignment = .natural,
+        isMultipleLines: Bool = false,
+        frame: CGRect = .zero
+    ) {
+        super.init(frame: frame)
+        
+        self.text = text
+        self.font = .preferredFont(forTextStyle: style)
+        self.textColor = textColor
+        self.textAlignment = alignment
+        self.numberOfLines = isMultipleLines ? 0 : 1
     }
-    */
-
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 }
