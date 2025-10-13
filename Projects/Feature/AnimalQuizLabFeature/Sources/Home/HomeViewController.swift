@@ -1,19 +1,35 @@
 import UIKit
 import SnapKit
+import UIKitExtensionShared
 
-class HomeViewController: BaseViewController {
-    
-    init() {
-        super.init(nibName: nil, bundle: nil)
+final class HomeViewController: BaseViewController {
+    private enum Metric {
+        static let bannerHeight: CGFloat = 100
     }
     
-    @MainActor required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+    private let stackView = VStackView()
+    private let contentView = UIView()
+    private let bannerView = UIView()
+    
+    override func loadView() {
+        super.loadView()
+        
+        self.view.addSubview(stackView)
+        stackView.snp.makeConstraints { make in
+            make.directionalEdges.equalTo(view.safeAreaLayoutGuide)
+        }
+        
+        bannerView.snp.makeConstraints { make in
+            make.height.equalTo(Metric.bannerHeight)
+        }
+        
+        bannerView.backgroundColor = .green
+        
+        stackView.addArrangedSubview(contentView)
+        stackView.addArrangedSubview(bannerView)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        view.backgroundColor = .red
     }
 }
