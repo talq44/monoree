@@ -1,20 +1,21 @@
-//
-//  SpacerView.swift
-//  UIKitExtensionShared
-//
-//  Created by 박창규 on 10/13/25.
-//
-
 import UIKit
 
-class SpacerView: UIView {
-
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+public class SpacerView: UIView {
+    public init(width: CGFloat? = nil, height: CGFloat? = nil) {
+        super.init(frame: .zero)
+        
+        translatesAutoresizingMaskIntoConstraints = false
+        
+        if let width {
+            widthAnchor.constraint(equalToConstant: width).isActive = true
+        }
+        
+        if let height {
+            heightAnchor.constraint(equalToConstant: height).isActive = true
+        }
     }
-    */
-
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 }
