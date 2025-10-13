@@ -101,13 +101,6 @@ public class ContentStackBaseView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private func updateContentConstraints() {
-        topC.constant = contentInsets.top
-        leadingC.constant = contentInsets.leading
-        trailingC.constant = contentInsets.trailing
-        bottomC.constant = contentInsets.bottom
-    }
-    
     public var stackView: UIStackView { _stackView }
 }
 
