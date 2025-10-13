@@ -4,7 +4,7 @@ public class BaseLabel: UILabel {
     public init(
         _ text: String? = nil,
         style: UIFont.TextStyle = .body,
-        textColor: UIColor = .darkText,
+        textColor: UIColor = .label,
         alignment: NSTextAlignment = .natural,
         isMultipleLines: Bool = false,
         frame: CGRect = .zero
