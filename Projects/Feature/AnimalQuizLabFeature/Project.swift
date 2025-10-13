@@ -12,6 +12,7 @@ let project = Project.module(
         .implementation(
             feature: .AnimalQuizLabFeature,
             dependencies: [
+                .shared(target: .FoundationShared),
                 .shared(target: .RxThirdKit),
                 .shared(target: .UIKitExtensionShared),
                 .shared(target: .UIThirdKit),
