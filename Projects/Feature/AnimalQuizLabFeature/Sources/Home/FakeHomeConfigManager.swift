@@ -14,7 +14,7 @@ internal struct FakeHomeConfigManager: HomeConfigManager {
                 imageURL: nil,
                 itemCategory: nil,
                 itemCategory2: nil,
-                columns: 1 // Int.random(in: 1...3)
+                columns: 2 // Int.random(in: 1...3)
             ),
             .init(
                 id: "2",
