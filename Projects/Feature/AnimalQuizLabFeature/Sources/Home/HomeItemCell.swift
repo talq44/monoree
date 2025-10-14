@@ -4,10 +4,20 @@ import UIKitExtensionShared
 
 final class HomeItemCell: UICollectionViewCell {
     private let stackView = HStackView(spacing: Spacing.s, alignment: .center)
-    private let imageView = UIImageView()
+    private let imageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.contentMode = .scaleAspectFit
+        return imageView
+    }()
     private let titlesStackView = VStackView(spacing: Spacing.xs)
-    private let titleLabel = BaseLabel(style: .title3)
-    private let subTitleLabel = BaseLabel(style: .body)
+    private let titleLabel = BaseLabel(style: .title2)
+    private let subTitleLabel = BaseLabel(style: .callout)
+    private let trailingChevronImageView: UIImageView = {
+        let imageView = UIImageView(image: UIImage(systemName: "chevron.right")?
+            .withTintColor(.darkGray))
+        imageView.tintColor = .darkGray
+        return imageView
+    }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -22,7 +32,7 @@ final class HomeItemCell: UICollectionViewCell {
                 subTitleLabel
             ),
             SpacerView(),
-            UIImageView(image: UIImage(systemName: "chevron.right")),
+            trailingChevronImageView,
             SpacerView(width: Spacing.l)
         )
         
@@ -32,7 +42,7 @@ final class HomeItemCell: UICollectionViewCell {
         
         imageView.snp.makeConstraints { make in
             make.trailing.equalToSuperview().inset(Spacing.l)
-            make.directionalHorizontalEdges.equalToSuperview().inset(Spacing.xs)
+            make.directionalVerticalEdges.equalToSuperview().inset(Spacing.xs)
         }
         
         contentView.layer.cornerRadius = 8
@@ -46,8 +56,10 @@ final class HomeItemCell: UICollectionViewCell {
     func bind(state: HomeViewState.Item) {
         titleLabel.text = state.title
         subTitleLabel.text = state.subTitle
+        subTitleLabel.isHidden = state.subTitle == nil || state.subTitle?.isEmpty == true
         
         bindBackgroundColor(hex: state.backgroundColor)
+        bindBackgroundImage(imageURL: nil)
     }
     
     private func bindBackgroundColor(hex: String?) {
@@ -55,5 +67,10 @@ final class HomeItemCell: UICollectionViewCell {
         
         contentView.backgroundColor = UIColor(hex: hex, alpha: 0.6)
         contentView.layer.borderColor = UIColor(hex: hex)?.cgColor
+    }
+    
+    private func bindBackgroundImage(imageURL: String?) {
+        print(imageURL ?? "")
+        imageView.image = UIImage(systemName: "cat")
     }
 }
