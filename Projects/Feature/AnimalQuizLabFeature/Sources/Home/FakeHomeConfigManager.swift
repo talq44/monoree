@@ -14,7 +14,7 @@ internal struct FakeHomeConfigManager: HomeConfigManager {
                 imageURL: nil,
                 itemCategory: nil,
                 itemCategory2: nil,
-                columns: Int.random(in: 1...3)
+                columns: 1 // Int.random(in: 1...3)
             ),
             .init(
                 id: "2",
@@ -24,7 +24,7 @@ internal struct FakeHomeConfigManager: HomeConfigManager {
                 imageURL: nil,
                 itemCategory: "animal",
                 itemCategory2: "land",
-                columns: Int.random(in: 1...3)
+                columns: 2 // Int.random(in: 1...3)
             ),
             .init(
                 id: "3",
@@ -34,7 +34,27 @@ internal struct FakeHomeConfigManager: HomeConfigManager {
                 imageURL: nil,
                 itemCategory: "animal",
                 itemCategory2: "fish",
-                columns: Int.random(in: 1...3)
+                columns: 2 // Int.random(in: 1...3)
+            ),
+            .init(
+                id: "4",
+                title: "곤충",
+                subTitle: nil,
+                backgroundColor: nil,
+                imageURL: nil,
+                itemCategory: "animal",
+                itemCategory2: "fish",
+                columns: 2 // Int.random(in: 1...3)
+            ),
+            .init(
+                id: "5",
+                title: "양서류",
+                subTitle: nil,
+                backgroundColor: "#E0F7FA",
+                imageURL: nil,
+                itemCategory: "animal",
+                itemCategory2: "fish",
+                columns: 2 // Int.random(in: 1...3)
             )
         ]
         return HomeDTO(isShowBanner: true, items: items)
