@@ -7,7 +7,7 @@ extension RemoteConfigManagerImpl: HomeConfigManager {
     ) throws -> RemoteConfigCoreInterface.HomeDTO {
         return try fetchRemoteConfig(
             HomeDTO.self,
-            stringKey: type.rawValue
+            stringKey: type.rawValue + "Home"
         )
     }
     
