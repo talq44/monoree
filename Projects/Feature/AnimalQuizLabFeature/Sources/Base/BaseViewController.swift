@@ -3,6 +3,12 @@ import RxSwift
 
 class BaseViewController: UIViewController {
     internal var disposeBag = DisposeBag()
+        
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        view.backgroundColor = .systemBackground
+    }
     
     internal func setupNavigationBar() {
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: coinButton())

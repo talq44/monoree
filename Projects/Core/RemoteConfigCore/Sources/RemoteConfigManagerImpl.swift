@@ -42,9 +42,9 @@ final class RemoteConfigManagerImpl: RemoteConfigManager {
     
     internal func fetchRemoteConfig<T: Decodable>(
         _ type: T.Type,
-        key: RemoteConfigKeys
+        stringKey: String
     ) throws -> T {
-        let rcValue = remoteConfig.configValue(forKey: key.rawValue)
+        let rcValue = remoteConfig.configValue(forKey: stringKey)
         
         switch T.self {
         case is String.Type:
@@ -74,5 +74,12 @@ final class RemoteConfigManagerImpl: RemoteConfigManager {
             }
             return try JSONDecoder().decode(T.self, from: data)
         }
+    }
+    
+    internal func fetchRemoteConfig<T: Decodable>(
+        _ type: T.Type,
+        key: RemoteConfigKeys
+    ) throws -> T {
+        return try fetchRemoteConfig(type, stringKey: key.rawValue)
     }
 }

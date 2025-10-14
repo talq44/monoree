@@ -51,12 +51,10 @@ final class GameListViewController: BaseViewController {
         super.viewDidLoad()
         
         setupNavigationBar()
-        
-        self.title = "게임 목록"
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
         let animalSymbols: [String] = [
             "bird",
@@ -127,6 +125,11 @@ extension GameListViewController: ReactorKit.View {
             )) { _, item, cell in
                 cell.bind(state: item)
             }
+            .disposed(by: disposeBag)
+        
+        reactor.state.map { $0.title }
+            .distinctUntilChanged()
+            .bind(to: self.rx.title)
             .disposed(by: disposeBag)
     }
 }
