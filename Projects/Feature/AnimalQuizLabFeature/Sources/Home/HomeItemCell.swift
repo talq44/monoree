@@ -13,6 +13,7 @@ final class HomeItemCell: UICollectionViewCell {
         super.init(frame: frame)
         
         contentView.addSubview(stackView)
+        contentView.addSubview(imageView)
         
         stackView.addArrangedSubviews(
             SpacerView(width: Spacing.l),
@@ -28,6 +29,14 @@ final class HomeItemCell: UICollectionViewCell {
         stackView.snp.makeConstraints { make in
             make.directionalEdges.equalToSuperview()
         }
+        
+        imageView.snp.makeConstraints { make in
+            make.trailing.equalToSuperview().inset(Spacing.l)
+            make.directionalHorizontalEdges.equalToSuperview().inset(Spacing.xs)
+        }
+        
+        contentView.layer.cornerRadius = 8
+        contentView.layer.borderWidth = 1
     }
     
     required init?(coder: NSCoder) {
@@ -37,6 +46,14 @@ final class HomeItemCell: UICollectionViewCell {
     func bind(state: HomeViewState.Item) {
         titleLabel.text = state.title
         subTitleLabel.text = state.subTitle
-//        contentView.backgroundColor = state.backgroundColor
+        
+        bindBackgroundColor(hex: state.backgroundColor)
+    }
+    
+    private func bindBackgroundColor(hex: String?) {
+        guard let hex else { return }
+        
+        contentView.backgroundColor = UIColor(hex: hex, alpha: 0.6)
+        contentView.layer.borderColor = UIColor(hex: hex)?.cgColor
     }
 }
