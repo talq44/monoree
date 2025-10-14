@@ -10,8 +10,9 @@ public struct HomeDTO: Codable {
         public let imageURL: String?
         public let itemCategory: String?
         public let itemCategory2: String?
+        public let columns: Int
         
-        public init(id: String, title: String, subTitle: String?, backgroundColor: String?, imageURL: String?, itemCategory: String?, itemCategory2: String?) {
+        public init(id: String, title: String, subTitle: String?, backgroundColor: String?, imageURL: String?, itemCategory: String?, itemCategory2: String?, columns: Int) {
             self.id = id
             self.title = title
             self.subTitle = subTitle
@@ -19,6 +20,7 @@ public struct HomeDTO: Codable {
             self.imageURL = imageURL
             self.itemCategory = itemCategory
             self.itemCategory2 = itemCategory2
+            self.columns = columns
         }
     }
     

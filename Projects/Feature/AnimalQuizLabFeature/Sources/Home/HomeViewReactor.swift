@@ -24,6 +24,7 @@ struct HomeViewState {
         let itemCategory: String?
         let itemCategory2: String?
         var itemsCount: Int
+        let columns: Int
     }
     
     var items: [Item] = []
@@ -114,7 +115,8 @@ extension HomeDTO {
                 imageURL: item.imageURL,
                 itemCategory: item.itemCategory,
                 itemCategory2: item.itemCategory2,
-                itemsCount: 0
+                itemsCount: 0,
+                columns: item.columns
             )
         }
     }
