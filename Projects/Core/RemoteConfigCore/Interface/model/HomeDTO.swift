@@ -8,9 +8,10 @@ public struct HomeDTO: Codable {
         /// hex
         public let backgroundColor: String?
         public let imageURL: String?
-        public let item_category: String
-        public let item_category2: String
+        public let itemCategory: String
+        public let itemCategory2: String
     }
     
+    public let isShowBanner: Bool
     public let items: [Item]
 }
