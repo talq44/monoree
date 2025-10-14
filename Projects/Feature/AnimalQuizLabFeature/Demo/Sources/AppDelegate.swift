@@ -13,6 +13,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let vc = AQLCoordinator.home()
         let nc = UINavigationController(rootViewController: vc)
+        nc.navigationBar.prefersLargeTitles = true
+        vc.navigationItem.largeTitleDisplayMode = .automatic // 또는 .always
         window?.rootViewController = nc
         window?.backgroundColor = .systemBackground
         window?.makeKeyAndVisible()

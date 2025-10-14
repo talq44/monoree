@@ -71,6 +71,5 @@ final class HomeItemCell: UICollectionViewCell {
     
     private func bindBackgroundImage(imageURL: String?) {
         print(imageURL ?? "")
-        imageView.image = UIImage(systemName: "cat")
     }
 }

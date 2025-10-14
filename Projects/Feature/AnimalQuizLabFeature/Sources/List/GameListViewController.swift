@@ -51,12 +51,10 @@ final class GameListViewController: BaseViewController {
         super.viewDidLoad()
         
         setupNavigationBar()
-        
-        self.title = "게임 목록"
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
         let animalSymbols: [String] = [
             "bird",
