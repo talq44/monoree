@@ -21,8 +21,8 @@ struct HomeViewState {
         let subTitle: String?
         let backgroundColor: String?
         let imageURL: String?
-        let itemCategory: String
-        let itemCategory2: String
+        let itemCategory: String?
+        let itemCategory2: String?
         var itemsCount: Int
     }
     
