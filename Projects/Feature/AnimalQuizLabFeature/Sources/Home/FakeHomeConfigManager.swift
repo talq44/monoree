@@ -13,7 +13,8 @@ internal struct FakeHomeConfigManager: HomeConfigManager {
                 backgroundColor: "#FFEEDD",
                 imageURL: nil,
                 itemCategory: nil,
-                itemCategory2: nil
+                itemCategory2: nil,
+                columns: Int.random(in: 1...3)
             ),
             .init(
                 id: "2",
@@ -22,7 +23,8 @@ internal struct FakeHomeConfigManager: HomeConfigManager {
                 backgroundColor: "#E0F7FA",
                 imageURL: nil,
                 itemCategory: "animal",
-                itemCategory2: "land"
+                itemCategory2: "land",
+                columns: Int.random(in: 1...3)
             ),
             .init(
                 id: "3",
@@ -31,7 +33,8 @@ internal struct FakeHomeConfigManager: HomeConfigManager {
                 backgroundColor: nil,
                 imageURL: nil,
                 itemCategory: "animal",
-                itemCategory2: "fish"
+                itemCategory2: "fish",
+                columns: Int.random(in: 1...3)
             )
         ]
         return HomeDTO(isShowBanner: true, items: items)
