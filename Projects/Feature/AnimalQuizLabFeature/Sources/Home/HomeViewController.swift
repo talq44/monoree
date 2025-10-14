@@ -10,7 +10,8 @@ final class HomeViewController: BaseViewController {
     
     private enum Metric {
         static let bannerHeight: CGFloat = 100
-        static let singleColumnHeight: CGFloat = 150
+        static let singleColumnHeight: CGFloat = 80
+        static let itemSpacing: CGFloat = Spacing.s
     }
     
     private let stackView = VStackView()
@@ -30,13 +31,6 @@ final class HomeViewController: BaseViewController {
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.register(Cell.self, forCellWithReuseIdentifier: String(describing: Cell.self))
         return collectionView
-    }()
-    
-    private let testButton: UIButton = {
-        var config = UIButton.Configuration.filled()
-        config.title = "테스트 목록 이동"
-        
-        return UIButton(configuration: config)
     }()
     
     init(reactor: HomeViewReactor = HomeViewReactor(useFakeRemoteConfig: true)) {
@@ -63,17 +57,11 @@ final class HomeViewController: BaseViewController {
         }
         
         stackView.addArrangedSubviews(
-            testButton,
             collectionView,
             bannerView
         )
         
         bannerView.backgroundColor = .green
-        
-        testButton.snp.makeConstraints { make in
-            make.directionalHorizontalEdges.equalTo(view.safeAreaLayoutGuide)
-            make.top.equalTo(view.safeAreaLayoutGuide).inset(8)
-        }
     }
     
     override func viewDidLoad() {
@@ -83,13 +71,13 @@ final class HomeViewController: BaseViewController {
         
         setupNavigationBar()
         
-        testButton.addAction(
-            UIAction(handler: { [weak self] _ in
-                let vc = GameListViewController()
-                self?.navigationController?.pushViewController(vc, animated: true)
-            }),
-            for: .touchUpInside
-        )
+//        testButton.addAction(
+//            UIAction(handler: { [weak self] _ in
+//                let vc = GameListViewController()
+//                self?.navigationController?.pushViewController(vc, animated: true)
+//            }),
+//            for: .touchUpInside
+//        )
         
         reactor?.action.onNext(.refresh)
     }
@@ -102,7 +90,6 @@ final class HomeViewController: BaseViewController {
             }()
             
             let count = max(1, min(3, columns))
-            let spacing: CGFloat = 8
             
             if count == 1 {
                 let itemSize = NSCollectionLayoutSize(
@@ -113,11 +100,11 @@ final class HomeViewController: BaseViewController {
                 
                 let groupSize = itemSize
                 let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
-                group.interItemSpacing = .fixed(spacing)
+                group.interItemSpacing = .fixed(Metric.itemSpacing)
                 
                 let section = NSCollectionLayoutSection(group: group)
                 section.contentInsets = NSDirectionalEdgeInsets(top: 8, leading: 16, bottom: 8, trailing: 16)
-                section.interGroupSpacing = spacing
+                section.interGroupSpacing = Metric.itemSpacing
                 
                 return section
             } else {
@@ -131,12 +118,16 @@ final class HomeViewController: BaseViewController {
                     widthDimension: .fractionalWidth(1.0),
                     heightDimension: .fractionalWidth(1.0 / CGFloat(count))
                 )
-                let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitem: item, count: count)
-                group.interItemSpacing = .fixed(spacing)
+                let group = NSCollectionLayoutGroup.horizontal(
+                    layoutSize: groupSize,
+                    repeatingSubitem: item,
+                    count: count
+                )
+                group.interItemSpacing = .fixed(Metric.itemSpacing)
                 
                 let section = NSCollectionLayoutSection(group: group)
                 section.contentInsets = NSDirectionalEdgeInsets(top: 8, leading: 16, bottom: 8, trailing: 16)
-                section.interGroupSpacing = spacing
+                section.interGroupSpacing = Metric.itemSpacing
                 
                 return section
             }
