@@ -12,6 +12,7 @@ enum HomeViewMutation {
     case setItems([HomeViewState.Item])
     case setIsShowBanner(Bool)
     case setError(message: String)
+    case setNextPage(GameListViewPayload)
 }
 
 struct HomeViewState {
@@ -30,6 +31,7 @@ struct HomeViewState {
     var items: [Item] = []
     var isShowBanner: Bool = false
     @Pulse var errorMessage: String?
+    @Pulse var nextPage: GameListViewPayload?
 }
 
 final class HomeViewReactor: Reactor {
@@ -55,7 +57,16 @@ extension HomeViewReactor {
             return mutateRefresh(remoteConfig: remoteConfig)
             
         case .selectItem(let id):
-            return .empty()
+            guard let item = currentState.items.first(where: { $0.id == id }) else {
+                return .empty()
+            }
+            
+            return .just(.setNextPage(GameListViewPayload(
+                id: item.id,
+                title: item.title,
+                itemCategory: item.itemCategory,
+                itemCategory2: item.itemCategory2
+            )))
         }
     }
 }
@@ -98,6 +109,9 @@ extension HomeViewReactor {
             
         case .setError(let message):
             state.errorMessage = message
+            
+        case .setNextPage(let payload):
+            state.nextPage = payload
         }
         
         return state

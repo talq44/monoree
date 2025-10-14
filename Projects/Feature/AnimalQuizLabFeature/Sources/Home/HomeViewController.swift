@@ -71,14 +71,6 @@ final class HomeViewController: BaseViewController {
         
         setupNavigationBar()
         
-//        testButton.addAction(
-//            UIAction(handler: { [weak self] _ in
-//                let vc = GameListViewController()
-//                self?.navigationController?.pushViewController(vc, animated: true)
-//            }),
-//            for: .touchUpInside
-//        )
-        
         reactor?.action.onNext(.refresh)
     }
     
@@ -151,6 +143,11 @@ extension HomeViewController: ReactorKit.View {
     }
     
     private func bindState(reactor: Reactor) {
+        bindStateItems(reactor: reactor)
+        bindStateNextPage(reactor: reactor)
+    }
+    
+    private func bindStateItems(reactor: Reactor) {
         reactor.state.map { $0.items }
             .distinctUntilChanged()
             .observe(on: MainScheduler.instance)
@@ -172,6 +169,16 @@ extension HomeViewController: ReactorKit.View {
             )) { _, item, cell in
                 cell.bind(state: item)
             }
+            .disposed(by: disposeBag)
+    }
+    
+    private func bindStateNextPage(reactor: Reactor) {
+        reactor.pulse(\.$nextPage)
+            .compactMap { $0 }
+            .subscribe(onNext: { [weak self] payload in
+                let vc = GameListViewController(reactor: GameListViewReactor(payload: payload))
+                self?.navigationController?.pushViewController(vc, animated: true)
+            })
             .disposed(by: disposeBag)
     }
 }

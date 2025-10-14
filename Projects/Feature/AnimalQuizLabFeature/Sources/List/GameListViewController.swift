@@ -128,5 +128,10 @@ extension GameListViewController: ReactorKit.View {
                 cell.bind(state: item)
             }
             .disposed(by: disposeBag)
+        
+        reactor.state.map { $0.title }
+            .distinctUntilChanged()
+            .bind(to: self.rx.title)
+            .disposed(by: disposeBag)
     }
 }
