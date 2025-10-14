@@ -10,4 +10,5 @@ import Foundation
 enum RemoteConfigKeys: String {
     case version
     case game
+    case home
 }

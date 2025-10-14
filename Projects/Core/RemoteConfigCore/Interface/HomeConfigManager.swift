@@ -1,0 +1,5 @@
+import Foundation
+
+public protocol HomeConfigManager {
+    func fetch(_ type: HomeConfigType) async throws -> HomeDTO
+}
