@@ -16,6 +16,7 @@ let project = Project.module(
                 .shared(target: .RxThirdKit),
                 .shared(target: .UIKitExtensionShared),
                 .shared(target: .UIThirdKit),
+                .core(target: .RemoteConfigCore, type: .interface),
                 .feature(target: .AnimalQuizLabFeature, type: .interface),
             ]
         ),
