@@ -27,6 +27,16 @@ internal struct FakeHomeConfigManager: HomeConfigManager {
                 columns: 3 // Int.random(in: 1...3)
             ),
             .init(
+                id: "6",
+                title: "조류",
+                subTitle: "하늘을 날아 올라",
+                backgroundColor: "#E007F6",
+                imageURL: "https://cdn.jsdelivr.net/gh/talq44/monoree_images@main/animal/toy3D/sparrow.webp",
+                itemCategory: "animal",
+                itemCategory2: "land",
+                columns: 3 // Int.random(in: 1...3)
+            ),
+            .init(
                 id: "3",
                 title: "해상",
                 subTitle: nil,
@@ -51,7 +61,7 @@ internal struct FakeHomeConfigManager: HomeConfigManager {
                 title: "양서류",
                 subTitle: nil,
                 backgroundColor: "#E0F7FA",
-                imageURL: "https://cdn.jsdelivr.net/gh/talq44/monoree_images@main/animal/plush/eagle.webp",
+                imageURL: "https://cdn.jsdelivr.net/gh/talq44/monoree_images@main/animal/toy3D/frog.webp",
                 itemCategory: "animal",
                 itemCategory2: "fish",
                 columns: 2 // Int.random(in: 1...3)
