@@ -69,7 +69,7 @@ final class HomeViewController: BaseViewController {
         
         self.title = "홈"
         
-        setupNavigationBar()
+        setupNavigationBarHome()
         
         reactor?.action.onNext(.refresh)
     }
