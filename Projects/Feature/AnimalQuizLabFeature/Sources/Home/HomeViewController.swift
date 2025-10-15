@@ -4,6 +4,7 @@ import UIKitExtensionShared
 import ReactorKit
 import RxSwift
 import RxCocoa
+import RxThirdKit
 
 final class HomeViewController: BaseViewController {
     typealias Cell = HomeItemCell
@@ -70,8 +71,6 @@ final class HomeViewController: BaseViewController {
         self.title = "홈"
         
         setupNavigationBarHome()
-        
-        reactor?.action.onNext(.refresh)
     }
     
     private func makeCompositionalLayout() -> UICollectionViewCompositionalLayout {
@@ -136,6 +135,11 @@ extension HomeViewController: ReactorKit.View {
     }
     
     private func bindAction(reactor: Reactor) {
+        rx.viewWillAppear
+            .map { _ in Reactor.Action.refresh }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
+        
         collectionView.rx.modelSelected(HomeViewState.Item.self)
             .map { Reactor.Action.selectItem(id: $0.id) }
             .bind(to: reactor.action)
