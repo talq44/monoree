@@ -11,7 +11,7 @@ internal struct FakeHomeConfigManager: HomeConfigManager {
                 title: "동물",
                 subTitle: "모든 동물을 만나보세요.",
                 backgroundColor: "#FFEEDD",
-                imageURL: nil,
+                imageURL: "https://cdn.jsdelivr.net/gh/talq44/monoree_images@main/animal/plush/tiger.webp",
                 itemCategory: nil,
                 itemCategory2: nil,
                 columns: 1 // Int.random(in: 1...3)
@@ -21,7 +21,7 @@ internal struct FakeHomeConfigManager: HomeConfigManager {
                 title: "육지",
                 subTitle: "Loyal friend",
                 backgroundColor: "#E0F7FA",
-                imageURL: nil,
+                imageURL: "https://cdn.jsdelivr.net/gh/talq44/monoree_images@main/animal/toy3D/lion.webp",
                 itemCategory: "animal",
                 itemCategory2: "land",
                 columns: 2 // Int.random(in: 1...3)
@@ -31,7 +31,7 @@ internal struct FakeHomeConfigManager: HomeConfigManager {
                 title: "해상",
                 subTitle: nil,
                 backgroundColor: nil,
-                imageURL: nil,
+                imageURL: "https://cdn.jsdelivr.net/gh/talq44/monoree_images@main/animal/realistic/swan.webp",
                 itemCategory: "animal",
                 itemCategory2: "fish",
                 columns: 2 // Int.random(in: 1...3)
@@ -41,7 +41,7 @@ internal struct FakeHomeConfigManager: HomeConfigManager {
                 title: "곤충",
                 subTitle: nil,
                 backgroundColor: nil,
-                imageURL: nil,
+                imageURL: "https://cdn.jsdelivr.net/gh/talq44/monoree_images@main/animal/plush/eagle.webp",
                 itemCategory: "animal",
                 itemCategory2: "fish",
                 columns: 2 // Int.random(in: 1...3)
@@ -51,7 +51,7 @@ internal struct FakeHomeConfigManager: HomeConfigManager {
                 title: "양서류",
                 subTitle: nil,
                 backgroundColor: "#E0F7FA",
-                imageURL: nil,
+                imageURL: "https://cdn.jsdelivr.net/gh/talq44/monoree_images@main/animal/plush/eagle.webp",
                 itemCategory: "animal",
                 itemCategory2: "fish",
                 columns: 2 // Int.random(in: 1...3)

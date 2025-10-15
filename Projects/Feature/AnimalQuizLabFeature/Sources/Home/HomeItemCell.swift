@@ -1,5 +1,6 @@
 import UIKit
 import SnapKit
+import Kingfisher
 import UIKitExtensionShared
 
 final class HomeItemCell: UICollectionViewCell {
@@ -42,6 +43,7 @@ final class HomeItemCell: UICollectionViewCell {
         
         imageView.snp.makeConstraints { make in
             make.trailing.equalToSuperview().inset(Spacing.l)
+            make.width.equalToSuperview().multipliedBy(0.3)
             make.directionalVerticalEdges.equalToSuperview().inset(Spacing.xs)
         }
         
@@ -59,7 +61,7 @@ final class HomeItemCell: UICollectionViewCell {
         subTitleLabel.isHidden = state.subTitle == nil || state.subTitle?.isEmpty == true
         
         bindBackgroundColor(hex: state.backgroundColor)
-        bindBackgroundImage(imageURL: nil)
+        bindBackgroundImage(imageURL: state.imageURL)
     }
     
     private func bindBackgroundColor(hex: String?) {
@@ -70,6 +72,7 @@ final class HomeItemCell: UICollectionViewCell {
     }
     
     private func bindBackgroundImage(imageURL: String?) {
-        print(imageURL ?? "")
+        let url = URL(string: imageURL ?? "")
+        imageView.kf.setImage(with: url)
     }
 }
