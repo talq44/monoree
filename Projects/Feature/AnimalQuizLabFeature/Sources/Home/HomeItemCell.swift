@@ -12,7 +12,7 @@ final class HomeItemCell: UICollectionViewCell {
     }()
     private let titlesStackView = VStackView(spacing: Spacing.xs)
     private let titleLabel = BaseLabel(style: .title2)
-    private let subTitleLabel = BaseLabel(style: .callout)
+    private let subTitleLabel = BaseLabel(style: .callout, isMultipleLines: true)
     private let trailingChevronImageView: UIImageView = {
         let imageView = UIImageView(image: UIImage(systemName: "chevron.right")?
             .withTintColor(.darkGray))

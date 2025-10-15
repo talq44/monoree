@@ -9,7 +9,7 @@ internal struct FakeHomeConfigManager: HomeConfigManager {
             .init(
                 id: "1",
                 title: "동물",
-                subTitle: "모든 동물을 만나보세요.",
+                subTitle: "모든 동물을 만나보세요. 다양한 동물들이 한가득",
                 backgroundColor: "#FFEEDD",
                 imageURL: "https://cdn.jsdelivr.net/gh/talq44/monoree_images@main/animal/plush/tiger.webp",
                 itemCategory: nil,
@@ -24,7 +24,7 @@ internal struct FakeHomeConfigManager: HomeConfigManager {
                 imageURL: "https://cdn.jsdelivr.net/gh/talq44/monoree_images@main/animal/toy3D/lion.webp",
                 itemCategory: "animal",
                 itemCategory2: "land",
-                columns: 2 // Int.random(in: 1...3)
+                columns: 3 // Int.random(in: 1...3)
             ),
             .init(
                 id: "3",
@@ -34,7 +34,7 @@ internal struct FakeHomeConfigManager: HomeConfigManager {
                 imageURL: "https://cdn.jsdelivr.net/gh/talq44/monoree_images@main/animal/realistic/swan.webp",
                 itemCategory: "animal",
                 itemCategory2: "fish",
-                columns: 2 // Int.random(in: 1...3)
+                columns: 3 // Int.random(in: 1...3)
             ),
             .init(
                 id: "4",
