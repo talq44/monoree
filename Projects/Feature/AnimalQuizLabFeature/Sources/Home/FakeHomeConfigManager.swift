@@ -9,9 +9,9 @@ internal struct FakeHomeConfigManager: HomeConfigManager {
             .init(
                 id: "1",
                 title: "동물",
-                subTitle: "모든 동물을 만나보세요.",
+                subTitle: "모든 동물을 만나보세요. 다양한 동물들이 한가득",
                 backgroundColor: "#FFEEDD",
-                imageURL: nil,
+                imageURL: "https://cdn.jsdelivr.net/gh/talq44/monoree_images@main/animal/plush/tiger.webp",
                 itemCategory: nil,
                 itemCategory2: nil,
                 columns: 1 // Int.random(in: 1...3)
@@ -21,27 +21,37 @@ internal struct FakeHomeConfigManager: HomeConfigManager {
                 title: "육지",
                 subTitle: "Loyal friend",
                 backgroundColor: "#E0F7FA",
-                imageURL: nil,
+                imageURL: "https://cdn.jsdelivr.net/gh/talq44/monoree_images@main/animal/toy3D/lion.webp",
                 itemCategory: "animal",
                 itemCategory2: "land",
-                columns: 2 // Int.random(in: 1...3)
+                columns: 3 // Int.random(in: 1...3)
+            ),
+            .init(
+                id: "6",
+                title: "조류",
+                subTitle: "하늘을 날아 올라",
+                backgroundColor: "#E007F6",
+                imageURL: "https://cdn.jsdelivr.net/gh/talq44/monoree_images@main/animal/toy3D/sparrow.webp",
+                itemCategory: "animal",
+                itemCategory2: "land",
+                columns: 3 // Int.random(in: 1...3)
             ),
             .init(
                 id: "3",
                 title: "해상",
                 subTitle: nil,
                 backgroundColor: nil,
-                imageURL: nil,
+                imageURL: "https://cdn.jsdelivr.net/gh/talq44/monoree_images@main/animal/realistic/swan.webp",
                 itemCategory: "animal",
                 itemCategory2: "fish",
-                columns: 2 // Int.random(in: 1...3)
+                columns: 3 // Int.random(in: 1...3)
             ),
             .init(
                 id: "4",
                 title: "곤충",
                 subTitle: nil,
                 backgroundColor: nil,
-                imageURL: nil,
+                imageURL: "https://cdn.jsdelivr.net/gh/talq44/monoree_images@main/animal/plush/eagle.webp",
                 itemCategory: "animal",
                 itemCategory2: "fish",
                 columns: 2 // Int.random(in: 1...3)
@@ -51,7 +61,7 @@ internal struct FakeHomeConfigManager: HomeConfigManager {
                 title: "양서류",
                 subTitle: nil,
                 backgroundColor: "#E0F7FA",
-                imageURL: nil,
+                imageURL: "https://cdn.jsdelivr.net/gh/talq44/monoree_images@main/animal/toy3D/frog.webp",
                 itemCategory: "animal",
                 itemCategory2: "fish",
                 columns: 2 // Int.random(in: 1...3)

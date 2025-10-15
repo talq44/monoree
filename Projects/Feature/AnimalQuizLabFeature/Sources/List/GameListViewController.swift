@@ -50,7 +50,7 @@ final class GameListViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setupNavigationBar()
+        setupNavigationBarCoin()
     }
     
     override func viewWillAppear(_ animated: Bool) {
