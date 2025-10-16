@@ -136,7 +136,7 @@ extension GameListViewController: ReactorKit.View {
             .compactMap { $0 }
             .subscribe(onNext: { [weak self] payload in
                 let vc = GamePlayViewController()
-                self?.navigationController?.pushViewController(vc, animated: true)
+                self?.present(vc, animated: true)
             })
             .disposed(by: disposeBag)
     }
