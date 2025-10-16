@@ -88,31 +88,17 @@ final class GameContentView: UIView {
         switch answers.count {
         case ..<1:
             bottomStackView.isHidden = true
-        case ..<4:
+        case 1...3:
             let answerStackView = VStackView(spacing: Spacing.m, distribution: .fillEqually)
             
             bottomStackView.addArrangedSubviews(answerStackView)
             
             Array(0..<answers.count).forEach { row in
-                let configuration: UIButton.Configuration
-                if #available(iOS 26.0, *) {
-                    configuration = UIButton.Configuration.glass()
-                } else {
-                    configuration = UIButton.Configuration.borderedProminent()
-                }
-                
-                let button = UIButton(configuration: configuration)
-                button.addAction(
-                    UIAction(handler: { [weak self] _ in
-                        self?.didSelectAnswer?(row)
-                    }),
-                    for: .touchUpInside
-                )
-                button.configuration?.title = answers[row]
+                let button = makeButton(title: answers[row], row: row)
                 answerButtons.append(button)
                 answerStackView.addArrangedSubview(button)
             }
-        case 4:
+        case 4...6:
             let answerStackView = HStackView(spacing: Spacing.m, distribution: .fillEqually)
             let answerStackView2 = HStackView(spacing: Spacing.m, distribution: .fillEqually)
             bottomStackView.addArrangedSubviews(
@@ -121,46 +107,68 @@ final class GameContentView: UIView {
             )
             
             Array(0..<(answers.count / 2)).forEach { row in
-                let configuration: UIButton.Configuration
-                if #available(iOS 26.0, *) {
-                    configuration = UIButton.Configuration.glass()
-                } else {
-                    configuration = UIButton.Configuration.borderedProminent()
-                }
-                
-                let button = UIButton(configuration: configuration)
-                button.addAction(
-                    UIAction(handler: { [weak self] _ in
-                        self?.didSelectAnswer?(row)
-                    }),
-                    for: .touchUpInside
-                )
-                button.configuration?.title = answers[row]
+                let button = makeButton(title: answers[row], row: row)
                 answerButtons.append(button)
                 answerStackView.addArrangedSubview(button)
             }
             
             Array((answers.count / 2)..<answers.count).forEach { row in
-                let configuration: UIButton.Configuration
-                if #available(iOS 26.0, *) {
-                    configuration = UIButton.Configuration.glass()
-                } else {
-                    configuration = UIButton.Configuration.borderedProminent()
-                }
-                
-                let button = UIButton(configuration: configuration)
-                button.addAction(
-                    UIAction(handler: { [weak self] _ in
-                        self?.didSelectAnswer?(row)
-                    }),
-                    for: .touchUpInside
-                )
-                button.configuration?.title = answers[row]
+                let button = makeButton(title: answers[row], row: row)
                 answerButtons.append(button)
                 answerStackView2.addArrangedSubview(button)
+            }
+        case 7...9:
+            let answerStackView = HStackView(spacing: Spacing.m, distribution: .fillEqually)
+            let answerStackView2 = HStackView(spacing: Spacing.m, distribution: .fillEqually)
+            let answerStackView3 = HStackView(spacing: Spacing.m, distribution: .fillEqually)
+            bottomStackView.addArrangedSubviews(
+                answerStackView,
+                answerStackView2,
+                answerStackView3
+            )
+            
+            Array(0..<3).forEach { row in
+                let button = makeButton(title: answers[row], row: row)
+                answerButtons.append(button)
+                answerStackView.addArrangedSubview(button)
+            }
+            
+            Array(3..<6).forEach { row in
+                let button = makeButton(title: answers[row], row: row)
+                answerButtons.append(button)
+                answerStackView2.addArrangedSubview(button)
+            }
+            
+            Array(6..<9).forEach { row in
+                let button = makeButton(title: answers[row], row: row)
+                answerButtons.append(button)
+                answerStackView3.addArrangedSubview(button)
             }
         default:
             break
         }
+    }
+    
+    private func makeButton(title: String, row: Int) -> UIButton {
+        var configuration: UIButton.Configuration
+        if #available(iOS 26.0, *) {
+            configuration = UIButton.Configuration.glass()
+        } else {
+            configuration = UIButton.Configuration.borderedProminent()
+        }
+        
+        var title = AttributedString(title)
+        title.font = .preferredFont(forTextStyle: .extraLargeTitle2)
+        configuration.attributedTitle = title
+        
+        let button = UIButton(configuration: configuration)
+        button.addAction(
+            UIAction(handler: { [weak self] _ in
+                self?.didSelectAnswer?(row)
+            }),
+            for: .touchUpInside
+        )
+        
+        return button
     }
 }
