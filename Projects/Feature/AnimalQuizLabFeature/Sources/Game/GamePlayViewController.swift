@@ -6,11 +6,11 @@ import RxSwift
 import RxCocoa
 
 struct GamePlayViewPayload {
-    
+    let answerCount: Int
 }
 
 final class GamePlayViewController: BaseViewController {
-    private let itemView = GameContentView(style: .image, answer: .answer4)
+    private let itemView = GameContentView(style: .image)
     
     override func loadView() {
         super.loadView()
@@ -25,9 +25,9 @@ final class GamePlayViewController: BaseViewController {
             gameQuestion: .image(
                 url: "https://cdn.jsdelivr.net/gh/talq44/monoree_images@main/animal/toy3D/lion.webp"
             ),
-            answers: ["사자", "호랑이", "까마귀", "토끼"],
+            answers: ["사자", "호랑이"],
             didSelectAnswer: { row in
-                print("row")
+                print("row \(row)")
             })
         )
     }
