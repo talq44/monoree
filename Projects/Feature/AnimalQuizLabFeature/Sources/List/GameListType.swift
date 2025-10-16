@@ -18,8 +18,8 @@ enum GameListType: CaseIterable {
         case .textMatchAnswer2: return 2
         case .textMatchAnswer3: return 3
         case .textMatchAnswer4: return 4
-        case .autoScroll10: return 10
-        case .autoScroll30: return 30
+        case .autoScroll10: return 0
+        case .autoScroll30: return 0
         }
     }
     
@@ -63,5 +63,9 @@ enum GameListType: CaseIterable {
         case .autoScroll30:
             return UIImage(systemName: "30.arrow.trianglehead.clockwise")
         }
+    }
+    
+    var isAutoScroll: Bool {
+        self == .autoScroll10 || self == .autoScroll30
     }
 }
