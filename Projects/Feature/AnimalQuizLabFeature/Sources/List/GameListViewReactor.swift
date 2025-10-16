@@ -36,7 +36,7 @@ extension GameListViewReactor {
         
         switch mutation {
         case .selectItem(let gameListType):
-            state.gamePlayViewPayload = .init()
+            state.gamePlayViewPayload = .init(answerCount: gameListType.count)
         }
         
         return state
