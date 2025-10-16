@@ -13,9 +13,10 @@ enum GameListViewAction {
     case selectItem(GameListType)
 }
 
-struct GameListViewState: Equatable {
+struct GameListViewState {
     let title: String
     let items: [GameListType] = GameListType.allCases
+    @Pulse var gamePlayViewPayload: GamePlayViewPayload?
 }
 
 final class GameListViewReactor: Reactor {
@@ -26,6 +27,19 @@ final class GameListViewReactor: Reactor {
     
     init(payload: GameListViewPayload) {
         initialState = .init(title: payload.title)
+    }
+}
+
+extension GameListViewReactor {
+    func reduce(state: GameListViewState, mutation: GameListViewAction) -> GameListViewState {
+        var state = state
+        
+        switch mutation {
+        case .selectItem(let gameListType):
+            state.gamePlayViewPayload = .init()
+        }
+        
+        return state
     }
 }
 

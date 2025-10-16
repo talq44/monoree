@@ -131,5 +131,13 @@ extension GameListViewController: ReactorKit.View {
             .distinctUntilChanged()
             .bind(to: self.rx.title)
             .disposed(by: disposeBag)
+        
+        reactor.pulse(\.$gamePlayViewPayload)
+            .compactMap { $0 }
+            .subscribe(onNext: { [weak self] payload in
+                let vc = GamePlayViewController()
+                self?.navigationController?.pushViewController(vc, animated: true)
+            })
+            .disposed(by: disposeBag)
     }
 }
