@@ -1,8 +1,10 @@
-//
-//  UIView+Extension.swift
-//  AnimalQuizLabFeature
-//
-//  Created by 박창규 on 10/16/25.
-//
+import UIKit
+import UIKitExtensionShared
 
-import Foundation
+extension UIView {
+    func contentStyle() {
+        layer.cornerRadius = Spacing.m
+        layer.masksToBounds = true
+        backgroundColor = .systemBackground
+    }
+}
