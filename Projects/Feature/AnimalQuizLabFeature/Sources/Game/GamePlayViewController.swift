@@ -1,29 +1,34 @@
-//
-//  GamePlayViewController.swift
-//  AnimalQuizLabFeature
-//
-//  Created by 박창규 on 10/16/25.
-//
-
 import UIKit
+import UIKitExtensionShared
+import SnapKit
+import ReactorKit
+import RxSwift
+import RxCocoa
 
-class GamePlayViewController: BaseViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
+struct GamePlayViewPayload {
     
+}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+final class GamePlayViewController: BaseViewController {
+    private let itemView = GameContentView(style: .image, answer: .answer4)
+    
+    override func loadView() {
+        super.loadView()
+        
+        view.addSubview(itemView)
+        
+        itemView.snp.makeConstraints { make in
+            make.directionalEdges.equalTo(view.safeAreaLayoutGuide).inset(Spacing.m)
+        }
+        
+        itemView.bind(state: GameContentView.State(
+            gameQuestion: .image(
+                url: "https://cdn.jsdelivr.net/gh/talq44/monoree_images@main/animal/toy3D/lion.webp"
+            ),
+            answers: ["사자", "호랑이", "까마귀", "토끼"],
+            didSelectAnswer: { row in
+                print("row")
+            })
+        )
     }
-    */
-
 }
