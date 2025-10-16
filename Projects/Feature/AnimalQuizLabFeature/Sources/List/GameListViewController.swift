@@ -135,7 +135,20 @@ extension GameListViewController: ReactorKit.View {
         reactor.pulse(\.$gamePlayViewPayload)
             .compactMap { $0 }
             .subscribe(onNext: { [weak self] payload in
-                let vc = GamePlayViewController()
+                let vc = GamePlayViewController(payload: payload)
+                
+                if UIDevice.isPad {
+                    vc.modalPresentationStyle = .pageSheet
+                    
+                    if let sheet = vc.sheetPresentationController {
+                        sheet.detents = [.large()]
+                        sheet.prefersScrollingExpandsWhenScrolledToEdge = false
+                        sheet.prefersGrabberVisible = true
+                        sheet.widthFollowsPreferredContentSizeWhenEdgeAttached = true
+                        sheet.prefersEdgeAttachedInCompactHeight = true
+                    }
+                }
+                
                 self?.present(vc, animated: true)
             })
             .disposed(by: disposeBag)
