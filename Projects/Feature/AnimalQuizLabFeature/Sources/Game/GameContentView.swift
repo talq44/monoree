@@ -14,13 +14,6 @@ enum GameQuestion {
     case text(String)
 }
 
-enum GameAnserType: Int {
-    case answer2 = 2
-    case answer3 = 3
-    case answer4 = 4
-    case noAnswer = 0
-}
-
 final class GameContentView: UIView {
     struct State {
         let gameQuestion: GameQuestion
@@ -41,7 +34,7 @@ final class GameContentView: UIView {
     
     private var didSelectAnswer: ((Int) -> Void)?
     
-    init(style: GameContentStyle, answer: GameAnserType) {
+    init(style: GameContentStyle) {
         super.init(frame: .zero)
         
         addSubview(stackView)
@@ -67,78 +60,6 @@ final class GameContentView: UIView {
         questionLabel.snp.makeConstraints { make in
             make.directionalEdges.equalToSuperview().inset(Spacing.s)
         }
-        
-        switch answer {
-        case .answer2, .answer3:
-            let answerStackView = HStackView(spacing: Spacing.m, distribution: .fillEqually)
-            bottomStackView.addArrangedSubviews(answerStackView)
-            
-            Array(0..<answer.rawValue).forEach { row in
-                let configuration: UIButton.Configuration
-                if #available(iOS 26.0, *) {
-                    configuration = UIButton.Configuration.glass()
-                } else {
-                    configuration = UIButton.Configuration.borderedProminent()
-                }
-                
-                let button = UIButton(configuration: configuration)
-                button.addAction(
-                    UIAction(handler: { [weak self] _ in
-                        self?.didSelectAnswer?(row)
-                    }),
-                    for: .touchUpInside
-                )
-                answerButtons.append(button)
-                answerStackView.addArrangedSubview(button)
-            }
-        case .answer4:
-            let answerStackView = HStackView(spacing: Spacing.m, distribution: .fillEqually)
-            let answerStackView2 = HStackView(spacing: Spacing.m, distribution: .fillEqually)
-            bottomStackView.addArrangedSubviews(
-                answerStackView,
-                answerStackView2
-            )
-            
-            Array(0..<(answer.rawValue / 2)).forEach { row in
-                let configuration: UIButton.Configuration
-                if #available(iOS 26.0, *) {
-                    configuration = UIButton.Configuration.glass()
-                } else {
-                    configuration = UIButton.Configuration.borderedProminent()
-                }
-                
-                let button = UIButton(configuration: configuration)
-                button.addAction(
-                    UIAction(handler: { [weak self] _ in
-                        self?.didSelectAnswer?(row)
-                    }),
-                    for: .touchUpInside
-                )
-                answerButtons.append(button)
-                answerStackView.addArrangedSubview(button)
-            }
-            
-            Array((answer.rawValue / 2)..<answer.rawValue).forEach { row in
-                let configuration: UIButton.Configuration
-                if #available(iOS 26.0, *) {
-                    configuration = UIButton.Configuration.glass()
-                } else {
-                    configuration = UIButton.Configuration.borderedProminent()
-                }
-                
-                let button = UIButton(configuration: configuration)
-                button.addAction(
-                    UIAction(handler: { [weak self] _ in
-                        self?.didSelectAnswer?(row)
-                    }),
-                    for: .touchUpInside
-                )
-                answerButtons.append(button)
-                answerStackView2.addArrangedSubview(button)
-            }
-        case .noAnswer:
-            bottomStackView.isHidden = true
-        }
     }
     
     required init?(coder: NSCoder) {
@@ -158,12 +79,88 @@ final class GameContentView: UIView {
             questionLabel.text = text
         }
         
-        state.answers.enumerated().forEach { index, offset in
-            guard index < answerButtons.count else { return }
-            
-            answerButtons[index].configuration?.title = offset
-        }
-        
         didSelectAnswer = state.didSelectAnswer
+        
+        makeButtons(answers: state.answers)
+    }
+    
+    private func makeButtons(answers: [String]) {
+        switch answers.count {
+        case ..<1:
+            bottomStackView.isHidden = true
+        case ..<4:
+            let answerStackView = VStackView(spacing: Spacing.m, distribution: .fillEqually)
+            
+            bottomStackView.addArrangedSubviews(answerStackView)
+            
+            Array(0..<answers.count).forEach { row in
+                let configuration: UIButton.Configuration
+                if #available(iOS 26.0, *) {
+                    configuration = UIButton.Configuration.glass()
+                } else {
+                    configuration = UIButton.Configuration.borderedProminent()
+                }
+                
+                let button = UIButton(configuration: configuration)
+                button.addAction(
+                    UIAction(handler: { [weak self] _ in
+                        self?.didSelectAnswer?(row)
+                    }),
+                    for: .touchUpInside
+                )
+                button.configuration?.title = answers[row]
+                answerButtons.append(button)
+                answerStackView.addArrangedSubview(button)
+            }
+        case 4:
+            let answerStackView = HStackView(spacing: Spacing.m, distribution: .fillEqually)
+            let answerStackView2 = HStackView(spacing: Spacing.m, distribution: .fillEqually)
+            bottomStackView.addArrangedSubviews(
+                answerStackView,
+                answerStackView2
+            )
+            
+            Array(0..<(answers.count / 2)).forEach { row in
+                let configuration: UIButton.Configuration
+                if #available(iOS 26.0, *) {
+                    configuration = UIButton.Configuration.glass()
+                } else {
+                    configuration = UIButton.Configuration.borderedProminent()
+                }
+                
+                let button = UIButton(configuration: configuration)
+                button.addAction(
+                    UIAction(handler: { [weak self] _ in
+                        self?.didSelectAnswer?(row)
+                    }),
+                    for: .touchUpInside
+                )
+                button.configuration?.title = answers[row]
+                answerButtons.append(button)
+                answerStackView.addArrangedSubview(button)
+            }
+            
+            Array((answers.count / 2)..<answers.count).forEach { row in
+                let configuration: UIButton.Configuration
+                if #available(iOS 26.0, *) {
+                    configuration = UIButton.Configuration.glass()
+                } else {
+                    configuration = UIButton.Configuration.borderedProminent()
+                }
+                
+                let button = UIButton(configuration: configuration)
+                button.addAction(
+                    UIAction(handler: { [weak self] _ in
+                        self?.didSelectAnswer?(row)
+                    }),
+                    for: .touchUpInside
+                )
+                button.configuration?.title = answers[row]
+                answerButtons.append(button)
+                answerStackView2.addArrangedSubview(button)
+            }
+        default:
+            break
+        }
     }
 }
