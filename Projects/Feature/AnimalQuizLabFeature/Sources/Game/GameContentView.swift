@@ -85,6 +85,12 @@ final class GameContentView: UIView {
     }
     
     private func makeButtons(answers: [String]) {
+        bottomStackView.arrangedSubviews.forEach {
+            $0.removeFromSuperview()
+        }
+        
+        answerButtons.removeAll()
+        
         switch answers.count {
         case ..<1:
             bottomStackView.isHidden = true
