@@ -1,6 +1,7 @@
 import UIKit
 import SnapKit
 import Kingfisher
+import FoundationShared
 
 enum SettingViewSection: Int, CaseIterable {
     case imageStyle = 0
@@ -73,18 +74,6 @@ final class SettingViewController: BaseViewController {
     private let tableView = UITableView(frame: .zero, style: .insetGrouped)
     private var selectImageIndex: Int = 0
     private var selectedAutoScrollRow: Int = 0
-    
-    private var appVersionText: String {
-        let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String
-        
-#if DEBUG
-        let build = Bundle.main.infoDictionary?["CFBundleVersion"] as? String
-        if let version, let build { return "v\(version) (\(build))" }
-#else
-        if let version { return "v\(version)" }
-#endif
-        return "버전 정보"
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -183,7 +172,7 @@ extension SettingViewController: UITableViewDataSource {
             cell.imageView?.image = UIImage(systemName: style.systemImageName)
             
         case .version:
-            cell.textLabel?.text = appVersionText
+            cell.textLabel?.text = Bundle.marketingVersion
             cell.detailTextLabel?.text = "앱스토어로 이동"
             cell.imageView?.image = UIImage(systemName: "calendar.circle")
             cell.accessoryType = .disclosureIndicator
