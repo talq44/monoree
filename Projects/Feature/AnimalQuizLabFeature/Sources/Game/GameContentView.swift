@@ -46,6 +46,7 @@ final class GameContentView: UIView {
     private var answerButtons: [UIButton] = []
     
     private var didSelectAnswer: ((Int) -> Void)?
+    private var question: String?
     
     init(style: GameContentStyle) {
         super.init(frame: .zero)
@@ -79,6 +80,15 @@ final class GameContentView: UIView {
             make.top.trailing.equalToSuperview().inset(Spacing.l)
             make.size.equalTo(64)
         }
+        
+        speakButton.addAction(
+            UIAction(handler: { [weak self] _ in
+                guard let question = self?.question else { return }
+                SpeakTTSManager.shared.stop()
+                SpeakTTSManager.shared.speak(text: question)
+            }),
+            for: .touchUpInside
+        )
     }
     
     required init?(coder: NSCoder) {
@@ -88,18 +98,24 @@ final class GameContentView: UIView {
     internal func bind(state: State) {
         switch state.type {
         case .image, .autoScroll:
-            speakButton.isHidden = true
             let imageURL = "https://cdn.jsdelivr.net/gh/talq44/monoree_images@main/animal/toy3D/\(state.gameQuestion).webp"
-            questionLabel.isHidden = true
             imageView.kf.setImage(
                 with: URL(string: imageURL),
                 placeholder: UIImage(systemName: "photo"),
                 options: [.transition(.fade(0.2))]
             )
             
+            questionLabel.isHidden = true
+            
         case .text:
             imageView.isHidden = true
             questionLabel.text = state.gameQuestion
+        }
+        
+        speakButton.isHidden = !state.type.isShowSpeakButton
+        
+        if state.type.isShowSpeakButton {
+            question = state.gameQuestion
         }
         
         didSelectAnswer = state.didSelectAnswer
