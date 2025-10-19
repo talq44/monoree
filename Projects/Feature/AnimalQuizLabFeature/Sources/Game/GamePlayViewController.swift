@@ -6,6 +6,7 @@ import RxSwift
 import RxCocoa
 
 struct GamePlayViewPayload {
+    let type: GameType
     let answerCount: Int
     let isAutoScroll: Bool
 }
@@ -17,12 +18,23 @@ final class GamePlayViewController: BaseViewController {
         "돌고래", "상어", "물개", "바다거북", "앵무새", "독수리", "부엉이", "올빼미", "타조", "펭귄",
         "카멜레온", "이구아나", "악어", "도마뱀", "뱀", "개미핥기", "캥거루", "코알라", "라마", "알파카"
     ]
+    
+    private let animalEnNames: [String] = [
+        "lion", "tiger", "rabbit", "swan", "frog", "bear", "cat", "dog"
+    ]
 
-    private func randomAnimalNames(count requested: Int) -> [String] {
+    private func randomAnimalNames(count requested: Int, type: GameType) -> [String] {
         let capped = max(0, min(10, requested))
         if capped == 0 { return [] }
         // Shuffle and take the first N to guarantee uniqueness
-        return Array(animalNames.shuffled().prefix(capped))
+        switch type {
+        case .image:
+            return Array(animalNames.shuffled().prefix(capped))
+        case .text:
+            return Array(animalEnNames.shuffled().prefix(capped))
+        case .autoScroll:
+            return Array(animalNames.shuffled().prefix(capped))
+        }
     }
     
     private let itemView = GameContentView(style: .image)
@@ -49,10 +61,9 @@ final class GamePlayViewController: BaseViewController {
         }
         
         itemView.bind(state: GameContentView.State(
-            gameQuestion: .image(
-                url: "https://cdn.jsdelivr.net/gh/talq44/monoree_images@main/animal/toy3D/lion.webp"
-            ),
-            answers: randomAnimalNames(count: payload.answerCount),
+            type: payload.type,
+            gameQuestion: "lion",
+            answers: randomAnimalNames(count: payload.answerCount, type: payload.type),
             didSelectAnswer: { row in
                 print("row \(row)")
             })

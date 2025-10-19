@@ -68,4 +68,25 @@ enum GameListType: CaseIterable {
     var isAutoScroll: Bool {
         self == .autoScroll10 || self == .autoScroll30
     }
+    
+    var gameType: GameType {
+        switch self {
+        case .imageMatchAnswer2:
+            return .image
+        case .textMatchAnswer2:
+            return .text
+        case .imageMatchAnswer3:
+            return .image
+        case .textMatchAnswer3:
+            return .text
+        case .imageMatchAnswer4:
+            return .image
+        case .textMatchAnswer4:
+            return .text
+        case .autoScroll10:
+            return .autoScroll
+        case .autoScroll30:
+            return .autoScroll
+        }
+    }
 }
