@@ -1,6 +1,6 @@
 import Foundation
 
-enum GameTyp {
+enum GameType {
     case image
     case text
     case autoScroll

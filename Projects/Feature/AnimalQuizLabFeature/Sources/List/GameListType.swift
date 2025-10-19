@@ -69,7 +69,7 @@ enum GameListType: CaseIterable {
         self == .autoScroll10 || self == .autoScroll30
     }
     
-    var gameType: GameTyp {
+    var gameType: GameType {
         switch self {
         case .imageMatchAnswer2:
             return .image

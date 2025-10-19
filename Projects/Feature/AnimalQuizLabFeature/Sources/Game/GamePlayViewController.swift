@@ -6,7 +6,7 @@ import RxSwift
 import RxCocoa
 
 struct GamePlayViewPayload {
-    let type: GameTyp
+    let type: GameType
     let answerCount: Int
     let isAutoScroll: Bool
 }
@@ -23,7 +23,7 @@ final class GamePlayViewController: BaseViewController {
         "lion", "tiger", "rabbit", "swan", "frog", "bear", "cat", "dog"
     ]
 
-    private func randomAnimalNames(count requested: Int, type: GameTyp) -> [String] {
+    private func randomAnimalNames(count requested: Int, type: GameType) -> [String] {
         let capped = max(0, min(10, requested))
         if capped == 0 { return [] }
         // Shuffle and take the first N to guarantee uniqueness

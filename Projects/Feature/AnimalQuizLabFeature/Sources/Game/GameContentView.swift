@@ -16,7 +16,7 @@ enum GameQuestion {
 
 final class GameContentView: UIView {
     struct State {
-        let type: GameTyp
+        let type: GameType
         let gameQuestion: String
         let answers: [String]
         let didSelectAnswer: ((Int) -> Void)
@@ -131,7 +131,7 @@ final class GameContentView: UIView {
         makeButtons(answers: state.answers, type: state.type)
     }
     
-    private func makeButtons(answers: [String], type: GameTyp) {
+    private func makeButtons(answers: [String], type: GameType) {
         bottomStackView.arrangedSubviews.forEach {
             $0.removeFromSuperview()
         }
@@ -202,7 +202,7 @@ final class GameContentView: UIView {
         }
     }
     
-    private func makeButton(title: String, row: Int, type: GameTyp, answersCount: Int) -> UIButton {
+    private func makeButton(title: String, row: Int, type: GameType, answersCount: Int) -> UIButton {
         var configuration: UIButton.Configuration
         if #available(iOS 26.0, *) {
             configuration = UIButton.Configuration.glass()
