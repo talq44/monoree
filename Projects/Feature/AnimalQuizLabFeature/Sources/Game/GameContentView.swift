@@ -229,7 +229,6 @@ final class GameContentView: UIView {
             let url = URL(string: imageURL)
             button.imageView?.contentMode = .scaleAspectFit
             let itemHeight = (UIScreen.main.bounds.height / 2 / 2) - 30
-            print(itemHeight)
             let targetSize = CGSize(width: itemHeight, height: itemHeight)
             let processor = DownsamplingImageProcessor(size: targetSize)
 
