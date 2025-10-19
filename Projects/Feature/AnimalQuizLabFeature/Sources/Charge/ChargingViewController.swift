@@ -86,7 +86,7 @@ final class ChargingViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = AnimalQuizLabFeatureStrings.Title.home
+        self.title = AnimalQuizLabFeatureStrings.Title.topup
     }
 }
 
