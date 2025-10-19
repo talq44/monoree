@@ -30,14 +30,14 @@ enum ChargingSection: Int, CaseIterable {
 
 enum ChargingPaymentSection: Int, CaseIterable {
     case oneDay = 0
-    case seventDay
+    case sevenDay
     case recover
     case history
     
     var title: String {
         switch self {
         case .oneDay: return "1일 이용권"
-        case .seventDay: return "7일 이용권"
+        case .sevenDay: return "7일 이용권"
         case .recover: return "복구하기"
         case .history: return "결제 내역 보기"
         }
@@ -181,7 +181,7 @@ extension ChargingViewController: UITableViewDataSource {
             
             return cell
             
-        case .seventDay:
+        case .sevenDay:
             let cell = tableView.dequeueReusableCell(ChargingPaymentItemCell.self, for: indexPath)
             cell.bind(state: ChargingPaymentItemCell.State(
                 title: type.title,
