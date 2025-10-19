@@ -11,6 +11,7 @@ let project = Project.module(
         ),
         .implementation(
             feature: .AnimalQuizLabFeature,
+            hasResources: true,
             dependencies: [
                 .shared(target: .FoundationShared),
                 .shared(target: .RxThirdKit),
