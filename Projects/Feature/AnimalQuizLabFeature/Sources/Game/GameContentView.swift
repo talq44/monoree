@@ -22,6 +22,10 @@ final class GameContentView: UIView {
         let didSelectAnswer: ((Int) -> Void)
     }
     
+    private enum Metric {
+        static let speakButtonSize: CGFloat = 48
+    }
+    
     private let stackView = VStackView(spacing: Spacing.m, distribution: .fillEqually)
     private let topView = UIView()
     private let imageView: UIImageView = {
@@ -37,6 +41,11 @@ final class GameContentView: UIView {
     private let speakButton: UIButton = {
         var config = UIButton.Configuration.plain()
         config.image = UIImage(systemName: "speaker.wave.3")
+        config.preferredSymbolConfigurationForImage = UIImage.SymbolConfiguration(
+            pointSize: Metric.speakButtonSize,
+            weight: .bold,
+            scale: .large
+        )
         
         let button = UIButton(configuration: config)
         button.isSymbolAnimationEnabled = true
@@ -78,7 +87,6 @@ final class GameContentView: UIView {
         
         speakButton.snp.makeConstraints { make in
             make.top.trailing.equalToSuperview().inset(Spacing.l)
-            make.size.equalTo(64)
         }
         
         speakButton.addAction(
