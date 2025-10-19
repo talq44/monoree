@@ -6,10 +6,61 @@ import RxSwift
 import RxCocoa
 import ReactorKit
 
+enum ChargingSection: Int, CaseIterable {
+    case payemnt
+    case coin
+    case guide
+    
+    var row: Int {
+        switch self {
+        case .payemnt: return 3
+        case .coin: return 2
+        case .guide: return 1
+        }
+    }
+    
+    var title: String {
+        switch self {
+        case .payemnt: return "결제"
+        case .coin: return "코인"
+        case .guide: return "이용 가이드"
+        }
+    }
+}
+
+enum ChargingPaymentSection: Int {
+    case oneDay = 0
+    case seventDay
+    case recover
+    case history
+    
+    var title: String {
+        switch self {
+        case .oneDay: return "1일 이용권"
+        case .seventDay: return "7일 이용권"
+        case .recover: return "복구하기"
+        case .history: return "결제 내역 보기"
+        }
+    }
+    
+    var systemName: String {
+        switch self {
+        case .oneDay: return "1.calendar"
+        case .seventDay: return "7.calendar"
+        case .recover: return "arrow.clockwise.circle"
+        case .history: return "list.bullet"
+        }
+    }
+}
+
 final class ChargingViewController: BaseViewController {
+    typealias Cell = UITableViewCell
+    
     private let stackView = VStackView(spacing: Spacing.m)
     
     private let coinContentView = ContentVStackView()
+    
+    private let tableView = UITableView(frame: .zero, style: .insetGrouped)
     
     private let freeCoinContentStackView = HStackView(spacing: 8)
     private let freeCoinTitleLabel = BaseLabel("🎁 무료 코인",style: .title3)
@@ -87,6 +138,8 @@ final class ChargingViewController: BaseViewController {
         super.viewDidLoad()
         
         self.title = "충전소"
+        tableView.dataSource = self
+        tableView.register(Cell.self, forCellReuseIdentifier: "Cell")
     }
 }
 
@@ -105,5 +158,26 @@ extension ChargingViewController: ReactorKit.View {
         state.map { $0.chargeCoin.decimalString }
             .bind(to: chargeCoinValueLabel.rx.text)
             .disposed(by: disposeBag)
+    }
+}
+
+extension ChargingViewController: UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return ChargingSection.allCases.count
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        guard let sectionType = ChargingSection(rawValue: section) else { return 0 }
+        return sectionType.row
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let sectionType = ChargingSection(rawValue: indexPath.section) else {
+            return UITableViewCell()
+        }
+        
+        let cell = tableView.dequeueReusableCell(Cell.self, for: indexPath)
+        
+        return cell
     }
 }
