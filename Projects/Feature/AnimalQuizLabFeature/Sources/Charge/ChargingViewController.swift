@@ -7,13 +7,13 @@ import RxCocoa
 import ReactorKit
 
 enum ChargingSection: Int, CaseIterable {
-    case payemnt
+    case payment
     case coin
     case guide
     
     var row: Int {
         switch self {
-        case .payemnt: return ChargingPaymentSection.allCases.count
+        case .payment: return ChargingPaymentSection.allCases.count
         case .coin: return ChargingCoinSection.allCases.count
         case .guide: return 1
         }
@@ -21,7 +21,7 @@ enum ChargingSection: Int, CaseIterable {
     
     var title: String {
         switch self {
-        case .payemnt: return "결제"
+        case .payment: return "결제"
         case .coin: return "코인"
         case .guide: return "이용 가이드"
         }
@@ -132,7 +132,7 @@ extension ChargingViewController: UITableViewDataSource {
         }
         
         switch sectionType {
-        case .payemnt:
+        case .payment:
             return makePaymentCell(tableView, cellForRowAt: indexPath)
         case .coin:
             return makeCoinCell(tableView, cellForRowAt: indexPath)
