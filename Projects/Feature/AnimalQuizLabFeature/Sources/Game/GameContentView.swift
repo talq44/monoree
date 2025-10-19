@@ -34,6 +34,14 @@ final class GameContentView: UIView {
         alignment: .center,
         isMultipleLines: true
     )
+    private let speakButton: UIButton = {
+        var config = UIButton.Configuration.plain()
+        config.image = UIImage(systemName: "speaker.wave.3")
+        
+        let button = UIButton(configuration: config)
+        button.isSymbolAnimationEnabled = true
+        return button
+    }()
     private let bottomStackView = VStackView(spacing: Spacing.m, distribution: .fillEqually)
     private var answerButtons: [UIButton] = []
     
@@ -47,7 +55,8 @@ final class GameContentView: UIView {
         stackView.addArrangedSubviews(
             topView.addSubviews(
                 imageView,
-                questionLabel
+                questionLabel,
+                speakButton
             ),
             bottomStackView
         )
@@ -65,6 +74,11 @@ final class GameContentView: UIView {
         questionLabel.snp.makeConstraints { make in
             make.directionalEdges.equalToSuperview().inset(Spacing.s)
         }
+        
+        speakButton.snp.makeConstraints { make in
+            make.top.trailing.equalToSuperview().inset(Spacing.l)
+            make.size.equalTo(64)
+        }
     }
     
     required init?(coder: NSCoder) {
@@ -74,6 +88,7 @@ final class GameContentView: UIView {
     internal func bind(state: State) {
         switch state.type {
         case .image, .autoScroll:
+            speakButton.isHidden = true
             let imageURL = "https://cdn.jsdelivr.net/gh/talq44/monoree_images@main/animal/toy3D/\(state.gameQuestion).webp"
             questionLabel.isHidden = true
             imageView.kf.setImage(
