@@ -42,19 +42,6 @@ enum ChargingPaymentSection: Int, CaseIterable {
         case .history: return "결제 내역 보기"
         }
     }
-    
-    var systemName: String {
-        switch self {
-        case .oneDay: return "1.calendar"
-        case .seventDay: return "7.calendar"
-        case .recover: return "arrow.clockwise.circle"
-        case .history: return "list.bullet"
-        }
-    }
-    
-    var isShowMore: Bool {
-        return self == .history
-    }
 }
 
 enum ChargingCoinSection: Int, CaseIterable {
@@ -220,7 +207,6 @@ extension ChargingViewController: UITableViewDataSource {
             let cell = tableView.dequeueReusableCell(Cell.self, for: indexPath)
             var config = cell.defaultContentConfiguration()
             config.text = type.title
-            config.image = UIImage(systemName: type.systemName)
             cell.accessoryView = nil
             cell.accessoryType = .disclosureIndicator
             cell.contentConfiguration = config
