@@ -24,6 +24,7 @@ final class GameContentView: UIView {
     
     private enum Metric {
         static let speakButtonSize: CGFloat = 48
+        static let estimatedHeight: CGFloat = 30
     }
     
     private let stackView = VStackView(spacing: Spacing.m, distribution: .fillEqually)
@@ -228,7 +229,7 @@ final class GameContentView: UIView {
             let imageURL = "https://cdn.jsdelivr.net/gh/talq44/monoree_images@main/animal/toy3D/" + title + ".webp"
             let url = URL(string: imageURL)
             button.imageView?.contentMode = .scaleAspectFit
-            let itemHeight = (UIScreen.main.bounds.height / 2 / 2) - 30
+            let itemHeight = (UIScreen.main.bounds.height / 2 / 2) - Metric.estimatedHeight
             let targetSize = CGSize(width: itemHeight, height: itemHeight)
             let processor = DownsamplingImageProcessor(size: targetSize)
 
