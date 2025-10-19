@@ -108,7 +108,7 @@ final class GameContentView: UIView {
             bottomStackView.addArrangedSubviews(answerStackView)
             
             Array(0..<answers.count).forEach { row in
-                let button = makeButton(title: answers[row], row: row, type: type)
+                let button = makeButton(title: answers[row], row: row, type: type, answersCount: answers.count)
                 answerButtons.append(button)
                 answerStackView.addArrangedSubview(button)
             }
@@ -121,13 +121,13 @@ final class GameContentView: UIView {
             )
             
             Array(0..<(answers.count / 2)).forEach { row in
-                let button = makeButton(title: answers[row], row: row, type: type)
+                let button = makeButton(title: answers[row], row: row, type: type, answersCount: answers.count)
                 answerButtons.append(button)
                 answerStackView.addArrangedSubview(button)
             }
             
             Array((answers.count / 2)..<answers.count).forEach { row in
-                let button = makeButton(title: answers[row], row: row, type: type)
+                let button = makeButton(title: answers[row], row: row, type: type, answersCount: answers.count)
                 answerButtons.append(button)
                 answerStackView2.addArrangedSubview(button)
             }
@@ -142,19 +142,19 @@ final class GameContentView: UIView {
             )
             
             Array(0..<3).forEach { row in
-                let button = makeButton(title: answers[row], row: row, type: type)
+                let button = makeButton(title: answers[row], row: row, type: type, answersCount: answers.count)
                 answerButtons.append(button)
                 answerStackView.addArrangedSubview(button)
             }
             
             Array(3..<6).forEach { row in
-                let button = makeButton(title: answers[row], row: row, type: type)
+                let button = makeButton(title: answers[row], row: row, type: type, answersCount: answers.count)
                 answerButtons.append(button)
                 answerStackView2.addArrangedSubview(button)
             }
             
             Array(6..<9).forEach { row in
-                let button = makeButton(title: answers[row], row: row, type: type)
+                let button = makeButton(title: answers[row], row: row, type: type, answersCount: answers.count)
                 answerButtons.append(button)
                 answerStackView3.addArrangedSubview(button)
             }
@@ -163,7 +163,7 @@ final class GameContentView: UIView {
         }
     }
     
-    private func makeButton(title: String, row: Int, type: GameTyp) -> UIButton {
+    private func makeButton(title: String, row: Int, type: GameTyp, answersCount: Int) -> UIButton {
         var configuration: UIButton.Configuration
         if #available(iOS 26.0, *) {
             configuration = UIButton.Configuration.glass()
@@ -186,13 +186,24 @@ final class GameContentView: UIView {
         )
         
         if type == .text {
-            let imageURL = "https://cdn.jsdelivr.net/gh/talq44/monoree_images@main/animal/toy3D" + title + ".webp"
+            let imageURL = "https://cdn.jsdelivr.net/gh/talq44/monoree_images@main/animal/toy3D/" + title + ".webp"
             let url = URL(string: imageURL)
+            button.imageView?.contentMode = .scaleAspectFit
+            let itemHeight = (UIScreen.main.bounds.height / 2 / 2) - 30
+            print(itemHeight)
+            let targetSize = CGSize(width: itemHeight, height: itemHeight)
+            let processor = DownsamplingImageProcessor(size: targetSize)
+
             button.kf.setImage(
                 with: url,
                 for: .normal,
                 placeholder: UIImage(systemName: "photo"),
-                options: [.transition(.fade(0.2))]
+                options: [
+                    .processor(processor),
+                    .scaleFactor(UIScreen.main.scale),
+                    .transition(.fade(0.2)),
+                    .cacheOriginalImage
+                ]
             )
         }
         
