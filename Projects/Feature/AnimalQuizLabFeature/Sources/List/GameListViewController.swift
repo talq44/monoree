@@ -6,14 +6,14 @@ import RxSwift
 import RxCocoa
 
 final class GameListViewController: BaseViewController {
+    private typealias Cell = GameCategoryCell
+    
     private enum Metric {
         static let itemHeight: CGFloat = 72
         static let itemSpacing: CGFloat = Spacing.m
     }
     
-    private typealias Cell = GameListItemCell
-    
-    private let tableView = UITableView()
+    private let tableView = UITableView(frame: .zero, style: .grouped)
     private let backgroundImageView = UIImageView()
     
     init(reactor: GameListViewReactor = GameListViewReactor()) {
@@ -41,7 +41,7 @@ final class GameListViewController: BaseViewController {
             make.directionalEdges.equalTo(view.safeAreaLayoutGuide)
         }
         
-        tableView.rowHeight = Metric.itemHeight
+        tableView.rowHeight = UITableView.automaticDimension
         tableView.separatorStyle = .none
         tableView.backgroundColor = .clear
         tableView.register(Cell.self)
@@ -51,53 +51,6 @@ final class GameListViewController: BaseViewController {
         super.viewDidLoad()
         
         setupNavigationBarCoin()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        let animalSymbols: [String] = [
-            "bird",
-            "bird.fill",
-            "bear",
-            "bear.fill",
-            "cat",
-            "cat.fill",
-            "dog",
-            "dog.fill",
-            "hare",
-            "hare.fill",
-            "tortoise",
-            "tortoise.fill",
-            "lizard",
-            "lizard.fill",
-            "fish",
-            "fish.fill"
-        ]
-        
-        if let systemName = animalSymbols.randomElement() {
-            bindImage(systemName)
-        }
-    }
-    
-    private func bindImage(_ systemName: String) {
-        let config = UIImage.SymbolConfiguration(pointSize: 128, weight: .bold)
-        let image = UIImage(systemName: systemName, withConfiguration: config)
-        
-        backgroundImageView.image = image
-        
-        switch Int.random(in: 0..<5) {
-        case 0:
-            backgroundImageView.addSymbolEffect(.scale)
-        case 1:
-            backgroundImageView.addSymbolEffect(.appear)
-        case 2:
-            backgroundImageView.addSymbolEffect(.disappear)
-        case 3:
-            backgroundImageView.addSymbolEffect(.pulse)
-        default:
-            backgroundImageView.addSymbolEffect(.bounce)
-        }
     }
 }
 
@@ -109,12 +62,7 @@ extension GameListViewController: ReactorKit.View {
         bindState(reactor: reactor)
     }
     
-    private func bindAction(reactor: GameListViewReactor) {
-        tableView.rx.modelSelected(GameListType.self)
-            .map { Reactor.Action.selectItem($0) }
-            .bind(to: reactor.action)
-            .disposed(by: disposeBag)
-    }
+    private func bindAction(reactor: GameListViewReactor) { }
     
     private func bindState(reactor: GameListViewReactor) {
         reactor.state.map { $0.items }
@@ -122,8 +70,11 @@ extension GameListViewController: ReactorKit.View {
             .bind(to: tableView.rx.items(
                 cellIdentifier: String(describing: Cell.self),
                 cellType: Cell.self
-            )) { _, item, cell in
-                cell.bind(state: item)
+            )) { [weak reactor] _, item, cell in
+                cell.bind(type: item)
+                cell.didSelectButton = { type, item in
+                    reactor?.action.onNext(.selectItem(type, item))
+                }
             }
             .disposed(by: disposeBag)
         
