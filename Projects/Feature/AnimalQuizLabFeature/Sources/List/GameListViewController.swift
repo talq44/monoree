@@ -70,10 +70,10 @@ extension GameListViewController: ReactorKit.View {
             .bind(to: tableView.rx.items(
                 cellIdentifier: String(describing: Cell.self),
                 cellType: Cell.self
-            )) { _, item, cell in
+            )) { [weak reactor] _, item, cell in
                 cell.bind(type: item)
                 cell.didSelectButton = { type, item in
-                    reactor.action.onNext(.selectItem(type, item))
+                    reactor?.action.onNext(.selectItem(type, item))
                 }
             }
             .disposed(by: disposeBag)
