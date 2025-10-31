@@ -3,6 +3,8 @@ import UIKitExtensionShared
 import SnapKit
 
 final class GameCategoryComponentView: BaseView {
+    var didSelectButton: ((GameType, GameType.QuizItem) -> Void)?
+    
     private let stackView = VStackView(spacing: Spacing.s)
     private let topInfoStackView = HStackView(spacing: Spacing.s, alignment: .top)
     private let textInfoStackView = VStackView(spacing: Spacing.xs)
@@ -78,7 +80,12 @@ final class GameCategoryComponentView: BaseView {
                 trailing: 0
             )
             
-            return UIButton(configuration: config)
+            return UIButton(
+                configuration: config,
+                primaryAction: UIAction(handler: { [weak self] _ in
+                    self?.didSelectButton?(type, item)
+                })
+            )
         }
     }
 }

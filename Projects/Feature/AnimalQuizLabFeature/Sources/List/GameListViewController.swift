@@ -62,12 +62,7 @@ extension GameListViewController: ReactorKit.View {
         bindState(reactor: reactor)
     }
     
-    private func bindAction(reactor: GameListViewReactor) {
-        tableView.rx.modelSelected(GameType.self)
-            .map { Reactor.Action.selectItem($0) }
-            .bind(to: reactor.action)
-            .disposed(by: disposeBag)
-    }
+    private func bindAction(reactor: GameListViewReactor) { }
     
     private func bindState(reactor: GameListViewReactor) {
         reactor.state.map { $0.items }
@@ -77,6 +72,9 @@ extension GameListViewController: ReactorKit.View {
                 cellType: Cell.self
             )) { _, item, cell in
                 cell.bind(type: item)
+                cell.didSelectButton = { type, item in
+                    reactor.action.onNext(.selectItem(type, item))
+                }
             }
             .disposed(by: disposeBag)
         

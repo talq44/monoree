@@ -4,6 +4,12 @@ import UIKitExtensionShared
 
 final class GameCategoryCell: UITableViewCell {
     private let itemView = GameCategoryComponentView(type: .image)
+    
+    var didSelectButton: ((GameType, GameType.QuizItem) -> Void)? {
+        didSet {
+            itemView.didSelectButton = didSelectButton
+        }
+    }
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)

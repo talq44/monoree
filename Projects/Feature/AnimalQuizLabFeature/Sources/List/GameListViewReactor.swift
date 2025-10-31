@@ -10,7 +10,7 @@ struct GameListViewPayload {
 }
 
 enum GameListViewAction {
-    case selectItem(GameType)
+    case selectItem(GameType, GameType.QuizItem)
 }
 
 struct GameListViewState {
@@ -35,11 +35,11 @@ extension GameListViewReactor {
         var state = state
         
         switch mutation {
-        case .selectItem(let type):
+        case .selectItem(let type, let item):
             state.gamePlayViewPayload = .init(
                 type: type,
-                answerCount: 2,
-                isAutoScroll: false
+                answerCount: item.count,
+                isAutoScroll: type == .autoScroll
             )
         }
         
