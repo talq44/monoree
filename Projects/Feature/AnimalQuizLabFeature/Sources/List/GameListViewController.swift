@@ -41,7 +41,7 @@ final class GameListViewController: BaseViewController {
             make.directionalEdges.equalTo(view.safeAreaLayoutGuide)
         }
         
-        tableView.estimatedRowHeight = UITableView.automaticDimension
+        tableView.rowHeight = UITableView.automaticDimension
         tableView.separatorStyle = .none
         tableView.backgroundColor = .clear
         tableView.register(Cell.self)

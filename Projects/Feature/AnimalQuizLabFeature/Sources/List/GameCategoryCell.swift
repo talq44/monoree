@@ -8,10 +8,15 @@ final class GameCategoryCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
+        selectionStyle = .none
+        backgroundColor = .clear
+        
         contentView.addSubview(itemView)
         
         itemView.snp.makeConstraints { make in
-            make.directionalEdges.equalToSuperview().inset(Spacing.l)
+            make.top.equalToSuperview()
+            make.bottom.equalToSuperview().inset(Spacing.m)
+            make.directionalHorizontalEdges.equalToSuperview().inset(Spacing.l)
         }
     }
     
