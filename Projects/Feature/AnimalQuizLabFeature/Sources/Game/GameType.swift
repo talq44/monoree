@@ -94,7 +94,7 @@ enum GameType: CaseIterable {
                 QuizItem(
                     imageSystemName: "30.arrow.trianglehead.clockwise",
                     count: 30,
-                    title: "10"
+                    title: "30"
                 )
             ]
         }
