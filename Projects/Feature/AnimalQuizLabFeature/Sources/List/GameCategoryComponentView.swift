@@ -39,7 +39,7 @@ final class GameCategoryComponentView: BaseView {
         backgroundColor = .systemBackground
         layer.cornerRadius = 16
         layer.borderWidth = 1
-        layer.borderColor = UIColor.lightGray.cgColor
+        layer.borderColor = UIColor.separator.cgColor
         
         stackView.snp.makeConstraints { make in
             make.directionalEdges.equalToSuperview().inset(Spacing.m)
