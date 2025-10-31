@@ -51,9 +51,9 @@ enum GameListType: CaseIterable {
         case .textMatchAnswer2:
             return UIImage(systemName: "rectangle.grid.1x2")
         case .imageMatchAnswer3:
-            return UIImage(systemName: "rectangle.grid.3x1.fill")
+            return UIImage(systemName: "rectangle.grid.1x3.fill")
         case .textMatchAnswer3:
-            return UIImage(systemName: "rectangle.grid.3x1")
+            return UIImage(systemName: "rectangle.grid.1x3")
         case .imageMatchAnswer4:
             return UIImage(systemName: "square.grid.2x2.fill")
         case .textMatchAnswer4:
