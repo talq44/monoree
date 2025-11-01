@@ -32,6 +32,8 @@ final class GamePlayViewController: BaseViewController {
             return Array(animalNames.shuffled().prefix(capped))
         case .text:
             return Array(animalEnNames.shuffled().prefix(capped))
+        case .categoryDifferent:
+            return Array(animalEnNames.shuffled().prefix(capped))
         case .autoScroll:
             return Array(animalNames.shuffled().prefix(capped))
         }

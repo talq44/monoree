@@ -106,7 +106,7 @@ final class GameContentView: UIView {
     
     internal func bind(state: State) {
         switch state.type {
-        case .image, .autoScroll:
+        case .image, .categoryDifferent, .autoScroll:
             let imageURL = "https://cdn.jsdelivr.net/gh/talq44/monoree_images@main/animal/toy3D/\(state.gameQuestion).webp"
             imageView.kf.setImage(
                 with: URL(string: imageURL),
