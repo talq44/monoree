@@ -225,7 +225,7 @@ final class GameContentView: UIView {
             for: .touchUpInside
         )
         
-        if type == .text {
+        if type == .text || type == .categoryDifferent {
             let imageURL = "https://cdn.jsdelivr.net/gh/talq44/monoree_images@main/animal/toy3D/" + title + ".webp"
             let url = URL(string: imageURL)
             button.imageView?.contentMode = .scaleAspectFit
