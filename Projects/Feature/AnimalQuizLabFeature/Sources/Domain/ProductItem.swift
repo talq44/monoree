@@ -1,7 +1,7 @@
 import Foundation
 
-struct ProductItem {
-    struct Name {
+struct ProductItem: Equatable {
+    struct Name: Equatable {
         let language: String
         let name: String
     }
@@ -9,6 +9,5 @@ struct ProductItem {
     let id: String
     let names: [Name]
     let category: String
-    let itemCategory2: [String]
-    let itemCategory3: [String]
+    let itemCategory2: String
 }
