@@ -370,12 +370,12 @@ final class ProductListUseCase {
         var choices: [[ProductItem]] = []
         
         for index in 0..<questionCount {
-            let origen = selected[index]
-            let origenFilter = items.filter { $0.id != origen.id }
+            let origin = selected[index]
+            let originFilter = items.filter { $0.id != origin.id }
             
-            let equals = origenFilter.filter { $0.itemCategory2 == origen.itemCategory2 }
+            let equals = originFilter.filter { $0.itemCategory2 == origin.itemCategory2 }
                 .shuffled(count: choicesCount - 1)
-            let notEqual = origenFilter.filter { $0.itemCategory2 != origen.itemCategory2 }
+            let notEqual = originFilter.filter { $0.itemCategory2 != origin.itemCategory2 }
                 .shuffled()
                 .first
             
