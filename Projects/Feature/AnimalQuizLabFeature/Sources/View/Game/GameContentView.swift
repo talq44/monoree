@@ -16,9 +16,7 @@ enum GameQuestion {
 
 final class GameContentView: UIView {
     struct State {
-        let type: GameType
-        let gameQuestion: String
-        let answers: [String]
+        let gameItem: GameItem
         let didSelectAnswer: ((Int) -> Void)
     }
     
@@ -105,9 +103,9 @@ final class GameContentView: UIView {
     }
     
     internal func bind(state: State) {
-        switch state.type {
+        switch state.gameItem.type {
         case .image, .categoryDifferent, .autoScroll:
-            let imageURL = "https://cdn.jsdelivr.net/gh/talq44/monoree_images@main/animal/toy3D/\(state.gameQuestion).webp"
+            let imageURL = state.gameItem.question.imageURL
             imageView.kf.setImage(
                 with: URL(string: imageURL),
                 placeholder: UIImage(systemName: "photo"),
@@ -118,28 +116,28 @@ final class GameContentView: UIView {
             
         case .text:
             imageView.isHidden = true
-            questionLabel.text = state.gameQuestion
+            questionLabel.text = state.gameItem.question.name
         }
         
-        speakButton.isHidden = !state.type.isShowSpeakButton
+        speakButton.isHidden = !state.gameItem.type.isShowSpeakButton
         
-        if state.type.isShowSpeakButton {
-            question = state.gameQuestion
+        if state.gameItem.type.isShowSpeakButton {
+            question = state.gameItem.question.name
         }
         
         didSelectAnswer = state.didSelectAnswer
         
-        makeButtons(answers: state.answers, type: state.type)
+        makeButtons(choices: state.gameItem.choices, type: state.gameItem.type)
     }
     
-    private func makeButtons(answers: [String], type: GameType) {
+    private func makeButtons(choices: [ProductItem], type: GameType) {
         bottomStackView.arrangedSubviews.forEach {
             $0.removeFromSuperview()
         }
         
         answerButtons.removeAll()
         
-        switch answers.count {
+        switch choices.count {
         case ..<1:
             bottomStackView.isHidden = true
         case 1...3:
@@ -147,8 +145,13 @@ final class GameContentView: UIView {
             
             bottomStackView.addArrangedSubviews(answerStackView)
             
-            Array(0..<answers.count).forEach { row in
-                let button = makeButton(title: answers[row], row: row, type: type, answersCount: answers.count)
+            Array(0..<choices.count).forEach { row in
+                let button = makeButton(
+                    item: choices[row],
+                    row: row,
+                    type: type,
+                    answersCount: choices.count
+                )
                 answerButtons.append(button)
                 answerStackView.addArrangedSubview(button)
             }
@@ -160,14 +163,24 @@ final class GameContentView: UIView {
                 answerStackView2
             )
             
-            Array(0..<(answers.count / 2)).forEach { row in
-                let button = makeButton(title: answers[row], row: row, type: type, answersCount: answers.count)
+            Array(0..<(choices.count / 2)).forEach { row in
+                let button = makeButton(
+                    item: choices[row],
+                    row: row,
+                    type: type,
+                    answersCount: choices.count
+                )
                 answerButtons.append(button)
                 answerStackView.addArrangedSubview(button)
             }
             
-            Array((answers.count / 2)..<answers.count).forEach { row in
-                let button = makeButton(title: answers[row], row: row, type: type, answersCount: answers.count)
+            Array((choices.count / 2)..<choices.count).forEach { row in
+                let button = makeButton(
+                    item: choices[row],
+                    row: row,
+                    type: type,
+                    answersCount: choices.count
+                )
                 answerButtons.append(button)
                 answerStackView2.addArrangedSubview(button)
             }
@@ -182,19 +195,34 @@ final class GameContentView: UIView {
             )
             
             Array(0..<3).forEach { row in
-                let button = makeButton(title: answers[row], row: row, type: type, answersCount: answers.count)
+                let button = makeButton(
+                    item: choices[row],
+                    row: row,
+                    type: type,
+                    answersCount: choices.count
+                )
                 answerButtons.append(button)
                 answerStackView.addArrangedSubview(button)
             }
             
             Array(3..<6).forEach { row in
-                let button = makeButton(title: answers[row], row: row, type: type, answersCount: answers.count)
+                let button = makeButton(
+                    item: choices[row],
+                    row: row,
+                    type: type,
+                    answersCount: choices.count
+                )
                 answerButtons.append(button)
                 answerStackView2.addArrangedSubview(button)
             }
             
             Array(6..<9).forEach { row in
-                let button = makeButton(title: answers[row], row: row, type: type, answersCount: answers.count)
+                let button = makeButton(
+                    item: choices[row],
+                    row: row,
+                    type: type,
+                    answersCount: choices.count
+                )
                 answerButtons.append(button)
                 answerStackView3.addArrangedSubview(button)
             }
@@ -203,7 +231,7 @@ final class GameContentView: UIView {
         }
     }
     
-    private func makeButton(title: String, row: Int, type: GameType, answersCount: Int) -> UIButton {
+    private func makeButton(item: ProductItem, row: Int, type: GameType, answersCount: Int) -> UIButton {
         var configuration: UIButton.Configuration
         if #available(iOS 26.0, *) {
             configuration = UIButton.Configuration.glass()
@@ -212,7 +240,7 @@ final class GameContentView: UIView {
         }
         
         if type == .image {
-            var title = AttributedString(title)
+            var title = AttributedString(item.name)
             title.font = .preferredFont(forTextStyle: .extraLargeTitle2)
             configuration.attributedTitle = title
         }
@@ -226,7 +254,7 @@ final class GameContentView: UIView {
         )
         
         if type == .text || type == .categoryDifferent {
-            let imageURL = "https://cdn.jsdelivr.net/gh/talq44/monoree_images@main/animal/toy3D/" + title + ".webp"
+            let imageURL = item.imageURL
             let url = URL(string: imageURL)
             button.imageView?.contentMode = .scaleAspectFit
             let itemHeight = (UIScreen.main.bounds.height / 2 / 2) - Metric.estimatedHeight

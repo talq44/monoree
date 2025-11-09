@@ -52,9 +52,7 @@ extension GamePlayViewController: ReactorKit.View {
             .withUnretained(self)
             .subscribe(onNext: { vc, item in
                 vc.itemView.bind(state: GameContentView.State(
-                    type: item.type,
-                    gameQuestion: item.question.id,
-                    answers: item.choices.map { $0.id },
+                    gameItem: item,
                     didSelectAnswer: { row in
                         print("row \(row)")
                     })
