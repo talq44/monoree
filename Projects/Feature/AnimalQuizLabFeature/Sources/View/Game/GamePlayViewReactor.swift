@@ -2,29 +2,30 @@ import Foundation
 import ReactorKit
 import RxSwift
 
+struct GamePlayViewPayload {
+    let type: GameType
+    let category: String?
+    let itemCategory2: String?
+    let questionCount: Int
+    let choiceCount: Int
+    let isAutoScroll: Bool
+}
+
 enum GamePlayViewAction {
     case refresh
     case answer(String)
-    case movePageAtIndex(Int)
 }
 
 enum GamePlayViewMutation {
-    case setInfos(items: [String])
+    case setGameItems([GameItem])
 }
 
 struct GamePlayViewState {
-    struct Item {
-        let id: String
-        let name: String
-        let imageURL: String?
-        let answer: String
-        let questions: [String]
-    }
-    
     let gameType: GameType
-    var items: [String] = []
-    var currentPage: Int = 0
     let totalPage: Int
+    let choiceCount: Int
+    var items: [GameItem] = []
+    var currentPage: Int = 0
     
     @Pulse var score: [Int: Bool] = [:]
 }
@@ -35,11 +36,73 @@ final class GamePlayViewReactor: Reactor {
     typealias State = GamePlayViewState
     
     let initialState: GamePlayViewState
+    private let listUseCase: ProductListUseCase
     
-    init(gameType: GameType, total: Int) {
+    init(
+        payload: GamePlayViewPayload,
+        listUseCase: ProductListUseCase = ProductListUseCase()
+    ) {
+        self.listUseCase = listUseCase
+        
         initialState = GamePlayViewState(
-            gameType: gameType,
-            totalPage: total
+            gameType: payload.type,
+            totalPage: payload.questionCount,
+            choiceCount: payload.choiceCount
         )
+    }
+}
+
+// MARK: - Action
+extension GamePlayViewReactor {
+    func mutate(action: GamePlayViewAction) -> Observable<GamePlayViewMutation> {
+        switch action {
+        case .refresh:
+            return requestGameList(state: currentState, useCase: listUseCase)
+        case .answer(let string):
+            return .empty()
+        }
+    }
+}
+
+// MARK: - Side Effect
+extension GamePlayViewReactor {
+    private func requestGameList(
+        state: GamePlayViewState,
+        useCase: ProductListUseCase
+    ) -> Observable<GamePlayViewMutation> {
+        return Observable.create { emitter in
+            let task = Task { @MainActor in
+                do {
+                    let result = try await useCase.executePlay(
+                        withType: state.gameType,
+                        questionCount: state.totalPage,
+                        choicesCount: state.choiceCount
+                    )
+                    
+                    emitter.onNext(.setGameItems(result))
+                } catch {
+                    print("error \(error)")
+                }
+                
+                emitter.onCompleted()
+            }
+            
+            return Disposables.create {
+                task.cancel()
+            }
+        }
+    }
+}
+
+// MARK: - Reduce
+extension GamePlayViewReactor {
+    func reduce(state: GamePlayViewState, mutation: GamePlayViewMutation) -> GamePlayViewState {
+        var state = state
+        
+        switch mutation {
+        case .setGameItems(let array):
+            state.items = array
+        }
+        return state
     }
 }
