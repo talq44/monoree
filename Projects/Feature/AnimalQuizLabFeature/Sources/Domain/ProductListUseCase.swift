@@ -362,6 +362,7 @@ final class ProductListUseCase {
             return GameItem(
                 type: withType,
                 question: $0.element,
+                answer: $0.element,
                 choices: choices[$0.offset]
             )
         }
@@ -374,6 +375,7 @@ final class ProductListUseCase {
         choicesCount: Int
     ) -> [GameItem] {
         let selected: [ProductItem] = items.shuffled(count: questionCount)
+        var answers: [ProductItem] = []
         var choices: [[ProductItem]] = []
         
         for index in 0..<questionCount {
@@ -391,6 +393,7 @@ final class ProductListUseCase {
                 continue
             }
             
+            answers.append(notEqual)
             choices.append((equals + [notEqual]).shuffled())
         }
         
@@ -398,6 +401,7 @@ final class ProductListUseCase {
             return GameItem(
                 type: withType,
                 question: $0.element,
+                answer: answers[$0.offset],
                 choices: choices[$0.offset]
             )
         }

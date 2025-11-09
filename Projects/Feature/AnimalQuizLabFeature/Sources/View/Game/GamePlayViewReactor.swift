@@ -18,7 +18,9 @@ enum GamePlayViewAction {
 
 enum GamePlayViewMutation {
     case setGameItems([GameItem])
-    case checkChoice(question: ProductItem, choice: ProductItem)
+    case nextPage
+    case complete
+//    case checkChoice(question: ProductItem, choice: ProductItem)
 }
 
 struct GamePlayViewState {
@@ -60,7 +62,17 @@ extension GamePlayViewReactor {
         case .refresh:
             return requestGameList(state: currentState, useCase: listUseCase)
         case let .selectChoice(question, choice):
-            return .just(.checkChoice(question: question, choice: choice))
+            guard let item = currentState.items.first(
+                where: { $0.question.id == question.id }
+            ) else {
+                return .empty()
+            }
+            
+            guard item.answer.id == choice.id else {
+                return .empty()
+            }
+            
+            return .just(.nextPage)
         }
     }
 }
@@ -103,14 +115,17 @@ extension GamePlayViewReactor {
         switch mutation {
         case .setGameItems(let array):
             state.items = array
-        case let .checkChoice(_, _):
+        case .nextPage:
             let nextPage = state.currentPage + 1
             guard nextPage < state.items.count else {
                 return state
             }
             
             state.currentPage = nextPage
+        case .complete:
+            break
         }
+        
         return state
     }
 }
