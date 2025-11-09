@@ -44,6 +44,21 @@ public extension UICollectionView {
         }
         return view
     }
+    
+    // MARK: - Validation
+    /// Returns true if the given indexPath points to an existing item in the collection view.
+    /// Checks that the section and item are within bounds using `numberOfSections` and `numberOfItems(inSection:)`.
+    func isValidItem(at indexPath: IndexPath) -> Bool {
+        let sections = numberOfSections
+        guard indexPath.section >= 0 && indexPath.section < sections else { return false }
+        let items = numberOfItems(inSection: indexPath.section)
+        return indexPath.item >= 0 && indexPath.item < items
+    }
+    
+    /// Returns true if the given section index exists in the collection view.
+    func isValidSection(_ section: Int) -> Bool {
+        return section >= 0 && section < numberOfSections
+    }
 }
 
 extension UICollectionReusableView: ReusableView {}

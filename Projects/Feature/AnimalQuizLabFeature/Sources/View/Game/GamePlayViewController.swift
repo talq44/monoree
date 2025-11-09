@@ -30,7 +30,7 @@ final class GamePlayViewController: BaseViewController {
             let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
 
             let section = NSCollectionLayoutSection(group: group)
-            section.orthogonalScrollingBehavior = .groupPaging
+            section.orthogonalScrollingBehavior = .groupPagingCentered
             section.contentInsets = .zero
             section.interGroupSpacing = 0
             return section
@@ -38,8 +38,8 @@ final class GamePlayViewController: BaseViewController {
 
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.backgroundColor = .clear
-        collectionView.isPagingEnabled = true
         collectionView.showsHorizontalScrollIndicator = false
+        collectionView.isScrollEnabled = false
         collectionView.register(Cell.self)
         return collectionView
     }()
@@ -61,6 +61,7 @@ final class GamePlayViewController: BaseViewController {
         view.addSubview(stackView)
         
         stackView.addArrangedSubviews(
+            SpacerView(height: Spacing.m),
             topContentView.addSubviews(
                 topTextStackView.addArrangedSubviews(
                     currentCountLabel,
@@ -103,6 +104,11 @@ extension GamePlayViewController: ReactorKit.View {
     }
     
     private func bindState(reactor: GamePlayViewReactor) {
+        reactor.state.compactMap { ($0.currentPage + 1).toString }
+            .distinctUntilChanged()
+            .bind(to: currentCountLabel.rx.text)
+            .disposed(by: disposeBag)
+        
         reactor.state.compactMap { $0.totalPage.toString }
             .distinctUntilChanged()
             .bind(to: totalPageLabel.rx.text)
@@ -113,14 +119,29 @@ extension GamePlayViewController: ReactorKit.View {
             .bind(to: collectionView.rx.items(
                 cellIdentifier: Cell.reuseIdentifier,
                 cellType: Cell.self
-            )) { row, item, cell in
+            )) { [weak reactor] _, item, cell in
                 cell.bind(state: GameContentView.State(
                     gameItem: item,
-                    didSelectAnswer: { row in
-                        print("row \(row)")
+                    didSelectAnswer: { selectRow in
+                        reactor?.action.onNext(.selectChoice(
+                            question: item.question,
+                            choice: item.choices[selectRow]
+                        ))
                     })
                 )
             }
+            .disposed(by: disposeBag)
+        
+        reactor.state.map { $0.currentPage }
+            .filter { $0 > 0 }
+            .withUnretained(collectionView)
+            .subscribe(onNext: { cov, index in
+                let indexPath = IndexPath(item: index, section: 0)
+                
+                guard cov.isValidItem(at: indexPath) else { return }
+                
+                cov.scrollToItem(at: indexPath, at: .left, animated: true)
+            })
             .disposed(by: disposeBag)
     }
 }
