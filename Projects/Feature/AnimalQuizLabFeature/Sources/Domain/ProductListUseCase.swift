@@ -303,9 +303,11 @@ final class ProductListUseCase {
         }
     }
     
-    func executePlay(withType: GameType, questionCount: Int, choicesCount: Int) async throws
-    -> [GameItem]
-    {
+    func executePlay(
+        withType: GameType,
+        questionCount: Int,
+        choicesCount: Int
+    ) async throws -> [GameItem] {
         guard cache.count > 0 else {
             _ = try await fetch(category: nil, itemCategory2: nil)
             return try await executePlay(
@@ -318,12 +320,14 @@ final class ProductListUseCase {
         switch withType {
         case .image, .text, .autoScroll:
             return executeCountStyle(
+                withType: withType,
                 items: cache,
                 questionCount: questionCount,
                 choicesCount: choicesCount
             )
         case .categoryDifferent:
             return executeCategory2Style(
+                withType: withType,
                 items: cache,
                 questionCount: questionCount,
                 choicesCount: choicesCount
@@ -332,6 +336,7 @@ final class ProductListUseCase {
     }
     
     private func executeCountStyle(
+        withType: GameType,
         items: [ProductItem],
         questionCount: Int,
         choicesCount: Int
@@ -355,6 +360,7 @@ final class ProductListUseCase {
         
         return selected.enumerated().map {
             return GameItem(
+                type: withType,
                 question: $0.element,
                 choices: choices[$0.offset]
             )
@@ -362,6 +368,7 @@ final class ProductListUseCase {
     }
     
     private func executeCategory2Style(
+        withType: GameType,
         items: [ProductItem],
         questionCount: Int,
         choicesCount: Int
@@ -389,6 +396,7 @@ final class ProductListUseCase {
         
         return selected.enumerated().map {
             return GameItem(
+                type: withType,
                 question: $0.element,
                 choices: choices[$0.offset]
             )
