@@ -58,7 +58,7 @@ extension GamePlayViewReactor {
         switch action {
         case .refresh:
             return requestGameList(state: currentState, useCase: listUseCase)
-        case .answer(let string):
+        case .answer:
             return .empty()
         }
     }

@@ -44,9 +44,9 @@ extension GameListViewReactor {
         case .selectItem(let type, let item):
             state.gamePlayViewPayload = GamePlayViewPayload(
                 type: type,
-                category: nil,
-                itemCategory2: nil,
-                questionCount: item.count,
+                category: state.category,
+                itemCategory2: state.itemCategory2,
+                questionCount: 10,
                 choiceCount: item.count,
                 isAutoScroll: type == .autoScroll
             )

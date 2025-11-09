@@ -4,9 +4,45 @@ import SnapKit
 import ReactorKit
 import RxSwift
 import RxCocoa
+import RxThirdKit
 
 final class GamePlayViewController: BaseViewController {
-    private let itemView = GameContentView(style: .image)
+    private typealias Cell = GamePlayItemCell
+    
+    private let stackView = VStackView()
+    private let topContentView = UIView()
+    private let topTextStackView = HStackView()
+    private let currentCountLabel = BaseLabel("0", style: .title3)
+    private let totalPageLabel = BaseLabel("0", style: .title3)
+    private let collectionView: UICollectionView = {
+        // Compositional layout with horizontal paging, one full-screen item per page
+        let layout = UICollectionViewCompositionalLayout { (_, _) -> NSCollectionLayoutSection? in
+            let itemSize = NSCollectionLayoutSize(
+                widthDimension: .fractionalWidth(1.0),
+                heightDimension: .fractionalHeight(1.0)
+            )
+            let item = NSCollectionLayoutItem(layoutSize: itemSize)
+            
+            let groupSize = NSCollectionLayoutSize(
+                widthDimension: .fractionalWidth(1.0),
+                heightDimension: .fractionalHeight(1.0)
+            )
+            let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
+
+            let section = NSCollectionLayoutSection(group: group)
+            section.orthogonalScrollingBehavior = .groupPaging
+            section.contentInsets = .zero
+            section.interGroupSpacing = 0
+            return section
+        }
+
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        collectionView.backgroundColor = .clear
+        collectionView.isPagingEnabled = true
+        collectionView.showsHorizontalScrollIndicator = false
+        collectionView.register(Cell.self)
+        return collectionView
+    }()
     
     init(reactor: GamePlayViewReactor) {
         super.init(nibName: nil, bundle: nil)
@@ -22,10 +58,30 @@ final class GamePlayViewController: BaseViewController {
     override func loadView() {
         super.loadView()
         
-        view.addSubview(itemView)
+        view.addSubview(stackView)
         
-        itemView.snp.makeConstraints { make in
+        stackView.addArrangedSubviews(
+            topContentView.addSubviews(
+                topTextStackView.addArrangedSubviews(
+                    currentCountLabel,
+                    BaseLabel("/", style: .title3),
+                    totalPageLabel
+                )
+            ),
+            collectionView
+        )
+        
+        stackView.snp.makeConstraints { make in
             make.directionalEdges.equalTo(view.safeAreaLayoutGuide).inset(Spacing.m)
+        }
+        
+        topTextStackView.snp.makeConstraints { make in
+            make.center.equalToSuperview()
+            make.height.lessThanOrEqualTo(64)
+        }
+        
+        collectionView.snp.makeConstraints { make in
+            make.height.greaterThanOrEqualTo(100) // allow it to expand
         }
     }
 }
@@ -47,17 +103,24 @@ extension GamePlayViewController: ReactorKit.View {
     }
     
     private func bindState(reactor: GamePlayViewReactor) {
-        reactor.state.compactMap { $0.items.first }
+        reactor.state.compactMap { $0.totalPage.toString }
             .distinctUntilChanged()
-            .withUnretained(self)
-            .subscribe(onNext: { vc, item in
-                vc.itemView.bind(state: GameContentView.State(
+            .bind(to: totalPageLabel.rx.text)
+            .disposed(by: disposeBag)
+        
+        reactor.state.map { $0.items }
+            .distinctUntilChanged()
+            .bind(to: collectionView.rx.items(
+                cellIdentifier: Cell.reuseIdentifier,
+                cellType: Cell.self
+            )) { row, item, cell in
+                cell.bind(state: GameContentView.State(
                     gameItem: item,
                     didSelectAnswer: { row in
                         print("row \(row)")
                     })
                 )
-            })
+            }
             .disposed(by: disposeBag)
     }
 }
