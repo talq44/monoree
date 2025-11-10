@@ -86,7 +86,8 @@ extension GameListViewController: ReactorKit.View {
         reactor.pulse(\.$gamePlayViewPayload)
             .compactMap { $0 }
             .subscribe(onNext: { [weak self] payload in
-                let vc = GamePlayViewController(payload: payload)
+                let reactor = GamePlayViewReactor(payload: payload)
+                let vc = GamePlayViewController(reactor: reactor)
                 
                 if UIDevice.isPad {
                     vc.modalPresentationStyle = .pageSheet
