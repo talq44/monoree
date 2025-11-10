@@ -15,28 +15,23 @@ enum CoinError: Error {
 final class CoinUseCase {
     private var currentType: CoinType = .coin {
         didSet {
-            currentTypeSubject.onNext(currentType)
+            currentCoinStateSubject.onNext((currentType, currentCoin))
         }
     }
     
     private var currentCoin: Int = 0 {
         didSet {
-            currentCoinSubject.onNext(currentCoin)
+            currentCoinStateSubject.onNext((currentType, currentCoin))
         }
     }
     
     private var refillCount: Int = 3
     private let useCase: UserDefaultManagerImpl
     
-    private let currentTypeSubject = PublishSubject<CoinType>()
-    private let currentCoinSubject = PublishSubject<Int>()
+    private let currentCoinStateSubject = PublishSubject<(CoinType, Int)>()
     
-    var currentTypeObj: Observable<CoinType> {
-        return currentTypeSubject.asObservable()
-    }
-    
-    var currentCoinObj: Observable<Int> {
-        return currentCoinSubject.asObservable()
+    var currentCoinStateObj: Observable<(CoinType, Int)> {
+        return currentCoinStateSubject.asObservable()
     }
     
     init(suiteName: String) {
@@ -55,7 +50,7 @@ final class CoinUseCase {
     }
     
     func check() async {
-        let value = useCase.value(for: CoinHistory())
+        let value = useCase.value(for: CoinUseHistory())
         
         guard let list = value?.sorted(), let last = list.last, !last.date.isToday else {
             currentCoin += refillCount
@@ -67,10 +62,10 @@ final class CoinUseCase {
     }
     
     private func appendUse(coin: Int) {
-        let value = useCase.value(for: CoinHistory())
+        let value = useCase.value(for: CoinUseHistory())
         guard var list = value?.sorted() else { return }
         
-        list.append(CoinHistoryItem(date: Date(), coin: coin))
-        useCase.set(list, for: CoinHistory())
+        list.append(CoinUseHistoryItem(date: Date(), coin: coin))
+        useCase.set(list, for: CoinUseHistory())
     }
 }

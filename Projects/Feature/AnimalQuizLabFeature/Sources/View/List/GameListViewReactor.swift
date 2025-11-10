@@ -27,6 +27,8 @@ final class GameListViewReactor: Reactor {
     
     let initialState: GameListViewState
     
+    private let coinUseCase: CoinUseCase = CoinUseCase(suiteName: "Coin")
+    
     init(payload: GameListViewPayload) {
         initialState = GameListViewState(
             title: payload.title,
@@ -42,6 +44,10 @@ extension GameListViewReactor {
         
         switch mutation {
         case .selectItem(let type, let item):
+            Task { @MainActor in
+                _ = try await coinUseCase.play()
+            }
+            
             state.gamePlayViewPayload = GamePlayViewPayload(
                 type: type,
                 category: state.category,
