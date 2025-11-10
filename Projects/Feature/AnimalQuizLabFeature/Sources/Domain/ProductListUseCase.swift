@@ -389,6 +389,7 @@ final class ProductListUseCase {
                 .first
             
             guard let notEqual else {
+                answers.append(ProductItem(id: "", names: [], category: "", itemCategory2: ""))
                 choices.append(equals)
                 continue
             }
