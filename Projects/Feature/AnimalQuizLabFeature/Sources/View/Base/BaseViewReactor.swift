@@ -61,8 +61,17 @@ extension BaseViewReactor {
 // MARK: - transform
 extension BaseViewReactor {
     func transform(mutation: Observable<BaseViewMutation>) -> Observable<BaseViewMutation> {
+        let coinHistory: Observable<BaseViewMutation> = coinUseCase.currentCoinStateObj
+            .map { type, coin in
+                let message: String
+                switch type {
+                case .coin: message = "Coin \(coin)"
+                case .subscribe: message = "정액제"
+                }
+                return .setCoinText(message)
+            }
         
-        return .merge([mutation])
+        return .merge([mutation, coinHistory])
     }
 }
 

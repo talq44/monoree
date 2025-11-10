@@ -1,8 +1,10 @@
 import UIKit
 import RxSwift
+import RxCocoa
 
 class BaseViewController: UIViewController {
     internal var disposeBag = DisposeBag()
+    private lazy var baseReactor = BaseViewReactor.shared
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -11,7 +13,9 @@ class BaseViewController: UIViewController {
     }
     
     internal func setupNavigationBarCoin() {
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: coinButton())
+        navigationItem.rightBarButtonItem = UIBarButtonItem(customView: coinButton())
+        baseReactor.action.onNext(.refresh)
+        binding()
     }
     
     internal func setupNavigationBarHome() {
@@ -49,5 +53,18 @@ class BaseViewController: UIViewController {
         button.isSymbolAnimationEnabled = true
         
         return button
+    }
+}
+
+extension BaseViewController {
+    func binding() {
+        baseReactor.state.map { $0.coinText }
+            .distinctUntilChanged()
+            .observe(on: MainScheduler.instance)
+            .withUnretained(self)
+            .subscribe(onNext: { vc, text in
+                vc.navigationItem.rightBarButtonItem?.title = text
+            })
+            .disposed(by: disposeBag)
     }
 }
