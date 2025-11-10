@@ -16,6 +16,8 @@ enum GameListViewAction {
 struct GameListViewState {
     let title: String
     let items: [GameType] = GameType.allCases
+    let category: String?
+    let itemCategory2: String?
     @Pulse var gamePlayViewPayload: GamePlayViewPayload?
 }
 
@@ -26,7 +28,11 @@ final class GameListViewReactor: Reactor {
     let initialState: GameListViewState
     
     init(payload: GameListViewPayload) {
-        initialState = .init(title: payload.title)
+        initialState = GameListViewState(
+            title: payload.title,
+            category: payload.itemCategory,
+            itemCategory2: payload.itemCategory2
+        )
     }
 }
 
@@ -36,9 +42,12 @@ extension GameListViewReactor {
         
         switch mutation {
         case .selectItem(let type, let item):
-            state.gamePlayViewPayload = .init(
+            state.gamePlayViewPayload = GamePlayViewPayload(
                 type: type,
-                answerCount: item.count,
+                category: state.category,
+                itemCategory2: state.itemCategory2,
+                questionCount: 10,
+                choiceCount: item.count,
                 isAutoScroll: type == .autoScroll
             )
         }

@@ -16,7 +16,7 @@ final class ProductListUseCase {
         let baseCategory = "동물"
         let mock: [ProductItem] = [
             ProductItem(
-                id: "Dog",
+                id: "dog",
                 names: [
                     ProductItem.Name(language: "en", name: "Dog"),
                     ProductItem.Name(language: "ko", name: "개"),
@@ -25,7 +25,7 @@ final class ProductListUseCase {
                 itemCategory2: "포유류"
             ),
             ProductItem(
-                id: "Cat",
+                id: "cat",
                 names: [
                     ProductItem.Name(language: "en", name: "Cat"),
                     ProductItem.Name(language: "ko", name: "고양이"),
@@ -34,7 +34,7 @@ final class ProductListUseCase {
                 itemCategory2: "포유류"
             ),
             ProductItem(
-                id: "Elephant",
+                id: "elephant",
                 names: [
                     ProductItem.Name(language: "en", name: "Elephant"),
                     ProductItem.Name(language: "ko", name: "코끼리"),
@@ -43,7 +43,7 @@ final class ProductListUseCase {
                 itemCategory2: "포유류"
             ),
             ProductItem(
-                id: "Lion",
+                id: "lion",
                 names: [
                     ProductItem.Name(language: "en", name: "Lion"),
                     ProductItem.Name(language: "ko", name: "사자"),
@@ -52,7 +52,7 @@ final class ProductListUseCase {
                 itemCategory2: "포유류"
             ),
             ProductItem(
-                id: "Tiger",
+                id: "tiger",
                 names: [
                     ProductItem.Name(language: "en", name: "Tiger"),
                     ProductItem.Name(language: "ko", name: "호랑이"),
@@ -61,7 +61,7 @@ final class ProductListUseCase {
                 itemCategory2: "포유류"
             ),
             ProductItem(
-                id: "Giraffe",
+                id: "giraffe",
                 names: [
                     ProductItem.Name(language: "en", name: "Giraffe"),
                     ProductItem.Name(language: "ko", name: "기린"),
@@ -70,7 +70,7 @@ final class ProductListUseCase {
                 itemCategory2: "포유류"
             ),
             ProductItem(
-                id: "Bear",
+                id: "bear",
                 names: [
                     ProductItem.Name(language: "en", name: "Bear"),
                     ProductItem.Name(language: "ko", name: "곰"),
@@ -79,7 +79,7 @@ final class ProductListUseCase {
                 itemCategory2: "포유류"
             ),
             ProductItem(
-                id: "Wolf",
+                id: "wolf",
                 names: [
                     ProductItem.Name(language: "en", name: "Wolf"),
                     ProductItem.Name(language: "ko", name: "늑대"),
@@ -88,7 +88,7 @@ final class ProductListUseCase {
                 itemCategory2: "포유류"
             ),
             ProductItem(
-                id: "Dolphin",
+                id: "dolphin",
                 names: [
                     ProductItem.Name(language: "en", name: "Dolphin"),
                     ProductItem.Name(language: "ko", name: "돌고래"),
@@ -97,7 +97,7 @@ final class ProductListUseCase {
                 itemCategory2: "포유류"
             ),
             ProductItem(
-                id: "Whale",
+                id: "whale",
                 names: [
                     ProductItem.Name(language: "en", name: "Whale"),
                     ProductItem.Name(language: "ko", name: "고래"),
@@ -107,7 +107,7 @@ final class ProductListUseCase {
             ),
             
             ProductItem(
-                id: "Eagle",
+                id: "eagle",
                 names: [
                     ProductItem.Name(language: "en", name: "Eagle"),
                     ProductItem.Name(language: "ko", name: "독수리"),
@@ -116,7 +116,7 @@ final class ProductListUseCase {
                 itemCategory2: "조류"
             ),
             ProductItem(
-                id: "Sparrow",
+                id: "sparrow",
                 names: [
                     ProductItem.Name(language: "en", name: "Sparrow"),
                     ProductItem.Name(language: "ko", name: "참새"),
@@ -125,7 +125,7 @@ final class ProductListUseCase {
                 itemCategory2: "조류"
             ),
             ProductItem(
-                id: "Penguin",
+                id: "penguin",
                 names: [
                     ProductItem.Name(language: "en", name: "Penguin"),
                     ProductItem.Name(language: "ko", name: "펭귄"),
@@ -134,7 +134,7 @@ final class ProductListUseCase {
                 itemCategory2: "조류"
             ),
             ProductItem(
-                id: "Owl",
+                id: "owl",
                 names: [
                     ProductItem.Name(language: "en", name: "Owl"),
                     ProductItem.Name(language: "ko", name: "부엉이"),
@@ -143,7 +143,7 @@ final class ProductListUseCase {
                 itemCategory2: "조류"
             ),
             ProductItem(
-                id: "Flamingo",
+                id: "flamingo",
                 names: [
                     ProductItem.Name(language: "en", name: "Flamingo"),
                     ProductItem.Name(language: "ko", name: "플라밍고"),
@@ -153,7 +153,7 @@ final class ProductListUseCase {
             ),
             
             ProductItem(
-                id: "Crocodile",
+                id: "crocodile",
                 names: [
                     ProductItem.Name(language: "en", name: "Crocodile"),
                     ProductItem.Name(language: "ko", name: "악어"),
@@ -162,7 +162,7 @@ final class ProductListUseCase {
                 itemCategory2: "파충류"
             ),
             ProductItem(
-                id: "Snake",
+                id: "snake",
                 names: [
                     ProductItem.Name(language: "en", name: "Snake"),
                     ProductItem.Name(language: "ko", name: "뱀"),
@@ -171,7 +171,7 @@ final class ProductListUseCase {
                 itemCategory2: "파충류"
             ),
             ProductItem(
-                id: "Turtle",
+                id: "turtle",
                 names: [
                     ProductItem.Name(language: "en", name: "Turtle"),
                     ProductItem.Name(language: "ko", name: "거북이"),
@@ -181,7 +181,7 @@ final class ProductListUseCase {
             ),
             
             ProductItem(
-                id: "Frog",
+                id: "frog",
                 names: [
                     ProductItem.Name(language: "en", name: "Frog"),
                     ProductItem.Name(language: "ko", name: "개구리"),
@@ -190,7 +190,7 @@ final class ProductListUseCase {
                 itemCategory2: "양서류"
             ),
             ProductItem(
-                id: "Salamander",
+                id: "salamander",
                 names: [
                     ProductItem.Name(language: "en", name: "Salamander"),
                     ProductItem.Name(language: "ko", name: "도롱뇽"),
@@ -200,7 +200,7 @@ final class ProductListUseCase {
             ),
             
             ProductItem(
-                id: "Shark",
+                id: "shark",
                 names: [
                     ProductItem.Name(language: "en", name: "Shark"),
                     ProductItem.Name(language: "ko", name: "상어"),
@@ -209,7 +209,7 @@ final class ProductListUseCase {
                 itemCategory2: "어류"
             ),
             ProductItem(
-                id: "Clownfish",
+                id: "clownfish",
                 names: [
                     ProductItem.Name(language: "en", name: "Clownfish"),
                     ProductItem.Name(language: "ko", name: "흰동가리"),
@@ -218,7 +218,7 @@ final class ProductListUseCase {
                 itemCategory2: "어류"
             ),
             ProductItem(
-                id: "Salmon",
+                id: "salmon",
                 names: [
                     ProductItem.Name(language: "en", name: "Salmon"),
                     ProductItem.Name(language: "ko", name: "연어"),
@@ -228,7 +228,7 @@ final class ProductListUseCase {
             ),
             
             ProductItem(
-                id: "Butterfly",
+                id: "butterfly",
                 names: [
                     ProductItem.Name(language: "en", name: "Butterfly"),
                     ProductItem.Name(language: "ko", name: "나비"),
@@ -237,7 +237,7 @@ final class ProductListUseCase {
                 itemCategory2: "곤충"
             ),
             ProductItem(
-                id: "Bee",
+                id: "bee",
                 names: [
                     ProductItem.Name(language: "en", name: "Bee"),
                     ProductItem.Name(language: "ko", name: "벌"),
@@ -246,7 +246,7 @@ final class ProductListUseCase {
                 itemCategory2: "곤충"
             ),
             ProductItem(
-                id: "Ant",
+                id: "ant",
                 names: [
                     ProductItem.Name(language: "en", name: "Ant"),
                     ProductItem.Name(language: "ko", name: "개미"),
@@ -256,7 +256,7 @@ final class ProductListUseCase {
             ),
             
             ProductItem(
-                id: "Spider",
+                id: "spider",
                 names: [
                     ProductItem.Name(language: "en", name: "Spider"),
                     ProductItem.Name(language: "ko", name: "거미"),
@@ -265,7 +265,7 @@ final class ProductListUseCase {
                 itemCategory2: "절지동물"
             ),
             ProductItem(
-                id: "Crab",
+                id: "crab",
                 names: [
                     ProductItem.Name(language: "en", name: "Crab"),
                     ProductItem.Name(language: "ko", name: "게"),
@@ -274,7 +274,7 @@ final class ProductListUseCase {
                 itemCategory2: "절지동물"
             ),
             ProductItem(
-                id: "Lobster",
+                id: "lobster",
                 names: [
                     ProductItem.Name(language: "en", name: "Lobster"),
                     ProductItem.Name(language: "ko", name: "바닷가재"),
@@ -284,7 +284,7 @@ final class ProductListUseCase {
             ),
             
             ProductItem(
-                id: "Kangaroo",
+                id: "kangaroo",
                 names: [
                     ProductItem.Name(language: "en", name: "Kangaroo"),
                     ProductItem.Name(language: "ko", name: "캥거루"),
@@ -303,9 +303,11 @@ final class ProductListUseCase {
         }
     }
     
-    func executePlay(withType: GameType, questionCount: Int, choicesCount: Int) async throws
-    -> [GameItem]
-    {
+    func executePlay(
+        withType: GameType,
+        questionCount: Int,
+        choicesCount: Int
+    ) async throws -> [GameItem] {
         guard cache.count > 0 else {
             _ = try await fetch(category: nil, itemCategory2: nil)
             return try await executePlay(
@@ -318,12 +320,14 @@ final class ProductListUseCase {
         switch withType {
         case .image, .text, .autoScroll:
             return executeCountStyle(
+                withType: withType,
                 items: cache,
                 questionCount: questionCount,
                 choicesCount: choicesCount
             )
         case .categoryDifferent:
             return executeCategory2Style(
+                withType: withType,
                 items: cache,
                 questionCount: questionCount,
                 choicesCount: choicesCount
@@ -332,6 +336,7 @@ final class ProductListUseCase {
     }
     
     private func executeCountStyle(
+        withType: GameType,
         items: [ProductItem],
         questionCount: Int,
         choicesCount: Int
@@ -355,18 +360,22 @@ final class ProductListUseCase {
         
         return selected.enumerated().map {
             return GameItem(
+                type: withType,
                 question: $0.element,
+                answer: $0.element,
                 choices: choices[$0.offset]
             )
         }
     }
     
     private func executeCategory2Style(
+        withType: GameType,
         items: [ProductItem],
         questionCount: Int,
         choicesCount: Int
     ) -> [GameItem] {
         let selected: [ProductItem] = items.shuffled(count: questionCount)
+        var answers: [ProductItem] = []
         var choices: [[ProductItem]] = []
         
         for index in 0..<questionCount {
@@ -380,16 +389,20 @@ final class ProductListUseCase {
                 .first
             
             guard let notEqual else {
+                answers.append(ProductItem(id: "", names: [], category: "", itemCategory2: ""))
                 choices.append(equals)
                 continue
             }
             
+            answers.append(notEqual)
             choices.append((equals + [notEqual]).shuffled())
         }
         
         return selected.enumerated().map {
             return GameItem(
+                type: withType,
                 question: $0.element,
+                answer: answers[$0.offset],
                 choices: choices[$0.offset]
             )
         }
