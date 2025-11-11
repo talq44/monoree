@@ -50,9 +50,9 @@ final class CoinUseCase {
     }
     
     func check() async {
-        let value = useCase.value(for: CoinUseHistory())
+        let list = (useCase.value(for: CoinUseHistory()) ?? []).sorted()
         
-        guard let list = value?.sorted(), let last = list.last, !last.date.isToday else {
+        guard let last = list.last, !last.date.isToday else {
             currentCoin += refillCount
             return
         }
@@ -62,8 +62,7 @@ final class CoinUseCase {
     }
     
     private func appendUse(coin: Int) {
-        let value = useCase.value(for: CoinUseHistory())
-        guard var list = value?.sorted() else { return }
+        var list = (useCase.value(for: CoinUseHistory()) ?? []).sorted()
         
         list.append(CoinUseHistoryItem(date: Date(), coin: coin))
         useCase.set(list, for: CoinUseHistory())
