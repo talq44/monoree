@@ -63,7 +63,8 @@ extension BaseViewController {
             .observe(on: MainScheduler.instance)
             .withUnretained(self)
             .subscribe(onNext: { vc, text in
-                vc.navigationItem.rightBarButtonItem?.title = text
+                (vc.navigationItem.rightBarButtonItem?.customView as? UIButton)?.configuration?.title = text
+//                vc.navigationItem.rightBarButtonItem?.title = text
             })
             .disposed(by: disposeBag)
     }
