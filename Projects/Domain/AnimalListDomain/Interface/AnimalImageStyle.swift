@@ -2,7 +2,7 @@ import Foundation
 
 public enum AnimalImageStyle: String {
     case realistic
-    case anime2D
-    case toy3D
+    case anime2d
+    case toy3d
     case plush
 }
