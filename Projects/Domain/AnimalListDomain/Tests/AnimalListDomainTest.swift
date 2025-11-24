@@ -4,6 +4,16 @@ import AnimalListDomainInterface
 
 @testable import AnimalListDomain
 
+private enum TestError: Error, CustomStringConvertible {
+    case prerequisiteFailed(String)
+    var description: String {
+        switch self {
+        case .prerequisiteFailed(let reason):
+            return "Test prerequisite failed: \(reason)"
+        }
+    }
+}
+
 struct AnimalListUseCaseTests {
     var useCase: AnimalListUsecase = AnimalListUseCaseImpl()
     
@@ -16,17 +26,15 @@ struct AnimalListUseCaseTests {
     @Test("가져온 동물 목록의 개수가 정확한지 테스트")
     func test_fetch_animal_list_has_correct_count() async {
         let animals = await useCase.fetch()
-        // Assuming animal.txt has 151 lines based on previous context
         #expect(animals.count == 149)
     }
     
     @Test("동물 속성이 올바르게 디코딩되었는지 테스트")
-    func test_animal_properties_are_decoded_correctly() async {
+    func test_animal_properties_are_decoded_correctly() async throws {
         let animals = await useCase.fetch()
         
         guard let lion = animals.first(where: { $0.id == "lion" }) else {
-            #expect(false, "Lion not found in the list")
-            return
+            throw TestError.prerequisiteFailed("Lion not found in the list")
         }
         
         #expect(lion.id == "lion")
@@ -37,25 +45,24 @@ struct AnimalListUseCaseTests {
         #expect(lion.itemCategory2?.name == "Mammal")
         #expect(lion.itemCategory2?.names.first(where: { $0.languageCode == "en"})?.name == "Mammal")
         #expect(lion.itemCategory2?.names.first(where: { $0.languageCode == "ko"})?.name == "포유류")
-    }}
+    }
+}
 
 struct AnimalImageTests {
     var useCase: AnimalListUsecase = AnimalListUseCaseImpl()
     
     @Test("동물 이미지가 번들에 존재하는지 테스트")
-    func test_animal_image_exists() async {
+    func test_animal_image_exists() async throws {
         let animals = await useCase.fetch()
         guard let lion = animals.first(where: { $0.id == "lion" }) else {
-            #expect(false, "Lion not found")
-            return
+            throw TestError.prerequisiteFailed("Lion not found")
         }
         
         let imageName = lion.imageNameStyle(.toy3d)
         #expect(imageName == "toy3d_lion.webp")
         
         guard let path = Bundle.module.path(forResource: imageName, ofType: nil) else {
-            #expect(false, "Image path for \(imageName ?? "nil") not found")
-            return
+            throw TestError.prerequisiteFailed("Image path for \(imageName ?? "nil") not found")
         }
         
         let image = UIImage(contentsOfFile: path)
