@@ -5,5 +5,6 @@ public protocol GameEntity {
     var names: [NameEntity] { get }
     var category: CategoryEntity { get }
     var itemCategory2: CategoryEntity? { get }
-    var imageName: String? { get }
+    
+    func imageName(_ type: String) -> String?
 }
