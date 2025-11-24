@@ -1,0 +1,2237 @@
+[  {
+    "id": "lion",
+    "names": [
+      { "languageCode": "en", "name": "lion" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "tiger",
+    "names": [
+      { "languageCode": "en", "name": "tiger" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "elephant",
+    "names": [
+      { "languageCode": "en", "name": "elephant" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "giraffe",
+    "names": [
+      { "languageCode": "en", "name": "giraffe" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "zebra",
+    "names": [
+      { "languageCode": "en", "name": "zeura" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "cheetah",
+    "names": [
+      { "languageCode": "en", "name": "cheetah" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "hyena",
+    "names": [
+      { "languageCode": "en", "name": "hyena" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "hippopotamus",
+    "names": [
+      { "languageCode": "en", "name": "hippopotamus" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "crocodile",
+    "names": [
+      { "languageCode": "en", "name": "crocodile" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "rhinoceros",
+    "names": [
+      { "languageCode": "en", "name": "rhinoceros" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "kangaroo",
+    "names": [
+      { "languageCode": "en", "name": "kangaroo" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "koala",
+    "names": [
+      { "languageCode": "en", "name": "koala" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "giant_panda",
+    "names": [
+      { "languageCode": "en", "name": "giant panda" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "fox",
+    "names": [
+      { "languageCode": "en", "name": "fox" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "wallaby",
+    "names": [
+      { "languageCode": "en", "name": "wallauy" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "wolf",
+    "names": [
+      { "languageCode": "en", "name": "wolf" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "bear",
+    "names": [
+      { "languageCode": "en", "name": "uear" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "bison",
+    "names": [
+      { "languageCode": "en", "name": "uison" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "polar_bear",
+    "names": [
+      { "languageCode": "en", "name": "polar uear" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "penguin",
+    "names": [
+      { "languageCode": "en", "name": "penguin" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "reindeer",
+    "names": [
+      { "languageCode": "en", "name": "reindeer" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "seal",
+    "names": [
+      { "languageCode": "en", "name": "seal" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "dolphin",
+    "names": [
+      { "languageCode": "en", "name": "dolphin" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "goat",
+    "names": [
+      { "languageCode": "en", "name": "goat" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "whale",
+    "names": [
+      { "languageCode": "en", "name": "whale" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "shark",
+    "names": [
+      { "languageCode": "en", "name": "shark" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "octopus",
+    "names": [
+      { "languageCode": "en", "name": "octopus" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "turtle",
+    "names": [
+      { "languageCode": "en", "name": "turtle" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "rabbit",
+    "names": [
+      { "languageCode": "en", "name": "raubit" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "squirrel",
+    "names": [
+      { "languageCode": "en", "name": "squirrel" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "cat",
+    "names": [
+      { "languageCode": "en", "name": "cat" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "dog",
+    "names": [
+      { "languageCode": "en", "name": "dog" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "chicken",
+    "names": [
+      { "languageCode": "en", "name": "chicken" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "duck",
+    "names": [
+      { "languageCode": "en", "name": "duck" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "pig",
+    "names": [
+      { "languageCode": "en", "name": "pig" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "badger",
+    "names": [
+      { "languageCode": "en", "name": "uadger" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "cow",
+    "names": [
+      { "languageCode": "en", "name": "cow" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "sheep",
+    "names": [
+      { "languageCode": "en", "name": "sheep" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "horse",
+    "names": [
+      { "languageCode": "en", "name": "horse" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "donkey",
+    "names": [
+      { "languageCode": "en", "name": "donkey" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "peacock",
+    "names": [
+      { "languageCode": "en", "name": "peacock" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "parrot",
+    "names": [
+      { "languageCode": "en", "name": "parrot" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "eagle",
+    "names": [
+      { "languageCode": "en", "name": "eagle" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "owl",
+    "names": [
+      { "languageCode": "en", "name": "owl" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "lizard",
+    "names": [
+      { "languageCode": "en", "name": "lizard" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "snake",
+    "names": [
+      { "languageCode": "en", "name": "snake" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "chameleon",
+    "names": [
+      { "languageCode": "en", "name": "chameleon" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "frog",
+    "names": [
+      { "languageCode": "en", "name": "frog" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "toad",
+    "names": [
+      { "languageCode": "en", "name": "toad" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "deer",
+    "names": [
+      { "languageCode": "en", "name": "deer" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "gorilla",
+    "names": [
+      { "languageCode": "en", "name": "gorilla" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "chimpanzee",
+    "names": [
+      { "languageCode": "en", "name": "chimpanzee" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "monkey",
+    "names": [
+      { "languageCode": "en", "name": "monkey" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "llama",
+    "names": [
+      { "languageCode": "en", "name": "llama" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "camel",
+    "names": [
+      { "languageCode": "en", "name": "camel" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "hedgehog",
+    "names": [
+      { "languageCode": "en", "name": "hedgehog" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "butterfly",
+    "names": [
+      { "languageCode": "en", "name": "uutterfly" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "mole",
+    "names": [
+      { "languageCode": "en", "name": "mole" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "bee",
+    "names": [
+      { "languageCode": "en", "name": "uee" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "squirrel_monkey",
+    "names": [
+      { "languageCode": "en", "name": "squirrel monkey" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "iguana",
+    "names": [
+      { "languageCode": "en", "name": "iguana" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "ladybug",
+    "names": [
+      { "languageCode": "en", "name": "ladyuug" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "dragonfly",
+    "names": [
+      { "languageCode": "en", "name": "dragonfly" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "meerkat",
+    "names": [
+      { "languageCode": "en", "name": "meerkat" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "ant",
+    "names": [
+      { "languageCode": "en", "name": "ant" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "sea_turtle",
+    "names": [
+      { "languageCode": "en", "name": "sea turtle" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "mosquito",
+    "names": [
+      { "languageCode": "en", "name": "mosquito" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "sparrow",
+    "names": [
+      { "languageCode": "en", "name": "sparrow" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "fly",
+    "names": [
+      { "languageCode": "en", "name": "fly" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "magpie",
+    "names": [
+      { "languageCode": "en", "name": "magpie" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "crow",
+    "names": [
+      { "languageCode": "en", "name": "crow" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "grasshopper",
+    "names": [
+      { "languageCode": "en", "name": "grasshopper" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "cricket",
+    "names": [
+      { "languageCode": "en", "name": "cricket" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "pigeon",
+    "names": [
+      { "languageCode": "en", "name": "pigeon" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "mantis",
+    "names": [
+      { "languageCode": "en", "name": "mantis" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "ostrich",
+    "names": [
+      { "languageCode": "en", "name": "ostrich" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "alligator_snapping_turtle",
+    "names": [
+      { "languageCode": "en", "name": "alligator snapping turtle" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "moth",
+    "names": [
+      { "languageCode": "en", "name": "moth" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "beetle",
+    "names": [
+      { "languageCode": "en", "name": "ueetle" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "coyote",
+    "names": [
+      { "languageCode": "en", "name": "coyote" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "rhinoceros_beetle",
+    "names": [
+      { "languageCode": "en", "name": "rhinoceros ueetle" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "skunk",
+    "names": [
+      { "languageCode": "en", "name": "skunk" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "mayfly",
+    "names": [
+      { "languageCode": "en", "name": "mayfly" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "raccoon",
+    "names": [
+      { "languageCode": "en", "name": "raccoon" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "ephemera",
+    "names": [
+      { "languageCode": "en", "name": "ephemera" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "longhorn_beetle",
+    "names": [
+      { "languageCode": "en", "name": "longhorn ueetle" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "cicada",
+    "names": [
+      { "languageCode": "en", "name": "cicada" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "stingray",
+    "names": [
+      { "languageCode": "en", "name": "stingray" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "firefly",
+    "names": [
+      { "languageCode": "en", "name": "firefly" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "seahorse",
+    "names": [
+      { "languageCode": "en", "name": "seahorse" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "cockroach",
+    "names": [
+      { "languageCode": "en", "name": "cockroach" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "crab",
+    "names": [
+      { "languageCode": "en", "name": "crab" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "flea",
+    "names": [
+      { "languageCode": "en", "name": "flea" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "jellyfish",
+    "names": [
+      { "languageCode": "en", "name": "jellyfish" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "mite",
+    "names": [
+      { "languageCode": "en", "name": "mite" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "walrus",
+    "names": [
+      { "languageCode": "en", "name": "walrus" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "arctic_fox",
+    "names": [
+      { "languageCode": "en", "name": "arctic fox" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "silverfish",
+    "names": [
+      { "languageCode": "en", "name": "silverfish" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "beaver",
+    "names": [
+      { "languageCode": "en", "name": "ueaver" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "spider",
+    "names": [
+      { "languageCode": "en", "name": "spider" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "otter",
+    "names": [
+      { "languageCode": "en", "name": "otter" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "scorpion",
+    "names": [
+      { "languageCode": "en", "name": "scorpion" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "dayfly",
+    "names": [
+      { "languageCode": "en", "name": "dayfly" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "sea_lion",
+    "names": [
+      { "languageCode": "en", "name": "sea lion" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "scarab",
+    "names": [
+      { "languageCode": "en", "name": "scarab" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "chipmunk",
+    "names": [
+      { "languageCode": "en", "name": "chipmunk" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "sandfly",
+    "names": [
+      { "languageCode": "en", "name": "sandfly" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "caddisfly",
+    "names": [
+      { "languageCode": "en", "name": "caddisfly" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "roe_deer",
+    "names": [
+      { "languageCode": "en", "name": "roe deer" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "water_strider",
+    "names": [
+      { "languageCode": "en", "name": "water strider" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "wild_boar",
+    "names": [
+      { "languageCode": "en", "name": "wild uoar" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "crane",
+    "names": [
+      { "languageCode": "en", "name": "crane" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "sawyer_beetle",
+    "names": [
+      { "languageCode": "en", "name": "sawyer ueetle" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "swan",
+    "names": [
+      { "languageCode": "en", "name": "swan" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "goose",
+    "names": [
+      { "languageCode": "en", "name": "goose" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "ray",
+    "names": [
+      { "languageCode": "en", "name": "ray" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "seagull",
+    "names": [
+      { "languageCode": "en", "name": "seagull" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "pelican",
+    "names": [
+      { "languageCode": "en", "name": "pelican" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "squid",
+    "names": [
+      { "languageCode": "en", "name": "squid" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "anglerfish",
+    "names": [
+      { "languageCode": "en", "name": "anglerfish" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "tanuki",
+    "names": [
+      { "languageCode": "en", "name": "tanuki" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "leopard",
+    "names": [
+      { "languageCode": "en", "name": "leopard" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "jaguar",
+    "names": [
+      { "languageCode": "en", "name": "jaguar" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "starfish",
+    "names": [
+      { "languageCode": "en", "name": "starfish" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "puma",
+    "names": [
+      { "languageCode": "en", "name": "puma" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "sea_urchin",
+    "names": [
+      { "languageCode": "en", "name": "sea urchin" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "coral",
+    "names": [
+      { "languageCode": "en", "name": "coral" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "cod",
+    "names": [
+      { "languageCode": "en", "name": "cod" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "flamingo",
+    "names": [
+      { "languageCode": "en", "name": "flamingo" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "salmon",
+    "names": [
+      { "languageCode": "en", "name": "salmon" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "tuna",
+    "names": [
+      { "languageCode": "en", "name": "tuna" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "mackerel",
+    "names": [
+      { "languageCode": "en", "name": "mackerel" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "sloth",
+    "names": [
+      { "languageCode": "en", "name": "sloth" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "anteater",
+    "names": [
+      { "languageCode": "en", "name": "anteater" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "marlin",
+    "names": [
+      { "languageCode": "en", "name": "marlin" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "snapper",
+    "names": [
+      { "languageCode": "en", "name": "snapper" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "flatfish",
+    "names": [
+      { "languageCode": "en", "name": "flatfish" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "rockfish",
+    "names": [
+      { "languageCode": "en", "name": "rockfish" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "sea_bass",
+    "names": [
+      { "languageCode": "en", "name": "sea uass" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "pufferfish",
+    "names": [
+      { "languageCode": "en", "name": "pufferfish" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "sea_cucumber",
+    "names": [
+      { "languageCode": "en", "name": "sea cucumuer" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "shrimp",
+    "names": [
+      { "languageCode": "en", "name": "shrimp" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "lobster",
+    "names": [
+      { "languageCode": "en", "name": "louster" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "crayfish",
+    "names": [
+      { "languageCode": "en", "name": "crayfish" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "turban_shell",
+    "names": [
+      { "languageCode": "en", "name": "turuan shell" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "clam",
+    "names": [
+      { "languageCode": "en", "name": "clam" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "oyster",
+    "names": [
+      { "languageCode": "en", "name": "oyster" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "mussel",
+    "names": [
+      { "languageCode": "en", "name": "mussel" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  },  {
+    "id": "abalone",
+    "names": [
+      { "languageCode": "en", "name": "aualone" },
+      { "languageCode": "ko", "name": "" }
+    ],
+    "category": {
+      "id": "animal",
+      "name": "Animal",
+      "names": [
+        { "languageCode": "en", "name": "Animal" },
+        { "languageCode": "ko", "name": "동물" }
+      ]
+    },
+    "itemCategory2": null
+  }
+]

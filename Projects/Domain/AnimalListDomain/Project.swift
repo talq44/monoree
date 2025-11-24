@@ -13,6 +13,7 @@ let project = Project.module(
         ),
         .implementation(
             domain: .AnimalListDomain,
+            hasResources: true,
             dependencies: [
                 .domain(target: .AnimalListDomain, type: .interface),
             ]
