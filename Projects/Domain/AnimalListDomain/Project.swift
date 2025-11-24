@@ -7,10 +7,13 @@ let project = Project.module(
     targets: [
         .interface(
             domain: .AnimalListDomain,
-            dependencies: []
+            dependencies: [
+                .domain(target: .GameEntityDomain, type: .interface)
+            ]
         ),
         .implementation(
             domain: .AnimalListDomain,
+            hasResources: true,
             dependencies: [
                 .domain(target: .AnimalListDomain, type: .interface),
             ]

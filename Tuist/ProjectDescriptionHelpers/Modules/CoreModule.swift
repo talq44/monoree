@@ -1,13 +1,13 @@
 import ProjectDescription
 
 public enum CoreModule: String, CaseIterable {
-	case UserDefaultCore
-	case AdMobCore
+    case AdMobCore
+    case AnalyticsCore
+    case LocalDataCore
 	case MonoreeDesignSystemCore
-	case LocalDataCore
 	case RemoteConfigCore
-	case AnalyticsCore
-	case UserAPICore
+    case UserAPICore
+    case UserDefaultCore
     
     public var name: String {
         self.rawValue
