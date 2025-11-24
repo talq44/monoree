@@ -20,24 +20,24 @@ struct AnimalListUseCaseTests {
         #expect(animals.count == 149)
     }
     
-        @Test("동물 속성이 올바르게 디코딩되었는지 테스트")
-        func test_animal_properties_are_decoded_correctly() async {
-            let animals = await useCase.fetch()
-            
-            guard let lion = animals.first(where: { $0.id == "lion" }) else {
-                #expect(false, "Lion not found in the list")
-                return
-            }
-    
-            #expect(lion.id == "lion")
-            #expect(lion.names.first(where: { $0.languageCode == "en" })?.name == "Lion")
-            #expect(lion.names.first(where: { $0.languageCode == "ko" })?.name == "사자")
-            
-            #expect(lion.itemCategory2?.id == "mammal")
-            #expect(lion.itemCategory2?.name == "Mammal")
-            #expect(lion.itemCategory2?.names.first(where: { $0.languageCode == "en"})?.name == "Mammal")
-            #expect(lion.itemCategory2?.names.first(where: { $0.languageCode == "ko"})?.name == "포유류")
-        }}
+    @Test("동물 속성이 올바르게 디코딩되었는지 테스트")
+    func test_animal_properties_are_decoded_correctly() async {
+        let animals = await useCase.fetch()
+        
+        guard let lion = animals.first(where: { $0.id == "lion" }) else {
+            #expect(false, "Lion not found in the list")
+            return
+        }
+        
+        #expect(lion.id == "lion")
+        #expect(lion.names.first(where: { $0.languageCode == "en" })?.name == "Lion")
+        #expect(lion.names.first(where: { $0.languageCode == "ko" })?.name == "사자")
+        
+        #expect(lion.itemCategory2?.id == "mammal")
+        #expect(lion.itemCategory2?.name == "Mammal")
+        #expect(lion.itemCategory2?.names.first(where: { $0.languageCode == "en"})?.name == "Mammal")
+        #expect(lion.itemCategory2?.names.first(where: { $0.languageCode == "ko"})?.name == "포유류")
+    }}
 
 struct AnimalImageTests {
     var useCase: AnimalListUsecase = AnimalListUseCaseImpl()
