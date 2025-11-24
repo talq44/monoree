@@ -1,9 +1,6 @@
 import Foundation
+import GameEntityDomainInterface
 
-public protocol Animal {
-    var id: String { get }
-    var nameKo: String { get }
-    var nameEn: String { get }
-    var category: Set<AnimalCategory> { get }
-    var imageURL: String { get }
+public protocol Animal: GameEntity {
+    func imageNameStyle(_ style: AnimalImageStyle) -> String?
 }

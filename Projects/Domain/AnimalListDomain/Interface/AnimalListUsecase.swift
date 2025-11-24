@@ -1,5 +1,5 @@
 import Foundation
 
 public protocol AnimalListUsecase {
-    func fetch(_ category: AnimalCategory) async -> [Animal]
+    func fetch() async -> [Animal]
 }
