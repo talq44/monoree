@@ -5,16 +5,8 @@ import AnimalListDomainInterface
 struct AnimalImpl: Animal {
     let id: String
     let names: [any NameEntity]
-    let category: any CategoryEntity
-    let itemCategory2: (any CategoryEntity)?
-    
-    var categoryID: String {
-        category.id
-    }
-    
-    var itemCategory2ID: String? {
-        itemCategory2?.id
-    }
+    let categoryID: String
+    let itemCategory2ID: String?
     
     func imageName(_ type: String) -> String? {
         return type + "_" + id + ".webp"
