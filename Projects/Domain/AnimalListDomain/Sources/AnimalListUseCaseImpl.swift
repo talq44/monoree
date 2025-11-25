@@ -3,9 +3,9 @@ import AnimalListDomainInterface
 import GameEntityDomainInterface
 
 // MARK: - UseCase Implementation
-final class AnimalListUseCaseImpl: AnimalListUsecase {
-    func fetch() async -> [Animal] {
-        guard let url = Bundle.module.url(
+final class AnimalListUseCaseImpl: AnimalListUseCase {
+    func fetch() async -> [any GameEntityDomainInterface.GameEntity] {
+        guard let animalListURL = Bundle.module.url(
             forResource: "animal_list",
             withExtension: "json"
         ) else {
@@ -14,18 +14,10 @@ final class AnimalListUseCaseImpl: AnimalListUsecase {
         }
 
         do {
-            let data = try Data(contentsOf: url)
-            let animalDTOs = try JSONDecoder().decode([AnimalDTO].self, from: data)
+            let animalData = try Data(contentsOf: animalListURL)
+            let animalDTOs = try JSONDecoder().decode([AnimalDTO].self, from: animalData)
             
-            let animals: [Animal] = animalDTOs.map { dto in
-                return AnimalImpl(
-                    id: dto.id,
-                    names: dto.names,
-                    category: dto.category,
-                    itemCategory2: dto.itemCategory2
-                )
-            }
-            return animals
+            return animalDTOs
         } catch {
             print("Error decoding animal list: \(error)")
             return []

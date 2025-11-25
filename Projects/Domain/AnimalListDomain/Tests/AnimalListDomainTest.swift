@@ -1,7 +1,6 @@
 import Testing
 import UIKit
 import AnimalListDomainInterface
-
 @testable import AnimalListDomain
 
 private enum TestError: Error, CustomStringConvertible {
@@ -15,7 +14,7 @@ private enum TestError: Error, CustomStringConvertible {
 }
 
 struct AnimalListUseCaseTests {
-    var useCase: AnimalListUsecase = AnimalListUseCaseImpl()
+    var useCase: AnimalListUseCase = AnimalListUseCaseImpl()
     
     @Test("동물 목록을 가져오는지 테스트")
     func test_fetch_animal_list_is_not_empty() async {
@@ -34,17 +33,12 @@ struct AnimalListUseCaseTests {
             let animals = await useCase.fetch()
             
             guard let lion = animals.first(where: { $0.id == "lion" }) else {
-                throw TestError.prerequisiteFailed("Lion not found in the list")
+                throw TestError.prerequisiteFailed("Lion not found")
             }
     
             #expect(lion.id == "lion")
             #expect(lion.names.first(where: { $0.languageCode == "en" })?.name == "Lion")
             #expect(lion.names.first(where: { $0.languageCode == "ko" })?.name == "사자")
-            
-            #expect(lion.itemCategory2?.id == "mammal")
-            #expect(lion.itemCategory2?.name == "Mammal")
-            #expect(lion.itemCategory2?.names.first(where: { $0.languageCode == "en"})?.name == "Mammal")
-            #expect(lion.itemCategory2?.names.first(where: { $0.languageCode == "ko"})?.name == "포유류")
         }
     
         @Test("모든 동물의 ID가 고유한지 테스트")
@@ -54,8 +48,44 @@ struct AnimalListUseCaseTests {
             #expect(animals.count == idSet.count, "Duplicate IDs found in animal list")
         }
     }
+
+struct AnimalCategoryListUseCaseTests {
+    var useCase: AnimalCategoryListUseCase = AnimalCategoryListUseCaseImpl()
+
+    @Test("카테고리 목록을 가져오는지 테스트")
+    func test_fetch_category_list_is_not_empty() async {
+        let categories = await useCase.fetch()
+        #expect(!categories.isEmpty)
+    }
+
+    @Test("가져온 카테고리 목록의 개수가 정확한지 테스트")
+    func test_fetch_category_list_has_correct_count() async {
+        let categories = await useCase.fetch()
+        #expect(categories.count == 8)
+    }
+
+    @Test("카테고리 속성이 올바르게 디코딩되었는지 테스트")
+    func test_category_properties_are_decoded_correctly() async throws {
+        let categories = await useCase.fetch()
+
+        guard let mammalCategory = categories.first(where: { $0.id == "mammal" }) else {
+            throw TestError.prerequisiteFailed("Mammal category not found in the list")
+        }
+
+        #expect(mammalCategory.id == "mammal")
+        #expect(mammalCategory.name == "Mammal")
+        #expect(mammalCategory.names.first(where: { $0.languageCode == "en" })?.name == "Mammal")
+        #expect(mammalCategory.names.first(where: { $0.languageCode == "ko" })?.name == "포유류")
+        #expect(mammalCategory.parentId == "animal")
+
+        guard let animalCategory = categories.first(where: { $0.id == "animal" }) else {
+            throw TestError.prerequisiteFailed("Animal category not found in the list")
+        }
+        #expect(animalCategory.parentId == nil)
+    }
+}
 struct AnimalImageTests {
-    var useCase: AnimalListUsecase = AnimalListUseCaseImpl()
+    var useCase: AnimalListUseCase = AnimalListUseCaseImpl()
     
     @Test("동물 이미지가 번들에 존재하는지 테스트")
     func test_animal_image_exists() async throws {
@@ -64,7 +94,7 @@ struct AnimalImageTests {
             throw TestError.prerequisiteFailed("Lion not found")
         }
         
-        let imageName = lion.imageNameStyle(.toy3d)
+        let imageName = lion.imageName("toy3d")
         #expect(imageName == "toy3d_lion.webp")
         
         guard let path = Bundle.module.path(forResource: imageName, ofType: nil) else {

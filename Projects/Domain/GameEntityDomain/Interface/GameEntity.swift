@@ -1,10 +1,9 @@
 import Foundation
 
-public protocol GameEntity {
+public protocol GameEntity: Localizable {
     var id: String { get }
-    var names: [NameEntity] { get }
-    var category: CategoryEntity { get }
-    var itemCategory2: CategoryEntity? { get }
+    var categoryID: String { get }
+    var itemCategory2ID: String? { get }
     
     func imageName(_ type: String) -> String?
 }
