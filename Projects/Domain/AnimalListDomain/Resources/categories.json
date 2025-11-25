@@ -1,0 +1,186 @@
+[
+  {
+    "id": "amphibian",
+    "name": "Amphibian",
+    "names": [
+      {
+        "languageCode": "en",
+        "name": "Amphibian"
+      },
+      {
+        "languageCode": "ko",
+        "name": "양서류"
+      },
+      {
+        "languageCode": "es",
+        "name": "Anfibio"
+      },
+      {
+        "languageCode": "ja",
+        "name": "両生類"
+      }
+    ],
+    "parentId": "animal"
+  },
+  {
+    "id": "animal",
+    "name": "Animal",
+    "names": [
+      {
+        "languageCode": "en",
+        "name": "Animal"
+      },
+      {
+        "languageCode": "ko",
+        "name": "동물"
+      },
+      {
+        "languageCode": "es",
+        "name": "Animal"
+      },
+      {
+        "languageCode": "ja",
+        "name": "動物"
+      }
+    ],
+    "parentId": null
+  },
+  {
+    "id": "bird",
+    "name": "Bird",
+    "names": [
+      {
+        "languageCode": "en",
+        "name": "Bird"
+      },
+      {
+        "languageCode": "ko",
+        "name": "조류"
+      },
+      {
+        "languageCode": "es",
+        "name": "Ave"
+      },
+      {
+        "languageCode": "ja",
+        "name": "鳥"
+      }
+    ],
+    "parentId": "animal"
+  },
+  {
+    "id": "fish",
+    "name": "Fish",
+    "names": [
+      {
+        "languageCode": "en",
+        "name": "Fish"
+      },
+      {
+        "languageCode": "ko",
+        "name": "어류"
+      },
+      {
+        "languageCode": "es",
+        "name": "Pez"
+      },
+      {
+        "languageCode": "ja",
+        "name": "魚"
+      }
+    ],
+    "parentId": "animal"
+  },
+  {
+    "id": "insect",
+    "name": "Insect",
+    "names": [
+      {
+        "languageCode": "en",
+        "name": "Insect"
+      },
+      {
+        "languageCode": "ko",
+        "name": "곤충"
+      },
+      {
+        "languageCode": "es",
+        "name": "Insecto"
+      },
+      {
+        "languageCode": "ja",
+        "name": "昆虫"
+      }
+    ],
+    "parentId": "animal"
+  },
+  {
+    "id": "invertebrate",
+    "name": "Invertebrate",
+    "names": [
+      {
+        "languageCode": "en",
+        "name": "Invertebrate"
+      },
+      {
+        "languageCode": "ko",
+        "name": "무척추동물"
+      },
+      {
+        "languageCode": "es",
+        "name": "Invertebrado"
+      },
+      {
+        "languageCode": "ja",
+        "name": "無脊椎動物"
+      }
+    ],
+    "parentId": "animal"
+  },
+  {
+    "id": "mammal",
+    "name": "Mammal",
+    "names": [
+      {
+        "languageCode": "en",
+        "name": "Mammal"
+      },
+      {
+        "languageCode": "ko",
+        "name": "포유류"
+      },
+      {
+        "languageCode": "es",
+        "name": "Mamífero"
+      },
+      {
+        "languageCode": "ja",
+        "name": "哺乳類"
+      }
+    ],
+    "parentId": "animal"
+  },
+  {
+    "id": "reptile",
+    "name": "Reptile",
+    "names": [
+      {
+        "languageCode": "en",
+        "name": "Reptile"
+      },
+      {
+        "languageCode": "ko",
+        "name": "파충류"
+      },
+      {
+        "languageCode": "es",
+        "name": "Reptil"
+      },
+      {
+        "languageCode": "ja",
+        "name": "爬虫類"
+      }
+    ],
+    "parentId": "animal"
+  }
+]

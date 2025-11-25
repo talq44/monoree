@@ -1,7 +1,7 @@
 import Foundation
 
-public protocol CategoryEntity {
+public protocol CategoryEntity: Localizable {
     var id: String { get }
     var name: String { get }
-    var names: [any NameEntity] { get }
+    var parentId: String? { get }
 }
