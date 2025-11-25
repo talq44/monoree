@@ -2,7 +2,7 @@ import Foundation
 import AnimalListDomainInterface
 import GameEntityDomainInterface
 
-struct AnimalDTO: Decodable, GameEntity, Localizable {
+struct AnimalDTO: Decodable, Animal, Localizable {
     let id: String
     let names: [any NameEntity]
     let categoryID: String
@@ -22,6 +22,10 @@ struct AnimalDTO: Decodable, GameEntity, Localizable {
     
     func imageName(_ type: String) -> String? {
         return type + "_" + id + ".webp"
+    }
+    
+    func imageNameStyle(_ style: AnimalListDomainInterface.AnimalImageStyle) -> String? {
+        return style.rawValue + "_" + id + ".webp"
     }
 }
 
