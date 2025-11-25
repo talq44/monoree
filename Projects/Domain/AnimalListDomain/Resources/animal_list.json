@@ -9,6 +9,14 @@
       {
         "languageCode": "ko",
         "name": "사자"
+      },
+      {
+        "languageCode": "es",
+        "name": "León"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ライオン"
       }
     ],
     "category": {
@@ -22,6 +30,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -36,6 +52,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -50,6 +74,14 @@
       {
         "languageCode": "ko",
         "name": "호랑이"
+      },
+      {
+        "languageCode": "es",
+        "name": "Tigre"
+      },
+      {
+        "languageCode": "ja",
+        "name": "トラ"
       }
     ],
     "category": {
@@ -63,6 +95,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -77,6 +117,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -91,6 +139,14 @@
       {
         "languageCode": "ko",
         "name": "코끼리"
+      },
+      {
+        "languageCode": "es",
+        "name": "Elefante"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ゾウ"
       }
     ],
     "category": {
@@ -104,6 +160,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -118,6 +182,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -132,6 +204,14 @@
       {
         "languageCode": "ko",
         "name": "기린"
+      },
+      {
+        "languageCode": "es",
+        "name": "Jirafa"
+      },
+      {
+        "languageCode": "ja",
+        "name": "キリン"
       }
     ],
     "category": {
@@ -145,6 +225,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -159,6 +247,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -173,6 +269,14 @@
       {
         "languageCode": "ko",
         "name": "얼룩말"
+      },
+      {
+        "languageCode": "es",
+        "name": "Cebra"
+      },
+      {
+        "languageCode": "ja",
+        "name": "シマウマ"
       }
     ],
     "category": {
@@ -186,6 +290,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -200,6 +312,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -214,6 +334,14 @@
       {
         "languageCode": "ko",
         "name": "치타"
+      },
+      {
+        "languageCode": "es",
+        "name": "Guepardo"
+      },
+      {
+        "languageCode": "ja",
+        "name": "チーター"
       }
     ],
     "category": {
@@ -227,6 +355,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -241,6 +377,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -255,6 +399,14 @@
       {
         "languageCode": "ko",
         "name": "하이에나"
+      },
+      {
+        "languageCode": "es",
+        "name": "Hiena"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ハイエナ"
       }
     ],
     "category": {
@@ -268,6 +420,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -282,6 +442,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -296,6 +464,14 @@
       {
         "languageCode": "ko",
         "name": "하마"
+      },
+      {
+        "languageCode": "es",
+        "name": "Hipopótamo"
+      },
+      {
+        "languageCode": "ja",
+        "name": "カバ"
       }
     ],
     "category": {
@@ -309,6 +485,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -323,6 +507,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -337,6 +529,14 @@
       {
         "languageCode": "ko",
         "name": "악어"
+      },
+      {
+        "languageCode": "es",
+        "name": "Cocodrilo"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ワニ"
       }
     ],
     "category": {
@@ -350,6 +550,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -364,6 +572,14 @@
         {
           "languageCode": "ko",
           "name": "파충류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Reptil"
+        },
+        {
+          "languageCode": "ja",
+          "name": "爬虫類"
         }
       ]
     }
@@ -378,6 +594,14 @@
       {
         "languageCode": "ko",
         "name": "코뿔소"
+      },
+      {
+        "languageCode": "es",
+        "name": "Rinoceronte"
+      },
+      {
+        "languageCode": "ja",
+        "name": "サイ"
       }
     ],
     "category": {
@@ -391,6 +615,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -405,6 +637,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -419,6 +659,14 @@
       {
         "languageCode": "ko",
         "name": "캥거루"
+      },
+      {
+        "languageCode": "es",
+        "name": "Canguro"
+      },
+      {
+        "languageCode": "ja",
+        "name": "カンガルー"
       }
     ],
     "category": {
@@ -432,6 +680,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -446,6 +702,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -460,6 +724,14 @@
       {
         "languageCode": "ko",
         "name": "코알라"
+      },
+      {
+        "languageCode": "es",
+        "name": "Coala"
+      },
+      {
+        "languageCode": "ja",
+        "name": "コアラ"
       }
     ],
     "category": {
@@ -473,6 +745,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -487,6 +767,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -501,6 +789,14 @@
       {
         "languageCode": "ko",
         "name": "판다"
+      },
+      {
+        "languageCode": "es",
+        "name": "Panda gigante"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ジャイアントパンダ"
       }
     ],
     "category": {
@@ -514,6 +810,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -528,6 +832,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -542,6 +854,14 @@
       {
         "languageCode": "ko",
         "name": "여우"
+      },
+      {
+        "languageCode": "es",
+        "name": "Zorro"
+      },
+      {
+        "languageCode": "ja",
+        "name": "キツネ"
       }
     ],
     "category": {
@@ -555,6 +875,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -569,6 +897,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -583,6 +919,14 @@
       {
         "languageCode": "ko",
         "name": "왈라비"
+      },
+      {
+        "languageCode": "es",
+        "name": "Ualabí"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ワラビー"
       }
     ],
     "category": {
@@ -596,6 +940,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -610,6 +962,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -624,6 +984,14 @@
       {
         "languageCode": "ko",
         "name": "늑대"
+      },
+      {
+        "languageCode": "es",
+        "name": "Lobo"
+      },
+      {
+        "languageCode": "ja",
+        "name": "オオカミ"
       }
     ],
     "category": {
@@ -637,6 +1005,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -651,6 +1027,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -665,6 +1049,14 @@
       {
         "languageCode": "ko",
         "name": "곰"
+      },
+      {
+        "languageCode": "es",
+        "name": "Oso"
+      },
+      {
+        "languageCode": "ja",
+        "name": "クマ"
       }
     ],
     "category": {
@@ -678,6 +1070,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -692,6 +1092,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -706,6 +1114,14 @@
       {
         "languageCode": "ko",
         "name": "들소"
+      },
+      {
+        "languageCode": "es",
+        "name": "Bisonte"
+      },
+      {
+        "languageCode": "ja",
+        "name": "バイソン"
       }
     ],
     "category": {
@@ -719,6 +1135,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -733,6 +1157,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -747,6 +1179,14 @@
       {
         "languageCode": "ko",
         "name": "북극곰"
+      },
+      {
+        "languageCode": "es",
+        "name": "Oso polar"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ホッキョクグマ"
       }
     ],
     "category": {
@@ -760,6 +1200,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -774,6 +1222,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -788,6 +1244,14 @@
       {
         "languageCode": "ko",
         "name": "펭귄"
+      },
+      {
+        "languageCode": "es",
+        "name": "Pingüino"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ペンギン"
       }
     ],
     "category": {
@@ -801,6 +1265,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -815,6 +1287,14 @@
         {
           "languageCode": "ko",
           "name": "조류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Ave"
+        },
+        {
+          "languageCode": "ja",
+          "name": "鳥"
         }
       ]
     }
@@ -829,6 +1309,14 @@
       {
         "languageCode": "ko",
         "name": "순록"
+      },
+      {
+        "languageCode": "es",
+        "name": "Reno"
+      },
+      {
+        "languageCode": "ja",
+        "name": "トナカイ"
       }
     ],
     "category": {
@@ -842,6 +1330,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -856,6 +1352,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -870,6 +1374,14 @@
       {
         "languageCode": "ko",
         "name": "물개"
+      },
+      {
+        "languageCode": "es",
+        "name": "Foca"
+      },
+      {
+        "languageCode": "ja",
+        "name": "アザラシ"
       }
     ],
     "category": {
@@ -883,6 +1395,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -897,6 +1417,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -911,6 +1439,14 @@
       {
         "languageCode": "ko",
         "name": "돌고래"
+      },
+      {
+        "languageCode": "es",
+        "name": "Delfín"
+      },
+      {
+        "languageCode": "ja",
+        "name": "イルカ"
       }
     ],
     "category": {
@@ -924,6 +1460,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -938,6 +1482,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -952,6 +1504,14 @@
       {
         "languageCode": "ko",
         "name": "염소"
+      },
+      {
+        "languageCode": "es",
+        "name": "Cabra"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ヤギ"
       }
     ],
     "category": {
@@ -965,6 +1525,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -979,6 +1547,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -993,6 +1569,14 @@
       {
         "languageCode": "ko",
         "name": "고래"
+      },
+      {
+        "languageCode": "es",
+        "name": "Ballena"
+      },
+      {
+        "languageCode": "ja",
+        "name": "クジラ"
       }
     ],
     "category": {
@@ -1006,6 +1590,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -1020,6 +1612,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -1034,6 +1634,14 @@
       {
         "languageCode": "ko",
         "name": "상어"
+      },
+      {
+        "languageCode": "es",
+        "name": "Tiburón"
+      },
+      {
+        "languageCode": "ja",
+        "name": "サメ"
       }
     ],
     "category": {
@@ -1047,6 +1655,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -1061,6 +1677,14 @@
         {
           "languageCode": "ko",
           "name": "어류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Pez"
+        },
+        {
+          "languageCode": "ja",
+          "name": "魚"
         }
       ]
     }
@@ -1075,6 +1699,14 @@
       {
         "languageCode": "ko",
         "name": "문어"
+      },
+      {
+        "languageCode": "es",
+        "name": "Pulpo"
+      },
+      {
+        "languageCode": "ja",
+        "name": "タコ"
       }
     ],
     "category": {
@@ -1088,6 +1720,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -1102,6 +1742,14 @@
         {
           "languageCode": "ko",
           "name": "무척추동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Invertebrado"
+        },
+        {
+          "languageCode": "ja",
+          "name": "無脊椎動物"
         }
       ]
     }
@@ -1116,6 +1764,14 @@
       {
         "languageCode": "ko",
         "name": "거북이"
+      },
+      {
+        "languageCode": "es",
+        "name": "Tortuga"
+      },
+      {
+        "languageCode": "ja",
+        "name": "カメ"
       }
     ],
     "category": {
@@ -1129,6 +1785,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -1143,6 +1807,14 @@
         {
           "languageCode": "ko",
           "name": "파충류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Reptil"
+        },
+        {
+          "languageCode": "ja",
+          "name": "爬虫類"
         }
       ]
     }
@@ -1157,6 +1829,14 @@
       {
         "languageCode": "ko",
         "name": "토끼"
+      },
+      {
+        "languageCode": "es",
+        "name": "Conejo"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ウサギ"
       }
     ],
     "category": {
@@ -1170,6 +1850,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -1184,6 +1872,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -1198,6 +1894,14 @@
       {
         "languageCode": "ko",
         "name": "다람쥐"
+      },
+      {
+        "languageCode": "es",
+        "name": "Ardilla"
+      },
+      {
+        "languageCode": "ja",
+        "name": "リス"
       }
     ],
     "category": {
@@ -1211,6 +1915,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -1225,6 +1937,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -1239,6 +1959,14 @@
       {
         "languageCode": "ko",
         "name": "고양이"
+      },
+      {
+        "languageCode": "es",
+        "name": "Gato"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ネコ"
       }
     ],
     "category": {
@@ -1252,6 +1980,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -1266,6 +2002,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -1280,6 +2024,14 @@
       {
         "languageCode": "ko",
         "name": "개"
+      },
+      {
+        "languageCode": "es",
+        "name": "Perro"
+      },
+      {
+        "languageCode": "ja",
+        "name": "イヌ"
       }
     ],
     "category": {
@@ -1293,6 +2045,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -1307,6 +2067,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -1321,6 +2089,14 @@
       {
         "languageCode": "ko",
         "name": "닭"
+      },
+      {
+        "languageCode": "es",
+        "name": "Pollo"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ニワトリ"
       }
     ],
     "category": {
@@ -1334,6 +2110,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -1348,6 +2132,14 @@
         {
           "languageCode": "ko",
           "name": "조류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Ave"
+        },
+        {
+          "languageCode": "ja",
+          "name": "鳥"
         }
       ]
     }
@@ -1362,6 +2154,14 @@
       {
         "languageCode": "ko",
         "name": "오리"
+      },
+      {
+        "languageCode": "es",
+        "name": "Pato"
+      },
+      {
+        "languageCode": "ja",
+        "name": "アヒル"
       }
     ],
     "category": {
@@ -1375,6 +2175,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -1389,6 +2197,14 @@
         {
           "languageCode": "ko",
           "name": "조류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Ave"
+        },
+        {
+          "languageCode": "ja",
+          "name": "鳥"
         }
       ]
     }
@@ -1403,6 +2219,14 @@
       {
         "languageCode": "ko",
         "name": "돼지"
+      },
+      {
+        "languageCode": "es",
+        "name": "Cerdo"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ブタ"
       }
     ],
     "category": {
@@ -1416,6 +2240,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -1430,6 +2262,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -1444,6 +2284,14 @@
       {
         "languageCode": "ko",
         "name": "오소리"
+      },
+      {
+        "languageCode": "es",
+        "name": "Tejón"
+      },
+      {
+        "languageCode": "ja",
+        "name": "アナグマ"
       }
     ],
     "category": {
@@ -1457,6 +2305,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -1471,6 +2327,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -1485,6 +2349,14 @@
       {
         "languageCode": "ko",
         "name": "소"
+      },
+      {
+        "languageCode": "es",
+        "name": "Vaca"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ウシ"
       }
     ],
     "category": {
@@ -1498,6 +2370,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -1512,6 +2392,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -1526,6 +2414,14 @@
       {
         "languageCode": "ko",
         "name": "양"
+      },
+      {
+        "languageCode": "es",
+        "name": "Oveja"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ヒツジ"
       }
     ],
     "category": {
@@ -1539,6 +2435,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -1553,6 +2457,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -1567,6 +2479,14 @@
       {
         "languageCode": "ko",
         "name": "말"
+      },
+      {
+        "languageCode": "es",
+        "name": "Caballo"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ウマ"
       }
     ],
     "category": {
@@ -1580,6 +2500,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -1594,6 +2522,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -1608,6 +2544,14 @@
       {
         "languageCode": "ko",
         "name": "당나귀"
+      },
+      {
+        "languageCode": "es",
+        "name": "Burro"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ロバ"
       }
     ],
     "category": {
@@ -1621,6 +2565,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -1635,6 +2587,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -1649,6 +2609,14 @@
       {
         "languageCode": "ko",
         "name": "공작"
+      },
+      {
+        "languageCode": "es",
+        "name": "Pavo real"
+      },
+      {
+        "languageCode": "ja",
+        "name": "クジャク"
       }
     ],
     "category": {
@@ -1662,6 +2630,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -1676,6 +2652,14 @@
         {
           "languageCode": "ko",
           "name": "조류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Ave"
+        },
+        {
+          "languageCode": "ja",
+          "name": "鳥"
         }
       ]
     }
@@ -1690,6 +2674,14 @@
       {
         "languageCode": "ko",
         "name": "앵무새"
+      },
+      {
+        "languageCode": "es",
+        "name": "Loro"
+      },
+      {
+        "languageCode": "ja",
+        "name": "オウム"
       }
     ],
     "category": {
@@ -1703,6 +2695,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -1717,6 +2717,14 @@
         {
           "languageCode": "ko",
           "name": "조류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Ave"
+        },
+        {
+          "languageCode": "ja",
+          "name": "鳥"
         }
       ]
     }
@@ -1731,6 +2739,14 @@
       {
         "languageCode": "ko",
         "name": "독수리"
+      },
+      {
+        "languageCode": "es",
+        "name": "Águila"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ワシ"
       }
     ],
     "category": {
@@ -1744,6 +2760,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -1758,6 +2782,14 @@
         {
           "languageCode": "ko",
           "name": "조류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Ave"
+        },
+        {
+          "languageCode": "ja",
+          "name": "鳥"
         }
       ]
     }
@@ -1772,6 +2804,14 @@
       {
         "languageCode": "ko",
         "name": "부엉이"
+      },
+      {
+        "languageCode": "es",
+        "name": "Búho"
+      },
+      {
+        "languageCode": "ja",
+        "name": "フクロウ"
       }
     ],
     "category": {
@@ -1785,6 +2825,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -1799,6 +2847,14 @@
         {
           "languageCode": "ko",
           "name": "조류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Ave"
+        },
+        {
+          "languageCode": "ja",
+          "name": "鳥"
         }
       ]
     }
@@ -1813,6 +2869,14 @@
       {
         "languageCode": "ko",
         "name": "도마뱀"
+      },
+      {
+        "languageCode": "es",
+        "name": "Lagarto"
+      },
+      {
+        "languageCode": "ja",
+        "name": "トカゲ"
       }
     ],
     "category": {
@@ -1826,6 +2890,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -1840,6 +2912,14 @@
         {
           "languageCode": "ko",
           "name": "파충류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Reptil"
+        },
+        {
+          "languageCode": "ja",
+          "name": "爬虫類"
         }
       ]
     }
@@ -1854,6 +2934,14 @@
       {
         "languageCode": "ko",
         "name": "뱀"
+      },
+      {
+        "languageCode": "es",
+        "name": "Serpiente"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ヘビ"
       }
     ],
     "category": {
@@ -1867,6 +2955,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -1881,6 +2977,14 @@
         {
           "languageCode": "ko",
           "name": "파충류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Reptil"
+        },
+        {
+          "languageCode": "ja",
+          "name": "爬虫類"
         }
       ]
     }
@@ -1895,6 +2999,14 @@
       {
         "languageCode": "ko",
         "name": "카멜레온"
+      },
+      {
+        "languageCode": "es",
+        "name": "Camaleón"
+      },
+      {
+        "languageCode": "ja",
+        "name": "カメレオン"
       }
     ],
     "category": {
@@ -1908,6 +3020,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -1922,6 +3042,14 @@
         {
           "languageCode": "ko",
           "name": "파충류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Reptil"
+        },
+        {
+          "languageCode": "ja",
+          "name": "爬虫類"
         }
       ]
     }
@@ -1936,6 +3064,14 @@
       {
         "languageCode": "ko",
         "name": "개구리"
+      },
+      {
+        "languageCode": "es",
+        "name": "Rana"
+      },
+      {
+        "languageCode": "ja",
+        "name": "カエル"
       }
     ],
     "category": {
@@ -1949,6 +3085,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -1963,6 +3107,14 @@
         {
           "languageCode": "ko",
           "name": "양서류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Anfibio"
+        },
+        {
+          "languageCode": "ja",
+          "name": "両生類"
         }
       ]
     }
@@ -1977,6 +3129,14 @@
       {
         "languageCode": "ko",
         "name": "두꺼비"
+      },
+      {
+        "languageCode": "es",
+        "name": "Sapo"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ヒキガエル"
       }
     ],
     "category": {
@@ -1990,6 +3150,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -2004,6 +3172,14 @@
         {
           "languageCode": "ko",
           "name": "양서류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Anfibio"
+        },
+        {
+          "languageCode": "ja",
+          "name": "両生類"
         }
       ]
     }
@@ -2018,6 +3194,14 @@
       {
         "languageCode": "ko",
         "name": "사슴"
+      },
+      {
+        "languageCode": "es",
+        "name": "Ciervo"
+      },
+      {
+        "languageCode": "ja",
+        "name": "シカ"
       }
     ],
     "category": {
@@ -2031,6 +3215,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -2045,6 +3237,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -2059,6 +3259,14 @@
       {
         "languageCode": "ko",
         "name": "고릴라"
+      },
+      {
+        "languageCode": "es",
+        "name": "Gorila"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ゴリラ"
       }
     ],
     "category": {
@@ -2072,6 +3280,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -2086,6 +3302,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -2100,6 +3324,14 @@
       {
         "languageCode": "ko",
         "name": "침팬지"
+      },
+      {
+        "languageCode": "es",
+        "name": "Chimpancé"
+      },
+      {
+        "languageCode": "ja",
+        "name": "チンパンジー"
       }
     ],
     "category": {
@@ -2113,6 +3345,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -2127,6 +3367,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -2141,6 +3389,14 @@
       {
         "languageCode": "ko",
         "name": "원숭이"
+      },
+      {
+        "languageCode": "es",
+        "name": "Mono"
+      },
+      {
+        "languageCode": "ja",
+        "name": "サル"
       }
     ],
     "category": {
@@ -2154,6 +3410,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -2168,6 +3432,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -2182,6 +3454,14 @@
       {
         "languageCode": "ko",
         "name": "라마"
+      },
+      {
+        "languageCode": "es",
+        "name": "Llama"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ラマ"
       }
     ],
     "category": {
@@ -2195,6 +3475,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -2209,6 +3497,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -2223,6 +3519,14 @@
       {
         "languageCode": "ko",
         "name": "낙타"
+      },
+      {
+        "languageCode": "es",
+        "name": "Camello"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ラクダ"
       }
     ],
     "category": {
@@ -2236,6 +3540,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -2250,6 +3562,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -2264,6 +3584,14 @@
       {
         "languageCode": "ko",
         "name": "고슴도치"
+      },
+      {
+        "languageCode": "es",
+        "name": "Erizo"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ハリネズミ"
       }
     ],
     "category": {
@@ -2277,6 +3605,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -2291,6 +3627,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -2305,6 +3649,14 @@
       {
         "languageCode": "ko",
         "name": "나비"
+      },
+      {
+        "languageCode": "es",
+        "name": "Mariposa"
+      },
+      {
+        "languageCode": "ja",
+        "name": "チョウ"
       }
     ],
     "category": {
@@ -2318,6 +3670,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -2332,6 +3692,14 @@
         {
           "languageCode": "ko",
           "name": "곤충"
+        },
+        {
+          "languageCode": "es",
+          "name": "Insecto"
+        },
+        {
+          "languageCode": "ja",
+          "name": "昆虫"
         }
       ]
     }
@@ -2346,6 +3714,14 @@
       {
         "languageCode": "ko",
         "name": "두더지"
+      },
+      {
+        "languageCode": "es",
+        "name": "Topo"
+      },
+      {
+        "languageCode": "ja",
+        "name": "モグラ"
       }
     ],
     "category": {
@@ -2359,6 +3735,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -2373,6 +3757,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -2387,6 +3779,14 @@
       {
         "languageCode": "ko",
         "name": "벌"
+      },
+      {
+        "languageCode": "es",
+        "name": "Abeja"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ハチ"
       }
     ],
     "category": {
@@ -2400,6 +3800,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -2414,6 +3822,14 @@
         {
           "languageCode": "ko",
           "name": "곤충"
+        },
+        {
+          "languageCode": "es",
+          "name": "Insecto"
+        },
+        {
+          "languageCode": "ja",
+          "name": "昆虫"
         }
       ]
     }
@@ -2428,6 +3844,14 @@
       {
         "languageCode": "ko",
         "name": "다람쥐원숭이"
+      },
+      {
+        "languageCode": "es",
+        "name": "Mono ardilla"
+      },
+      {
+        "languageCode": "ja",
+        "name": "リスザル"
       }
     ],
     "category": {
@@ -2441,6 +3865,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -2455,6 +3887,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -2469,6 +3909,14 @@
       {
         "languageCode": "ko",
         "name": "이구아나"
+      },
+      {
+        "languageCode": "es",
+        "name": "Iguana"
+      },
+      {
+        "languageCode": "ja",
+        "name": "イグアナ"
       }
     ],
     "category": {
@@ -2482,6 +3930,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -2496,6 +3952,14 @@
         {
           "languageCode": "ko",
           "name": "파충류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Reptil"
+        },
+        {
+          "languageCode": "ja",
+          "name": "爬虫類"
         }
       ]
     }
@@ -2510,6 +3974,14 @@
       {
         "languageCode": "ko",
         "name": "무당벌레"
+      },
+      {
+        "languageCode": "es",
+        "name": "Mariquita"
+      },
+      {
+        "languageCode": "ja",
+        "name": "テントウムシ"
       }
     ],
     "category": {
@@ -2523,6 +3995,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -2537,6 +4017,14 @@
         {
           "languageCode": "ko",
           "name": "곤충"
+        },
+        {
+          "languageCode": "es",
+          "name": "Insecto"
+        },
+        {
+          "languageCode": "ja",
+          "name": "昆虫"
         }
       ]
     }
@@ -2551,6 +4039,14 @@
       {
         "languageCode": "ko",
         "name": "잠자리"
+      },
+      {
+        "languageCode": "es",
+        "name": "Libélula"
+      },
+      {
+        "languageCode": "ja",
+        "name": "トンボ"
       }
     ],
     "category": {
@@ -2564,6 +4060,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -2578,6 +4082,14 @@
         {
           "languageCode": "ko",
           "name": "곤충"
+        },
+        {
+          "languageCode": "es",
+          "name": "Insecto"
+        },
+        {
+          "languageCode": "ja",
+          "name": "昆虫"
         }
       ]
     }
@@ -2592,6 +4104,14 @@
       {
         "languageCode": "ko",
         "name": "미어캣"
+      },
+      {
+        "languageCode": "es",
+        "name": "Suricata"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ミーアキャット"
       }
     ],
     "category": {
@@ -2605,6 +4125,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -2619,6 +4147,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -2633,6 +4169,14 @@
       {
         "languageCode": "ko",
         "name": "개미"
+      },
+      {
+        "languageCode": "es",
+        "name": "Hormiga"
+      },
+      {
+        "languageCode": "ja",
+        "name": "アリ"
       }
     ],
     "category": {
@@ -2646,6 +4190,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -2660,6 +4212,14 @@
         {
           "languageCode": "ko",
           "name": "곤충"
+        },
+        {
+          "languageCode": "es",
+          "name": "Insecto"
+        },
+        {
+          "languageCode": "ja",
+          "name": "昆虫"
         }
       ]
     }
@@ -2674,6 +4234,14 @@
       {
         "languageCode": "ko",
         "name": "바다거북"
+      },
+      {
+        "languageCode": "es",
+        "name": "Tortuga marina"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ウミガメ"
       }
     ],
     "category": {
@@ -2687,6 +4255,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -2701,6 +4277,14 @@
         {
           "languageCode": "ko",
           "name": "파충류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Reptil"
+        },
+        {
+          "languageCode": "ja",
+          "name": "爬虫類"
         }
       ]
     }
@@ -2715,6 +4299,14 @@
       {
         "languageCode": "ko",
         "name": "모기"
+      },
+      {
+        "languageCode": "es",
+        "name": "Mosquito"
+      },
+      {
+        "languageCode": "ja",
+        "name": "カ"
       }
     ],
     "category": {
@@ -2728,6 +4320,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -2742,6 +4342,14 @@
         {
           "languageCode": "ko",
           "name": "곤충"
+        },
+        {
+          "languageCode": "es",
+          "name": "Insecto"
+        },
+        {
+          "languageCode": "ja",
+          "name": "昆虫"
         }
       ]
     }
@@ -2756,6 +4364,14 @@
       {
         "languageCode": "ko",
         "name": "참새"
+      },
+      {
+        "languageCode": "es",
+        "name": "Gorrión"
+      },
+      {
+        "languageCode": "ja",
+        "name": "スズメ"
       }
     ],
     "category": {
@@ -2769,6 +4385,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -2783,6 +4407,14 @@
         {
           "languageCode": "ko",
           "name": "조류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Ave"
+        },
+        {
+          "languageCode": "ja",
+          "name": "鳥"
         }
       ]
     }
@@ -2797,6 +4429,14 @@
       {
         "languageCode": "ko",
         "name": "파리"
+      },
+      {
+        "languageCode": "es",
+        "name": "Mosca"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ハエ"
       }
     ],
     "category": {
@@ -2810,6 +4450,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -2824,6 +4472,14 @@
         {
           "languageCode": "ko",
           "name": "곤충"
+        },
+        {
+          "languageCode": "es",
+          "name": "Insecto"
+        },
+        {
+          "languageCode": "ja",
+          "name": "昆虫"
         }
       ]
     }
@@ -2838,6 +4494,14 @@
       {
         "languageCode": "ko",
         "name": "까치"
+      },
+      {
+        "languageCode": "es",
+        "name": "Urraca"
+      },
+      {
+        "languageCode": "ja",
+        "name": "カササギ"
       }
     ],
     "category": {
@@ -2851,6 +4515,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -2865,6 +4537,14 @@
         {
           "languageCode": "ko",
           "name": "조류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Ave"
+        },
+        {
+          "languageCode": "ja",
+          "name": "鳥"
         }
       ]
     }
@@ -2879,6 +4559,14 @@
       {
         "languageCode": "ko",
         "name": "까마귀"
+      },
+      {
+        "languageCode": "es",
+        "name": "Cuervo"
+      },
+      {
+        "languageCode": "ja",
+        "name": "カラス"
       }
     ],
     "category": {
@@ -2892,6 +4580,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -2906,6 +4602,14 @@
         {
           "languageCode": "ko",
           "name": "조류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Ave"
+        },
+        {
+          "languageCode": "ja",
+          "name": "鳥"
         }
       ]
     }
@@ -2920,6 +4624,14 @@
       {
         "languageCode": "ko",
         "name": "메뚜기"
+      },
+      {
+        "languageCode": "es",
+        "name": "Saltamontes"
+      },
+      {
+        "languageCode": "ja",
+        "name": "バッタ"
       }
     ],
     "category": {
@@ -2933,6 +4645,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -2947,6 +4667,14 @@
         {
           "languageCode": "ko",
           "name": "곤충"
+        },
+        {
+          "languageCode": "es",
+          "name": "Insecto"
+        },
+        {
+          "languageCode": "ja",
+          "name": "昆虫"
         }
       ]
     }
@@ -2961,6 +4689,14 @@
       {
         "languageCode": "ko",
         "name": "귀뚜라미"
+      },
+      {
+        "languageCode": "es",
+        "name": "Grillo"
+      },
+      {
+        "languageCode": "ja",
+        "name": "コオロギ"
       }
     ],
     "category": {
@@ -2974,6 +4710,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -2988,6 +4732,14 @@
         {
           "languageCode": "ko",
           "name": "곤충"
+        },
+        {
+          "languageCode": "es",
+          "name": "Insecto"
+        },
+        {
+          "languageCode": "ja",
+          "name": "昆虫"
         }
       ]
     }
@@ -3002,6 +4754,14 @@
       {
         "languageCode": "ko",
         "name": "비둘기"
+      },
+      {
+        "languageCode": "es",
+        "name": "Paloma"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ハト"
       }
     ],
     "category": {
@@ -3015,6 +4775,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -3029,6 +4797,14 @@
         {
           "languageCode": "ko",
           "name": "조류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Ave"
+        },
+        {
+          "languageCode": "ja",
+          "name": "鳥"
         }
       ]
     }
@@ -3043,6 +4819,14 @@
       {
         "languageCode": "ko",
         "name": "사마귀"
+      },
+      {
+        "languageCode": "es",
+        "name": "Mantis"
+      },
+      {
+        "languageCode": "ja",
+        "name": "カマキリ"
       }
     ],
     "category": {
@@ -3056,6 +4840,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -3070,6 +4862,14 @@
         {
           "languageCode": "ko",
           "name": "곤충"
+        },
+        {
+          "languageCode": "es",
+          "name": "Insecto"
+        },
+        {
+          "languageCode": "ja",
+          "name": "昆虫"
         }
       ]
     }
@@ -3084,6 +4884,14 @@
       {
         "languageCode": "ko",
         "name": "타조"
+      },
+      {
+        "languageCode": "es",
+        "name": "Avestruz"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ダチョウ"
       }
     ],
     "category": {
@@ -3097,6 +4905,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -3111,6 +4927,14 @@
         {
           "languageCode": "ko",
           "name": "조류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Ave"
+        },
+        {
+          "languageCode": "ja",
+          "name": "鳥"
         }
       ]
     }
@@ -3125,6 +4949,14 @@
       {
         "languageCode": "ko",
         "name": "악어거북"
+      },
+      {
+        "languageCode": "es",
+        "name": "Tortuga caimán"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ワニガメ"
       }
     ],
     "category": {
@@ -3138,6 +4970,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -3152,6 +4992,14 @@
         {
           "languageCode": "ko",
           "name": "파충류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Reptil"
+        },
+        {
+          "languageCode": "ja",
+          "name": "爬虫類"
         }
       ]
     }
@@ -3166,6 +5014,14 @@
       {
         "languageCode": "ko",
         "name": "나방"
+      },
+      {
+        "languageCode": "es",
+        "name": "Polilla"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ガ"
       }
     ],
     "category": {
@@ -3179,6 +5035,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -3193,6 +5057,14 @@
         {
           "languageCode": "ko",
           "name": "곤충"
+        },
+        {
+          "languageCode": "es",
+          "name": "Insecto"
+        },
+        {
+          "languageCode": "ja",
+          "name": "昆虫"
         }
       ]
     }
@@ -3207,6 +5079,14 @@
       {
         "languageCode": "ko",
         "name": "딱정벌레"
+      },
+      {
+        "languageCode": "es",
+        "name": "Escarabajo"
+      },
+      {
+        "languageCode": "ja",
+        "name": "カブトムシ"
       }
     ],
     "category": {
@@ -3220,6 +5100,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -3234,6 +5122,14 @@
         {
           "languageCode": "ko",
           "name": "곤충"
+        },
+        {
+          "languageCode": "es",
+          "name": "Insecto"
+        },
+        {
+          "languageCode": "ja",
+          "name": "昆虫"
         }
       ]
     }
@@ -3248,6 +5144,14 @@
       {
         "languageCode": "ko",
         "name": "코요테"
+      },
+      {
+        "languageCode": "es",
+        "name": "Coyote"
+      },
+      {
+        "languageCode": "ja",
+        "name": "コヨーテ"
       }
     ],
     "category": {
@@ -3261,6 +5165,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -3275,6 +5187,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -3289,6 +5209,14 @@
       {
         "languageCode": "ko",
         "name": "장수풍뎅이"
+      },
+      {
+        "languageCode": "es",
+        "name": "Escarabajo rinoceronte"
+      },
+      {
+        "languageCode": "ja",
+        "name": "カブトムシ"
       }
     ],
     "category": {
@@ -3302,6 +5230,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -3316,6 +5252,14 @@
         {
           "languageCode": "ko",
           "name": "곤충"
+        },
+        {
+          "languageCode": "es",
+          "name": "Insecto"
+        },
+        {
+          "languageCode": "ja",
+          "name": "昆虫"
         }
       ]
     }
@@ -3330,6 +5274,14 @@
       {
         "languageCode": "ko",
         "name": "스컹크"
+      },
+      {
+        "languageCode": "es",
+        "name": "Zorrillo"
+      },
+      {
+        "languageCode": "ja",
+        "name": "スカンク"
       }
     ],
     "category": {
@@ -3343,6 +5295,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -3357,6 +5317,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -3371,6 +5339,14 @@
       {
         "languageCode": "ko",
         "name": "하루살이"
+      },
+      {
+        "languageCode": "es",
+        "name": "Efímera"
+      },
+      {
+        "languageCode": "ja",
+        "name": "カゲロウ"
       }
     ],
     "category": {
@@ -3384,6 +5360,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -3398,6 +5382,14 @@
         {
           "languageCode": "ko",
           "name": "곤충"
+        },
+        {
+          "languageCode": "es",
+          "name": "Insecto"
+        },
+        {
+          "languageCode": "ja",
+          "name": "昆虫"
         }
       ]
     }
@@ -3412,6 +5404,14 @@
       {
         "languageCode": "ko",
         "name": "너구리"
+      },
+      {
+        "languageCode": "es",
+        "name": "Mapache"
+      },
+      {
+        "languageCode": "ja",
+        "name": "アライグマ"
       }
     ],
     "category": {
@@ -3425,6 +5425,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -3439,6 +5447,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -3453,6 +5469,14 @@
       {
         "languageCode": "ko",
         "name": "하루살이"
+      },
+      {
+        "languageCode": "es",
+        "name": "Efímera"
+      },
+      {
+        "languageCode": "ja",
+        "name": "カゲロウ"
       }
     ],
     "category": {
@@ -3466,6 +5490,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -3480,6 +5512,14 @@
         {
           "languageCode": "ko",
           "name": "곤충"
+        },
+        {
+          "languageCode": "es",
+          "name": "Insecto"
+        },
+        {
+          "languageCode": "ja",
+          "name": "昆虫"
         }
       ]
     }
@@ -3494,6 +5534,14 @@
       {
         "languageCode": "ko",
         "name": "하늘소"
+      },
+      {
+        "languageCode": "es",
+        "name": "Escarabajo longicornio"
+      },
+      {
+        "languageCode": "ja",
+        "name": "カミキリムシ"
       }
     ],
     "category": {
@@ -3507,6 +5555,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -3521,6 +5577,14 @@
         {
           "languageCode": "ko",
           "name": "곤충"
+        },
+        {
+          "languageCode": "es",
+          "name": "Insecto"
+        },
+        {
+          "languageCode": "ja",
+          "name": "昆虫"
         }
       ]
     }
@@ -3535,6 +5599,14 @@
       {
         "languageCode": "ko",
         "name": "매미"
+      },
+      {
+        "languageCode": "es",
+        "name": "Cigarra"
+      },
+      {
+        "languageCode": "ja",
+        "name": "セミ"
       }
     ],
     "category": {
@@ -3548,6 +5620,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -3562,6 +5642,14 @@
         {
           "languageCode": "ko",
           "name": "곤충"
+        },
+        {
+          "languageCode": "es",
+          "name": "Insecto"
+        },
+        {
+          "languageCode": "ja",
+          "name": "昆虫"
         }
       ]
     }
@@ -3576,6 +5664,14 @@
       {
         "languageCode": "ko",
         "name": "가오리"
+      },
+      {
+        "languageCode": "es",
+        "name": "Raya"
+      },
+      {
+        "languageCode": "ja",
+        "name": "アカエイ"
       }
     ],
     "category": {
@@ -3589,6 +5685,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -3603,6 +5707,14 @@
         {
           "languageCode": "ko",
           "name": "어류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Pez"
+        },
+        {
+          "languageCode": "ja",
+          "name": "魚"
         }
       ]
     }
@@ -3617,6 +5729,14 @@
       {
         "languageCode": "ko",
         "name": "반딧불이"
+      },
+      {
+        "languageCode": "es",
+        "name": "Luciérnaga"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ホタル"
       }
     ],
     "category": {
@@ -3630,6 +5750,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -3644,6 +5772,14 @@
         {
           "languageCode": "ko",
           "name": "곤충"
+        },
+        {
+          "languageCode": "es",
+          "name": "Insecto"
+        },
+        {
+          "languageCode": "ja",
+          "name": "昆虫"
         }
       ]
     }
@@ -3658,6 +5794,14 @@
       {
         "languageCode": "ko",
         "name": "해마"
+      },
+      {
+        "languageCode": "es",
+        "name": "Caballito de mar"
+      },
+      {
+        "languageCode": "ja",
+        "name": "タツノオトシゴ"
       }
     ],
     "category": {
@@ -3671,6 +5815,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -3685,6 +5837,14 @@
         {
           "languageCode": "ko",
           "name": "어류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Pez"
+        },
+        {
+          "languageCode": "ja",
+          "name": "魚"
         }
       ]
     }
@@ -3699,6 +5859,14 @@
       {
         "languageCode": "ko",
         "name": "바퀴벌레"
+      },
+      {
+        "languageCode": "es",
+        "name": "Cucaracha"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ゴキブリ"
       }
     ],
     "category": {
@@ -3712,6 +5880,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -3726,6 +5902,14 @@
         {
           "languageCode": "ko",
           "name": "곤충"
+        },
+        {
+          "languageCode": "es",
+          "name": "Insecto"
+        },
+        {
+          "languageCode": "ja",
+          "name": "昆虫"
         }
       ]
     }
@@ -3740,6 +5924,14 @@
       {
         "languageCode": "ko",
         "name": "게"
+      },
+      {
+        "languageCode": "es",
+        "name": "Cangrejo"
+      },
+      {
+        "languageCode": "ja",
+        "name": "カニ"
       }
     ],
     "category": {
@@ -3753,6 +5945,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -3767,6 +5967,14 @@
         {
           "languageCode": "ko",
           "name": "무척추동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Invertebrado"
+        },
+        {
+          "languageCode": "ja",
+          "name": "無脊椎動物"
         }
       ]
     }
@@ -3781,6 +5989,14 @@
       {
         "languageCode": "ko",
         "name": "벼룩"
+      },
+      {
+        "languageCode": "es",
+        "name": "Pulga"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ノミ"
       }
     ],
     "category": {
@@ -3794,6 +6010,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -3808,6 +6032,14 @@
         {
           "languageCode": "ko",
           "name": "곤충"
+        },
+        {
+          "languageCode": "es",
+          "name": "Insecto"
+        },
+        {
+          "languageCode": "ja",
+          "name": "昆虫"
         }
       ]
     }
@@ -3822,6 +6054,14 @@
       {
         "languageCode": "ko",
         "name": "해파리"
+      },
+      {
+        "languageCode": "es",
+        "name": "Medusa"
+      },
+      {
+        "languageCode": "ja",
+        "name": "クラゲ"
       }
     ],
     "category": {
@@ -3835,6 +6075,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -3849,6 +6097,14 @@
         {
           "languageCode": "ko",
           "name": "무척추동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Invertebrado"
+        },
+        {
+          "languageCode": "ja",
+          "name": "無脊椎動物"
         }
       ]
     }
@@ -3863,6 +6119,14 @@
       {
         "languageCode": "ko",
         "name": "진드기"
+      },
+      {
+        "languageCode": "es",
+        "name": "Ácaro"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ダニ"
       }
     ],
     "category": {
@@ -3876,6 +6140,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -3890,6 +6162,14 @@
         {
           "languageCode": "ko",
           "name": "곤충"
+        },
+        {
+          "languageCode": "es",
+          "name": "Insecto"
+        },
+        {
+          "languageCode": "ja",
+          "name": "昆虫"
         }
       ]
     }
@@ -3904,6 +6184,14 @@
       {
         "languageCode": "ko",
         "name": "바다코끼리"
+      },
+      {
+        "languageCode": "es",
+        "name": "Morsa"
+      },
+      {
+        "languageCode": "ja",
+        "name": "セイウチ"
       }
     ],
     "category": {
@@ -3917,6 +6205,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -3931,6 +6227,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -3945,6 +6249,14 @@
       {
         "languageCode": "ko",
         "name": "북극여우"
+      },
+      {
+        "languageCode": "es",
+        "name": "Zorro ártico"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ホッキョクギツネ"
       }
     ],
     "category": {
@@ -3958,6 +6270,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -3972,6 +6292,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -3986,6 +6314,14 @@
       {
         "languageCode": "ko",
         "name": "좀벌레"
+      },
+      {
+        "languageCode": "es",
+        "name": "Lepisma"
+      },
+      {
+        "languageCode": "ja",
+        "name": "シミ"
       }
     ],
     "category": {
@@ -3999,6 +6335,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -4013,6 +6357,14 @@
         {
           "languageCode": "ko",
           "name": "곤충"
+        },
+        {
+          "languageCode": "es",
+          "name": "Insecto"
+        },
+        {
+          "languageCode": "ja",
+          "name": "昆虫"
         }
       ]
     }
@@ -4027,6 +6379,14 @@
       {
         "languageCode": "ko",
         "name": "비버"
+      },
+      {
+        "languageCode": "es",
+        "name": "Castor"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ビーバー"
       }
     ],
     "category": {
@@ -4040,6 +6400,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -4054,6 +6422,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -4068,6 +6444,14 @@
       {
         "languageCode": "ko",
         "name": "거미"
+      },
+      {
+        "languageCode": "es",
+        "name": "Araña"
+      },
+      {
+        "languageCode": "ja",
+        "name": "クモ"
       }
     ],
     "category": {
@@ -4081,6 +6465,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -4095,6 +6487,14 @@
         {
           "languageCode": "ko",
           "name": "무척추동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Invertebrado"
+        },
+        {
+          "languageCode": "ja",
+          "name": "無脊椎動物"
         }
       ]
     }
@@ -4109,6 +6509,14 @@
       {
         "languageCode": "ko",
         "name": "수달"
+      },
+      {
+        "languageCode": "es",
+        "name": "Nutria"
+      },
+      {
+        "languageCode": "ja",
+        "name": "カワウソ"
       }
     ],
     "category": {
@@ -4122,6 +6530,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -4136,6 +6552,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -4150,6 +6574,14 @@
       {
         "languageCode": "ko",
         "name": "전갈"
+      },
+      {
+        "languageCode": "es",
+        "name": "Escorpión"
+      },
+      {
+        "languageCode": "ja",
+        "name": "サソリ"
       }
     ],
     "category": {
@@ -4163,6 +6595,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -4177,6 +6617,14 @@
         {
           "languageCode": "ko",
           "name": "무척추동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Invertebrado"
+        },
+        {
+          "languageCode": "ja",
+          "name": "無脊椎動物"
         }
       ]
     }
@@ -4191,6 +6639,14 @@
       {
         "languageCode": "ko",
         "name": "하루살이"
+      },
+      {
+        "languageCode": "es",
+        "name": "Efímera"
+      },
+      {
+        "languageCode": "ja",
+        "name": "カゲロウ"
       }
     ],
     "category": {
@@ -4204,6 +6660,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -4218,6 +6682,14 @@
         {
           "languageCode": "ko",
           "name": "곤충"
+        },
+        {
+          "languageCode": "es",
+          "name": "Insecto"
+        },
+        {
+          "languageCode": "ja",
+          "name": "昆虫"
         }
       ]
     }
@@ -4232,6 +6704,14 @@
       {
         "languageCode": "ko",
         "name": "바다사자"
+      },
+      {
+        "languageCode": "es",
+        "name": "León marino"
+      },
+      {
+        "languageCode": "ja",
+        "name": "アシカ"
       }
     ],
     "category": {
@@ -4245,6 +6725,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -4259,6 +6747,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -4273,6 +6769,14 @@
       {
         "languageCode": "ko",
         "name": "풍뎅이"
+      },
+      {
+        "languageCode": "es",
+        "name": "Escarabajo"
+      },
+      {
+        "languageCode": "ja",
+        "name": "コガネムシ"
       }
     ],
     "category": {
@@ -4286,6 +6790,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -4300,6 +6812,14 @@
         {
           "languageCode": "ko",
           "name": "곤충"
+        },
+        {
+          "languageCode": "es",
+          "name": "Insecto"
+        },
+        {
+          "languageCode": "ja",
+          "name": "昆虫"
         }
       ]
     }
@@ -4314,6 +6834,14 @@
       {
         "languageCode": "ko",
         "name": "다람쥐"
+      },
+      {
+        "languageCode": "es",
+        "name": "Ardilla listada"
+      },
+      {
+        "languageCode": "ja",
+        "name": "シマリス"
       }
     ],
     "category": {
@@ -4327,6 +6855,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -4341,6 +6877,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -4355,6 +6899,14 @@
       {
         "languageCode": "ko",
         "name": "갯파리"
+      },
+      {
+        "languageCode": "es",
+        "name": "Flebótomo"
+      },
+      {
+        "languageCode": "ja",
+        "name": "サシチョウバエ"
       }
     ],
     "category": {
@@ -4368,6 +6920,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -4382,6 +6942,14 @@
         {
           "languageCode": "ko",
           "name": "곤충"
+        },
+        {
+          "languageCode": "es",
+          "name": "Insecto"
+        },
+        {
+          "languageCode": "ja",
+          "name": "昆虫"
         }
       ]
     }
@@ -4396,6 +6964,14 @@
       {
         "languageCode": "ko",
         "name": "날도래"
+      },
+      {
+        "languageCode": "es",
+        "name": "Frigánea"
+      },
+      {
+        "languageCode": "ja",
+        "name": "トビケラ"
       }
     ],
     "category": {
@@ -4409,6 +6985,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -4423,6 +7007,14 @@
         {
           "languageCode": "ko",
           "name": "곤충"
+        },
+        {
+          "languageCode": "es",
+          "name": "Insecto"
+        },
+        {
+          "languageCode": "ja",
+          "name": "昆虫"
         }
       ]
     }
@@ -4437,6 +7029,14 @@
       {
         "languageCode": "ko",
         "name": "노루"
+      },
+      {
+        "languageCode": "es",
+        "name": "Corzo"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ノロジカ"
       }
     ],
     "category": {
@@ -4450,6 +7050,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -4464,6 +7072,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -4478,6 +7094,14 @@
       {
         "languageCode": "ko",
         "name": "소금쟁이"
+      },
+      {
+        "languageCode": "es",
+        "name": "Zapatero"
+      },
+      {
+        "languageCode": "ja",
+        "name": "アメンボ"
       }
     ],
     "category": {
@@ -4491,6 +7115,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -4505,6 +7137,14 @@
         {
           "languageCode": "ko",
           "name": "곤충"
+        },
+        {
+          "languageCode": "es",
+          "name": "Insecto"
+        },
+        {
+          "languageCode": "ja",
+          "name": "昆虫"
         }
       ]
     }
@@ -4519,6 +7159,14 @@
       {
         "languageCode": "ko",
         "name": "멧돼지"
+      },
+      {
+        "languageCode": "es",
+        "name": "Jabalí"
+      },
+      {
+        "languageCode": "ja",
+        "name": "イノシシ"
       }
     ],
     "category": {
@@ -4532,6 +7180,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -4546,6 +7202,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -4560,6 +7224,14 @@
       {
         "languageCode": "ko",
         "name": "두루미"
+      },
+      {
+        "languageCode": "es",
+        "name": "Grulla"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ツル"
       }
     ],
     "category": {
@@ -4573,6 +7245,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -4587,6 +7267,14 @@
         {
           "languageCode": "ko",
           "name": "조류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Ave"
+        },
+        {
+          "languageCode": "ja",
+          "name": "鳥"
         }
       ]
     }
@@ -4601,6 +7289,14 @@
       {
         "languageCode": "ko",
         "name": "하늘소"
+      },
+      {
+        "languageCode": "es",
+        "name": "Escarabajo aserrador"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ノコギリカミキリ"
       }
     ],
     "category": {
@@ -4614,6 +7310,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -4628,6 +7332,14 @@
         {
           "languageCode": "ko",
           "name": "곤충"
+        },
+        {
+          "languageCode": "es",
+          "name": "Insecto"
+        },
+        {
+          "languageCode": "ja",
+          "name": "昆虫"
         }
       ]
     }
@@ -4642,6 +7354,14 @@
       {
         "languageCode": "ko",
         "name": "백조"
+      },
+      {
+        "languageCode": "es",
+        "name": "Cisne"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ハクチョウ"
       }
     ],
     "category": {
@@ -4655,6 +7375,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -4669,6 +7397,14 @@
         {
           "languageCode": "ko",
           "name": "조류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Ave"
+        },
+        {
+          "languageCode": "ja",
+          "name": "鳥"
         }
       ]
     }
@@ -4683,6 +7419,14 @@
       {
         "languageCode": "ko",
         "name": "거위"
+      },
+      {
+        "languageCode": "es",
+        "name": "Ganso"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ガチョウ"
       }
     ],
     "category": {
@@ -4696,6 +7440,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -4710,6 +7462,14 @@
         {
           "languageCode": "ko",
           "name": "조류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Ave"
+        },
+        {
+          "languageCode": "ja",
+          "name": "鳥"
         }
       ]
     }
@@ -4724,6 +7484,14 @@
       {
         "languageCode": "ko",
         "name": "가오리"
+      },
+      {
+        "languageCode": "es",
+        "name": "Raya"
+      },
+      {
+        "languageCode": "ja",
+        "name": "エイ"
       }
     ],
     "category": {
@@ -4737,6 +7505,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -4751,6 +7527,14 @@
         {
           "languageCode": "ko",
           "name": "어류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Pez"
+        },
+        {
+          "languageCode": "ja",
+          "name": "魚"
         }
       ]
     }
@@ -4765,6 +7549,14 @@
       {
         "languageCode": "ko",
         "name": "갈매기"
+      },
+      {
+        "languageCode": "es",
+        "name": "Gaviota"
+      },
+      {
+        "languageCode": "ja",
+        "name": "カモメ"
       }
     ],
     "category": {
@@ -4778,6 +7570,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -4792,6 +7592,14 @@
         {
           "languageCode": "ko",
           "name": "조류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Ave"
+        },
+        {
+          "languageCode": "ja",
+          "name": "鳥"
         }
       ]
     }
@@ -4806,6 +7614,14 @@
       {
         "languageCode": "ko",
         "name": "펠리컨"
+      },
+      {
+        "languageCode": "es",
+        "name": "Pelícano"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ペリカン"
       }
     ],
     "category": {
@@ -4819,6 +7635,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -4833,6 +7657,14 @@
         {
           "languageCode": "ko",
           "name": "조류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Ave"
+        },
+        {
+          "languageCode": "ja",
+          "name": "鳥"
         }
       ]
     }
@@ -4847,6 +7679,14 @@
       {
         "languageCode": "ko",
         "name": "오징어"
+      },
+      {
+        "languageCode": "es",
+        "name": "Calamar"
+      },
+      {
+        "languageCode": "ja",
+        "name": "イカ"
       }
     ],
     "category": {
@@ -4860,6 +7700,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -4874,6 +7722,14 @@
         {
           "languageCode": "ko",
           "name": "무척추동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Invertebrado"
+        },
+        {
+          "languageCode": "ja",
+          "name": "無脊椎動物"
         }
       ]
     }
@@ -4888,6 +7744,14 @@
       {
         "languageCode": "ko",
         "name": "아귀"
+      },
+      {
+        "languageCode": "es",
+        "name": "Rape"
+      },
+      {
+        "languageCode": "ja",
+        "name": "アンコウ"
       }
     ],
     "category": {
@@ -4901,6 +7765,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -4915,6 +7787,14 @@
         {
           "languageCode": "ko",
           "name": "어류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Pez"
+        },
+        {
+          "languageCode": "ja",
+          "name": "魚"
         }
       ]
     }
@@ -4929,6 +7809,14 @@
       {
         "languageCode": "ko",
         "name": "너구리"
+      },
+      {
+        "languageCode": "es",
+        "name": "Tanuki"
+      },
+      {
+        "languageCode": "ja",
+        "name": "タヌキ"
       }
     ],
     "category": {
@@ -4942,6 +7830,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -4956,6 +7852,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -4970,6 +7874,14 @@
       {
         "languageCode": "ko",
         "name": "표범"
+      },
+      {
+        "languageCode": "es",
+        "name": "Leopardo"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ヒョウ"
       }
     ],
     "category": {
@@ -4983,6 +7895,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -4997,6 +7917,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -5011,6 +7939,14 @@
       {
         "languageCode": "ko",
         "name": "재규어"
+      },
+      {
+        "languageCode": "es",
+        "name": "Jaguar"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ジャガー"
       }
     ],
     "category": {
@@ -5024,6 +7960,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -5038,6 +7982,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -5052,6 +8004,14 @@
       {
         "languageCode": "ko",
         "name": "불가사리"
+      },
+      {
+        "languageCode": "es",
+        "name": "Estrella de mar"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ヒトデ"
       }
     ],
     "category": {
@@ -5065,6 +8025,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -5079,6 +8047,14 @@
         {
           "languageCode": "ko",
           "name": "무척추동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Invertebrado"
+        },
+        {
+          "languageCode": "ja",
+          "name": "無脊椎動物"
         }
       ]
     }
@@ -5093,6 +8069,14 @@
       {
         "languageCode": "ko",
         "name": "퓨마"
+      },
+      {
+        "languageCode": "es",
+        "name": "Puma"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ピューマ"
       }
     ],
     "category": {
@@ -5106,6 +8090,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -5120,6 +8112,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -5134,6 +8134,14 @@
       {
         "languageCode": "ko",
         "name": "성게"
+      },
+      {
+        "languageCode": "es",
+        "name": "Erizo de mar"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ウニ"
       }
     ],
     "category": {
@@ -5147,6 +8155,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -5161,6 +8177,14 @@
         {
           "languageCode": "ko",
           "name": "무척추동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Invertebrado"
+        },
+        {
+          "languageCode": "ja",
+          "name": "無脊椎動物"
         }
       ]
     }
@@ -5175,6 +8199,14 @@
       {
         "languageCode": "ko",
         "name": "산호"
+      },
+      {
+        "languageCode": "es",
+        "name": "Coral"
+      },
+      {
+        "languageCode": "ja",
+        "name": "サンゴ"
       }
     ],
     "category": {
@@ -5188,6 +8220,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -5202,6 +8242,14 @@
         {
           "languageCode": "ko",
           "name": "무척추동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Invertebrado"
+        },
+        {
+          "languageCode": "ja",
+          "name": "無脊椎動物"
         }
       ]
     }
@@ -5216,6 +8264,14 @@
       {
         "languageCode": "ko",
         "name": "대구"
+      },
+      {
+        "languageCode": "es",
+        "name": "Bacalao"
+      },
+      {
+        "languageCode": "ja",
+        "name": "タラ"
       }
     ],
     "category": {
@@ -5229,6 +8285,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -5243,6 +8307,14 @@
         {
           "languageCode": "ko",
           "name": "어류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Pez"
+        },
+        {
+          "languageCode": "ja",
+          "name": "魚"
         }
       ]
     }
@@ -5257,6 +8329,14 @@
       {
         "languageCode": "ko",
         "name": "홍학"
+      },
+      {
+        "languageCode": "es",
+        "name": "Flamenco"
+      },
+      {
+        "languageCode": "ja",
+        "name": "フラミン고"
       }
     ],
     "category": {
@@ -5270,6 +8350,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -5284,6 +8372,14 @@
         {
           "languageCode": "ko",
           "name": "조류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Ave"
+        },
+        {
+          "languageCode": "ja",
+          "name": "鳥"
         }
       ]
     }
@@ -5298,6 +8394,14 @@
       {
         "languageCode": "ko",
         "name": "연어"
+      },
+      {
+        "languageCode": "es",
+        "name": "Salmón"
+      },
+      {
+        "languageCode": "ja",
+        "name": "サケ"
       }
     ],
     "category": {
@@ -5311,6 +8415,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -5325,6 +8437,14 @@
         {
           "languageCode": "ko",
           "name": "어류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Pez"
+        },
+        {
+          "languageCode": "ja",
+          "name": "魚"
         }
       ]
     }
@@ -5339,6 +8459,14 @@
       {
         "languageCode": "ko",
         "name": "참치"
+      },
+      {
+        "languageCode": "es",
+        "name": "Atún"
+      },
+      {
+        "languageCode": "ja",
+        "name": "マグロ"
       }
     ],
     "category": {
@@ -5352,6 +8480,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -5366,6 +8502,14 @@
         {
           "languageCode": "ko",
           "name": "어류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Pez"
+        },
+        {
+          "languageCode": "ja",
+          "name": "魚"
         }
       ]
     }
@@ -5380,6 +8524,14 @@
       {
         "languageCode": "ko",
         "name": "고등어"
+      },
+      {
+        "languageCode": "es",
+        "name": "Caballa"
+      },
+      {
+        "languageCode": "ja",
+        "name": "サバ"
       }
     ],
     "category": {
@@ -5393,6 +8545,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -5407,6 +8567,14 @@
         {
           "languageCode": "ko",
           "name": "어류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Pez"
+        },
+        {
+          "languageCode": "ja",
+          "name": "魚"
         }
       ]
     }
@@ -5421,6 +8589,14 @@
       {
         "languageCode": "ko",
         "name": "나무늘보"
+      },
+      {
+        "languageCode": "es",
+        "name": "Perezoso"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ナマケモノ"
       }
     ],
     "category": {
@@ -5434,6 +8610,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -5448,6 +8632,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -5462,6 +8654,14 @@
       {
         "languageCode": "ko",
         "name": "개미핥기"
+      },
+      {
+        "languageCode": "es",
+        "name": "Oso hormiguero"
+      },
+      {
+        "languageCode": "ja",
+        "name": "アリクイ"
       }
     ],
     "category": {
@@ -5475,6 +8675,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -5489,6 +8697,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -5503,6 +8719,14 @@
       {
         "languageCode": "ko",
         "name": "청새치"
+      },
+      {
+        "languageCode": "es",
+        "name": "Marlín"
+      },
+      {
+        "languageCode": "ja",
+        "name": "カジキ"
       }
     ],
     "category": {
@@ -5516,6 +8740,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -5530,6 +8762,14 @@
         {
           "languageCode": "ko",
           "name": "어류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Pez"
+        },
+        {
+          "languageCode": "ja",
+          "name": "魚"
         }
       ]
     }
@@ -5544,6 +8784,14 @@
       {
         "languageCode": "ko",
         "name": "도미"
+      },
+      {
+        "languageCode": "es",
+        "name": "Pargo"
+      },
+      {
+        "languageCode": "ja",
+        "name": "タイ"
       }
     ],
     "category": {
@@ -5557,6 +8805,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -5571,6 +8827,14 @@
         {
           "languageCode": "ko",
           "name": "어류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Pez"
+        },
+        {
+          "languageCode": "ja",
+          "name": "魚"
         }
       ]
     }
@@ -5585,6 +8849,14 @@
       {
         "languageCode": "ko",
         "name": "넙치"
+      },
+      {
+        "languageCode": "es",
+        "name": "Lenguado"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ヒラメ"
       }
     ],
     "category": {
@@ -5598,6 +8870,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -5612,6 +8892,14 @@
         {
           "languageCode": "ko",
           "name": "어류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Pez"
+        },
+        {
+          "languageCode": "ja",
+          "name": "魚"
         }
       ]
     }
@@ -5626,6 +8914,14 @@
       {
         "languageCode": "ko",
         "name": "우럭"
+      },
+      {
+        "languageCode": "es",
+        "name": "Rascacio"
+      },
+      {
+        "languageCode": "ja",
+        "name": "カサゴ"
       }
     ],
     "category": {
@@ -5639,6 +8935,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -5653,6 +8957,14 @@
         {
           "languageCode": "ko",
           "name": "어류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Pez"
+        },
+        {
+          "languageCode": "ja",
+          "name": "魚"
         }
       ]
     }
@@ -5667,6 +8979,14 @@
       {
         "languageCode": "ko",
         "name": "농어"
+      },
+      {
+        "languageCode": "es",
+        "name": "Lubina"
+      },
+      {
+        "languageCode": "ja",
+        "name": "スズキ"
       }
     ],
     "category": {
@@ -5680,6 +9000,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -5694,6 +9022,14 @@
         {
           "languageCode": "ko",
           "name": "어류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Pez"
+        },
+        {
+          "languageCode": "ja",
+          "name": "魚"
         }
       ]
     }
@@ -5708,6 +9044,14 @@
       {
         "languageCode": "ko",
         "name": "복어"
+      },
+      {
+        "languageCode": "es",
+        "name": "Pez globo"
+      },
+      {
+        "languageCode": "ja",
+        "name": "フグ"
       }
     ],
     "category": {
@@ -5721,6 +9065,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -5735,6 +9087,14 @@
         {
           "languageCode": "ko",
           "name": "어류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Pez"
+        },
+        {
+          "languageCode": "ja",
+          "name": "魚"
         }
       ]
     }
@@ -5749,6 +9109,14 @@
       {
         "languageCode": "ko",
         "name": "해삼"
+      },
+      {
+        "languageCode": "es",
+        "name": "Pepino de mar"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ナマコ"
       }
     ],
     "category": {
@@ -5762,6 +9130,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -5776,6 +9152,14 @@
         {
           "languageCode": "ko",
           "name": "무척추동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Invertebrado"
+        },
+        {
+          "languageCode": "ja",
+          "name": "無脊椎動物"
         }
       ]
     }
@@ -5790,6 +9174,14 @@
       {
         "languageCode": "ko",
         "name": "새우"
+      },
+      {
+        "languageCode": "es",
+        "name": "Camarón"
+      },
+      {
+        "languageCode": "ja",
+        "name": "エビ"
       }
     ],
     "category": {
@@ -5803,6 +9195,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -5817,6 +9217,14 @@
         {
           "languageCode": "ko",
           "name": "무척추동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Invertebrado"
+        },
+        {
+          "languageCode": "ja",
+          "name": "無脊椎動物"
         }
       ]
     }
@@ -5831,6 +9239,14 @@
       {
         "languageCode": "ko",
         "name": "랍스터"
+      },
+      {
+        "languageCode": "es",
+        "name": "Langosta"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ロブスター"
       }
     ],
     "category": {
@@ -5844,6 +9260,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -5858,6 +9282,14 @@
         {
           "languageCode": "ko",
           "name": "무척추동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Invertebrado"
+        },
+        {
+          "languageCode": "ja",
+          "name": "無脊椎動物"
         }
       ]
     }
@@ -5872,6 +9304,14 @@
       {
         "languageCode": "ko",
         "name": "가재"
+      },
+      {
+        "languageCode": "es",
+        "name": "Cangrejo de río"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ザリガニ"
       }
     ],
     "category": {
@@ -5885,6 +9325,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -5899,6 +9347,14 @@
         {
           "languageCode": "ko",
           "name": "무척추동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Invertebrado"
+        },
+        {
+          "languageCode": "ja",
+          "name": "無脊椎動物"
         }
       ]
     }
@@ -5913,6 +9369,14 @@
       {
         "languageCode": "ko",
         "name": "소라"
+      },
+      {
+        "languageCode": "es",
+        "name": "Caracol turbante"
+      },
+      {
+        "languageCode": "ja",
+        "name": "サザエ"
       }
     ],
     "category": {
@@ -5926,6 +9390,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -5940,6 +9412,14 @@
         {
           "languageCode": "ko",
           "name": "무척추동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Invertebrado"
+        },
+        {
+          "languageCode": "ja",
+          "name": "無脊椎動物"
         }
       ]
     }
@@ -5954,6 +9434,14 @@
       {
         "languageCode": "ko",
         "name": "조개"
+      },
+      {
+        "languageCode": "es",
+        "name": "Almeja"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ハマグリ"
       }
     ],
     "category": {
@@ -5967,6 +9455,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -5981,6 +9477,14 @@
         {
           "languageCode": "ko",
           "name": "무척추동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Invertebrado"
+        },
+        {
+          "languageCode": "ja",
+          "name": "無脊椎動物"
         }
       ]
     }
@@ -5995,6 +9499,14 @@
       {
         "languageCode": "ko",
         "name": "굴"
+      },
+      {
+        "languageCode": "es",
+        "name": "Ostra"
+      },
+      {
+        "languageCode": "ja",
+        "name": "カキ"
       }
     ],
     "category": {
@@ -6008,6 +9520,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -6022,6 +9542,14 @@
         {
           "languageCode": "ko",
           "name": "무척추동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Invertebrado"
+        },
+        {
+          "languageCode": "ja",
+          "name": "無脊椎動物"
         }
       ]
     }
@@ -6036,6 +9564,14 @@
       {
         "languageCode": "ko",
         "name": "홍합"
+      },
+      {
+        "languageCode": "es",
+        "name": "Mejillón"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ムール貝"
       }
     ],
     "category": {
@@ -6049,6 +9585,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -6063,6 +9607,14 @@
         {
           "languageCode": "ko",
           "name": "무척추동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Invertebrado"
+        },
+        {
+          "languageCode": "ja",
+          "name": "無脊椎動物"
         }
       ]
     }
@@ -6077,6 +9629,14 @@
       {
         "languageCode": "ko",
         "name": "전복"
+      },
+      {
+        "languageCode": "es",
+        "name": "Abulón"
+      },
+      {
+        "languageCode": "ja",
+        "name": "アワビ"
       }
     ],
     "category": {
@@ -6090,6 +9650,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -6104,6 +9672,14 @@
         {
           "languageCode": "ko",
           "name": "무척추동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Invertebrado"
+        },
+        {
+          "languageCode": "ja",
+          "name": "無脊椎動物"
         }
       ]
     }
@@ -6118,6 +9694,14 @@
       {
         "languageCode": "ko",
         "name": "레서판다"
+      },
+      {
+        "languageCode": "es",
+        "name": "Panda rojo"
+      },
+      {
+        "languageCode": "ja",
+        "name": "レッサーパンダ"
       }
     ],
     "category": {
@@ -6131,6 +9715,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -6145,6 +9737,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -6159,6 +9759,14 @@
       {
         "languageCode": "ko",
         "name": "아르마딜로"
+      },
+      {
+        "languageCode": "es",
+        "name": "Armadillo"
+      },
+      {
+        "languageCode": "ja",
+        "name": "アルマジロ"
       }
     ],
     "category": {
@@ -6172,6 +9780,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -6186,6 +9802,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -6200,6 +9824,14 @@
       {
         "languageCode": "ko",
         "name": "테이퍼"
+      },
+      {
+        "languageCode": "es",
+        "name": "Tapir"
+      },
+      {
+        "languageCode": "ja",
+        "name": "バク"
       }
     ],
     "category": {
@@ -6213,6 +9845,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -6227,6 +9867,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -6241,6 +9889,14 @@
       {
         "languageCode": "ko",
         "name": "카피바라"
+      },
+      {
+        "languageCode": "es",
+        "name": "Capibara"
+      },
+      {
+        "languageCode": "ja",
+        "name": "カピバラ"
       }
     ],
     "category": {
@@ -6254,6 +9910,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -6268,6 +9932,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -6282,6 +9954,14 @@
       {
         "languageCode": "ko",
         "name": "웜뱃"
+      },
+      {
+        "languageCode": "es",
+        "name": "Wombat"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ウォンバット"
       }
     ],
     "category": {
@@ -6295,6 +9975,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -6309,6 +9997,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -6323,6 +10019,14 @@
       {
         "languageCode": "ko",
         "name": "오리너구리"
+      },
+      {
+        "languageCode": "es",
+        "name": "Ornitorrinco"
+      },
+      {
+        "languageCode": "ja",
+        "name": "カモノハシ"
       }
     ],
     "category": {
@@ -6336,6 +10040,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -6350,6 +10062,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -6364,6 +10084,14 @@
       {
         "languageCode": "ko",
         "name": "바늘두더지"
+      },
+      {
+        "languageCode": "es",
+        "name": "Equidna"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ハリモグラ"
       }
     ],
     "category": {
@@ -6377,6 +10105,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -6391,6 +10127,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -6405,6 +10149,14 @@
       {
         "languageCode": "ko",
         "name": "페넥여우"
+      },
+      {
+        "languageCode": "es",
+        "name": "Zorro fénec"
+      },
+      {
+        "languageCode": "ja",
+        "name": "フェネックギツネ"
       }
     ],
     "category": {
@@ -6418,6 +10170,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -6432,6 +10192,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -6446,6 +10214,14 @@
       {
         "languageCode": "ko",
         "name": "여우원숭이"
+      },
+      {
+        "languageCode": "es",
+        "name": "Lémur"
+      },
+      {
+        "languageCode": "ja",
+        "name": "キツネザル"
       }
     ],
     "category": {
@@ -6459,6 +10235,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -6473,6 +10257,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -6487,6 +10279,14 @@
       {
         "languageCode": "ko",
         "name": "오카피"
+      },
+      {
+        "languageCode": "es",
+        "name": "Okapi"
+      },
+      {
+        "languageCode": "ja",
+        "name": "オカピ"
       }
     ],
     "category": {
@@ -6500,6 +10300,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -6514,6 +10322,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -6528,6 +10344,14 @@
       {
         "languageCode": "ko",
         "name": "천산갑"
+      },
+      {
+        "languageCode": "es",
+        "name": "Pangolín"
+      },
+      {
+        "languageCode": "ja",
+        "name": "センザンコウ"
       }
     ],
     "category": {
@@ -6541,6 +10365,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -6555,6 +10387,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -6569,6 +10409,14 @@
       {
         "languageCode": "ko",
         "name": "땅돼지"
+      },
+      {
+        "languageCode": "es",
+        "name": "Cerdo hormiguero"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ツチブタ"
       }
     ],
     "category": {
@@ -6582,6 +10430,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -6596,6 +10452,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -6610,6 +10474,14 @@
       {
         "languageCode": "ko",
         "name": "매너티"
+      },
+      {
+        "languageCode": "es",
+        "name": "Manatí"
+      },
+      {
+        "languageCode": "ja",
+        "name": "マナティー"
       }
     ],
     "category": {
@@ -6623,6 +10495,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -6637,6 +10517,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -6651,6 +10539,14 @@
       {
         "languageCode": "ko",
         "name": "일각고래"
+      },
+      {
+        "languageCode": "es",
+        "name": "Narval"
+      },
+      {
+        "languageCode": "ja",
+        "name": "イッカク"
       }
     ],
     "category": {
@@ -6664,6 +10560,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -6678,6 +10582,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -6692,6 +10604,14 @@
       {
         "languageCode": "ko",
         "name": "흰고래"
+      },
+      {
+        "languageCode": "es",
+        "name": "Beluga"
+      },
+      {
+        "languageCode": "ja",
+        "name": "シロイルカ"
       }
     ],
     "category": {
@@ -6705,6 +10625,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -6719,6 +10647,14 @@
         {
           "languageCode": "ko",
           "name": "포유류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Mamífero"
+        },
+        {
+          "languageCode": "ja",
+          "name": "哺乳類"
         }
       ]
     }
@@ -6733,6 +10669,14 @@
       {
         "languageCode": "ko",
         "name": "벌새"
+      },
+      {
+        "languageCode": "es",
+        "name": "Colibrí"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ハチドリ"
       }
     ],
     "category": {
@@ -6746,6 +10690,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -6760,6 +10712,14 @@
         {
           "languageCode": "ko",
           "name": "조류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Ave"
+        },
+        {
+          "languageCode": "ja",
+          "name": "鳥"
         }
       ]
     }
@@ -6774,6 +10734,14 @@
       {
         "languageCode": "ko",
         "name": "물총새"
+      },
+      {
+        "languageCode": "es",
+        "name": "Martín pescador"
+      },
+      {
+        "languageCode": "ja",
+        "name": "カワセミ"
       }
     ],
     "category": {
@@ -6787,6 +10755,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -6801,6 +10777,14 @@
         {
           "languageCode": "ko",
           "name": "조류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Ave"
+        },
+        {
+          "languageCode": "ja",
+          "name": "鳥"
         }
       ]
     }
@@ -6815,6 +10799,14 @@
       {
         "languageCode": "ko",
         "name": "투칸"
+      },
+      {
+        "languageCode": "es",
+        "name": "Tucán"
+      },
+      {
+        "languageCode": "ja",
+        "name": "オオハシ"
       }
     ],
     "category": {
@@ -6828,6 +10820,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -6842,6 +10842,14 @@
         {
           "languageCode": "ko",
           "name": "조류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Ave"
+        },
+        {
+          "languageCode": "ja",
+          "name": "鳥"
         }
       ]
     }
@@ -6856,6 +10864,14 @@
       {
         "languageCode": "ko",
         "name": "마코앵무"
+      },
+      {
+        "languageCode": "es",
+        "name": "Guacamayo"
+      },
+      {
+        "languageCode": "ja",
+        "name": "コンゴウインコ"
       }
     ],
     "category": {
@@ -6869,6 +10885,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -6883,6 +10907,14 @@
         {
           "languageCode": "ko",
           "name": "조류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Ave"
+        },
+        {
+          "languageCode": "ja",
+          "name": "鳥"
         }
       ]
     }
@@ -6897,6 +10929,14 @@
       {
         "languageCode": "ko",
         "name": "매"
+      },
+      {
+        "languageCode": "es",
+        "name": "Halcón"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ハヤブサ"
       }
     ],
     "category": {
@@ -6910,6 +10950,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -6924,6 +10972,14 @@
         {
           "languageCode": "ko",
           "name": "조류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Ave"
+        },
+        {
+          "languageCode": "ja",
+          "name": "鳥"
         }
       ]
     }
@@ -6938,6 +10994,14 @@
       {
         "languageCode": "ko",
         "name": "매"
+      },
+      {
+        "languageCode": "es",
+        "name": "Halcón"
+      },
+      {
+        "languageCode": "ja",
+        "name": "タカ"
       }
     ],
     "category": {
@@ -6951,6 +11015,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -6965,6 +11037,14 @@
         {
           "languageCode": "ko",
           "name": "조류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Ave"
+        },
+        {
+          "languageCode": "ja",
+          "name": "鳥"
         }
       ]
     }
@@ -6979,6 +11059,14 @@
       {
         "languageCode": "ko",
         "name": "콘도르"
+      },
+      {
+        "languageCode": "es",
+        "name": "Cóndor"
+      },
+      {
+        "languageCode": "ja",
+        "name": "コンドル"
       }
     ],
     "category": {
@@ -6992,6 +11080,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -7006,6 +11102,14 @@
         {
           "languageCode": "ko",
           "name": "조류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Ave"
+        },
+        {
+          "languageCode": "ja",
+          "name": "鳥"
         }
       ]
     }
@@ -7020,6 +11124,14 @@
       {
         "languageCode": "ko",
         "name": "알바트로스"
+      },
+      {
+        "languageCode": "es",
+        "name": "Albatros"
+      },
+      {
+        "languageCode": "ja",
+        "name": "アホウドリ"
       }
     ],
     "category": {
@@ -7033,6 +11145,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -7047,6 +11167,14 @@
         {
           "languageCode": "ko",
           "name": "조류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Ave"
+        },
+        {
+          "languageCode": "ja",
+          "name": "鳥"
         }
       ]
     }
@@ -7061,6 +11189,14 @@
       {
         "languageCode": "ko",
         "name": "퍼핀"
+      },
+      {
+        "languageCode": "es",
+        "name": "Frailecillo"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ツノメドリ"
       }
     ],
     "category": {
@@ -7074,6 +11210,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -7088,6 +11232,14 @@
         {
           "languageCode": "ko",
           "name": "조류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Ave"
+        },
+        {
+          "languageCode": "ja",
+          "name": "鳥"
         }
       ]
     }
@@ -7102,6 +11254,14 @@
       {
         "languageCode": "ko",
         "name": "에뮤"
+      },
+      {
+        "languageCode": "es",
+        "name": "Emú"
+      },
+      {
+        "languageCode": "ja",
+        "name": "エミュー"
       }
     ],
     "category": {
@@ -7115,6 +11275,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -7129,6 +11297,14 @@
         {
           "languageCode": "ko",
           "name": "조류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Ave"
+        },
+        {
+          "languageCode": "ja",
+          "name": "鳥"
         }
       ]
     }
@@ -7143,6 +11319,14 @@
       {
         "languageCode": "ko",
         "name": "도마뱀붙이"
+      },
+      {
+        "languageCode": "es",
+        "name": "Geco"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ヤモリ"
       }
     ],
     "category": {
@@ -7156,6 +11340,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -7170,6 +11362,14 @@
         {
           "languageCode": "ko",
           "name": "파충류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Reptil"
+        },
+        {
+          "languageCode": "ja",
+          "name": "爬虫類"
         }
       ]
     }
@@ -7184,6 +11384,14 @@
       {
         "languageCode": "ko",
         "name": "코모도왕도마뱀"
+      },
+      {
+        "languageCode": "es",
+        "name": "Dragón de Komodo"
+      },
+      {
+        "languageCode": "ja",
+        "name": "コモドドラゴン"
       }
     ],
     "category": {
@@ -7197,6 +11405,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -7211,6 +11427,14 @@
         {
           "languageCode": "ko",
           "name": "파충류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Reptil"
+        },
+        {
+          "languageCode": "ja",
+          "name": "爬虫類"
         }
       ]
     }
@@ -7225,6 +11449,14 @@
       {
         "languageCode": "ko",
         "name": "독도마뱀"
+      },
+      {
+        "languageCode": "es",
+        "name": "Monstruo de Gila"
+      },
+      {
+        "languageCode": "ja",
+        "name": "アメリカドクトカゲ"
       }
     ],
     "category": {
@@ -7238,6 +11470,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -7252,6 +11492,14 @@
         {
           "languageCode": "ko",
           "name": "파충류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Reptil"
+        },
+        {
+          "languageCode": "ja",
+          "name": "爬虫類"
         }
       ]
     }
@@ -7266,6 +11514,14 @@
       {
         "languageCode": "ko",
         "name": "아나콘다"
+      },
+      {
+        "languageCode": "es",
+        "name": "Anaconda"
+      },
+      {
+        "languageCode": "ja",
+        "name": "アナコンダ"
       }
     ],
     "category": {
@@ -7279,6 +11535,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -7293,6 +11557,14 @@
         {
           "languageCode": "ko",
           "name": "파충류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Reptil"
+        },
+        {
+          "languageCode": "ja",
+          "name": "爬虫類"
         }
       ]
     }
@@ -7307,6 +11579,14 @@
       {
         "languageCode": "ko",
         "name": "코브라"
+      },
+      {
+        "languageCode": "es",
+        "name": "Cobra"
+      },
+      {
+        "languageCode": "ja",
+        "name": "コブラ"
       }
     ],
     "category": {
@@ -7320,6 +11600,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -7334,6 +11622,14 @@
         {
           "languageCode": "ko",
           "name": "파충류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Reptil"
+        },
+        {
+          "languageCode": "ja",
+          "name": "爬虫類"
         }
       ]
     }
@@ -7348,6 +11644,14 @@
       {
         "languageCode": "ko",
         "name": "독사"
+      },
+      {
+        "languageCode": "es",
+        "name": "Víbora"
+      },
+      {
+        "languageCode": "ja",
+        "name": "クサリヘビ"
       }
     ],
     "category": {
@@ -7361,6 +11665,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -7375,6 +11687,14 @@
         {
           "languageCode": "ko",
           "name": "파충류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Reptil"
+        },
+        {
+          "languageCode": "ja",
+          "name": "爬虫類"
         }
       ]
     }
@@ -7389,6 +11709,14 @@
       {
         "languageCode": "ko",
         "name": "방울뱀"
+      },
+      {
+        "languageCode": "es",
+        "name": "Serpiente de cascabel"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ガラガラヘビ"
       }
     ],
     "category": {
@@ -7402,6 +11730,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -7416,6 +11752,14 @@
         {
           "languageCode": "ko",
           "name": "파충류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Reptil"
+        },
+        {
+          "languageCode": "ja",
+          "name": "爬虫類"
         }
       ]
     }
@@ -7430,6 +11774,14 @@
       {
         "languageCode": "ko",
         "name": "바다뱀"
+      },
+      {
+        "languageCode": "es",
+        "name": "Serpiente marina"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ウミヘビ"
       }
     ],
     "category": {
@@ -7443,6 +11795,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -7457,6 +11817,14 @@
         {
           "languageCode": "ko",
           "name": "파충류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Reptil"
+        },
+        {
+          "languageCode": "ja",
+          "name": "爬虫類"
         }
       ]
     }
@@ -7471,6 +11839,14 @@
       {
         "languageCode": "ko",
         "name": "카이만"
+      },
+      {
+        "languageCode": "es",
+        "name": "Caimán"
+      },
+      {
+        "languageCode": "ja",
+        "name": "カイマン"
       }
     ],
     "category": {
@@ -7484,6 +11860,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -7498,6 +11882,14 @@
         {
           "languageCode": "ko",
           "name": "파충류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Reptil"
+        },
+        {
+          "languageCode": "ja",
+          "name": "爬虫類"
         }
       ]
     }
@@ -7512,6 +11904,14 @@
       {
         "languageCode": "ko",
         "name": "가비알"
+      },
+      {
+        "languageCode": "es",
+        "name": "Gavial"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ガビアル"
       }
     ],
     "category": {
@@ -7525,6 +11925,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -7539,6 +11947,14 @@
         {
           "languageCode": "ko",
           "name": "파충류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Reptil"
+        },
+        {
+          "languageCode": "ja",
+          "name": "爬虫類"
         }
       ]
     }
@@ -7553,6 +11969,14 @@
       {
         "languageCode": "ko",
         "name": "도롱뇽"
+      },
+      {
+        "languageCode": "es",
+        "name": "Salamandra"
+      },
+      {
+        "languageCode": "ja",
+        "name": "サンショウウオ"
       }
     ],
     "category": {
@@ -7566,6 +11990,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -7580,6 +12012,14 @@
         {
           "languageCode": "ko",
           "name": "양서류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Anfibio"
+        },
+        {
+          "languageCode": "ja",
+          "name": "両生類"
         }
       ]
     }
@@ -7594,6 +12034,14 @@
       {
         "languageCode": "ko",
         "name": "영원"
+      },
+      {
+        "languageCode": "es",
+        "name": "Tritón"
+      },
+      {
+        "languageCode": "ja",
+        "name": "イモリ"
       }
     ],
     "category": {
@@ -7607,6 +12055,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -7621,6 +12077,14 @@
         {
           "languageCode": "ko",
           "name": "양서류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Anfibio"
+        },
+        {
+          "languageCode": "ja",
+          "name": "両生類"
         }
       ]
     }
@@ -7635,6 +12099,14 @@
       {
         "languageCode": "ko",
         "name": "아홀로틀"
+      },
+      {
+        "languageCode": "es",
+        "name": "Ajolote"
+      },
+      {
+        "languageCode": "ja",
+        "name": "アホロートル"
       }
     ],
     "category": {
@@ -7648,6 +12120,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -7662,6 +12142,14 @@
         {
           "languageCode": "ko",
           "name": "양서류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Anfibio"
+        },
+        {
+          "languageCode": "ja",
+          "name": "両生類"
         }
       ]
     }
@@ -7676,6 +12164,14 @@
       {
         "languageCode": "ko",
         "name": "독화살개구리"
+      },
+      {
+        "languageCode": "es",
+        "name": "Rana dardo venenosa"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ヤドクガエル"
       }
     ],
     "category": {
@@ -7689,6 +12185,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -7703,6 +12207,14 @@
         {
           "languageCode": "ko",
           "name": "양서류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Anfibio"
+        },
+        {
+          "languageCode": "ja",
+          "name": "両生類"
         }
       ]
     }
@@ -7717,6 +12229,14 @@
       {
         "languageCode": "ko",
         "name": "흰동가리"
+      },
+      {
+        "languageCode": "es",
+        "name": "Pez payaso"
+      },
+      {
+        "languageCode": "ja",
+        "name": "クマノミ"
       }
     ],
     "category": {
@@ -7730,6 +12250,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -7744,6 +12272,14 @@
         {
           "languageCode": "ko",
           "name": "어류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Pez"
+        },
+        {
+          "languageCode": "ja",
+          "name": "魚"
         }
       ]
     }
@@ -7758,6 +12294,14 @@
       {
         "languageCode": "ko",
         "name": "피라냐"
+      },
+      {
+        "languageCode": "es",
+        "name": "Piraña"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ピラニア"
       }
     ],
     "category": {
@@ -7771,6 +12315,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -7785,6 +12337,14 @@
         {
           "languageCode": "ko",
           "name": "어류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Pez"
+        },
+        {
+          "languageCode": "ja",
+          "name": "魚"
         }
       ]
     }
@@ -7799,6 +12359,14 @@
       {
         "languageCode": "ko",
         "name": "블롭피쉬"
+      },
+      {
+        "languageCode": "es",
+        "name": "Pez borrón"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ブロブフィッシュ"
       }
     ],
     "category": {
@@ -7812,6 +12380,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -7826,6 +12402,14 @@
         {
           "languageCode": "ko",
           "name": "어류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Pez"
+        },
+        {
+          "languageCode": "ja",
+          "name": "魚"
         }
       ]
     }
@@ -7840,6 +12424,14 @@
       {
         "languageCode": "ko",
         "name": "개복치"
+      },
+      {
+        "languageCode": "es",
+        "name": "Pez luna"
+      },
+      {
+        "languageCode": "ja",
+        "name": "マンボウ"
       }
     ],
     "category": {
@@ -7853,6 +12445,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -7867,6 +12467,14 @@
         {
           "languageCode": "ko",
           "name": "어류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Pez"
+        },
+        {
+          "languageCode": "ja",
+          "name": "魚"
         }
       ]
     }
@@ -7881,6 +12489,14 @@
       {
         "languageCode": "ko",
         "name": "황새치"
+      },
+      {
+        "languageCode": "es",
+        "name": "Pez espada"
+      },
+      {
+        "languageCode": "ja",
+        "name": "メカジキ"
       }
     ],
     "category": {
@@ -7894,6 +12510,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -7908,6 +12532,14 @@
         {
           "languageCode": "ko",
           "name": "어류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Pez"
+        },
+        {
+          "languageCode": "ja",
+          "name": "魚"
         }
       ]
     }
@@ -7922,6 +12554,14 @@
       {
         "languageCode": "ko",
         "name": "돛새치"
+      },
+      {
+        "languageCode": "es",
+        "name": "Pez vela"
+      },
+      {
+        "languageCode": "ja",
+        "name": "バショウカジキ"
       }
     ],
     "category": {
@@ -7935,6 +12575,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -7949,6 +12597,14 @@
         {
           "languageCode": "ko",
           "name": "어류"
+        },
+        {
+          "languageCode": "es",
+          "name": "Pez"
+        },
+        {
+          "languageCode": "ja",
+          "name": "魚"
         }
       ]
     }
@@ -7963,6 +12619,14 @@
       {
         "languageCode": "ko",
         "name": "대벌레"
+      },
+      {
+        "languageCode": "es",
+        "name": "Insecto palo"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ナナフシ"
       }
     ],
     "category": {
@@ -7976,6 +12640,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -7990,6 +12662,14 @@
         {
           "languageCode": "ko",
           "name": "곤충"
+        },
+        {
+          "languageCode": "es",
+          "name": "Insecto"
+        },
+        {
+          "languageCode": "ja",
+          "name": "昆虫"
         }
       ]
     }
@@ -8004,6 +12684,14 @@
       {
         "languageCode": "ko",
         "name": "잎벌레"
+      },
+      {
+        "languageCode": "es",
+        "name": "Insecto hoja"
+      },
+      {
+        "languageCode": "ja",
+        "name": "コノハムシ"
       }
     ],
     "category": {
@@ -8017,6 +12705,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -8031,6 +12727,14 @@
         {
           "languageCode": "ko",
           "name": "곤충"
+        },
+        {
+          "languageCode": "es",
+          "name": "Insecto"
+        },
+        {
+          "languageCode": "ja",
+          "name": "昆虫"
         }
       ]
     }
@@ -8045,6 +12749,14 @@
       {
         "languageCode": "ko",
         "name": "말벌"
+      },
+      {
+        "languageCode": "es",
+        "name": "Avispa"
+      },
+      {
+        "languageCode": "ja",
+        "name": "スズメバチ"
       }
     ],
     "category": {
@@ -8058,6 +12770,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -8072,6 +12792,14 @@
         {
           "languageCode": "ko",
           "name": "곤충"
+        },
+        {
+          "languageCode": "es",
+          "name": "Insecto"
+        },
+        {
+          "languageCode": "ja",
+          "name": "昆虫"
         }
       ]
     }
@@ -8086,6 +12814,14 @@
       {
         "languageCode": "ko",
         "name": "타란툴라"
+      },
+      {
+        "languageCode": "es",
+        "name": "Tarántula"
+      },
+      {
+        "languageCode": "ja",
+        "name": "タランチュラ"
       }
     ],
     "category": {
@@ -8099,6 +12835,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -8113,6 +12857,14 @@
         {
           "languageCode": "ko",
           "name": "무척추동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Invertebrado"
+        },
+        {
+          "languageCode": "ja",
+          "name": "無脊椎動物"
         }
       ]
     }
@@ -8127,6 +12879,14 @@
       {
         "languageCode": "ko",
         "name": "지네"
+      },
+      {
+        "languageCode": "es",
+        "name": "Ciempiés"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ムカデ"
       }
     ],
     "category": {
@@ -8140,6 +12900,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -8154,6 +12922,14 @@
         {
           "languageCode": "ko",
           "name": "무척추동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Invertebrado"
+        },
+        {
+          "languageCode": "ja",
+          "name": "無脊椎動物"
         }
       ]
     }
@@ -8168,6 +12944,14 @@
       {
         "languageCode": "ko",
         "name": "노래기"
+      },
+      {
+        "languageCode": "es",
+        "name": "Milpiés"
+      },
+      {
+        "languageCode": "ja",
+        "name": "ヤスデ"
       }
     ],
     "category": {
@@ -8181,6 +12965,14 @@
         {
           "languageCode": "ko",
           "name": "동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Animal"
+        },
+        {
+          "languageCode": "ja",
+          "name": "動物"
         }
       ]
     },
@@ -8195,6 +12987,14 @@
         {
           "languageCode": "ko",
           "name": "무척추동물"
+        },
+        {
+          "languageCode": "es",
+          "name": "Invertebrado"
+        },
+        {
+          "languageCode": "ja",
+          "name": "無脊椎動物"
         }
       ]
     }
