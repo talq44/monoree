@@ -1,4602 +1,4602 @@
 [
-  {
-    "id": "lion",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Lion"
-      },
-      {
-        "languageCode": "ko",
-        "name": "사자"
-      },
-      {
-        "languageCode": "es",
-        "name": "León"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ライオン"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "tiger",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Tiger"
-      },
-      {
-        "languageCode": "ko",
-        "name": "호랑이"
-      },
-      {
-        "languageCode": "es",
-        "name": "Tigre"
-      },
-      {
-        "languageCode": "ja",
-        "name": "トラ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "elephant",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Elephant"
-      },
-      {
-        "languageCode": "ko",
-        "name": "코끼리"
-      },
-      {
-        "languageCode": "es",
-        "name": "Elefante"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ゾウ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "giraffe",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Giraffe"
-      },
-      {
-        "languageCode": "ko",
-        "name": "기린"
-      },
-      {
-        "languageCode": "es",
-        "name": "Jirafa"
-      },
-      {
-        "languageCode": "ja",
-        "name": "キリン"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "zebra",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Zebra"
-      },
-      {
-        "languageCode": "ko",
-        "name": "얼룩말"
-      },
-      {
-        "languageCode": "es",
-        "name": "Cebra"
-      },
-      {
-        "languageCode": "ja",
-        "name": "シマウマ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "cheetah",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Cheetah"
-      },
-      {
-        "languageCode": "ko",
-        "name": "치타"
-      },
-      {
-        "languageCode": "es",
-        "name": "Guepardo"
-      },
-      {
-        "languageCode": "ja",
-        "name": "チーター"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "hyena",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Hyena"
-      },
-      {
-        "languageCode": "ko",
-        "name": "하이에나"
-      },
-      {
-        "languageCode": "es",
-        "name": "Hiena"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ハイエナ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "hippopotamus",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Hippopotamus"
-      },
-      {
-        "languageCode": "ko",
-        "name": "하마"
-      },
-      {
-        "languageCode": "es",
-        "name": "Hipopótamo"
-      },
-      {
-        "languageCode": "ja",
-        "name": "カバ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "crocodile",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Crocodile"
-      },
-      {
-        "languageCode": "ko",
-        "name": "악어"
-      },
-      {
-        "languageCode": "es",
-        "name": "Cocodrilo"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ワニ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "reptile"
-  },
-  {
-    "id": "rhinoceros",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Rhinoceros"
-      },
-      {
-        "languageCode": "ko",
-        "name": "코뿔소"
-      },
-      {
-        "languageCode": "es",
-        "name": "Rinoceronte"
-      },
-      {
-        "languageCode": "ja",
-        "name": "サイ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "kangaroo",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Kangaroo"
-      },
-      {
-        "languageCode": "ko",
-        "name": "캥거루"
-      },
-      {
-        "languageCode": "es",
-        "name": "Canguro"
-      },
-      {
-        "languageCode": "ja",
-        "name": "カンガルー"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "koala",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Koala"
-      },
-      {
-        "languageCode": "ko",
-        "name": "코알라"
-      },
-      {
-        "languageCode": "es",
-        "name": "Coala"
-      },
-      {
-        "languageCode": "ja",
-        "name": "コアラ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "giant_panda",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Giant panda"
-      },
-      {
-        "languageCode": "ko",
-        "name": "판다"
-      },
-      {
-        "languageCode": "es",
-        "name": "Panda gigante"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ジャイアントパンダ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "fox",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Fox"
-      },
-      {
-        "languageCode": "ko",
-        "name": "여우"
-      },
-      {
-        "languageCode": "es",
-        "name": "Zorro"
-      },
-      {
-        "languageCode": "ja",
-        "name": "キツネ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "wallaby",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Wallaby"
-      },
-      {
-        "languageCode": "ko",
-        "name": "왈라비"
-      },
-      {
-        "languageCode": "es",
-        "name": "Ualabí"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ワラビー"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "wolf",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Wolf"
-      },
-      {
-        "languageCode": "ko",
-        "name": "늑대"
-      },
-      {
-        "languageCode": "es",
-        "name": "Lobo"
-      },
-      {
-        "languageCode": "ja",
-        "name": "オオカミ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "bear",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Bear"
-      },
-      {
-        "languageCode": "ko",
-        "name": "곰"
-      },
-      {
-        "languageCode": "es",
-        "name": "Oso"
-      },
-      {
-        "languageCode": "ja",
-        "name": "クマ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "bison",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Bison"
-      },
-      {
-        "languageCode": "ko",
-        "name": "들소"
-      },
-      {
-        "languageCode": "es",
-        "name": "Bisonte"
-      },
-      {
-        "languageCode": "ja",
-        "name": "バイソン"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "polar_bear",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Polar bear"
-      },
-      {
-        "languageCode": "ko",
-        "name": "북극곰"
-      },
-      {
-        "languageCode": "es",
-        "name": "Oso polar"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ホッキョクグマ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "penguin",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Penguin"
-      },
-      {
-        "languageCode": "ko",
-        "name": "펭귄"
-      },
-      {
-        "languageCode": "es",
-        "name": "Pingüino"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ペンギン"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "bird"
-  },
-  {
-    "id": "reindeer",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Reindeer"
-      },
-      {
-        "languageCode": "ko",
-        "name": "순록"
-      },
-      {
-        "languageCode": "es",
-        "name": "Reno"
-      },
-      {
-        "languageCode": "ja",
-        "name": "トナカイ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "seal",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Seal"
-      },
-      {
-        "languageCode": "ko",
-        "name": "물개"
-      },
-      {
-        "languageCode": "es",
-        "name": "Foca"
-      },
-      {
-        "languageCode": "ja",
-        "name": "アザラシ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "dolphin",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Dolphin"
-      },
-      {
-        "languageCode": "ko",
-        "name": "돌고래"
-      },
-      {
-        "languageCode": "es",
-        "name": "Delfín"
-      },
-      {
-        "languageCode": "ja",
-        "name": "イルカ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "goat",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Goat"
-      },
-      {
-        "languageCode": "ko",
-        "name": "염소"
-      },
-      {
-        "languageCode": "es",
-        "name": "Cabra"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ヤギ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "whale",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Whale"
-      },
-      {
-        "languageCode": "ko",
-        "name": "고래"
-      },
-      {
-        "languageCode": "es",
-        "name": "Ballena"
-      },
-      {
-        "languageCode": "ja",
-        "name": "クジラ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "shark",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Shark"
-      },
-      {
-        "languageCode": "ko",
-        "name": "상어"
-      },
-      {
-        "languageCode": "es",
-        "name": "Tiburón"
-      },
-      {
-        "languageCode": "ja",
-        "name": "サメ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "fish"
-  },
-  {
-    "id": "octopus",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Octopus"
-      },
-      {
-        "languageCode": "ko",
-        "name": "문어"
-      },
-      {
-        "languageCode": "es",
-        "name": "Pulpo"
-      },
-      {
-        "languageCode": "ja",
-        "name": "タコ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "invertebrate"
-  },
-  {
-    "id": "turtle",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Turtle"
-      },
-      {
-        "languageCode": "ko",
-        "name": "거북이"
-      },
-      {
-        "languageCode": "es",
-        "name": "Tortuga"
-      },
-      {
-        "languageCode": "ja",
-        "name": "カメ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "reptile"
-  },
-  {
-    "id": "rabbit",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Rabbit"
-      },
-      {
-        "languageCode": "ko",
-        "name": "토끼"
-      },
-      {
-        "languageCode": "es",
-        "name": "Conejo"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ウサギ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "squirrel",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Squirrel"
-      },
-      {
-        "languageCode": "ko",
-        "name": "다람쥐"
-      },
-      {
-        "languageCode": "es",
-        "name": "Ardilla"
-      },
-      {
-        "languageCode": "ja",
-        "name": "リス"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "cat",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Cat"
-      },
-      {
-        "languageCode": "ko",
-        "name": "고양이"
-      },
-      {
-        "languageCode": "es",
-        "name": "Gato"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ネコ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "dog",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Dog"
-      },
-      {
-        "languageCode": "ko",
-        "name": "개"
-      },
-      {
-        "languageCode": "es",
-        "name": "Perro"
-      },
-      {
-        "languageCode": "ja",
-        "name": "イヌ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "chicken",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Chicken"
-      },
-      {
-        "languageCode": "ko",
-        "name": "닭"
-      },
-      {
-        "languageCode": "es",
-        "name": "Pollo"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ニワトリ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "bird"
-  },
-  {
-    "id": "duck",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Duck"
-      },
-      {
-        "languageCode": "ko",
-        "name": "오리"
-      },
-      {
-        "languageCode": "es",
-        "name": "Pato"
-      },
-      {
-        "languageCode": "ja",
-        "name": "アヒル"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "bird"
-  },
-  {
-    "id": "pig",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Pig"
-      },
-      {
-        "languageCode": "ko",
-        "name": "돼지"
-      },
-      {
-        "languageCode": "es",
-        "name": "Cerdo"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ブタ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "badger",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Badger"
-      },
-      {
-        "languageCode": "ko",
-        "name": "오소리"
-      },
-      {
-        "languageCode": "es",
-        "name": "Tejón"
-      },
-      {
-        "languageCode": "ja",
-        "name": "アナグマ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "cow",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Cow"
-      },
-      {
-        "languageCode": "ko",
-        "name": "소"
-      },
-      {
-        "languageCode": "es",
-        "name": "Vaca"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ウシ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "sheep",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Sheep"
-      },
-      {
-        "languageCode": "ko",
-        "name": "양"
-      },
-      {
-        "languageCode": "es",
-        "name": "Oveja"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ヒツジ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "horse",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Horse"
-      },
-      {
-        "languageCode": "ko",
-        "name": "말"
-      },
-      {
-        "languageCode": "es",
-        "name": "Caballo"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ウマ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "donkey",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Donkey"
-      },
-      {
-        "languageCode": "ko",
-        "name": "당나귀"
-      },
-      {
-        "languageCode": "es",
-        "name": "Burro"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ロバ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "peacock",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Peacock"
-      },
-      {
-        "languageCode": "ko",
-        "name": "공작"
-      },
-      {
-        "languageCode": "es",
-        "name": "Pavo real"
-      },
-      {
-        "languageCode": "ja",
-        "name": "クジャク"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "bird"
-  },
-  {
-    "id": "parrot",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Parrot"
-      },
-      {
-        "languageCode": "ko",
-        "name": "앵무새"
-      },
-      {
-        "languageCode": "es",
-        "name": "Loro"
-      },
-      {
-        "languageCode": "ja",
-        "name": "オウム"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "bird"
-  },
-  {
-    "id": "eagle",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Eagle"
-      },
-      {
-        "languageCode": "ko",
-        "name": "독수리"
-      },
-      {
-        "languageCode": "es",
-        "name": "Águila"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ワシ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "bird"
-  },
-  {
-    "id": "owl",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Owl"
-      },
-      {
-        "languageCode": "ko",
-        "name": "부엉이"
-      },
-      {
-        "languageCode": "es",
-        "name": "Búho"
-      },
-      {
-        "languageCode": "ja",
-        "name": "フクロウ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "bird"
-  },
-  {
-    "id": "lizard",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Lizard"
-      },
-      {
-        "languageCode": "ko",
-        "name": "도마뱀"
-      },
-      {
-        "languageCode": "es",
-        "name": "Lagarto"
-      },
-      {
-        "languageCode": "ja",
-        "name": "トカゲ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "reptile"
-  },
-  {
-    "id": "snake",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Snake"
-      },
-      {
-        "languageCode": "ko",
-        "name": "뱀"
-      },
-      {
-        "languageCode": "es",
-        "name": "Serpiente"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ヘビ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "reptile"
-  },
-  {
-    "id": "chameleon",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Chameleon"
-      },
-      {
-        "languageCode": "ko",
-        "name": "카멜레온"
-      },
-      {
-        "languageCode": "es",
-        "name": "Camaleón"
-      },
-      {
-        "languageCode": "ja",
-        "name": "カメレオン"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "reptile"
-  },
-  {
-    "id": "frog",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Frog"
-      },
-      {
-        "languageCode": "ko",
-        "name": "개구리"
-      },
-      {
-        "languageCode": "es",
-        "name": "Rana"
-      },
-      {
-        "languageCode": "ja",
-        "name": "カエル"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "amphibian"
-  },
-  {
-    "id": "toad",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Toad"
-      },
-      {
-        "languageCode": "ko",
-        "name": "두꺼비"
-      },
-      {
-        "languageCode": "es",
-        "name": "Sapo"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ヒキガエル"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "amphibian"
-  },
-  {
-    "id": "deer",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Deer"
-      },
-      {
-        "languageCode": "ko",
-        "name": "사슴"
-      },
-      {
-        "languageCode": "es",
-        "name": "Ciervo"
-      },
-      {
-        "languageCode": "ja",
-        "name": "シカ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "gorilla",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Gorilla"
-      },
-      {
-        "languageCode": "ko",
-        "name": "고릴라"
-      },
-      {
-        "languageCode": "es",
-        "name": "Gorila"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ゴリラ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "chimpanzee",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Chimpanzee"
-      },
-      {
-        "languageCode": "ko",
-        "name": "침팬지"
-      },
-      {
-        "languageCode": "es",
-        "name": "Chimpancé"
-      },
-      {
-        "languageCode": "ja",
-        "name": "チンパンジー"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "monkey",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Monkey"
-      },
-      {
-        "languageCode": "ko",
-        "name": "원숭이"
-      },
-      {
-        "languageCode": "es",
-        "name": "Mono"
-      },
-      {
-        "languageCode": "ja",
-        "name": "サル"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "llama",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Llama"
-      },
-      {
-        "languageCode": "ko",
-        "name": "라마"
-      },
-      {
-        "languageCode": "es",
-        "name": "Llama"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ラマ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "camel",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Camel"
-      },
-      {
-        "languageCode": "ko",
-        "name": "낙타"
-      },
-      {
-        "languageCode": "es",
-        "name": "Camello"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ラクダ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "hedgehog",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Hedgehog"
-      },
-      {
-        "languageCode": "ko",
-        "name": "고슴도치"
-      },
-      {
-        "languageCode": "es",
-        "name": "Erizo"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ハリネズミ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "butterfly",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Butterfly"
-      },
-      {
-        "languageCode": "ko",
-        "name": "나비"
-      },
-      {
-        "languageCode": "es",
-        "name": "Mariposa"
-      },
-      {
-        "languageCode": "ja",
-        "name": "チョウ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "insect"
-  },
-  {
-    "id": "mole",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Mole"
-      },
-      {
-        "languageCode": "ko",
-        "name": "두더지"
-      },
-      {
-        "languageCode": "es",
-        "name": "Topo"
-      },
-      {
-        "languageCode": "ja",
-        "name": "モグラ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "bee",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Bee"
-      },
-      {
-        "languageCode": "ko",
-        "name": "벌"
-      },
-      {
-        "languageCode": "es",
-        "name": "Abeja"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ハチ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "insect"
-  },
-  {
-    "id": "squirrel_monkey",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Squirrel monkey"
-      },
-      {
-        "languageCode": "ko",
-        "name": "다람쥐원숭이"
-      },
-      {
-        "languageCode": "es",
-        "name": "Mono ardilla"
-      },
-      {
-        "languageCode": "ja",
-        "name": "リスザル"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "iguana",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Iguana"
-      },
-      {
-        "languageCode": "ko",
-        "name": "이구아나"
-      },
-      {
-        "languageCode": "es",
-        "name": "Iguana"
-      },
-      {
-        "languageCode": "ja",
-        "name": "イグアナ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "reptile"
-  },
-  {
-    "id": "ladybug",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Ladybug"
-      },
-      {
-        "languageCode": "ko",
-        "name": "무당벌레"
-      },
-      {
-        "languageCode": "es",
-        "name": "Mariquita"
-      },
-      {
-        "languageCode": "ja",
-        "name": "テントウムシ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "insect"
-  },
-  {
-    "id": "dragonfly",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Dragonfly"
-      },
-      {
-        "languageCode": "ko",
-        "name": "잠자리"
-      },
-      {
-        "languageCode": "es",
-        "name": "Libélula"
-      },
-      {
-        "languageCode": "ja",
-        "name": "トンボ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "insect"
-  },
-  {
-    "id": "meerkat",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Meerkat"
-      },
-      {
-        "languageCode": "ko",
-        "name": "미어캣"
-      },
-      {
-        "languageCode": "es",
-        "name": "Suricata"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ミーアキャット"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "ant",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Ant"
-      },
-      {
-        "languageCode": "ko",
-        "name": "개미"
-      },
-      {
-        "languageCode": "es",
-        "name": "Hormiga"
-      },
-      {
-        "languageCode": "ja",
-        "name": "アリ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "insect"
-  },
-  {
-    "id": "sea_turtle",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Sea turtle"
-      },
-      {
-        "languageCode": "ko",
-        "name": "바다거북"
-      },
-      {
-        "languageCode": "es",
-        "name": "Tortuga marina"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ウミガメ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "reptile"
-  },
-  {
-    "id": "mosquito",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Mosquito"
-      },
-      {
-        "languageCode": "ko",
-        "name": "모기"
-      },
-      {
-        "languageCode": "es",
-        "name": "Mosquito"
-      },
-      {
-        "languageCode": "ja",
-        "name": "カ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "insect"
-  },
-  {
-    "id": "sparrow",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Sparrow"
-      },
-      {
-        "languageCode": "ko",
-        "name": "참새"
-      },
-      {
-        "languageCode": "es",
-        "name": "Gorrión"
-      },
-      {
-        "languageCode": "ja",
-        "name": "スズメ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "bird"
-  },
-  {
-    "id": "fly",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Fly"
-      },
-      {
-        "languageCode": "ko",
-        "name": "파리"
-      },
-      {
-        "languageCode": "es",
-        "name": "Mosca"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ハエ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "insect"
-  },
-  {
-    "id": "magpie",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Magpie"
-      },
-      {
-        "languageCode": "ko",
-        "name": "까치"
-      },
-      {
-        "languageCode": "es",
-        "name": "Urraca"
-      },
-      {
-        "languageCode": "ja",
-        "name": "カササギ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "bird"
-  },
-  {
-    "id": "crow",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Crow"
-      },
-      {
-        "languageCode": "ko",
-        "name": "까마귀"
-      },
-      {
-        "languageCode": "es",
-        "name": "Cuervo"
-      },
-      {
-        "languageCode": "ja",
-        "name": "カラス"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "bird"
-  },
-  {
-    "id": "grasshopper",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Grasshopper"
-      },
-      {
-        "languageCode": "ko",
-        "name": "메뚜기"
-      },
-      {
-        "languageCode": "es",
-        "name": "Saltamontes"
-      },
-      {
-        "languageCode": "ja",
-        "name": "バッタ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "insect"
-  },
-  {
-    "id": "cricket",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Cricket"
-      },
-      {
-        "languageCode": "ko",
-        "name": "귀뚜라미"
-      },
-      {
-        "languageCode": "es",
-        "name": "Grillo"
-      },
-      {
-        "languageCode": "ja",
-        "name": "コオロギ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "insect"
-  },
-  {
-    "id": "pigeon",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Pigeon"
-      },
-      {
-        "languageCode": "ko",
-        "name": "비둘기"
-      },
-      {
-        "languageCode": "es",
-        "name": "Paloma"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ハト"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "bird"
-  },
-  {
-    "id": "mantis",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Mantis"
-      },
-      {
-        "languageCode": "ko",
-        "name": "사마귀"
-      },
-      {
-        "languageCode": "es",
-        "name": "Mantis"
-      },
-      {
-        "languageCode": "ja",
-        "name": "カマキリ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "insect"
-  },
-  {
-    "id": "ostrich",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Ostrich"
-      },
-      {
-        "languageCode": "ko",
-        "name": "타조"
-      },
-      {
-        "languageCode": "es",
-        "name": "Avestruz"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ダチョウ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "bird"
-  },
-  {
-    "id": "alligator_snapping_turtle",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Alligator snapping turtle"
-      },
-      {
-        "languageCode": "ko",
-        "name": "악어거북"
-      },
-      {
-        "languageCode": "es",
-        "name": "Tortuga caimán"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ワニガメ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "reptile"
-  },
-  {
-    "id": "moth",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Moth"
-      },
-      {
-        "languageCode": "ko",
-        "name": "나방"
-      },
-      {
-        "languageCode": "es",
-        "name": "Polilla"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ガ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "insect"
-  },
-  {
-    "id": "beetle",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Beetle"
-      },
-      {
-        "languageCode": "ko",
-        "name": "딱정벌레"
-      },
-      {
-        "languageCode": "es",
-        "name": "Escarabajo"
-      },
-      {
-        "languageCode": "ja",
-        "name": "カブトムシ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "insect"
-  },
-  {
-    "id": "coyote",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Coyote"
-      },
-      {
-        "languageCode": "ko",
-        "name": "코요테"
-      },
-      {
-        "languageCode": "es",
-        "name": "Coyote"
-      },
-      {
-        "languageCode": "ja",
-        "name": "コヨーテ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "rhinoceros_beetle",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Rhinoceros beetle"
-      },
-      {
-        "languageCode": "ko",
-        "name": "장수풍뎅이"
-      },
-      {
-        "languageCode": "es",
-        "name": "Escarabajo rinoceronte"
-      },
-      {
-        "languageCode": "ja",
-        "name": "カブトムシ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "insect"
-  },
-  {
-    "id": "skunk",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Skunk"
-      },
-      {
-        "languageCode": "ko",
-        "name": "스컹크"
-      },
-      {
-        "languageCode": "es",
-        "name": "Zorrillo"
-      },
-      {
-        "languageCode": "ja",
-        "name": "スカンク"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "mayfly",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Mayfly"
-      },
-      {
-        "languageCode": "ko",
-        "name": "하루살이"
-      },
-      {
-        "languageCode": "es",
-        "name": "Efímera"
-      },
-      {
-        "languageCode": "ja",
-        "name": "カゲロウ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "insect"
-  },
-  {
-    "id": "raccoon",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Raccoon"
-      },
-      {
-        "languageCode": "ko",
-        "name": "너구리"
-      },
-      {
-        "languageCode": "es",
-        "name": "Mapache"
-      },
-      {
-        "languageCode": "ja",
-        "name": "アライグマ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "ephemera",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Ephemera"
-      },
-      {
-        "languageCode": "ko",
-        "name": "하루살이"
-      },
-      {
-        "languageCode": "es",
-        "name": "Efímera"
-      },
-      {
-        "languageCode": "ja",
-        "name": "カゲロウ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "insect"
-  },
-  {
-    "id": "longhorn_beetle",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Longhorn beetle"
-      },
-      {
-        "languageCode": "ko",
-        "name": "하늘소"
-      },
-      {
-        "languageCode": "es",
-        "name": "Escarabajo longicornio"
-      },
-      {
-        "languageCode": "ja",
-        "name": "カミキリムシ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "insect"
-  },
-  {
-    "id": "cicada",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Cicada"
-      },
-      {
-        "languageCode": "ko",
-        "name": "매미"
-      },
-      {
-        "languageCode": "es",
-        "name": "Cigarra"
-      },
-      {
-        "languageCode": "ja",
-        "name": "セミ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "insect"
-  },
-  {
-    "id": "stingray",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Stingray"
-      },
-      {
-        "languageCode": "ko",
-        "name": "가오리"
-      },
-      {
-        "languageCode": "es",
-        "name": "Raya"
-      },
-      {
-        "languageCode": "ja",
-        "name": "アカエイ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "fish"
-  },
-  {
-    "id": "firefly",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Firefly"
-      },
-      {
-        "languageCode": "ko",
-        "name": "반딧불이"
-      },
-      {
-        "languageCode": "es",
-        "name": "Luciérnaga"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ホタル"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "insect"
-  },
-  {
-    "id": "seahorse",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Seahorse"
-      },
-      {
-        "languageCode": "ko",
-        "name": "해마"
-      },
-      {
-        "languageCode": "es",
-        "name": "Caballito de mar"
-      },
-      {
-        "languageCode": "ja",
-        "name": "タツノオトシゴ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "fish"
-  },
-  {
-    "id": "cockroach",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Cockroach"
-      },
-      {
-        "languageCode": "ko",
-        "name": "바퀴벌레"
-      },
-      {
-        "languageCode": "es",
-        "name": "Cucaracha"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ゴキブリ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "insect"
-  },
-  {
-    "id": "crab",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Crab"
-      },
-      {
-        "languageCode": "ko",
-        "name": "게"
-      },
-      {
-        "languageCode": "es",
-        "name": "Cangrejo"
-      },
-      {
-        "languageCode": "ja",
-        "name": "カニ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "invertebrate"
-  },
-  {
-    "id": "flea",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Flea"
-      },
-      {
-        "languageCode": "ko",
-        "name": "벼룩"
-      },
-      {
-        "languageCode": "es",
-        "name": "Pulga"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ノミ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "insect"
-  },
-  {
-    "id": "jellyfish",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Jellyfish"
-      },
-      {
-        "languageCode": "ko",
-        "name": "해파리"
-      },
-      {
-        "languageCode": "es",
-        "name": "Medusa"
-      },
-      {
-        "languageCode": "ja",
-        "name": "クラゲ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "invertebrate"
-  },
-  {
-    "id": "mite",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Mite"
-      },
-      {
-        "languageCode": "ko",
-        "name": "진드기"
-      },
-      {
-        "languageCode": "es",
-        "name": "Ácaro"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ダニ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "insect"
-  },
-  {
-    "id": "walrus",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Walrus"
-      },
-      {
-        "languageCode": "ko",
-        "name": "바다코끼리"
-      },
-      {
-        "languageCode": "es",
-        "name": "Morsa"
-      },
-      {
-        "languageCode": "ja",
-        "name": "セイウチ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "arctic_fox",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Arctic fox"
-      },
-      {
-        "languageCode": "ko",
-        "name": "북극여우"
-      },
-      {
-        "languageCode": "es",
-        "name": "Zorro ártico"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ホッキョクギツネ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "silverfish",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Silverfish"
-      },
-      {
-        "languageCode": "ko",
-        "name": "좀벌레"
-      },
-      {
-        "languageCode": "es",
-        "name": "Lepisma"
-      },
-      {
-        "languageCode": "ja",
-        "name": "シミ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "insect"
-  },
-  {
-    "id": "beaver",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Beaver"
-      },
-      {
-        "languageCode": "ko",
-        "name": "비버"
-      },
-      {
-        "languageCode": "es",
-        "name": "Castor"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ビーバー"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "spider",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Spider"
-      },
-      {
-        "languageCode": "ko",
-        "name": "거미"
-      },
-      {
-        "languageCode": "es",
-        "name": "Araña"
-      },
-      {
-        "languageCode": "ja",
-        "name": "クモ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "invertebrate"
-  },
-  {
-    "id": "otter",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Otter"
-      },
-      {
-        "languageCode": "ko",
-        "name": "수달"
-      },
-      {
-        "languageCode": "es",
-        "name": "Nutria"
-      },
-      {
-        "languageCode": "ja",
-        "name": "カワウソ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "scorpion",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Scorpion"
-      },
-      {
-        "languageCode": "ko",
-        "name": "전갈"
-      },
-      {
-        "languageCode": "es",
-        "name": "Escorpión"
-      },
-      {
-        "languageCode": "ja",
-        "name": "サソリ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "invertebrate"
-  },
-  {
-    "id": "dayfly",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Dayfly"
-      },
-      {
-        "languageCode": "ko",
-        "name": "하루살이"
-      },
-      {
-        "languageCode": "es",
-        "name": "Efímera"
-      },
-      {
-        "languageCode": "ja",
-        "name": "カゲロウ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "insect"
-  },
-  {
-    "id": "sea_lion",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Sea lion"
-      },
-      {
-        "languageCode": "ko",
-        "name": "바다사자"
-      },
-      {
-        "languageCode": "es",
-        "name": "León marino"
-      },
-      {
-        "languageCode": "ja",
-        "name": "アシカ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "scarab",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Scarab"
-      },
-      {
-        "languageCode": "ko",
-        "name": "풍뎅이"
-      },
-      {
-        "languageCode": "es",
-        "name": "Escarabajo"
-      },
-      {
-        "languageCode": "ja",
-        "name": "コガネムシ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "insect"
-  },
-  {
-    "id": "chipmunk",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Chipmunk"
-      },
-      {
-        "languageCode": "ko",
-        "name": "다람쥐"
-      },
-      {
-        "languageCode": "es",
-        "name": "Ardilla listada"
-      },
-      {
-        "languageCode": "ja",
-        "name": "シマリス"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "sandfly",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Sandfly"
-      },
-      {
-        "languageCode": "ko",
-        "name": "갯파리"
-      },
-      {
-        "languageCode": "es",
-        "name": "Flebótomo"
-      },
-      {
-        "languageCode": "ja",
-        "name": "サシチョウバエ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "insect"
-  },
-  {
-    "id": "caddisfly",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Caddisfly"
-      },
-      {
-        "languageCode": "ko",
-        "name": "날도래"
-      },
-      {
-        "languageCode": "es",
-        "name": "Frigánea"
-      },
-      {
-        "languageCode": "ja",
-        "name": "トビケラ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "insect"
-  },
-  {
-    "id": "roe_deer",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Roe deer"
-      },
-      {
-        "languageCode": "ko",
-        "name": "노루"
-      },
-      {
-        "languageCode": "es",
-        "name": "Corzo"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ノロジカ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "water_strider",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Water strider"
-      },
-      {
-        "languageCode": "ko",
-        "name": "소금쟁이"
-      },
-      {
-        "languageCode": "es",
-        "name": "Zapatero"
-      },
-      {
-        "languageCode": "ja",
-        "name": "アメンボ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "insect"
-  },
-  {
-    "id": "wild_boar",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Wild boar"
-      },
-      {
-        "languageCode": "ko",
-        "name": "멧돼지"
-      },
-      {
-        "languageCode": "es",
-        "name": "Jabalí"
-      },
-      {
-        "languageCode": "ja",
-        "name": "イノシシ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "crane",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Crane"
-      },
-      {
-        "languageCode": "ko",
-        "name": "두루미"
-      },
-      {
-        "languageCode": "es",
-        "name": "Grulla"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ツル"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "bird"
-  },
-  {
-    "id": "sawyer_beetle",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Sawyer beetle"
-      },
-      {
-        "languageCode": "ko",
-        "name": "하늘소"
-      },
-      {
-        "languageCode": "es",
-        "name": "Escarabajo aserrador"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ノコギリカミキリ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "insect"
-  },
-  {
-    "id": "swan",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Swan"
-      },
-      {
-        "languageCode": "ko",
-        "name": "백조"
-      },
-      {
-        "languageCode": "es",
-        "name": "Cisne"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ハクチョウ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "bird"
-  },
-  {
-    "id": "goose",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Goose"
-      },
-      {
-        "languageCode": "ko",
-        "name": "거위"
-      },
-      {
-        "languageCode": "es",
-        "name": "Ganso"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ガチョウ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "bird"
-  },
-  {
-    "id": "ray",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Ray"
-      },
-      {
-        "languageCode": "ko",
-        "name": "가오리"
-      },
-      {
-        "languageCode": "es",
-        "name": "Raya"
-      },
-      {
-        "languageCode": "ja",
-        "name": "エイ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "fish"
-  },
-  {
-    "id": "seagull",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Seagull"
-      },
-      {
-        "languageCode": "ko",
-        "name": "갈매기"
-      },
-      {
-        "languageCode": "es",
-        "name": "Gaviota"
-      },
-      {
-        "languageCode": "ja",
-        "name": "カモメ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "bird"
-  },
-  {
-    "id": "pelican",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Pelican"
-      },
-      {
-        "languageCode": "ko",
-        "name": "펠리컨"
-      },
-      {
-        "languageCode": "es",
-        "name": "Pelícano"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ペリカン"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "bird"
-  },
-  {
-    "id": "squid",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Squid"
-      },
-      {
-        "languageCode": "ko",
-        "name": "오징어"
-      },
-      {
-        "languageCode": "es",
-        "name": "Calamar"
-      },
-      {
-        "languageCode": "ja",
-        "name": "イカ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "invertebrate"
-  },
-  {
-    "id": "anglerfish",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Anglerfish"
-      },
-      {
-        "languageCode": "ko",
-        "name": "아귀"
-      },
-      {
-        "languageCode": "es",
-        "name": "Rape"
-      },
-      {
-        "languageCode": "ja",
-        "name": "アンコウ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "fish"
-  },
-  {
-    "id": "tanuki",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Tanuki"
-      },
-      {
-        "languageCode": "ko",
-        "name": "너구리"
-      },
-      {
-        "languageCode": "es",
-        "name": "Tanuki"
-      },
-      {
-        "languageCode": "ja",
-        "name": "タヌキ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "leopard",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Leopard"
-      },
-      {
-        "languageCode": "ko",
-        "name": "표범"
-      },
-      {
-        "languageCode": "es",
-        "name": "Leopardo"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ヒョウ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "jaguar",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Jaguar"
-      },
-      {
-        "languageCode": "ko",
-        "name": "재규어"
-      },
-      {
-        "languageCode": "es",
-        "name": "Jaguar"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ジャガー"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "starfish",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Starfish"
-      },
-      {
-        "languageCode": "ko",
-        "name": "불가사리"
-      },
-      {
-        "languageCode": "es",
-        "name": "Estrella de mar"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ヒトデ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "invertebrate"
-  },
-  {
-    "id": "puma",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Puma"
-      },
-      {
-        "languageCode": "ko",
-        "name": "퓨마"
-      },
-      {
-        "languageCode": "es",
-        "name": "Puma"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ピューマ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "sea_urchin",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Sea urchin"
-      },
-      {
-        "languageCode": "ko",
-        "name": "성게"
-      },
-      {
-        "languageCode": "es",
-        "name": "Erizo de mar"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ウニ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "invertebrate"
-  },
-  {
-    "id": "coral",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Coral"
-      },
-      {
-        "languageCode": "ko",
-        "name": "산호"
-      },
-      {
-        "languageCode": "es",
-        "name": "Coral"
-      },
-      {
-        "languageCode": "ja",
-        "name": "サンゴ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "invertebrate"
-  },
-  {
-    "id": "cod",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Cod"
-      },
-      {
-        "languageCode": "ko",
-        "name": "대구"
-      },
-      {
-        "languageCode": "es",
-        "name": "Bacalao"
-      },
-      {
-        "languageCode": "ja",
-        "name": "タラ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "fish"
-  },
-  {
-    "id": "flamingo",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Flamingo"
-      },
-      {
-        "languageCode": "ko",
-        "name": "홍학"
-      },
-      {
-        "languageCode": "es",
-        "name": "Flamenco"
-      },
-      {
-        "languageCode": "ja",
-        "name": "フラミン고"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "bird"
-  },
-  {
-    "id": "salmon",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Salmon"
-      },
-      {
-        "languageCode": "ko",
-        "name": "연어"
-      },
-      {
-        "languageCode": "es",
-        "name": "Salmón"
-      },
-      {
-        "languageCode": "ja",
-        "name": "サケ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "fish"
-  },
-  {
-    "id": "tuna",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Tuna"
-      },
-      {
-        "languageCode": "ko",
-        "name": "참치"
-      },
-      {
-        "languageCode": "es",
-        "name": "Atún"
-      },
-      {
-        "languageCode": "ja",
-        "name": "マグロ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "fish"
-  },
-  {
-    "id": "mackerel",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Mackerel"
-      },
-      {
-        "languageCode": "ko",
-        "name": "고등어"
-      },
-      {
-        "languageCode": "es",
-        "name": "Caballa"
-      },
-      {
-        "languageCode": "ja",
-        "name": "サバ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "fish"
-  },
-  {
-    "id": "sloth",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Sloth"
-      },
-      {
-        "languageCode": "ko",
-        "name": "나무늘보"
-      },
-      {
-        "languageCode": "es",
-        "name": "Perezoso"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ナマケモノ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "anteater",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Anteater"
-      },
-      {
-        "languageCode": "ko",
-        "name": "개미핥기"
-      },
-      {
-        "languageCode": "es",
-        "name": "Oso hormiguero"
-      },
-      {
-        "languageCode": "ja",
-        "name": "アリクイ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "marlin",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Marlin"
-      },
-      {
-        "languageCode": "ko",
-        "name": "청새치"
-      },
-      {
-        "languageCode": "es",
-        "name": "Marlín"
-      },
-      {
-        "languageCode": "ja",
-        "name": "カジキ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "fish"
-  },
-  {
-    "id": "snapper",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Snapper"
-      },
-      {
-        "languageCode": "ko",
-        "name": "도미"
-      },
-      {
-        "languageCode": "es",
-        "name": "Pargo"
-      },
-      {
-        "languageCode": "ja",
-        "name": "タイ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "fish"
-  },
-  {
-    "id": "flatfish",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Flatfish"
-      },
-      {
-        "languageCode": "ko",
-        "name": "넙치"
-      },
-      {
-        "languageCode": "es",
-        "name": "Lenguado"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ヒラメ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "fish"
-  },
-  {
-    "id": "rockfish",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Rockfish"
-      },
-      {
-        "languageCode": "ko",
-        "name": "우럭"
-      },
-      {
-        "languageCode": "es",
-        "name": "Rascacio"
-      },
-      {
-        "languageCode": "ja",
-        "name": "カサゴ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "fish"
-  },
-  {
-    "id": "sea_bass",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Sea bass"
-      },
-      {
-        "languageCode": "ko",
-        "name": "농어"
-      },
-      {
-        "languageCode": "es",
-        "name": "Lubina"
-      },
-      {
-        "languageCode": "ja",
-        "name": "スズキ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "fish"
-  },
-  {
-    "id": "pufferfish",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Pufferfish"
-      },
-      {
-        "languageCode": "ko",
-        "name": "복어"
-      },
-      {
-        "languageCode": "es",
-        "name": "Pez globo"
-      },
-      {
-        "languageCode": "ja",
-        "name": "フグ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "fish"
-  },
-  {
-    "id": "sea_cucumber",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Sea cucumber"
-      },
-      {
-        "languageCode": "ko",
-        "name": "해삼"
-      },
-      {
-        "languageCode": "es",
-        "name": "Pepino de mar"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ナマコ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "invertebrate"
-  },
-  {
-    "id": "shrimp",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Shrimp"
-      },
-      {
-        "languageCode": "ko",
-        "name": "새우"
-      },
-      {
-        "languageCode": "es",
-        "name": "Camarón"
-      },
-      {
-        "languageCode": "ja",
-        "name": "エビ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "invertebrate"
-  },
-  {
-    "id": "lobster",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Lobster"
-      },
-      {
-        "languageCode": "ko",
-        "name": "랍스터"
-      },
-      {
-        "languageCode": "es",
-        "name": "Langosta"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ロブスター"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "invertebrate"
-  },
-  {
-    "id": "crayfish",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Crayfish"
-      },
-      {
-        "languageCode": "ko",
-        "name": "가재"
-      },
-      {
-        "languageCode": "es",
-        "name": "Cangrejo de río"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ザリガニ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "invertebrate"
-  },
-  {
-    "id": "turban_shell",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Turban shell"
-      },
-      {
-        "languageCode": "ko",
-        "name": "소라"
-      },
-      {
-        "languageCode": "es",
-        "name": "Caracol turbante"
-      },
-      {
-        "languageCode": "ja",
-        "name": "サザエ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "invertebrate"
-  },
-  {
-    "id": "clam",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Clam"
-      },
-      {
-        "languageCode": "ko",
-        "name": "조개"
-      },
-      {
-        "languageCode": "es",
-        "name": "Almeja"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ハマグリ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "invertebrate"
-  },
-  {
-    "id": "oyster",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Oyster"
-      },
-      {
-        "languageCode": "ko",
-        "name": "굴"
-      },
-      {
-        "languageCode": "es",
-        "name": "Ostra"
-      },
-      {
-        "languageCode": "ja",
-        "name": "カキ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "invertebrate"
-  },
-  {
-    "id": "mussel",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Mussel"
-      },
-      {
-        "languageCode": "ko",
-        "name": "홍합"
-      },
-      {
-        "languageCode": "es",
-        "name": "Mejillón"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ムール貝"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "invertebrate"
-  },
-  {
-    "id": "abalone",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Abalone"
-      },
-      {
-        "languageCode": "ko",
-        "name": "전복"
-      },
-      {
-        "languageCode": "es",
-        "name": "Abulón"
-      },
-      {
-        "languageCode": "ja",
-        "name": "アワビ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "invertebrate"
-  },
-  {
-    "id": "red_panda",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Red Panda"
-      },
-      {
-        "languageCode": "ko",
-        "name": "레서판다"
-      },
-      {
-        "languageCode": "es",
-        "name": "Panda rojo"
-      },
-      {
-        "languageCode": "ja",
-        "name": "レッサーパンダ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "armadillo",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Armadillo"
-      },
-      {
-        "languageCode": "ko",
-        "name": "아르마딜로"
-      },
-      {
-        "languageCode": "es",
-        "name": "Armadillo"
-      },
-      {
-        "languageCode": "ja",
-        "name": "アルマジロ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "tapir",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Tapir"
-      },
-      {
-        "languageCode": "ko",
-        "name": "테이퍼"
-      },
-      {
-        "languageCode": "es",
-        "name": "Tapir"
-      },
-      {
-        "languageCode": "ja",
-        "name": "バク"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "capybara",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Capybara"
-      },
-      {
-        "languageCode": "ko",
-        "name": "카피바라"
-      },
-      {
-        "languageCode": "es",
-        "name": "Capibara"
-      },
-      {
-        "languageCode": "ja",
-        "name": "カピバラ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "wombat",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Wombat"
-      },
-      {
-        "languageCode": "ko",
-        "name": "웜뱃"
-      },
-      {
-        "languageCode": "es",
-        "name": "Wombat"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ウォンバット"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "platypus",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Platypus"
-      },
-      {
-        "languageCode": "ko",
-        "name": "오리너구리"
-      },
-      {
-        "languageCode": "es",
-        "name": "Ornitorrinco"
-      },
-      {
-        "languageCode": "ja",
-        "name": "カモノハシ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "echidna",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Echidna"
-      },
-      {
-        "languageCode": "ko",
-        "name": "바늘두더지"
-      },
-      {
-        "languageCode": "es",
-        "name": "Equidna"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ハリモグラ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "fennec_fox",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Fennec Fox"
-      },
-      {
-        "languageCode": "ko",
-        "name": "페넥여우"
-      },
-      {
-        "languageCode": "es",
-        "name": "Zorro fénec"
-      },
-      {
-        "languageCode": "ja",
-        "name": "フェネックギツネ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "lemur",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Lemur"
-      },
-      {
-        "languageCode": "ko",
-        "name": "여우원숭이"
-      },
-      {
-        "languageCode": "es",
-        "name": "Lémur"
-      },
-      {
-        "languageCode": "ja",
-        "name": "キツネザル"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "okapi",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Okapi"
-      },
-      {
-        "languageCode": "ko",
-        "name": "오카피"
-      },
-      {
-        "languageCode": "es",
-        "name": "Okapi"
-      },
-      {
-        "languageCode": "ja",
-        "name": "オカピ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "pangolin",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Pangolin"
-      },
-      {
-        "languageCode": "ko",
-        "name": "천산갑"
-      },
-      {
-        "languageCode": "es",
-        "name": "Pangolín"
-      },
-      {
-        "languageCode": "ja",
-        "name": "センザンコウ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "aardvark",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Aardvark"
-      },
-      {
-        "languageCode": "ko",
-        "name": "땅돼지"
-      },
-      {
-        "languageCode": "es",
-        "name": "Cerdo hormiguero"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ツチブタ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "manatee",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Manatee"
-      },
-      {
-        "languageCode": "ko",
-        "name": "매너티"
-      },
-      {
-        "languageCode": "es",
-        "name": "Manatí"
-      },
-      {
-        "languageCode": "ja",
-        "name": "マナティー"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "narwhal",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Narwhal"
-      },
-      {
-        "languageCode": "ko",
-        "name": "일각고래"
-      },
-      {
-        "languageCode": "es",
-        "name": "Narval"
-      },
-      {
-        "languageCode": "ja",
-        "name": "イッカク"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "beluga_whale",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Beluga Whale"
-      },
-      {
-        "languageCode": "ko",
-        "name": "흰고래"
-      },
-      {
-        "languageCode": "es",
-        "name": "Beluga"
-      },
-      {
-        "languageCode": "ja",
-        "name": "シロイルカ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "mammal"
-  },
-  {
-    "id": "hummingbird",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Hummingbird"
-      },
-      {
-        "languageCode": "ko",
-        "name": "벌새"
-      },
-      {
-        "languageCode": "es",
-        "name": "Colibrí"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ハチドリ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "bird"
-  },
-  {
-    "id": "kingfisher",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Kingfisher"
-      },
-      {
-        "languageCode": "ko",
-        "name": "물총새"
-      },
-      {
-        "languageCode": "es",
-        "name": "Martín pescador"
-      },
-      {
-        "languageCode": "ja",
-        "name": "カワセミ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "bird"
-  },
-  {
-    "id": "toucan",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Toucan"
-      },
-      {
-        "languageCode": "ko",
-        "name": "투칸"
-      },
-      {
-        "languageCode": "es",
-        "name": "Tucán"
-      },
-      {
-        "languageCode": "ja",
-        "name": "オオハシ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "bird"
-  },
-  {
-    "id": "macaw",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Macaw"
-      },
-      {
-        "languageCode": "ko",
-        "name": "마코앵무"
-      },
-      {
-        "languageCode": "es",
-        "name": "Guacamayo"
-      },
-      {
-        "languageCode": "ja",
-        "name": "コンゴウインコ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "bird"
-  },
-  {
-    "id": "falcon",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Falcon"
-      },
-      {
-        "languageCode": "ko",
-        "name": "매"
-      },
-      {
-        "languageCode": "es",
-        "name": "Halcón"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ハヤブサ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "bird"
-  },
-  {
-    "id": "hawk",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Hawk"
-      },
-      {
-        "languageCode": "ko",
-        "name": "매"
-      },
-      {
-        "languageCode": "es",
-        "name": "Halcón"
-      },
-      {
-        "languageCode": "ja",
-        "name": "タカ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "bird"
-  },
-  {
-    "id": "condor",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Condor"
-      },
-      {
-        "languageCode": "ko",
-        "name": "콘도르"
-      },
-      {
-        "languageCode": "es",
-        "name": "Cóndor"
-      },
-      {
-        "languageCode": "ja",
-        "name": "コンドル"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "bird"
-  },
-  {
-    "id": "albatross",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Albatross"
-      },
-      {
-        "languageCode": "ko",
-        "name": "알바트로스"
-      },
-      {
-        "languageCode": "es",
-        "name": "Albatros"
-      },
-      {
-        "languageCode": "ja",
-        "name": "アホウドリ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "bird"
-  },
-  {
-    "id": "puffin",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Puffin"
-      },
-      {
-        "languageCode": "ko",
-        "name": "퍼핀"
-      },
-      {
-        "languageCode": "es",
-        "name": "Frailecillo"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ツノメドリ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "bird"
-  },
-  {
-    "id": "emu",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Emu"
-      },
-      {
-        "languageCode": "ko",
-        "name": "에뮤"
-      },
-      {
-        "languageCode": "es",
-        "name": "Emú"
-      },
-      {
-        "languageCode": "ja",
-        "name": "エミュー"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "bird"
-  },
-  {
-    "id": "gecko",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Gecko"
-      },
-      {
-        "languageCode": "ko",
-        "name": "도마뱀붙이"
-      },
-      {
-        "languageCode": "es",
-        "name": "Geco"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ヤモリ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "reptile"
-  },
-  {
-    "id": "komodo_dragon",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Komodo Dragon"
-      },
-      {
-        "languageCode": "ko",
-        "name": "코모도왕도마뱀"
-      },
-      {
-        "languageCode": "es",
-        "name": "Dragón de Komodo"
-      },
-      {
-        "languageCode": "ja",
-        "name": "コモドドラゴン"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "reptile"
-  },
-  {
-    "id": "gila_monster",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Gila Monster"
-      },
-      {
-        "languageCode": "ko",
-        "name": "독도마뱀"
-      },
-      {
-        "languageCode": "es",
-        "name": "Monstruo de Gila"
-      },
-      {
-        "languageCode": "ja",
-        "name": "アメリカドクトカゲ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "reptile"
-  },
-  {
-    "id": "anaconda",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Anaconda"
-      },
-      {
-        "languageCode": "ko",
-        "name": "아나콘다"
-      },
-      {
-        "languageCode": "es",
-        "name": "Anaconda"
-      },
-      {
-        "languageCode": "ja",
-        "name": "アナコンダ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "reptile"
-  },
-  {
-    "id": "cobra",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Cobra"
-      },
-      {
-        "languageCode": "ko",
-        "name": "코브라"
-      },
-      {
-        "languageCode": "es",
-        "name": "Cobra"
-      },
-      {
-        "languageCode": "ja",
-        "name": "コブラ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "reptile"
-  },
-  {
-    "id": "viper",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Viper"
-      },
-      {
-        "languageCode": "ko",
-        "name": "독사"
-      },
-      {
-        "languageCode": "es",
-        "name": "Víbora"
-      },
-      {
-        "languageCode": "ja",
-        "name": "クサリヘビ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "reptile"
-  },
-  {
-    "id": "rattlesnake",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Rattlesnake"
-      },
-      {
-        "languageCode": "ko",
-        "name": "방울뱀"
-      },
-      {
-        "languageCode": "es",
-        "name": "Serpiente de cascabel"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ガラガラヘビ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "reptile"
-  },
-  {
-    "id": "sea_snake",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Sea Snake"
-      },
-      {
-        "languageCode": "ko",
-        "name": "바다뱀"
-      },
-      {
-        "languageCode": "es",
-        "name": "Serpiente marina"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ウミヘビ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "reptile"
-  },
-  {
-    "id": "caiman",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Caiman"
-      },
-      {
-        "languageCode": "ko",
-        "name": "카이만"
-      },
-      {
-        "languageCode": "es",
-        "name": "Caimán"
-      },
-      {
-        "languageCode": "ja",
-        "name": "カイマン"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "reptile"
-  },
-  {
-    "id": "gharial",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Gharial"
-      },
-      {
-        "languageCode": "ko",
-        "name": "가비알"
-      },
-      {
-        "languageCode": "es",
-        "name": "Gavial"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ガビアル"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "reptile"
-  },
-  {
-    "id": "salamander",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Salamander"
-      },
-      {
-        "languageCode": "ko",
-        "name": "도롱뇽"
-      },
-      {
-        "languageCode": "es",
-        "name": "Salamandra"
-      },
-      {
-        "languageCode": "ja",
-        "name": "サンショウウオ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "amphibian"
-  },
-  {
-    "id": "newt",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Newt"
-      },
-      {
-        "languageCode": "ko",
-        "name": "영원"
-      },
-      {
-        "languageCode": "es",
-        "name": "Tritón"
-      },
-      {
-        "languageCode": "ja",
-        "name": "イモリ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "amphibian"
-  },
-  {
-    "id": "axolotl",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Axolotl"
-      },
-      {
-        "languageCode": "ko",
-        "name": "아홀로틀"
-      },
-      {
-        "languageCode": "es",
-        "name": "Ajolote"
-      },
-      {
-        "languageCode": "ja",
-        "name": "アホロートル"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "amphibian"
-  },
-  {
-    "id": "poison_dart_frog",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Poison Dart Frog"
-      },
-      {
-        "languageCode": "ko",
-        "name": "독화살개구리"
-      },
-      {
-        "languageCode": "es",
-        "name": "Rana dardo venenosa"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ヤドクガエル"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "amphibian"
-  },
-  {
-    "id": "clownfish",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Clownfish"
-      },
-      {
-        "languageCode": "ko",
-        "name": "흰동가리"
-      },
-      {
-        "languageCode": "es",
-        "name": "Pez payaso"
-      },
-      {
-        "languageCode": "ja",
-        "name": "クマノミ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "fish"
-  },
-  {
-    "id": "piranha",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Piranha"
-      },
-      {
-        "languageCode": "ko",
-        "name": "피라냐"
-      },
-      {
-        "languageCode": "es",
-        "name": "Piraña"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ピラニア"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "fish"
-  },
-  {
-    "id": "blobfish",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Blobfish"
-      },
-      {
-        "languageCode": "ko",
-        "name": "블롭피쉬"
-      },
-      {
-        "languageCode": "es",
-        "name": "Pez borrón"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ブロブフィッシュ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "fish"
-  },
-  {
-    "id": "mola_mola",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Mola Mola"
-      },
-      {
-        "languageCode": "ko",
-        "name": "개복치"
-      },
-      {
-        "languageCode": "es",
-        "name": "Pez luna"
-      },
-      {
-        "languageCode": "ja",
-        "name": "マンボウ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "fish"
-  },
-  {
-    "id": "swordfish",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Swordfish"
-      },
-      {
-        "languageCode": "ko",
-        "name": "황새치"
-      },
-      {
-        "languageCode": "es",
-        "name": "Pez espada"
-      },
-      {
-        "languageCode": "ja",
-        "name": "メカジキ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "fish"
-  },
-  {
-    "id": "sailfish",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Sailfish"
-      },
-      {
-        "languageCode": "ko",
-        "name": "돛새치"
-      },
-      {
-        "languageCode": "es",
-        "name": "Pez vela"
-      },
-      {
-        "languageCode": "ja",
-        "name": "バショウカジキ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "fish"
-  },
-  {
-    "id": "stick_insect",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Stick Insect"
-      },
-      {
-        "languageCode": "ko",
-        "name": "대벌레"
-      },
-      {
-        "languageCode": "es",
-        "name": "Insecto palo"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ナナフシ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "insect"
-  },
-  {
-    "id": "leaf_insect",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Leaf Insect"
-      },
-      {
-        "languageCode": "ko",
-        "name": "잎벌레"
-      },
-      {
-        "languageCode": "es",
-        "name": "Insecto hoja"
-      },
-      {
-        "languageCode": "ja",
-        "name": "コノハムシ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "insect"
-  },
-  {
-    "id": "wasp",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Wasp"
-      },
-      {
-        "languageCode": "ko",
-        "name": "말벌"
-      },
-      {
-        "languageCode": "es",
-        "name": "Avispa"
-      },
-      {
-        "languageCode": "ja",
-        "name": "スズメバチ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "insect"
-  },
-  {
-    "id": "tarantula",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Tarantula"
-      },
-      {
-        "languageCode": "ko",
-        "name": "타란툴라"
-      },
-      {
-        "languageCode": "es",
-        "name": "Tarántula"
-      },
-      {
-        "languageCode": "ja",
-        "name": "タランチュラ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "invertebrate"
-  },
-  {
-    "id": "centipede",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Centipede"
-      },
-      {
-        "languageCode": "ko",
-        "name": "지네"
-      },
-      {
-        "languageCode": "es",
-        "name": "Ciempiés"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ムカデ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "invertebrate"
-  },
-  {
-    "id": "millipede",
-    "names": [
-      {
-        "languageCode": "en",
-        "name": "Millipede"
-      },
-      {
-        "languageCode": "ko",
-        "name": "노래기"
-      },
-      {
-        "languageCode": "es",
-        "name": "Milpiés"
-      },
-      {
-        "languageCode": "ja",
-        "name": "ヤスデ"
-      }
-    ],
-    "categoryID": "animal",
-    "itemCategory2ID": "invertebrate"
-  }
+    {
+        "id": "lion",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Lion"
+            },
+            {
+                "languageCode": "ko",
+                "name": "사자"
+            },
+            {
+                "languageCode": "es",
+                "name": "León"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ライオン"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "tiger",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Tiger"
+            },
+            {
+                "languageCode": "ko",
+                "name": "호랑이"
+            },
+            {
+                "languageCode": "es",
+                "name": "Tigre"
+            },
+            {
+                "languageCode": "ja",
+                "name": "トラ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "elephant",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Elephant"
+            },
+            {
+                "languageCode": "ko",
+                "name": "코끼리"
+            },
+            {
+                "languageCode": "es",
+                "name": "Elefante"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ゾウ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "giraffe",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Giraffe"
+            },
+            {
+                "languageCode": "ko",
+                "name": "기린"
+            },
+            {
+                "languageCode": "es",
+                "name": "Jirafa"
+            },
+            {
+                "languageCode": "ja",
+                "name": "キリン"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "zebra",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Zebra"
+            },
+            {
+                "languageCode": "ko",
+                "name": "얼룩말"
+            },
+            {
+                "languageCode": "es",
+                "name": "Cebra"
+            },
+            {
+                "languageCode": "ja",
+                "name": "シマウマ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "cheetah",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Cheetah"
+            },
+            {
+                "languageCode": "ko",
+                "name": "치타"
+            },
+            {
+                "languageCode": "es",
+                "name": "Guepardo"
+            },
+            {
+                "languageCode": "ja",
+                "name": "チーター"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "hyena",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Hyena"
+            },
+            {
+                "languageCode": "ko",
+                "name": "하이에나"
+            },
+            {
+                "languageCode": "es",
+                "name": "Hiena"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ハイエナ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "hippopotamus",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Hippopotamus"
+            },
+            {
+                "languageCode": "ko",
+                "name": "하마"
+            },
+            {
+                "languageCode": "es",
+                "name": "Hipopótamo"
+            },
+            {
+                "languageCode": "ja",
+                "name": "カバ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "crocodile",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Crocodile"
+            },
+            {
+                "languageCode": "ko",
+                "name": "악어"
+            },
+            {
+                "languageCode": "es",
+                "name": "Cocodrilo"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ワニ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "reptile"
+    },
+    {
+        "id": "rhinoceros",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Rhinoceros"
+            },
+            {
+                "languageCode": "ko",
+                "name": "코뿔소"
+            },
+            {
+                "languageCode": "es",
+                "name": "Rinoceronte"
+            },
+            {
+                "languageCode": "ja",
+                "name": "サイ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "kangaroo",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Kangaroo"
+            },
+            {
+                "languageCode": "ko",
+                "name": "캥거루"
+            },
+            {
+                "languageCode": "es",
+                "name": "Canguro"
+            },
+            {
+                "languageCode": "ja",
+                "name": "カンガルー"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "koala",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Koala"
+            },
+            {
+                "languageCode": "ko",
+                "name": "코알라"
+            },
+            {
+                "languageCode": "es",
+                "name": "Coala"
+            },
+            {
+                "languageCode": "ja",
+                "name": "コアラ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "giant_panda",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Giant panda"
+            },
+            {
+                "languageCode": "ko",
+                "name": "판다"
+            },
+            {
+                "languageCode": "es",
+                "name": "Panda gigante"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ジャイアントパンダ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "fox",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Fox"
+            },
+            {
+                "languageCode": "ko",
+                "name": "여우"
+            },
+            {
+                "languageCode": "es",
+                "name": "Zorro"
+            },
+            {
+                "languageCode": "ja",
+                "name": "キツネ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "wallaby",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Wallaby"
+            },
+            {
+                "languageCode": "ko",
+                "name": "왈라비"
+            },
+            {
+                "languageCode": "es",
+                "name": "Ualabí"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ワラビー"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "wolf",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Wolf"
+            },
+            {
+                "languageCode": "ko",
+                "name": "늑대"
+            },
+            {
+                "languageCode": "es",
+                "name": "Lobo"
+            },
+            {
+                "languageCode": "ja",
+                "name": "オオカミ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "bear",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Bear"
+            },
+            {
+                "languageCode": "ko",
+                "name": "곰"
+            },
+            {
+                "languageCode": "es",
+                "name": "Oso"
+            },
+            {
+                "languageCode": "ja",
+                "name": "クマ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "bison",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Bison"
+            },
+            {
+                "languageCode": "ko",
+                "name": "들소"
+            },
+            {
+                "languageCode": "es",
+                "name": "Bisonte"
+            },
+            {
+                "languageCode": "ja",
+                "name": "バイソン"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "polar_bear",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Polar bear"
+            },
+            {
+                "languageCode": "ko",
+                "name": "북극곰"
+            },
+            {
+                "languageCode": "es",
+                "name": "Oso polar"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ホッキョクグマ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "penguin",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Penguin"
+            },
+            {
+                "languageCode": "ko",
+                "name": "펭귄"
+            },
+            {
+                "languageCode": "es",
+                "name": "Pingüino"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ペンギン"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "bird"
+    },
+    {
+        "id": "reindeer",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Reindeer"
+            },
+            {
+                "languageCode": "ko",
+                "name": "순록"
+            },
+            {
+                "languageCode": "es",
+                "name": "Reno"
+            },
+            {
+                "languageCode": "ja",
+                "name": "トナカイ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "seal",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Seal"
+            },
+            {
+                "languageCode": "ko",
+                "name": "물개"
+            },
+            {
+                "languageCode": "es",
+                "name": "Foca"
+            },
+            {
+                "languageCode": "ja",
+                "name": "アザラシ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "dolphin",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Dolphin"
+            },
+            {
+                "languageCode": "ko",
+                "name": "돌고래"
+            },
+            {
+                "languageCode": "es",
+                "name": "Delfín"
+            },
+            {
+                "languageCode": "ja",
+                "name": "イルカ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "goat",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Goat"
+            },
+            {
+                "languageCode": "ko",
+                "name": "염소"
+            },
+            {
+                "languageCode": "es",
+                "name": "Cabra"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ヤギ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "whale",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Whale"
+            },
+            {
+                "languageCode": "ko",
+                "name": "고래"
+            },
+            {
+                "languageCode": "es",
+                "name": "Ballena"
+            },
+            {
+                "languageCode": "ja",
+                "name": "クジラ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "shark",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Shark"
+            },
+            {
+                "languageCode": "ko",
+                "name": "상어"
+            },
+            {
+                "languageCode": "es",
+                "name": "Tiburón"
+            },
+            {
+                "languageCode": "ja",
+                "name": "サメ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "fish"
+    },
+    {
+        "id": "octopus",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Octopus"
+            },
+            {
+                "languageCode": "ko",
+                "name": "문어"
+            },
+            {
+                "languageCode": "es",
+                "name": "Pulpo"
+            },
+            {
+                "languageCode": "ja",
+                "name": "タコ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "invertebrate"
+    },
+    {
+        "id": "turtle",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Turtle"
+            },
+            {
+                "languageCode": "ko",
+                "name": "거북이"
+            },
+            {
+                "languageCode": "es",
+                "name": "Tortuga"
+            },
+            {
+                "languageCode": "ja",
+                "name": "カメ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "reptile"
+    },
+    {
+        "id": "rabbit",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Rabbit"
+            },
+            {
+                "languageCode": "ko",
+                "name": "토끼"
+            },
+            {
+                "languageCode": "es",
+                "name": "Conejo"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ウサギ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "squirrel",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Squirrel"
+            },
+            {
+                "languageCode": "ko",
+                "name": "다람쥐"
+            },
+            {
+                "languageCode": "es",
+                "name": "Ardilla"
+            },
+            {
+                "languageCode": "ja",
+                "name": "リス"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "cat",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Cat"
+            },
+            {
+                "languageCode": "ko",
+                "name": "고양이"
+            },
+            {
+                "languageCode": "es",
+                "name": "Gato"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ネコ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "dog",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Dog"
+            },
+            {
+                "languageCode": "ko",
+                "name": "개"
+            },
+            {
+                "languageCode": "es",
+                "name": "Perro"
+            },
+            {
+                "languageCode": "ja",
+                "name": "イヌ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "chicken",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Chicken"
+            },
+            {
+                "languageCode": "ko",
+                "name": "닭"
+            },
+            {
+                "languageCode": "es",
+                "name": "Pollo"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ニワトリ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "bird"
+    },
+    {
+        "id": "duck",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Duck"
+            },
+            {
+                "languageCode": "ko",
+                "name": "오리"
+            },
+            {
+                "languageCode": "es",
+                "name": "Pato"
+            },
+            {
+                "languageCode": "ja",
+                "name": "アヒル"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "bird"
+    },
+    {
+        "id": "pig",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Pig"
+            },
+            {
+                "languageCode": "ko",
+                "name": "돼지"
+            },
+            {
+                "languageCode": "es",
+                "name": "Cerdo"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ブタ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "badger",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Badger"
+            },
+            {
+                "languageCode": "ko",
+                "name": "오소리"
+            },
+            {
+                "languageCode": "es",
+                "name": "Tejón"
+            },
+            {
+                "languageCode": "ja",
+                "name": "アナグマ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "cow",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Cow"
+            },
+            {
+                "languageCode": "ko",
+                "name": "소"
+            },
+            {
+                "languageCode": "es",
+                "name": "Vaca"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ウシ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "sheep",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Sheep"
+            },
+            {
+                "languageCode": "ko",
+                "name": "양"
+            },
+            {
+                "languageCode": "es",
+                "name": "Oveja"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ヒツジ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "horse",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Horse"
+            },
+            {
+                "languageCode": "ko",
+                "name": "말"
+            },
+            {
+                "languageCode": "es",
+                "name": "Caballo"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ウマ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "donkey",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Donkey"
+            },
+            {
+                "languageCode": "ko",
+                "name": "당나귀"
+            },
+            {
+                "languageCode": "es",
+                "name": "Burro"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ロバ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "peacock",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Peacock"
+            },
+            {
+                "languageCode": "ko",
+                "name": "공작"
+            },
+            {
+                "languageCode": "es",
+                "name": "Pavo real"
+            },
+            {
+                "languageCode": "ja",
+                "name": "クジャク"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "bird"
+    },
+    {
+        "id": "parrot",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Parrot"
+            },
+            {
+                "languageCode": "ko",
+                "name": "앵무새"
+            },
+            {
+                "languageCode": "es",
+                "name": "Loro"
+            },
+            {
+                "languageCode": "ja",
+                "name": "オウム"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "bird"
+    },
+    {
+        "id": "eagle",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Eagle"
+            },
+            {
+                "languageCode": "ko",
+                "name": "독수리"
+            },
+            {
+                "languageCode": "es",
+                "name": "Águila"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ワシ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "bird"
+    },
+    {
+        "id": "owl",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Owl"
+            },
+            {
+                "languageCode": "ko",
+                "name": "부엉이"
+            },
+            {
+                "languageCode": "es",
+                "name": "Búho"
+            },
+            {
+                "languageCode": "ja",
+                "name": "フクロウ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "bird"
+    },
+    {
+        "id": "lizard",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Lizard"
+            },
+            {
+                "languageCode": "ko",
+                "name": "도마뱀"
+            },
+            {
+                "languageCode": "es",
+                "name": "Lagarto"
+            },
+            {
+                "languageCode": "ja",
+                "name": "トカゲ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "reptile"
+    },
+    {
+        "id": "snake",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Snake"
+            },
+            {
+                "languageCode": "ko",
+                "name": "뱀"
+            },
+            {
+                "languageCode": "es",
+                "name": "Serpiente"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ヘビ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "reptile"
+    },
+    {
+        "id": "chameleon",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Chameleon"
+            },
+            {
+                "languageCode": "ko",
+                "name": "카멜레온"
+            },
+            {
+                "languageCode": "es",
+                "name": "Camaleón"
+            },
+            {
+                "languageCode": "ja",
+                "name": "カメレオン"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "reptile"
+    },
+    {
+        "id": "frog",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Frog"
+            },
+            {
+                "languageCode": "ko",
+                "name": "개구리"
+            },
+            {
+                "languageCode": "es",
+                "name": "Rana"
+            },
+            {
+                "languageCode": "ja",
+                "name": "カエル"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "amphibian"
+    },
+    {
+        "id": "toad",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Toad"
+            },
+            {
+                "languageCode": "ko",
+                "name": "두꺼비"
+            },
+            {
+                "languageCode": "es",
+                "name": "Sapo"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ヒキガエル"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "amphibian"
+    },
+    {
+        "id": "deer",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Deer"
+            },
+            {
+                "languageCode": "ko",
+                "name": "사슴"
+            },
+            {
+                "languageCode": "es",
+                "name": "Ciervo"
+            },
+            {
+                "languageCode": "ja",
+                "name": "シカ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "gorilla",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Gorilla"
+            },
+            {
+                "languageCode": "ko",
+                "name": "고릴라"
+            },
+            {
+                "languageCode": "es",
+                "name": "Gorila"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ゴリラ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "chimpanzee",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Chimpanzee"
+            },
+            {
+                "languageCode": "ko",
+                "name": "침팬지"
+            },
+            {
+                "languageCode": "es",
+                "name": "Chimpancé"
+            },
+            {
+                "languageCode": "ja",
+                "name": "チンパンジー"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "monkey",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Monkey"
+            },
+            {
+                "languageCode": "ko",
+                "name": "원숭이"
+            },
+            {
+                "languageCode": "es",
+                "name": "Mono"
+            },
+            {
+                "languageCode": "ja",
+                "name": "サル"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "llama",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Llama"
+            },
+            {
+                "languageCode": "ko",
+                "name": "라마"
+            },
+            {
+                "languageCode": "es",
+                "name": "Llama"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ラマ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "camel",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Camel"
+            },
+            {
+                "languageCode": "ko",
+                "name": "낙타"
+            },
+            {
+                "languageCode": "es",
+                "name": "Camello"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ラクダ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "hedgehog",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Hedgehog"
+            },
+            {
+                "languageCode": "ko",
+                "name": "고슴도치"
+            },
+            {
+                "languageCode": "es",
+                "name": "Erizo"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ハリネズミ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "butterfly",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Butterfly"
+            },
+            {
+                "languageCode": "ko",
+                "name": "나비"
+            },
+            {
+                "languageCode": "es",
+                "name": "Mariposa"
+            },
+            {
+                "languageCode": "ja",
+                "name": "チョウ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "insect"
+    },
+    {
+        "id": "mole",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Mole"
+            },
+            {
+                "languageCode": "ko",
+                "name": "두더지"
+            },
+            {
+                "languageCode": "es",
+                "name": "Topo"
+            },
+            {
+                "languageCode": "ja",
+                "name": "モグラ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "bee",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Bee"
+            },
+            {
+                "languageCode": "ko",
+                "name": "벌"
+            },
+            {
+                "languageCode": "es",
+                "name": "Abeja"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ハチ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "insect"
+    },
+    {
+        "id": "squirrel_monkey",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Squirrel monkey"
+            },
+            {
+                "languageCode": "ko",
+                "name": "다람쥐원숭이"
+            },
+            {
+                "languageCode": "es",
+                "name": "Mono ardilla"
+            },
+            {
+                "languageCode": "ja",
+                "name": "リスザル"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "iguana",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Iguana"
+            },
+            {
+                "languageCode": "ko",
+                "name": "이구아나"
+            },
+            {
+                "languageCode": "es",
+                "name": "Iguana"
+            },
+            {
+                "languageCode": "ja",
+                "name": "イグアナ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "reptile"
+    },
+    {
+        "id": "ladybug",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Ladybug"
+            },
+            {
+                "languageCode": "ko",
+                "name": "무당벌레"
+            },
+            {
+                "languageCode": "es",
+                "name": "Mariquita"
+            },
+            {
+                "languageCode": "ja",
+                "name": "テントウムシ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "insect"
+    },
+    {
+        "id": "dragonfly",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Dragonfly"
+            },
+            {
+                "languageCode": "ko",
+                "name": "잠자리"
+            },
+            {
+                "languageCode": "es",
+                "name": "Libélula"
+            },
+            {
+                "languageCode": "ja",
+                "name": "トンボ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "insect"
+    },
+    {
+        "id": "meerkat",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Meerkat"
+            },
+            {
+                "languageCode": "ko",
+                "name": "미어캣"
+            },
+            {
+                "languageCode": "es",
+                "name": "Suricata"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ミーアキャット"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "ant",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Ant"
+            },
+            {
+                "languageCode": "ko",
+                "name": "개미"
+            },
+            {
+                "languageCode": "es",
+                "name": "Hormiga"
+            },
+            {
+                "languageCode": "ja",
+                "name": "アリ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "insect"
+    },
+    {
+        "id": "sea_turtle",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Sea turtle"
+            },
+            {
+                "languageCode": "ko",
+                "name": "바다거북"
+            },
+            {
+                "languageCode": "es",
+                "name": "Tortuga marina"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ウミガメ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "reptile"
+    },
+    {
+        "id": "mosquito",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Mosquito"
+            },
+            {
+                "languageCode": "ko",
+                "name": "모기"
+            },
+            {
+                "languageCode": "es",
+                "name": "Mosquito"
+            },
+            {
+                "languageCode": "ja",
+                "name": "カ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "insect"
+    },
+    {
+        "id": "sparrow",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Sparrow"
+            },
+            {
+                "languageCode": "ko",
+                "name": "참새"
+            },
+            {
+                "languageCode": "es",
+                "name": "Gorrión"
+            },
+            {
+                "languageCode": "ja",
+                "name": "スズメ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "bird"
+    },
+    {
+        "id": "fly",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Fly"
+            },
+            {
+                "languageCode": "ko",
+                "name": "파리"
+            },
+            {
+                "languageCode": "es",
+                "name": "Mosca"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ハエ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "insect"
+    },
+    {
+        "id": "magpie",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Magpie"
+            },
+            {
+                "languageCode": "ko",
+                "name": "까치"
+            },
+            {
+                "languageCode": "es",
+                "name": "Urraca"
+            },
+            {
+                "languageCode": "ja",
+                "name": "カササギ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "bird"
+    },
+    {
+        "id": "crow",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Crow"
+            },
+            {
+                "languageCode": "ko",
+                "name": "까마귀"
+            },
+            {
+                "languageCode": "es",
+                "name": "Cuervo"
+            },
+            {
+                "languageCode": "ja",
+                "name": "カラス"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "bird"
+    },
+    {
+        "id": "grasshopper",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Grasshopper"
+            },
+            {
+                "languageCode": "ko",
+                "name": "메뚜기"
+            },
+            {
+                "languageCode": "es",
+                "name": "Saltamontes"
+            },
+            {
+                "languageCode": "ja",
+                "name": "バッタ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "insect"
+    },
+    {
+        "id": "cricket",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Cricket"
+            },
+            {
+                "languageCode": "ko",
+                "name": "귀뚜라미"
+            },
+            {
+                "languageCode": "es",
+                "name": "Grillo"
+            },
+            {
+                "languageCode": "ja",
+                "name": "コオロギ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "insect"
+    },
+    {
+        "id": "pigeon",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Pigeon"
+            },
+            {
+                "languageCode": "ko",
+                "name": "비둘기"
+            },
+            {
+                "languageCode": "es",
+                "name": "Paloma"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ハト"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "bird"
+    },
+    {
+        "id": "mantis",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Mantis"
+            },
+            {
+                "languageCode": "ko",
+                "name": "사마귀"
+            },
+            {
+                "languageCode": "es",
+                "name": "Mantis"
+            },
+            {
+                "languageCode": "ja",
+                "name": "カマキリ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "insect"
+    },
+    {
+        "id": "ostrich",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Ostrich"
+            },
+            {
+                "languageCode": "ko",
+                "name": "타조"
+            },
+            {
+                "languageCode": "es",
+                "name": "Avestruz"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ダチョウ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "bird"
+    },
+    {
+        "id": "alligator_snapping_turtle",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Alligator snapping turtle"
+            },
+            {
+                "languageCode": "ko",
+                "name": "악어거북"
+            },
+            {
+                "languageCode": "es",
+                "name": "Tortuga caimán"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ワニガメ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "reptile"
+    },
+    {
+        "id": "moth",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Moth"
+            },
+            {
+                "languageCode": "ko",
+                "name": "나방"
+            },
+            {
+                "languageCode": "es",
+                "name": "Polilla"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ガ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "insect"
+    },
+    {
+        "id": "beetle",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Beetle"
+            },
+            {
+                "languageCode": "ko",
+                "name": "딱정벌레"
+            },
+            {
+                "languageCode": "es",
+                "name": "Escarabajo"
+            },
+            {
+                "languageCode": "ja",
+                "name": "カブトムシ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "insect"
+    },
+    {
+        "id": "coyote",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Coyote"
+            },
+            {
+                "languageCode": "ko",
+                "name": "코요테"
+            },
+            {
+                "languageCode": "es",
+                "name": "Coyote"
+            },
+            {
+                "languageCode": "ja",
+                "name": "コヨーテ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "rhinoceros_beetle",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Rhinoceros beetle"
+            },
+            {
+                "languageCode": "ko",
+                "name": "장수풍뎅이"
+            },
+            {
+                "languageCode": "es",
+                "name": "Escarabajo rinoceronte"
+            },
+            {
+                "languageCode": "ja",
+                "name": "カブトムシ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "insect"
+    },
+    {
+        "id": "skunk",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Skunk"
+            },
+            {
+                "languageCode": "ko",
+                "name": "스컹크"
+            },
+            {
+                "languageCode": "es",
+                "name": "Zorrillo"
+            },
+            {
+                "languageCode": "ja",
+                "name": "スカンク"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "mayfly",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Mayfly"
+            },
+            {
+                "languageCode": "ko",
+                "name": "하루살이"
+            },
+            {
+                "languageCode": "es",
+                "name": "Efímera"
+            },
+            {
+                "languageCode": "ja",
+                "name": "カゲロウ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "insect"
+    },
+    {
+        "id": "raccoon",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Raccoon"
+            },
+            {
+                "languageCode": "ko",
+                "name": "너구리"
+            },
+            {
+                "languageCode": "es",
+                "name": "Mapache"
+            },
+            {
+                "languageCode": "ja",
+                "name": "アライグマ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "ephemera",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Ephemera"
+            },
+            {
+                "languageCode": "ko",
+                "name": "하루살이"
+            },
+            {
+                "languageCode": "es",
+                "name": "Efímera"
+            },
+            {
+                "languageCode": "ja",
+                "name": "カゲロウ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "insect"
+    },
+    {
+        "id": "longhorn_beetle",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Longhorn beetle"
+            },
+            {
+                "languageCode": "ko",
+                "name": "하늘소"
+            },
+            {
+                "languageCode": "es",
+                "name": "Escarabajo longicornio"
+            },
+            {
+                "languageCode": "ja",
+                "name": "カミキリムシ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "insect"
+    },
+    {
+        "id": "cicada",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Cicada"
+            },
+            {
+                "languageCode": "ko",
+                "name": "매미"
+            },
+            {
+                "languageCode": "es",
+                "name": "Cigarra"
+            },
+            {
+                "languageCode": "ja",
+                "name": "セミ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "insect"
+    },
+    {
+        "id": "stingray",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Stingray"
+            },
+            {
+                "languageCode": "ko",
+                "name": "가오리"
+            },
+            {
+                "languageCode": "es",
+                "name": "Raya"
+            },
+            {
+                "languageCode": "ja",
+                "name": "アカエイ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "fish"
+    },
+    {
+        "id": "firefly",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Firefly"
+            },
+            {
+                "languageCode": "ko",
+                "name": "반딧불이"
+            },
+            {
+                "languageCode": "es",
+                "name": "Luciérnaga"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ホタル"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "insect"
+    },
+    {
+        "id": "seahorse",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Seahorse"
+            },
+            {
+                "languageCode": "ko",
+                "name": "해마"
+            },
+            {
+                "languageCode": "es",
+                "name": "Caballito de mar"
+            },
+            {
+                "languageCode": "ja",
+                "name": "タツノオトシゴ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "fish"
+    },
+    {
+        "id": "cockroach",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Cockroach"
+            },
+            {
+                "languageCode": "ko",
+                "name": "바퀴벌레"
+            },
+            {
+                "languageCode": "es",
+                "name": "Cucaracha"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ゴキブリ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "insect"
+    },
+    {
+        "id": "crab",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Crab"
+            },
+            {
+                "languageCode": "ko",
+                "name": "게"
+            },
+            {
+                "languageCode": "es",
+                "name": "Cangrejo"
+            },
+            {
+                "languageCode": "ja",
+                "name": "カニ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "invertebrate"
+    },
+    {
+        "id": "flea",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Flea"
+            },
+            {
+                "languageCode": "ko",
+                "name": "벼룩"
+            },
+            {
+                "languageCode": "es",
+                "name": "Pulga"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ノミ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "insect"
+    },
+    {
+        "id": "jellyfish",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Jellyfish"
+            },
+            {
+                "languageCode": "ko",
+                "name": "해파리"
+            },
+            {
+                "languageCode": "es",
+                "name": "Medusa"
+            },
+            {
+                "languageCode": "ja",
+                "name": "クラゲ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "invertebrate"
+    },
+    {
+        "id": "mite",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Mite"
+            },
+            {
+                "languageCode": "ko",
+                "name": "진드기"
+            },
+            {
+                "languageCode": "es",
+                "name": "Ácaro"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ダニ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "insect"
+    },
+    {
+        "id": "walrus",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Walrus"
+            },
+            {
+                "languageCode": "ko",
+                "name": "바다코끼리"
+            },
+            {
+                "languageCode": "es",
+                "name": "Morsa"
+            },
+            {
+                "languageCode": "ja",
+                "name": "セイウチ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "arctic_fox",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Arctic fox"
+            },
+            {
+                "languageCode": "ko",
+                "name": "북극여우"
+            },
+            {
+                "languageCode": "es",
+                "name": "Zorro ártico"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ホッキョクギツネ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "silverfish",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Silverfish"
+            },
+            {
+                "languageCode": "ko",
+                "name": "좀벌레"
+            },
+            {
+                "languageCode": "es",
+                "name": "Lepisma"
+            },
+            {
+                "languageCode": "ja",
+                "name": "シミ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "insect"
+    },
+    {
+        "id": "beaver",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Beaver"
+            },
+            {
+                "languageCode": "ko",
+                "name": "비버"
+            },
+            {
+                "languageCode": "es",
+                "name": "Castor"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ビーバー"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "spider",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Spider"
+            },
+            {
+                "languageCode": "ko",
+                "name": "거미"
+            },
+            {
+                "languageCode": "es",
+                "name": "Araña"
+            },
+            {
+                "languageCode": "ja",
+                "name": "クモ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "invertebrate"
+    },
+    {
+        "id": "otter",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Otter"
+            },
+            {
+                "languageCode": "ko",
+                "name": "수달"
+            },
+            {
+                "languageCode": "es",
+                "name": "Nutria"
+            },
+            {
+                "languageCode": "ja",
+                "name": "カワウソ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "scorpion",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Scorpion"
+            },
+            {
+                "languageCode": "ko",
+                "name": "전갈"
+            },
+            {
+                "languageCode": "es",
+                "name": "Escorpión"
+            },
+            {
+                "languageCode": "ja",
+                "name": "サソリ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "invertebrate"
+    },
+    {
+        "id": "dayfly",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Dayfly"
+            },
+            {
+                "languageCode": "ko",
+                "name": "하루살이"
+            },
+            {
+                "languageCode": "es",
+                "name": "Efímera"
+            },
+            {
+                "languageCode": "ja",
+                "name": "カゲロウ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "insect"
+    },
+    {
+        "id": "sea_lion",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Sea lion"
+            },
+            {
+                "languageCode": "ko",
+                "name": "바다사자"
+            },
+            {
+                "languageCode": "es",
+                "name": "León marino"
+            },
+            {
+                "languageCode": "ja",
+                "name": "アシカ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "scarab",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Scarab"
+            },
+            {
+                "languageCode": "ko",
+                "name": "풍뎅이"
+            },
+            {
+                "languageCode": "es",
+                "name": "Escarabajo"
+            },
+            {
+                "languageCode": "ja",
+                "name": "コガネムシ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "insect"
+    },
+    {
+        "id": "chipmunk",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Chipmunk"
+            },
+            {
+                "languageCode": "ko",
+                "name": "다람쥐"
+            },
+            {
+                "languageCode": "es",
+                "name": "Ardilla listada"
+            },
+            {
+                "languageCode": "ja",
+                "name": "シマリス"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "sandfly",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Sandfly"
+            },
+            {
+                "languageCode": "ko",
+                "name": "갯파리"
+            },
+            {
+                "languageCode": "es",
+                "name": "Flebótomo"
+            },
+            {
+                "languageCode": "ja",
+                "name": "サシチョウバエ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "insect"
+    },
+    {
+        "id": "caddisfly",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Caddisfly"
+            },
+            {
+                "languageCode": "ko",
+                "name": "날도래"
+            },
+            {
+                "languageCode": "es",
+                "name": "Frigánea"
+            },
+            {
+                "languageCode": "ja",
+                "name": "トビケラ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "insect"
+    },
+    {
+        "id": "roe_deer",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Roe deer"
+            },
+            {
+                "languageCode": "ko",
+                "name": "노루"
+            },
+            {
+                "languageCode": "es",
+                "name": "Corzo"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ノロジカ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "water_strider",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Water strider"
+            },
+            {
+                "languageCode": "ko",
+                "name": "소금쟁이"
+            },
+            {
+                "languageCode": "es",
+                "name": "Zapatero"
+            },
+            {
+                "languageCode": "ja",
+                "name": "アメンボ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "insect"
+    },
+    {
+        "id": "wild_boar",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Wild boar"
+            },
+            {
+                "languageCode": "ko",
+                "name": "멧돼지"
+            },
+            {
+                "languageCode": "es",
+                "name": "Jabalí"
+            },
+            {
+                "languageCode": "ja",
+                "name": "イノシシ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "crane",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Crane"
+            },
+            {
+                "languageCode": "ko",
+                "name": "두루미"
+            },
+            {
+                "languageCode": "es",
+                "name": "Grulla"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ツル"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "bird"
+    },
+    {
+        "id": "sawyer_beetle",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Sawyer beetle"
+            },
+            {
+                "languageCode": "ko",
+                "name": "하늘소"
+            },
+            {
+                "languageCode": "es",
+                "name": "Escarabajo aserrador"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ノコギリカミキリ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "insect"
+    },
+    {
+        "id": "swan",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Swan"
+            },
+            {
+                "languageCode": "ko",
+                "name": "백조"
+            },
+            {
+                "languageCode": "es",
+                "name": "Cisne"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ハクチョウ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "bird"
+    },
+    {
+        "id": "goose",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Goose"
+            },
+            {
+                "languageCode": "ko",
+                "name": "거위"
+            },
+            {
+                "languageCode": "es",
+                "name": "Ganso"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ガチョウ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "bird"
+    },
+    {
+        "id": "ray",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Ray"
+            },
+            {
+                "languageCode": "ko",
+                "name": "가오리"
+            },
+            {
+                "languageCode": "es",
+                "name": "Raya"
+            },
+            {
+                "languageCode": "ja",
+                "name": "エイ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "fish"
+    },
+    {
+        "id": "seagull",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Seagull"
+            },
+            {
+                "languageCode": "ko",
+                "name": "갈매기"
+            },
+            {
+                "languageCode": "es",
+                "name": "Gaviota"
+            },
+            {
+                "languageCode": "ja",
+                "name": "カモメ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "bird"
+    },
+    {
+        "id": "pelican",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Pelican"
+            },
+            {
+                "languageCode": "ko",
+                "name": "펠리컨"
+            },
+            {
+                "languageCode": "es",
+                "name": "Pelícano"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ペリカン"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "bird"
+    },
+    {
+        "id": "squid",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Squid"
+            },
+            {
+                "languageCode": "ko",
+                "name": "오징어"
+            },
+            {
+                "languageCode": "es",
+                "name": "Calamar"
+            },
+            {
+                "languageCode": "ja",
+                "name": "イカ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "invertebrate"
+    },
+    {
+        "id": "anglerfish",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Anglerfish"
+            },
+            {
+                "languageCode": "ko",
+                "name": "아귀"
+            },
+            {
+                "languageCode": "es",
+                "name": "Rape"
+            },
+            {
+                "languageCode": "ja",
+                "name": "アンコウ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "fish"
+    },
+    {
+        "id": "tanuki",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Tanuki"
+            },
+            {
+                "languageCode": "ko",
+                "name": "너구리"
+            },
+            {
+                "languageCode": "es",
+                "name": "Tanuki"
+            },
+            {
+                "languageCode": "ja",
+                "name": "タヌキ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "leopard",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Leopard"
+            },
+            {
+                "languageCode": "ko",
+                "name": "표범"
+            },
+            {
+                "languageCode": "es",
+                "name": "Leopardo"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ヒョウ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "jaguar",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Jaguar"
+            },
+            {
+                "languageCode": "ko",
+                "name": "재규어"
+            },
+            {
+                "languageCode": "es",
+                "name": "Jaguar"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ジャガー"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "starfish",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Starfish"
+            },
+            {
+                "languageCode": "ko",
+                "name": "불가사리"
+            },
+            {
+                "languageCode": "es",
+                "name": "Estrella de mar"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ヒトデ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "invertebrate"
+    },
+    {
+        "id": "puma",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Puma"
+            },
+            {
+                "languageCode": "ko",
+                "name": "퓨마"
+            },
+            {
+                "languageCode": "es",
+                "name": "Puma"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ピューマ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "sea_urchin",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Sea urchin"
+            },
+            {
+                "languageCode": "ko",
+                "name": "성게"
+            },
+            {
+                "languageCode": "es",
+                "name": "Erizo de mar"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ウニ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "invertebrate"
+    },
+    {
+        "id": "coral",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Coral"
+            },
+            {
+                "languageCode": "ko",
+                "name": "산호"
+            },
+            {
+                "languageCode": "es",
+                "name": "Coral"
+            },
+            {
+                "languageCode": "ja",
+                "name": "サンゴ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "invertebrate"
+    },
+    {
+        "id": "cod",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Cod"
+            },
+            {
+                "languageCode": "ko",
+                "name": "대구"
+            },
+            {
+                "languageCode": "es",
+                "name": "Bacalao"
+            },
+            {
+                "languageCode": "ja",
+                "name": "タラ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "fish"
+    },
+    {
+        "id": "flamingo",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Flamingo"
+            },
+            {
+                "languageCode": "ko",
+                "name": "홍학"
+            },
+            {
+                "languageCode": "es",
+                "name": "Flamenco"
+            },
+            {
+                "languageCode": "ja",
+                "name": "フラミン고"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "bird"
+    },
+    {
+        "id": "salmon",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Salmon"
+            },
+            {
+                "languageCode": "ko",
+                "name": "연어"
+            },
+            {
+                "languageCode": "es",
+                "name": "Salmón"
+            },
+            {
+                "languageCode": "ja",
+                "name": "サケ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "fish"
+    },
+    {
+        "id": "tuna",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Tuna"
+            },
+            {
+                "languageCode": "ko",
+                "name": "참치"
+            },
+            {
+                "languageCode": "es",
+                "name": "Atún"
+            },
+            {
+                "languageCode": "ja",
+                "name": "マグロ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "fish"
+    },
+    {
+        "id": "mackerel",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Mackerel"
+            },
+            {
+                "languageCode": "ko",
+                "name": "고등어"
+            },
+            {
+                "languageCode": "es",
+                "name": "Caballa"
+            },
+            {
+                "languageCode": "ja",
+                "name": "サバ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "fish"
+    },
+    {
+        "id": "sloth",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Sloth"
+            },
+            {
+                "languageCode": "ko",
+                "name": "나무늘보"
+            },
+            {
+                "languageCode": "es",
+                "name": "Perezoso"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ナマケモノ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "anteater",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Anteater"
+            },
+            {
+                "languageCode": "ko",
+                "name": "개미핥기"
+            },
+            {
+                "languageCode": "es",
+                "name": "Oso hormiguero"
+            },
+            {
+                "languageCode": "ja",
+                "name": "アリクイ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "marlin",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Marlin"
+            },
+            {
+                "languageCode": "ko",
+                "name": "청새치"
+            },
+            {
+                "languageCode": "es",
+                "name": "Marlín"
+            },
+            {
+                "languageCode": "ja",
+                "name": "カジキ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "fish"
+    },
+    {
+        "id": "snapper",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Snapper"
+            },
+            {
+                "languageCode": "ko",
+                "name": "도미"
+            },
+            {
+                "languageCode": "es",
+                "name": "Pargo"
+            },
+            {
+                "languageCode": "ja",
+                "name": "タイ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "fish"
+    },
+    {
+        "id": "flatfish",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Flatfish"
+            },
+            {
+                "languageCode": "ko",
+                "name": "넙치"
+            },
+            {
+                "languageCode": "es",
+                "name": "Lenguado"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ヒラメ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "fish"
+    },
+    {
+        "id": "rockfish",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Rockfish"
+            },
+            {
+                "languageCode": "ko",
+                "name": "우럭"
+            },
+            {
+                "languageCode": "es",
+                "name": "Rascacio"
+            },
+            {
+                "languageCode": "ja",
+                "name": "カサゴ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "fish"
+    },
+    {
+        "id": "sea_bass",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Sea bass"
+            },
+            {
+                "languageCode": "ko",
+                "name": "농어"
+            },
+            {
+                "languageCode": "es",
+                "name": "Lubina"
+            },
+            {
+                "languageCode": "ja",
+                "name": "スズキ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "fish"
+    },
+    {
+        "id": "pufferfish",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Pufferfish"
+            },
+            {
+                "languageCode": "ko",
+                "name": "복어"
+            },
+            {
+                "languageCode": "es",
+                "name": "Pez globo"
+            },
+            {
+                "languageCode": "ja",
+                "name": "フグ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "fish"
+    },
+    {
+        "id": "sea_cucumber",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Sea cucumber"
+            },
+            {
+                "languageCode": "ko",
+                "name": "해삼"
+            },
+            {
+                "languageCode": "es",
+                "name": "Pepino de mar"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ナマコ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "invertebrate"
+    },
+    {
+        "id": "shrimp",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Shrimp"
+            },
+            {
+                "languageCode": "ko",
+                "name": "새우"
+            },
+            {
+                "languageCode": "es",
+                "name": "Camarón"
+            },
+            {
+                "languageCode": "ja",
+                "name": "エビ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "invertebrate"
+    },
+    {
+        "id": "lobster",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Lobster"
+            },
+            {
+                "languageCode": "ko",
+                "name": "랍스터"
+            },
+            {
+                "languageCode": "es",
+                "name": "Langosta"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ロブスター"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "invertebrate"
+    },
+    {
+        "id": "crayfish",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Crayfish"
+            },
+            {
+                "languageCode": "ko",
+                "name": "가재"
+            },
+            {
+                "languageCode": "es",
+                "name": "Cangrejo de río"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ザリガニ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "invertebrate"
+    },
+    {
+        "id": "turban_shell",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Turban shell"
+            },
+            {
+                "languageCode": "ko",
+                "name": "소라"
+            },
+            {
+                "languageCode": "es",
+                "name": "Caracol turbante"
+            },
+            {
+                "languageCode": "ja",
+                "name": "サザエ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "invertebrate"
+    },
+    {
+        "id": "clam",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Clam"
+            },
+            {
+                "languageCode": "ko",
+                "name": "조개"
+            },
+            {
+                "languageCode": "es",
+                "name": "Almeja"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ハマグリ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "invertebrate"
+    },
+    {
+        "id": "oyster",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Oyster"
+            },
+            {
+                "languageCode": "ko",
+                "name": "굴"
+            },
+            {
+                "languageCode": "es",
+                "name": "Ostra"
+            },
+            {
+                "languageCode": "ja",
+                "name": "カキ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "invertebrate"
+    },
+    {
+        "id": "mussel",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Mussel"
+            },
+            {
+                "languageCode": "ko",
+                "name": "홍합"
+            },
+            {
+                "languageCode": "es",
+                "name": "Mejillón"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ムール貝"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "invertebrate"
+    },
+    {
+        "id": "abalone",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Abalone"
+            },
+            {
+                "languageCode": "ko",
+                "name": "전복"
+            },
+            {
+                "languageCode": "es",
+                "name": "Abulón"
+            },
+            {
+                "languageCode": "ja",
+                "name": "アワビ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "invertebrate"
+    },
+    {
+        "id": "red_panda",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Red Panda"
+            },
+            {
+                "languageCode": "ko",
+                "name": "레서판다"
+            },
+            {
+                "languageCode": "es",
+                "name": "Panda rojo"
+            },
+            {
+                "languageCode": "ja",
+                "name": "レッサーパンダ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "armadillo",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Armadillo"
+            },
+            {
+                "languageCode": "ko",
+                "name": "아르마딜로"
+            },
+            {
+                "languageCode": "es",
+                "name": "Armadillo"
+            },
+            {
+                "languageCode": "ja",
+                "name": "アルマジロ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "tapir",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Tapir"
+            },
+            {
+                "languageCode": "ko",
+                "name": "테이퍼"
+            },
+            {
+                "languageCode": "es",
+                "name": "Tapir"
+            },
+            {
+                "languageCode": "ja",
+                "name": "バク"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "capybara",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Capybara"
+            },
+            {
+                "languageCode": "ko",
+                "name": "카피바라"
+            },
+            {
+                "languageCode": "es",
+                "name": "Capibara"
+            },
+            {
+                "languageCode": "ja",
+                "name": "カピバラ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "wombat",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Wombat"
+            },
+            {
+                "languageCode": "ko",
+                "name": "웜뱃"
+            },
+            {
+                "languageCode": "es",
+                "name": "Wombat"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ウォンバット"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "platypus",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Platypus"
+            },
+            {
+                "languageCode": "ko",
+                "name": "오리너구리"
+            },
+            {
+                "languageCode": "es",
+                "name": "Ornitorrinco"
+            },
+            {
+                "languageCode": "ja",
+                "name": "カモノハシ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "echidna",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Echidna"
+            },
+            {
+                "languageCode": "ko",
+                "name": "바늘두더지"
+            },
+            {
+                "languageCode": "es",
+                "name": "Equidna"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ハリモグラ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "fennec_fox",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Fennec Fox"
+            },
+            {
+                "languageCode": "ko",
+                "name": "페넥여우"
+            },
+            {
+                "languageCode": "es",
+                "name": "Zorro fénec"
+            },
+            {
+                "languageCode": "ja",
+                "name": "フェネックギツネ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "lemur",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Lemur"
+            },
+            {
+                "languageCode": "ko",
+                "name": "여우원숭이"
+            },
+            {
+                "languageCode": "es",
+                "name": "Lémur"
+            },
+            {
+                "languageCode": "ja",
+                "name": "キツネザル"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "okapi",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Okapi"
+            },
+            {
+                "languageCode": "ko",
+                "name": "오카피"
+            },
+            {
+                "languageCode": "es",
+                "name": "Okapi"
+            },
+            {
+                "languageCode": "ja",
+                "name": "オカピ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "pangolin",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Pangolin"
+            },
+            {
+                "languageCode": "ko",
+                "name": "천산갑"
+            },
+            {
+                "languageCode": "es",
+                "name": "Pangolín"
+            },
+            {
+                "languageCode": "ja",
+                "name": "センザンコウ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "aardvark",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Aardvark"
+            },
+            {
+                "languageCode": "ko",
+                "name": "땅돼지"
+            },
+            {
+                "languageCode": "es",
+                "name": "Cerdo hormiguero"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ツチブタ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "manatee",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Manatee"
+            },
+            {
+                "languageCode": "ko",
+                "name": "매너티"
+            },
+            {
+                "languageCode": "es",
+                "name": "Manatí"
+            },
+            {
+                "languageCode": "ja",
+                "name": "マナティー"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "narwhal",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Narwhal"
+            },
+            {
+                "languageCode": "ko",
+                "name": "일각고래"
+            },
+            {
+                "languageCode": "es",
+                "name": "Narval"
+            },
+            {
+                "languageCode": "ja",
+                "name": "イッカク"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "beluga_whale",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Beluga Whale"
+            },
+            {
+                "languageCode": "ko",
+                "name": "흰고래"
+            },
+            {
+                "languageCode": "es",
+                "name": "Beluga"
+            },
+            {
+                "languageCode": "ja",
+                "name": "シロイルカ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "mammal"
+    },
+    {
+        "id": "hummingbird",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Hummingbird"
+            },
+            {
+                "languageCode": "ko",
+                "name": "벌새"
+            },
+            {
+                "languageCode": "es",
+                "name": "Colibrí"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ハチドリ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "bird"
+    },
+    {
+        "id": "kingfisher",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Kingfisher"
+            },
+            {
+                "languageCode": "ko",
+                "name": "물총새"
+            },
+            {
+                "languageCode": "es",
+                "name": "Martín pescador"
+            },
+            {
+                "languageCode": "ja",
+                "name": "カワセミ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "bird"
+    },
+    {
+        "id": "toucan",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Toucan"
+            },
+            {
+                "languageCode": "ko",
+                "name": "투칸"
+            },
+            {
+                "languageCode": "es",
+                "name": "Tucán"
+            },
+            {
+                "languageCode": "ja",
+                "name": "オオハシ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "bird"
+    },
+    {
+        "id": "macaw",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Macaw"
+            },
+            {
+                "languageCode": "ko",
+                "name": "마코앵무"
+            },
+            {
+                "languageCode": "es",
+                "name": "Guacamayo"
+            },
+            {
+                "languageCode": "ja",
+                "name": "コンゴウインコ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "bird"
+    },
+    {
+        "id": "falcon",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Falcon"
+            },
+            {
+                "languageCode": "ko",
+                "name": "매"
+            },
+            {
+                "languageCode": "es",
+                "name": "Halcón"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ハヤブサ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "bird"
+    },
+    {
+        "id": "hawk",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Hawk"
+            },
+            {
+                "languageCode": "ko",
+                "name": "매"
+            },
+            {
+                "languageCode": "es",
+                "name": "Halcón"
+            },
+            {
+                "languageCode": "ja",
+                "name": "タカ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "bird"
+    },
+    {
+        "id": "condor",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Condor"
+            },
+            {
+                "languageCode": "ko",
+                "name": "콘도르"
+            },
+            {
+                "languageCode": "es",
+                "name": "Cóndor"
+            },
+            {
+                "languageCode": "ja",
+                "name": "コンドル"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "bird"
+    },
+    {
+        "id": "albatross",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Albatross"
+            },
+            {
+                "languageCode": "ko",
+                "name": "알바트로스"
+            },
+            {
+                "languageCode": "es",
+                "name": "Albatros"
+            },
+            {
+                "languageCode": "ja",
+                "name": "アホウドリ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "bird"
+    },
+    {
+        "id": "puffin",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Puffin"
+            },
+            {
+                "languageCode": "ko",
+                "name": "퍼핀"
+            },
+            {
+                "languageCode": "es",
+                "name": "Frailecillo"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ツノメドリ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "bird"
+    },
+    {
+        "id": "emu",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Emu"
+            },
+            {
+                "languageCode": "ko",
+                "name": "에뮤"
+            },
+            {
+                "languageCode": "es",
+                "name": "Emú"
+            },
+            {
+                "languageCode": "ja",
+                "name": "エミュー"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "bird"
+    },
+    {
+        "id": "gecko",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Gecko"
+            },
+            {
+                "languageCode": "ko",
+                "name": "도마뱀붙이"
+            },
+            {
+                "languageCode": "es",
+                "name": "Geco"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ヤモリ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "reptile"
+    },
+    {
+        "id": "komodo_dragon",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Komodo Dragon"
+            },
+            {
+                "languageCode": "ko",
+                "name": "코모도왕도마뱀"
+            },
+            {
+                "languageCode": "es",
+                "name": "Dragón de Komodo"
+            },
+            {
+                "languageCode": "ja",
+                "name": "コモドドラゴン"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "reptile"
+    },
+    {
+        "id": "gila_monster",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Gila Monster"
+            },
+            {
+                "languageCode": "ko",
+                "name": "독도마뱀"
+            },
+            {
+                "languageCode": "es",
+                "name": "Monstruo de Gila"
+            },
+            {
+                "languageCode": "ja",
+                "name": "アメリカドクトカゲ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "reptile"
+    },
+    {
+        "id": "anaconda",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Anaconda"
+            },
+            {
+                "languageCode": "ko",
+                "name": "아나콘다"
+            },
+            {
+                "languageCode": "es",
+                "name": "Anaconda"
+            },
+            {
+                "languageCode": "ja",
+                "name": "アナコンダ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "reptile"
+    },
+    {
+        "id": "cobra",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Cobra"
+            },
+            {
+                "languageCode": "ko",
+                "name": "코브라"
+            },
+            {
+                "languageCode": "es",
+                "name": "Cobra"
+            },
+            {
+                "languageCode": "ja",
+                "name": "コブラ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "reptile"
+    },
+    {
+        "id": "viper",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Viper"
+            },
+            {
+                "languageCode": "ko",
+                "name": "독사"
+            },
+            {
+                "languageCode": "es",
+                "name": "Víbora"
+            },
+            {
+                "languageCode": "ja",
+                "name": "クサリヘビ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "reptile"
+    },
+    {
+        "id": "rattlesnake",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Rattlesnake"
+            },
+            {
+                "languageCode": "ko",
+                "name": "방울뱀"
+            },
+            {
+                "languageCode": "es",
+                "name": "Serpiente de cascabel"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ガラガラヘビ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "reptile"
+    },
+    {
+        "id": "sea_snake",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Sea Snake"
+            },
+            {
+                "languageCode": "ko",
+                "name": "바다뱀"
+            },
+            {
+                "languageCode": "es",
+                "name": "Serpiente marina"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ウミヘビ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "reptile"
+    },
+    {
+        "id": "caiman",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Caiman"
+            },
+            {
+                "languageCode": "ko",
+                "name": "카이만"
+            },
+            {
+                "languageCode": "es",
+                "name": "Caimán"
+            },
+            {
+                "languageCode": "ja",
+                "name": "カイマン"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "reptile"
+    },
+    {
+        "id": "gharial",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Gharial"
+            },
+            {
+                "languageCode": "ko",
+                "name": "가비알"
+            },
+            {
+                "languageCode": "es",
+                "name": "Gavial"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ガビアル"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "reptile"
+    },
+    {
+        "id": "salamander",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Salamander"
+            },
+            {
+                "languageCode": "ko",
+                "name": "도롱뇽"
+            },
+            {
+                "languageCode": "es",
+                "name": "Salamandra"
+            },
+            {
+                "languageCode": "ja",
+                "name": "サンショウウオ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "amphibian"
+    },
+    {
+        "id": "newt",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Newt"
+            },
+            {
+                "languageCode": "ko",
+                "name": "영원"
+            },
+            {
+                "languageCode": "es",
+                "name": "Tritón"
+            },
+            {
+                "languageCode": "ja",
+                "name": "イモリ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "amphibian"
+    },
+    {
+        "id": "axolotl",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Axolotl"
+            },
+            {
+                "languageCode": "ko",
+                "name": "아홀로틀"
+            },
+            {
+                "languageCode": "es",
+                "name": "Ajolote"
+            },
+            {
+                "languageCode": "ja",
+                "name": "アホロートル"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "amphibian"
+    },
+    {
+        "id": "poison_dart_frog",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Poison Dart Frog"
+            },
+            {
+                "languageCode": "ko",
+                "name": "독화살개구리"
+            },
+            {
+                "languageCode": "es",
+                "name": "Rana dardo venenosa"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ヤドクガエル"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "amphibian"
+    },
+    {
+        "id": "clownfish",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Clownfish"
+            },
+            {
+                "languageCode": "ko",
+                "name": "흰동가리"
+            },
+            {
+                "languageCode": "es",
+                "name": "Pez payaso"
+            },
+            {
+                "languageCode": "ja",
+                "name": "クマノミ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "fish"
+    },
+    {
+        "id": "piranha",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Piranha"
+            },
+            {
+                "languageCode": "ko",
+                "name": "피라냐"
+            },
+            {
+                "languageCode": "es",
+                "name": "Piraña"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ピラニア"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "fish"
+    },
+    {
+        "id": "blobfish",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Blobfish"
+            },
+            {
+                "languageCode": "ko",
+                "name": "블롭피쉬"
+            },
+            {
+                "languageCode": "es",
+                "name": "Pez borrón"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ブロブフィッシュ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "fish"
+    },
+    {
+        "id": "mola_mola",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Mola Mola"
+            },
+            {
+                "languageCode": "ko",
+                "name": "개복치"
+            },
+            {
+                "languageCode": "es",
+                "name": "Pez luna"
+            },
+            {
+                "languageCode": "ja",
+                "name": "マンボウ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "fish"
+    },
+    {
+        "id": "swordfish",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Swordfish"
+            },
+            {
+                "languageCode": "ko",
+                "name": "황새치"
+            },
+            {
+                "languageCode": "es",
+                "name": "Pez espada"
+            },
+            {
+                "languageCode": "ja",
+                "name": "メカジキ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "fish"
+    },
+    {
+        "id": "sailfish",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Sailfish"
+            },
+            {
+                "languageCode": "ko",
+                "name": "돛새치"
+            },
+            {
+                "languageCode": "es",
+                "name": "Pez vela"
+            },
+            {
+                "languageCode": "ja",
+                "name": "バショウカジキ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "fish"
+    },
+    {
+        "id": "stick_insect",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Stick Insect"
+            },
+            {
+                "languageCode": "ko",
+                "name": "대벌레"
+            },
+            {
+                "languageCode": "es",
+                "name": "Insecto palo"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ナナフシ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "insect"
+    },
+    {
+        "id": "leaf_insect",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Leaf Insect"
+            },
+            {
+                "languageCode": "ko",
+                "name": "잎벌레"
+            },
+            {
+                "languageCode": "es",
+                "name": "Insecto hoja"
+            },
+            {
+                "languageCode": "ja",
+                "name": "コノハムシ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "insect"
+    },
+    {
+        "id": "wasp",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Wasp"
+            },
+            {
+                "languageCode": "ko",
+                "name": "말벌"
+            },
+            {
+                "languageCode": "es",
+                "name": "Avispa"
+            },
+            {
+                "languageCode": "ja",
+                "name": "スズメバチ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "insect"
+    },
+    {
+        "id": "tarantula",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Tarantula"
+            },
+            {
+                "languageCode": "ko",
+                "name": "타란툴라"
+            },
+            {
+                "languageCode": "es",
+                "name": "Tarántula"
+            },
+            {
+                "languageCode": "ja",
+                "name": "タランチュラ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "invertebrate"
+    },
+    {
+        "id": "centipede",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Centipede"
+            },
+            {
+                "languageCode": "ko",
+                "name": "지네"
+            },
+            {
+                "languageCode": "es",
+                "name": "Ciempiés"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ムカデ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "invertebrate"
+    },
+    {
+        "id": "millipede",
+        "names": [
+            {
+                "languageCode": "en",
+                "name": "Millipede"
+            },
+            {
+                "languageCode": "ko",
+                "name": "노래기"
+            },
+            {
+                "languageCode": "es",
+                "name": "Milpiés"
+            },
+            {
+                "languageCode": "ja",
+                "name": "ヤスデ"
+            }
+        ],
+        "categoryID": "animal",
+        "itemCategory2ID": "invertebrate"
+    }
 ]
