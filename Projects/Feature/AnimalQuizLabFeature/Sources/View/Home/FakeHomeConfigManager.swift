@@ -8,8 +8,8 @@ internal struct FakeHomeConfigManager: HomeConfigManager {
         let items: [HomeDTO.Item] = [
             .init(
                 id: "1",
-                title: NSLocalizedString("animal_title", comment: ""),
-                subTitle: NSLocalizedString("animal_subtitle", comment: ""),
+                title: AnimalQuizLabFeatureStrings.animalTitle,
+                subTitle: AnimalQuizLabFeatureStrings.animalSubtitle,
                 backgroundColor: "#FFEEDD",
                 imageURL: "https://cdn.jsdelivr.net/gh/talq44/monoree_images@main/animal/plush/tiger.webp",
                 itemCategory: nil,
@@ -18,7 +18,7 @@ internal struct FakeHomeConfigManager: HomeConfigManager {
             ),
             .init(
                 id: "2",
-                title: NSLocalizedString("land_title", comment: ""),
+                title: AnimalQuizLabFeatureStrings.landTitle,
                 subTitle: "Loyal friend",
                 backgroundColor: "#E0F7FA",
                 imageURL: "https://cdn.jsdelivr.net/gh/talq44/monoree_images@main/animal/toy3D/lion.webp",
@@ -28,8 +28,8 @@ internal struct FakeHomeConfigManager: HomeConfigManager {
             ),
             .init(
                 id: "6",
-                title: NSLocalizedString("bird_title", comment: ""),
-                subTitle: NSLocalizedString("bird_subtitle", comment: ""),
+                title: AnimalQuizLabFeatureStrings.birdTitle,
+                subTitle: AnimalQuizLabFeatureStrings.birdSubtitle,
                 backgroundColor: "#E007F6",
                 imageURL: "https://cdn.jsdelivr.net/gh/talq44/monoree_images@main/animal/toy3D/sparrow.webp",
                 itemCategory: "animal",
@@ -38,7 +38,7 @@ internal struct FakeHomeConfigManager: HomeConfigManager {
             ),
             .init(
                 id: "3",
-                title: NSLocalizedString("sea_title", comment: ""),
+                title: AnimalQuizLabFeatureStrings.seaTitle,
                 subTitle: nil,
                 backgroundColor: nil,
                 imageURL: "https://cdn.jsdelivr.net/gh/talq44/monoree_images@main/animal/realistic/swan.webp",
@@ -48,7 +48,7 @@ internal struct FakeHomeConfigManager: HomeConfigManager {
             ),
             .init(
                 id: "4",
-                title: NSLocalizedString("insect_title", comment: ""),
+                title: AnimalQuizLabFeatureStrings.insectTitle,
                 subTitle: nil,
                 backgroundColor: nil,
                 imageURL: "https://cdn.jsdelivr.net/gh/talq44/monoree_images@main/animal/plush/eagle.webp",
@@ -58,7 +58,7 @@ internal struct FakeHomeConfigManager: HomeConfigManager {
             ),
             .init(
                 id: "5",
-                title: NSLocalizedString("amphibian_title", comment: ""),
+                title: AnimalQuizLabFeatureStrings.amphibianTitle,
                 subTitle: nil,
                 backgroundColor: "#E0F7FA",
                 imageURL: "https://cdn.jsdelivr.net/gh/talq44/monoree_images@main/animal/toy3D/frog.webp",

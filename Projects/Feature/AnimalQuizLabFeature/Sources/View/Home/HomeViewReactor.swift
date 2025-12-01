@@ -84,7 +84,7 @@ extension HomeViewReactor {
                     emitter.onNext(.setIsShowBanner(dto.isShowBanner))
                     emitter.onNext(.setItems(dto.convertItems))
                 } catch {
-                    emitter.onNext(.setError(message: NSLocalizedString("network_error_message", comment: "")))
+                    emitter.onNext(.setError(message: AnimalQuizLabFeatureStrings.networkErrorMessage))
                 }
                 
                 emitter.onCompleted()

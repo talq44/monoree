@@ -11,10 +11,10 @@ enum SettingViewSection: Int, CaseIterable {
     
     var title: String {
         switch self {
-        case .imageStyle: return NSLocalizedString("image_style", comment: "")
-        case .autoScroll: return NSLocalizedString("auto_scroll_setting", comment: "")
-        case .soundSetting: return NSLocalizedString("sound_setting", comment: "")
-        case .version: return NSLocalizedString("version_info", comment: "")
+        case .imageStyle: return AnimalQuizLabFeatureStrings.imageStyle
+        case .autoScroll: return AnimalQuizLabFeatureStrings.autoScrollSetting
+        case .soundSetting: return AnimalQuizLabFeatureStrings.soundSetting
+        case .version: return AnimalQuizLabFeatureStrings.versionInfo
         }
     }
 }
@@ -27,10 +27,10 @@ enum SettingViewImageStyle: Int, CaseIterable {
     
     var name: String {
         switch self {
-        case .realistic: return NSLocalizedString("realistic_style", comment: "")
-        case .toy3D: return NSLocalizedString("toy_3d_style", comment: "")
-        case .anime2D: return NSLocalizedString("anime_2d_style", comment: "")
-        case .plush: return NSLocalizedString("plush_style", comment: "")
+        case .realistic: return AnimalQuizLabFeatureStrings.realisticStyle
+        case .toy3D: return AnimalQuizLabFeatureStrings.toy3dStyle
+        case .anime2D: return AnimalQuizLabFeatureStrings.anime2dStyle
+        case .plush: return AnimalQuizLabFeatureStrings.plushStyle
         }
     }
     
@@ -78,7 +78,7 @@ final class SettingViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = NSLocalizedString("setting", comment: "")
+        title = AnimalQuizLabFeatureStrings.setting
         
         view.addSubview(tableView)
         tableView.snp.makeConstraints { make in
@@ -130,7 +130,7 @@ extension SettingViewController: UITableViewDataSource {
             }
             
             guard let imageStyle = SettingViewImageStyle(rawValue: indexPath.row) else {
-                cell.textLabel?.text = NSLocalizedString("unknown", comment: "")
+                cell.textLabel?.text = AnimalQuizLabFeatureStrings.unknown
                 return cell
             }
             
@@ -144,7 +144,7 @@ extension SettingViewController: UITableViewDataSource {
             }
             
         case .soundSetting:
-            cell.textLabel?.text = NSLocalizedString("read_text_problem", comment: "")
+            cell.textLabel?.text = AnimalQuizLabFeatureStrings.readTextProblem
             cell.imageView?.image = UIImage(systemName: "speaker.wave.2")
             cell.accessoryType = .none
             
@@ -168,12 +168,12 @@ extension SettingViewController: UITableViewDataSource {
                 return cell
             }
             
-            cell.textLabel?.text = String(format: NSLocalizedString("seconds_format", comment: ""), style.second)
+            cell.textLabel?.text = AnimalQuizLabFeatureStrings.secondsFormat(style.second)
             cell.imageView?.image = UIImage(systemName: style.systemImageName)
             
         case .version:
             cell.textLabel?.text = Bundle.marketingVersion
-            cell.detailTextLabel?.text = NSLocalizedString("go_to_app_store", comment: "")
+            cell.detailTextLabel?.text = AnimalQuizLabFeatureStrings.goToAppStore
             cell.imageView?.image = UIImage(systemName: "calendar.circle")
             cell.accessoryType = .disclosureIndicator
         }

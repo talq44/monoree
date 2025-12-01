@@ -21,9 +21,9 @@ enum ChargingSection: Int, CaseIterable {
     
     var title: String {
         switch self {
-        case .payment: return NSLocalizedString("payment", comment: "")
-        case .coin: return NSLocalizedString("coin", comment: "")
-        case .guide: return NSLocalizedString("guide", comment: "")
+        case .payment: return AnimalQuizLabFeatureStrings.payment
+        case .coin: return AnimalQuizLabFeatureStrings.coin
+        case .guide: return AnimalQuizLabFeatureStrings.guide
         }
     }
 }
@@ -36,10 +36,10 @@ enum ChargingPaymentSection: Int, CaseIterable {
     
     var title: String {
         switch self {
-        case .oneDay: return NSLocalizedString("one_day_pass", comment: "")
-        case .sevenDay: return NSLocalizedString("seven_day_pass", comment: "")
-        case .recover: return NSLocalizedString("restore", comment: "")
-        case .history: return NSLocalizedString("payment_history", comment: "")
+        case .oneDay: return AnimalQuizLabFeatureStrings.oneDayPass
+        case .sevenDay: return AnimalQuizLabFeatureStrings.sevenDayPass
+        case .recover: return AnimalQuizLabFeatureStrings.restore
+        case .history: return AnimalQuizLabFeatureStrings.paymentHistory
         }
     }
 }
@@ -56,11 +56,11 @@ final class ChargingViewController: BaseViewController {
     
     private let coinContentView = VStackView(spacing: Spacing.s)
     private let freeCoinContentStackView = HStackView(spacing: 8)
-    private let freeCoinTitleLabel = BaseLabel(NSLocalizedString("free_coin_title", comment: ""))
+    private let freeCoinTitleLabel = BaseLabel(AnimalQuizLabFeatureStrings.freeCoinTitle)
     private let freeCoinValueLabel = BaseLabel("0")
     private let chargeButton: UIButton = {
         var configuration = UIButton.Configuration.filled()
-        configuration.title = NSLocalizedString("watch_ad_and_charge", comment: "")
+        configuration.title = AnimalQuizLabFeatureStrings.watchAdAndCharge
         
         return UIButton(configuration: configuration)
     }()
@@ -140,14 +140,14 @@ extension ChargingViewController: UITableViewDataSource {
             let cell = tableView.dequeueReusableCell(Cell.self, for: indexPath)
             var config = cell.defaultContentConfiguration()
             config.text = """
-        \(NSLocalizedString("free_coin_policy_1", comment: ""))
-        \(NSLocalizedString("free_coin_policy_2", comment: ""))
-        \(NSLocalizedString("free_coin_policy_3", comment: ""))
+        \(AnimalQuizLabFeatureStrings.freeCoinPolicy1)
+        \(AnimalQuizLabFeatureStrings.freeCoinPolicy2)
+        \(AnimalQuizLabFeatureStrings.freeCoinPolicy3)
         
-        \(NSLocalizedString("charged_coin_policy_1", comment: ""))
-        \(NSLocalizedString("charged_coin_policy_2", comment: ""))
-        \(NSLocalizedString("charged_coin_policy_3", comment: ""))
-        \(NSLocalizedString("coin_consumption_policy", comment: ""))
+        \(AnimalQuizLabFeatureStrings.chargedCoinPolicy1)
+        \(AnimalQuizLabFeatureStrings.chargedCoinPolicy2)
+        \(AnimalQuizLabFeatureStrings.chargedCoinPolicy3)
+        \(AnimalQuizLabFeatureStrings.coinConsumptionPolicy)
         """
             cell.contentConfiguration = config
             return cell
@@ -173,7 +173,7 @@ extension ChargingViewController: UITableViewDataSource {
             let cell = tableView.dequeueReusableCell(ChargingPaymentItemCell.self, for: indexPath)
             cell.bind(state: ChargingPaymentItemCell.State(
                 title: type.title,
-                buttonTitle: NSLocalizedString("one_thousand_won", comment: ""),
+                buttonTitle: AnimalQuizLabFeatureStrings.oneThousandWon,
                 action: {
                     print("천원")
                 }
@@ -185,7 +185,7 @@ extension ChargingViewController: UITableViewDataSource {
             let cell = tableView.dequeueReusableCell(ChargingPaymentItemCell.self, for: indexPath)
             cell.bind(state: ChargingPaymentItemCell.State(
                 title: type.title,
-                buttonTitle: NSLocalizedString("five_thousand_won", comment: ""),
+                buttonTitle: AnimalQuizLabFeatureStrings.fiveThousandWon,
                 action: {
                     print("5천원")
                 }
@@ -196,7 +196,7 @@ extension ChargingViewController: UITableViewDataSource {
             let cell = tableView.dequeueReusableCell(ChargingPaymentItemCell.self, for: indexPath)
             cell.bind(state: ChargingPaymentItemCell.State(
                 title: type.title,
-                buttonTitle: NSLocalizedString("restore_button", comment: ""),
+                buttonTitle: AnimalQuizLabFeatureStrings.restoreButton,
                 action: {
                     print("복구")
                 }

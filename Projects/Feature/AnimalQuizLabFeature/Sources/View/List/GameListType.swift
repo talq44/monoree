@@ -26,21 +26,21 @@ enum GameListType: CaseIterable {
     var description: String {
         switch self {
         case .imageMatchAnswer2:
-            return NSLocalizedString("image_quiz_2x1", comment: "")
+            return AnimalQuizLabFeatureStrings.imageQuiz2x1
         case .imageMatchAnswer3:
-            return NSLocalizedString("image_quiz_3x1", comment: "")
+            return AnimalQuizLabFeatureStrings.imageQuiz3x1
         case .imageMatchAnswer4:
-            return NSLocalizedString("image_quiz_2x2", comment: "")
+            return AnimalQuizLabFeatureStrings.imageQuiz2x2
         case .textMatchAnswer2:
-            return NSLocalizedString("text_quiz_2x1", comment: "")
+            return AnimalQuizLabFeatureStrings.textQuiz2x1
         case .textMatchAnswer3:
-            return NSLocalizedString("text_quiz_3x1", comment: "")
+            return AnimalQuizLabFeatureStrings.textQuiz3x1
         case .textMatchAnswer4:
-            return NSLocalizedString("text_quiz_2x2", comment: "")
+            return AnimalQuizLabFeatureStrings.textQuiz2x2
         case .autoScroll10:
-            return NSLocalizedString("auto_scroll_observe", comment: "")
+            return AnimalQuizLabFeatureStrings.autoScrollObserve
         case .autoScroll30:
-            return NSLocalizedString("auto_scroll_observe", comment: "")
+            return AnimalQuizLabFeatureStrings.autoScrollObserve
         }
     }
     

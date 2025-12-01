@@ -17,19 +17,19 @@ enum GameType: CaseIterable {
     
     var title: String {
         switch self {
-        case .image: return NSLocalizedString("image_quiz", comment: "")
-        case .text: return NSLocalizedString("text_quiz", comment: "")
-        case .categoryDifferent: return NSLocalizedString("category_quiz", comment: "")
-        case .autoScroll: return NSLocalizedString("image_scroll", comment: "")
+        case .image: return AnimalQuizLabFeatureStrings.imageQuiz
+        case .text: return AnimalQuizLabFeatureStrings.textQuiz
+        case .categoryDifferent: return AnimalQuizLabFeatureStrings.categoryQuiz
+        case .autoScroll: return AnimalQuizLabFeatureStrings.imageScroll
         }
     }
     
     var description: String {
         switch self {
-        case .image: return NSLocalizedString("image_quiz_description", comment: "")
-        case .text: return NSLocalizedString("text_quiz_description", comment: "")
-        case .categoryDifferent: return NSLocalizedString("category_quiz_description", comment: "")
-        case .autoScroll: return NSLocalizedString("image_scroll_description", comment: "")
+        case .image: return AnimalQuizLabFeatureStrings.imageQuizDescription
+        case .text: return AnimalQuizLabFeatureStrings.textQuizDescription
+        case .categoryDifferent: return AnimalQuizLabFeatureStrings.categoryQuizDescription
+        case .autoScroll: return AnimalQuizLabFeatureStrings.imageScrollDescription
         }
     }
     
