@@ -13,286 +13,7 @@ final class ProductListUseCase {
             }
         }
         
-        let baseCategory = "동물"
-        let mock: [ProductItem] = [
-            ProductItem(
-                id: "dog",
-                names: [
-                    ProductItem.Name(language: "en", name: "Dog"),
-                    ProductItem.Name(language: "ko", name: "개"),
-                ],
-                category: baseCategory,
-                itemCategory2: "포유류"
-            ),
-            ProductItem(
-                id: "cat",
-                names: [
-                    ProductItem.Name(language: "en", name: "Cat"),
-                    ProductItem.Name(language: "ko", name: "고양이"),
-                ],
-                category: baseCategory,
-                itemCategory2: "포유류"
-            ),
-            ProductItem(
-                id: "elephant",
-                names: [
-                    ProductItem.Name(language: "en", name: "Elephant"),
-                    ProductItem.Name(language: "ko", name: "코끼리"),
-                ],
-                category: baseCategory,
-                itemCategory2: "포유류"
-            ),
-            ProductItem(
-                id: "lion",
-                names: [
-                    ProductItem.Name(language: "en", name: "Lion"),
-                    ProductItem.Name(language: "ko", name: "사자"),
-                ],
-                category: baseCategory,
-                itemCategory2: "포유류"
-            ),
-            ProductItem(
-                id: "tiger",
-                names: [
-                    ProductItem.Name(language: "en", name: "Tiger"),
-                    ProductItem.Name(language: "ko", name: "호랑이"),
-                ],
-                category: baseCategory,
-                itemCategory2: "포유류"
-            ),
-            ProductItem(
-                id: "giraffe",
-                names: [
-                    ProductItem.Name(language: "en", name: "Giraffe"),
-                    ProductItem.Name(language: "ko", name: "기린"),
-                ],
-                category: baseCategory,
-                itemCategory2: "포유류"
-            ),
-            ProductItem(
-                id: "bear",
-                names: [
-                    ProductItem.Name(language: "en", name: "Bear"),
-                    ProductItem.Name(language: "ko", name: "곰"),
-                ],
-                category: baseCategory,
-                itemCategory2: "포유류"
-            ),
-            ProductItem(
-                id: "wolf",
-                names: [
-                    ProductItem.Name(language: "en", name: "Wolf"),
-                    ProductItem.Name(language: "ko", name: "늑대"),
-                ],
-                category: baseCategory,
-                itemCategory2: "포유류"
-            ),
-            ProductItem(
-                id: "dolphin",
-                names: [
-                    ProductItem.Name(language: "en", name: "Dolphin"),
-                    ProductItem.Name(language: "ko", name: "돌고래"),
-                ],
-                category: baseCategory,
-                itemCategory2: "포유류"
-            ),
-            ProductItem(
-                id: "whale",
-                names: [
-                    ProductItem.Name(language: "en", name: "Whale"),
-                    ProductItem.Name(language: "ko", name: "고래"),
-                ],
-                category: baseCategory,
-                itemCategory2: "포유류"
-            ),
-            
-            ProductItem(
-                id: "eagle",
-                names: [
-                    ProductItem.Name(language: "en", name: "Eagle"),
-                    ProductItem.Name(language: "ko", name: "독수리"),
-                ],
-                category: baseCategory,
-                itemCategory2: "조류"
-            ),
-            ProductItem(
-                id: "sparrow",
-                names: [
-                    ProductItem.Name(language: "en", name: "Sparrow"),
-                    ProductItem.Name(language: "ko", name: "참새"),
-                ],
-                category: baseCategory,
-                itemCategory2: "조류"
-            ),
-            ProductItem(
-                id: "penguin",
-                names: [
-                    ProductItem.Name(language: "en", name: "Penguin"),
-                    ProductItem.Name(language: "ko", name: "펭귄"),
-                ],
-                category: baseCategory,
-                itemCategory2: "조류"
-            ),
-            ProductItem(
-                id: "owl",
-                names: [
-                    ProductItem.Name(language: "en", name: "Owl"),
-                    ProductItem.Name(language: "ko", name: "부엉이"),
-                ],
-                category: baseCategory,
-                itemCategory2: "조류"
-            ),
-            ProductItem(
-                id: "flamingo",
-                names: [
-                    ProductItem.Name(language: "en", name: "Flamingo"),
-                    ProductItem.Name(language: "ko", name: "플라밍고"),
-                ],
-                category: baseCategory,
-                itemCategory2: "조류"
-            ),
-            
-            ProductItem(
-                id: "crocodile",
-                names: [
-                    ProductItem.Name(language: "en", name: "Crocodile"),
-                    ProductItem.Name(language: "ko", name: "악어"),
-                ],
-                category: baseCategory,
-                itemCategory2: "파충류"
-            ),
-            ProductItem(
-                id: "snake",
-                names: [
-                    ProductItem.Name(language: "en", name: "Snake"),
-                    ProductItem.Name(language: "ko", name: "뱀"),
-                ],
-                category: baseCategory,
-                itemCategory2: "파충류"
-            ),
-            ProductItem(
-                id: "turtle",
-                names: [
-                    ProductItem.Name(language: "en", name: "Turtle"),
-                    ProductItem.Name(language: "ko", name: "거북이"),
-                ],
-                category: baseCategory,
-                itemCategory2: "파충류"
-            ),
-            
-            ProductItem(
-                id: "frog",
-                names: [
-                    ProductItem.Name(language: "en", name: "Frog"),
-                    ProductItem.Name(language: "ko", name: "개구리"),
-                ],
-                category: baseCategory,
-                itemCategory2: "양서류"
-            ),
-            ProductItem(
-                id: "salamander",
-                names: [
-                    ProductItem.Name(language: "en", name: "Salamander"),
-                    ProductItem.Name(language: "ko", name: "도롱뇽"),
-                ],
-                category: baseCategory,
-                itemCategory2: "양서류"
-            ),
-            
-            ProductItem(
-                id: "shark",
-                names: [
-                    ProductItem.Name(language: "en", name: "Shark"),
-                    ProductItem.Name(language: "ko", name: "상어"),
-                ],
-                category: baseCategory,
-                itemCategory2: "어류"
-            ),
-            ProductItem(
-                id: "clownfish",
-                names: [
-                    ProductItem.Name(language: "en", name: "Clownfish"),
-                    ProductItem.Name(language: "ko", name: "흰동가리"),
-                ],
-                category: baseCategory,
-                itemCategory2: "어류"
-            ),
-            ProductItem(
-                id: "salmon",
-                names: [
-                    ProductItem.Name(language: "en", name: "Salmon"),
-                    ProductItem.Name(language: "ko", name: "연어"),
-                ],
-                category: baseCategory,
-                itemCategory2: "어류"
-            ),
-            
-            ProductItem(
-                id: "butterfly",
-                names: [
-                    ProductItem.Name(language: "en", name: "Butterfly"),
-                    ProductItem.Name(language: "ko", name: "나비"),
-                ],
-                category: baseCategory,
-                itemCategory2: "곤충"
-            ),
-            ProductItem(
-                id: "bee",
-                names: [
-                    ProductItem.Name(language: "en", name: "Bee"),
-                    ProductItem.Name(language: "ko", name: "벌"),
-                ],
-                category: baseCategory,
-                itemCategory2: "곤충"
-            ),
-            ProductItem(
-                id: "ant",
-                names: [
-                    ProductItem.Name(language: "en", name: "Ant"),
-                    ProductItem.Name(language: "ko", name: "개미"),
-                ],
-                category: baseCategory,
-                itemCategory2: "곤충"
-            ),
-            
-            ProductItem(
-                id: "spider",
-                names: [
-                    ProductItem.Name(language: "en", name: "Spider"),
-                    ProductItem.Name(language: "ko", name: "거미"),
-                ],
-                category: baseCategory,
-                itemCategory2: "절지동물"
-            ),
-            ProductItem(
-                id: "crab",
-                names: [
-                    ProductItem.Name(language: "en", name: "Crab"),
-                    ProductItem.Name(language: "ko", name: "게"),
-                ],
-                category: baseCategory,
-                itemCategory2: "절지동물"
-            ),
-            ProductItem(
-                id: "lobster",
-                names: [
-                    ProductItem.Name(language: "en", name: "Lobster"),
-                    ProductItem.Name(language: "ko", name: "바닷가재"),
-                ],
-                category: baseCategory,
-                itemCategory2: "절지동물"
-            ),
-            
-            ProductItem(
-                id: "kangaroo",
-                names: [
-                    ProductItem.Name(language: "en", name: "Kangaroo"),
-                    ProductItem.Name(language: "ko", name: "캥거루"),
-                ],
-                category: baseCategory,
-                itemCategory2: "포유류"
-            ),
-        ]
+        let mock = mockData()
         
         // Cache and return filtered
         cache = mock
@@ -407,6 +128,294 @@ final class ProductListUseCase {
             )
         }
     }
+}
+
+extension ProductListUseCase {
+    private func mockData() -> [ProductItem] {
+        let baseCategory = AnimalQuizLabFeatureStrings.animal
+        let mock: [ProductItem] = [
+            ProductItem(
+                id: "dog",
+                names: [
+                    ProductItem.Name(language: "en", name: "Dog"),
+                    ProductItem.Name(language: "ko", name: AnimalQuizLabFeatureStrings.dog),
+                ],
+                category: baseCategory,
+                itemCategory2: AnimalQuizLabFeatureStrings.mammal
+            ),
+            ProductItem(
+                id: "cat",
+                names: [
+                    ProductItem.Name(language: "en", name: "Cat"),
+                    ProductItem.Name(language: "ko", name: AnimalQuizLabFeatureStrings.cat),
+                ],
+                category: baseCategory,
+                itemCategory2: AnimalQuizLabFeatureStrings.mammal
+            ),
+            ProductItem(
+                id: "elephant",
+                names: [
+                    ProductItem.Name(language: "en", name: "Elephant"),
+                    ProductItem.Name(language: "ko", name: AnimalQuizLabFeatureStrings.elephant),
+                ],
+                category: baseCategory,
+                itemCategory2: AnimalQuizLabFeatureStrings.mammal
+            ),
+            ProductItem(
+                id: "lion",
+                names: [
+                    ProductItem.Name(language: "en", name: "Lion"),
+                    ProductItem.Name(language: "ko", name: AnimalQuizLabFeatureStrings.lion),
+                ],
+                category: baseCategory,
+                itemCategory2: AnimalQuizLabFeatureStrings.mammal
+            ),
+            ProductItem(
+                id: "tiger",
+                names: [
+                    ProductItem.Name(language: "en", name: "Tiger"),
+                    ProductItem.Name(language: "ko", name: AnimalQuizLabFeatureStrings.tiger),
+                ],
+                category: baseCategory,
+                itemCategory2: AnimalQuizLabFeatureStrings.mammal
+            ),
+            ProductItem(
+                id: "giraffe",
+                names: [
+                    ProductItem.Name(language: "en", name: "Giraffe"),
+                    ProductItem.Name(language: "ko", name: AnimalQuizLabFeatureStrings.giraffe),
+                ],
+                category: baseCategory,
+                itemCategory2: AnimalQuizLabFeatureStrings.mammal
+            ),
+            ProductItem(
+                id: "bear",
+                names: [
+                    ProductItem.Name(language: "en", name: "Bear"),
+                    ProductItem.Name(language: "ko", name: AnimalQuizLabFeatureStrings.bear),
+                ],
+                category: baseCategory,
+                itemCategory2: AnimalQuizLabFeatureStrings.mammal
+            ),
+            ProductItem(
+                id: "wolf",
+                names: [
+                    ProductItem.Name(language: "en", name: "Wolf"),
+                    ProductItem.Name(language: "ko", name: AnimalQuizLabFeatureStrings.wolf),
+                ],
+                category: baseCategory,
+                itemCategory2: AnimalQuizLabFeatureStrings.mammal
+            ),
+            ProductItem(
+                id: "dolphin",
+                names: [
+                    ProductItem.Name(language: "en", name: "Dolphin"),
+                    ProductItem.Name(language: "ko", name: AnimalQuizLabFeatureStrings.dolphin),
+                ],
+                category: baseCategory,
+                itemCategory2: AnimalQuizLabFeatureStrings.mammal
+            ),
+            ProductItem(
+                id: "whale",
+                names: [
+                    ProductItem.Name(language: "en", name: "Whale"),
+                    ProductItem.Name(language: "ko", name: AnimalQuizLabFeatureStrings.whale),
+                ],
+                category: baseCategory,
+                itemCategory2: AnimalQuizLabFeatureStrings.mammal
+            ),
+            
+            ProductItem(
+                id: "eagle",
+                names: [
+                    ProductItem.Name(language: "en", name: "Eagle"),
+                    ProductItem.Name(language: "ko", name: AnimalQuizLabFeatureStrings.eagle),
+                ],
+                category: baseCategory,
+                itemCategory2: AnimalQuizLabFeatureStrings.bird
+            ),
+            ProductItem(
+                id: "sparrow",
+                names: [
+                    ProductItem.Name(language: "en", name: "Sparrow"),
+                    ProductItem.Name(language: "ko", name: AnimalQuizLabFeatureStrings.sparrow),
+                ],
+                category: baseCategory,
+                itemCategory2: AnimalQuizLabFeatureStrings.bird
+            ),
+            ProductItem(
+                id: "penguin",
+                names: [
+                    ProductItem.Name(language: "en", name: "Penguin"),
+                    ProductItem.Name(language: "ko", name: AnimalQuizLabFeatureStrings.penguin),
+                ],
+                category: baseCategory,
+                itemCategory2: AnimalQuizLabFeatureStrings.bird
+            ),
+            ProductItem(
+                id: "owl",
+                names: [
+                    ProductItem.Name(language: "en", name: "Owl"),
+                    ProductItem.Name(language: "ko", name: AnimalQuizLabFeatureStrings.owl),
+                ],
+                category: baseCategory,
+                itemCategory2: AnimalQuizLabFeatureStrings.bird
+            ),
+            ProductItem(
+                id: "flamingo",
+                names: [
+                    ProductItem.Name(language: "en", name: "Flamingo"),
+                    ProductItem.Name(language: "ko", name: AnimalQuizLabFeatureStrings.flamingo),
+                ],
+                category: baseCategory,
+                itemCategory2: AnimalQuizLabFeatureStrings.bird
+            ),
+            
+            ProductItem(
+                id: "crocodile",
+                names: [
+                    ProductItem.Name(language: "en", name: "Crocodile"),
+                    ProductItem.Name(language: "ko", name: AnimalQuizLabFeatureStrings.crocodile),
+                ],
+                category: baseCategory,
+                itemCategory2: AnimalQuizLabFeatureStrings.reptile
+            ),
+            ProductItem(
+                id: "snake",
+                names: [
+                    ProductItem.Name(language: "en", name: "Snake"),
+                    ProductItem.Name(language: "ko", name: AnimalQuizLabFeatureStrings.snake),
+                ],
+                category: baseCategory,
+                itemCategory2: AnimalQuizLabFeatureStrings.reptile
+            ),
+            ProductItem(
+                id: "turtle",
+                names: [
+                    ProductItem.Name(language: "en", name: "Turtle"),
+                    ProductItem.Name(language: "ko", name: AnimalQuizLabFeatureStrings.turtle),
+                ],
+                category: baseCategory,
+                itemCategory2: AnimalQuizLabFeatureStrings.reptile
+            ),
+            
+            ProductItem(
+                id: "frog",
+                names: [
+                    ProductItem.Name(language: "en", name: "Frog"),
+                    ProductItem.Name(language: "ko", name: AnimalQuizLabFeatureStrings.frog),
+                ],
+                category: baseCategory,
+                itemCategory2: AnimalQuizLabFeatureStrings.amphibian
+            ),
+            ProductItem(
+                id: "salamander",
+                names: [
+                    ProductItem.Name(language: "en", name: "Salamander"),
+                    ProductItem.Name(language: "ko", name: AnimalQuizLabFeatureStrings.salamander),
+                ],
+                category: baseCategory,
+                itemCategory2: AnimalQuizLabFeatureStrings.amphibian
+            ),
+            
+            ProductItem(
+                id: "shark",
+                names: [
+                    ProductItem.Name(language: "en", name: "Shark"),
+                    ProductItem.Name(language: "ko", name: AnimalQuizLabFeatureStrings.shark),
+                ],
+                category: baseCategory,
+                itemCategory2: AnimalQuizLabFeatureStrings.fish
+            ),
+            ProductItem(
+                id: "clownfish",
+                names: [
+                    ProductItem.Name(language: "en", name: "Clownfish"),
+                    ProductItem.Name(language: "ko", name: AnimalQuizLabFeatureStrings.clownfish),
+                ],
+                category: baseCategory,
+                itemCategory2: AnimalQuizLabFeatureStrings.fish
+            ),
+            ProductItem(
+                id: "salmon",
+                names: [
+                    ProductItem.Name(language: "en", name: "Salmon"),
+                    ProductItem.Name(language: "ko", name: AnimalQuizLabFeatureStrings.salmon),
+                ],
+                category: baseCategory,
+                itemCategory2: AnimalQuizLabFeatureStrings.fish
+            ),
+            
+            ProductItem(
+                id: "butterfly",
+                names: [
+                    ProductItem.Name(language: "en", name: "Butterfly"),
+                    ProductItem.Name(language: "ko", name: AnimalQuizLabFeatureStrings.butterfly),
+                ],
+                category: baseCategory,
+                itemCategory2: AnimalQuizLabFeatureStrings.insect
+            ),
+            ProductItem(
+                id: "bee",
+                names: [
+                    ProductItem.Name(language: "en", name: "Bee"),
+                    ProductItem.Name(language: "ko", name: AnimalQuizLabFeatureStrings.bee),
+                ],
+                category: baseCategory,
+                itemCategory2: AnimalQuizLabFeatureStrings.insect
+            ),
+            ProductItem(
+                id: "ant",
+                names: [
+                    ProductItem.Name(language: "en", name: "Ant"),
+                    ProductItem.Name(language: "ko", name: AnimalQuizLabFeatureStrings.ant),
+                ],
+                category: baseCategory,
+                itemCategory2: AnimalQuizLabFeatureStrings.insect
+            ),
+            
+            ProductItem(
+                id: "spider",
+                names: [
+                    ProductItem.Name(language: "en", name: "Spider"),
+                    ProductItem.Name(language: "ko", name: AnimalQuizLabFeatureStrings.spider),
+                ],
+                category: baseCategory,
+                itemCategory2: AnimalQuizLabFeatureStrings.arthropod
+            ),
+            ProductItem(
+                id: "crab",
+                names: [
+                    ProductItem.Name(language: "en", name: "Crab"),
+                    ProductItem.Name(language: "ko", name: AnimalQuizLabFeatureStrings.crab),
+                ],
+                category: baseCategory,
+                itemCategory2: AnimalQuizLabFeatureStrings.arthropod
+            ),
+            ProductItem(
+                id: "lobster",
+                names: [
+                    ProductItem.Name(language: "en", name: "Lobster"),
+                    ProductItem.Name(language: "ko", name: AnimalQuizLabFeatureStrings.lobster),
+                ],
+                category: baseCategory,
+                itemCategory2: AnimalQuizLabFeatureStrings.arthropod
+            ),
+            
+            ProductItem(
+                id: "kangaroo",
+                names: [
+                    ProductItem.Name(language: "en", name: "Kangaroo"),
+                    ProductItem.Name(language: "ko", name: AnimalQuizLabFeatureStrings.kangaroo),
+                ],
+                category: baseCategory,
+                itemCategory2: AnimalQuizLabFeatureStrings.mammal
+            ),
+        ]
+        
+        return mock
+    }
+
 }
 
 extension Array where Element == ProductItem {

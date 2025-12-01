@@ -84,7 +84,7 @@ extension HomeViewReactor {
                     emitter.onNext(.setIsShowBanner(dto.isShowBanner))
                     emitter.onNext(.setItems(dto.convertItems))
                 } catch {
-                    emitter.onNext(.setError(message: "네트워크가 불안정합니다. 잠시후에 다시 시도해주세요."))
+                    emitter.onNext(.setError(message: AnimalQuizLabFeatureStrings.networkErrorMessage))
                 }
                 
                 emitter.onCompleted()

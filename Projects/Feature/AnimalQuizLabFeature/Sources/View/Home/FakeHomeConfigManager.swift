@@ -8,8 +8,8 @@ internal struct FakeHomeConfigManager: HomeConfigManager {
         let items: [HomeDTO.Item] = [
             .init(
                 id: "1",
-                title: "동물",
-                subTitle: "모든 동물을 만나보세요. 다양한 동물들이 한가득",
+                title: AnimalQuizLabFeatureStrings.animalTitle,
+                subTitle: AnimalQuizLabFeatureStrings.animalSubtitle,
                 backgroundColor: "#FFEEDD",
                 imageURL: "https://cdn.jsdelivr.net/gh/talq44/monoree_images@main/animal/plush/tiger.webp",
                 itemCategory: nil,
@@ -18,7 +18,7 @@ internal struct FakeHomeConfigManager: HomeConfigManager {
             ),
             .init(
                 id: "2",
-                title: "육지",
+                title: AnimalQuizLabFeatureStrings.landTitle,
                 subTitle: "Loyal friend",
                 backgroundColor: "#E0F7FA",
                 imageURL: "https://cdn.jsdelivr.net/gh/talq44/monoree_images@main/animal/toy3D/lion.webp",
@@ -28,8 +28,8 @@ internal struct FakeHomeConfigManager: HomeConfigManager {
             ),
             .init(
                 id: "6",
-                title: "조류",
-                subTitle: "하늘을 날아 올라",
+                title: AnimalQuizLabFeatureStrings.birdTitle,
+                subTitle: AnimalQuizLabFeatureStrings.birdSubtitle,
                 backgroundColor: "#E007F6",
                 imageURL: "https://cdn.jsdelivr.net/gh/talq44/monoree_images@main/animal/toy3D/sparrow.webp",
                 itemCategory: "animal",
@@ -38,7 +38,7 @@ internal struct FakeHomeConfigManager: HomeConfigManager {
             ),
             .init(
                 id: "3",
-                title: "해상",
+                title: AnimalQuizLabFeatureStrings.seaTitle,
                 subTitle: nil,
                 backgroundColor: nil,
                 imageURL: "https://cdn.jsdelivr.net/gh/talq44/monoree_images@main/animal/realistic/swan.webp",
@@ -48,7 +48,7 @@ internal struct FakeHomeConfigManager: HomeConfigManager {
             ),
             .init(
                 id: "4",
-                title: "곤충",
+                title: AnimalQuizLabFeatureStrings.insectTitle,
                 subTitle: nil,
                 backgroundColor: nil,
                 imageURL: "https://cdn.jsdelivr.net/gh/talq44/monoree_images@main/animal/plush/eagle.webp",
@@ -58,7 +58,7 @@ internal struct FakeHomeConfigManager: HomeConfigManager {
             ),
             .init(
                 id: "5",
-                title: "양서류",
+                title: AnimalQuizLabFeatureStrings.amphibianTitle,
                 subTitle: nil,
                 backgroundColor: "#E0F7FA",
                 imageURL: "https://cdn.jsdelivr.net/gh/talq44/monoree_images@main/animal/toy3D/frog.webp",

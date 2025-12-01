@@ -26,21 +26,21 @@ enum GameListType: CaseIterable {
     var description: String {
         switch self {
         case .imageMatchAnswer2:
-            return "이미지 보고 정답 맞추기 2x1"
+            return AnimalQuizLabFeatureStrings.imageQuiz2x1
         case .imageMatchAnswer3:
-            return "이미지 보고 정답 맞추기 3x1"
+            return AnimalQuizLabFeatureStrings.imageQuiz3x1
         case .imageMatchAnswer4:
-            return "이미지 보고 정답 맞추기 2x2"
+            return AnimalQuizLabFeatureStrings.imageQuiz2x2
         case .textMatchAnswer2:
-            return "이름 보고 이미지로 맞추기 2x1"
+            return AnimalQuizLabFeatureStrings.textQuiz2x1
         case .textMatchAnswer3:
-            return "이름 보고 이미지로 맞추기 3x1"
+            return AnimalQuizLabFeatureStrings.textQuiz3x1
         case .textMatchAnswer4:
-            return "이름 보고 이미지로 맞추기 2x2"
+            return AnimalQuizLabFeatureStrings.textQuiz2x2
         case .autoScroll10:
-            return "자동으로 돌아가며 관찰하기"
+            return AnimalQuizLabFeatureStrings.autoScrollObserve
         case .autoScroll30:
-            return "자동으로 돌아가며 관찰하기"
+            return AnimalQuizLabFeatureStrings.autoScrollObserve
         }
     }
     

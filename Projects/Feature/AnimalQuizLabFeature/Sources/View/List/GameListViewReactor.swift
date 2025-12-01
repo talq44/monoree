@@ -66,7 +66,7 @@ extension GameListViewReactor {
     convenience init() {
         let payload = GameListViewPayload(
             id: "1",
-            title: "타이틀",
+            title: AnimalQuizLabFeatureStrings.title,
             itemCategory: nil,
             itemCategory2: nil
         )
