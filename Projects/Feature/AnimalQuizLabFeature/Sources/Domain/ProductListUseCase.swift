@@ -132,284 +132,284 @@ final class ProductListUseCase {
 
 extension ProductListUseCase {
     private func mockData() -> [ProductItem] {
-        let baseCategory = "동물"
+        let baseCategory = NSLocalizedString("animal", comment: "")
         let mock: [ProductItem] = [
             ProductItem(
                 id: "dog",
                 names: [
                     ProductItem.Name(language: "en", name: "Dog"),
-                    ProductItem.Name(language: "ko", name: "개"),
+                    ProductItem.Name(language: "ko", name: NSLocalizedString("dog", comment: "")),
                 ],
                 category: baseCategory,
-                itemCategory2: "포유류"
+                itemCategory2: NSLocalizedString("mammal", comment: "")
             ),
             ProductItem(
                 id: "cat",
                 names: [
                     ProductItem.Name(language: "en", name: "Cat"),
-                    ProductItem.Name(language: "ko", name: "고양이"),
+                    ProductItem.Name(language: "ko", name: NSLocalizedString("cat", comment: "")),
                 ],
                 category: baseCategory,
-                itemCategory2: "포유류"
+                itemCategory2: NSLocalizedString("mammal", comment: "")
             ),
             ProductItem(
                 id: "elephant",
                 names: [
                     ProductItem.Name(language: "en", name: "Elephant"),
-                    ProductItem.Name(language: "ko", name: "코끼리"),
+                    ProductItem.Name(language: "ko", name: NSLocalizedString("elephant", comment: "")),
                 ],
                 category: baseCategory,
-                itemCategory2: "포유류"
+                itemCategory2: NSLocalizedString("mammal", comment: "")
             ),
             ProductItem(
                 id: "lion",
                 names: [
                     ProductItem.Name(language: "en", name: "Lion"),
-                    ProductItem.Name(language: "ko", name: "사자"),
+                    ProductItem.Name(language: "ko", name: NSLocalizedString("lion", comment: "")),
                 ],
                 category: baseCategory,
-                itemCategory2: "포유류"
+                itemCategory2: NSLocalizedString("mammal", comment: "")
             ),
             ProductItem(
                 id: "tiger",
                 names: [
                     ProductItem.Name(language: "en", name: "Tiger"),
-                    ProductItem.Name(language: "ko", name: "호랑이"),
+                    ProductItem.Name(language: "ko", name: NSLocalizedString("tiger", comment: "")),
                 ],
                 category: baseCategory,
-                itemCategory2: "포유류"
+                itemCategory2: NSLocalizedString("mammal", comment: "")
             ),
             ProductItem(
                 id: "giraffe",
                 names: [
                     ProductItem.Name(language: "en", name: "Giraffe"),
-                    ProductItem.Name(language: "ko", name: "기린"),
+                    ProductItem.Name(language: "ko", name: NSLocalizedString("giraffe", comment: "")),
                 ],
                 category: baseCategory,
-                itemCategory2: "포유류"
+                itemCategory2: NSLocalizedString("mammal", comment: "")
             ),
             ProductItem(
                 id: "bear",
                 names: [
                     ProductItem.Name(language: "en", name: "Bear"),
-                    ProductItem.Name(language: "ko", name: "곰"),
+                    ProductItem.Name(language: "ko", name: NSLocalizedString("bear", comment: "")),
                 ],
                 category: baseCategory,
-                itemCategory2: "포유류"
+                itemCategory2: NSLocalizedString("mammal", comment: "")
             ),
             ProductItem(
                 id: "wolf",
                 names: [
                     ProductItem.Name(language: "en", name: "Wolf"),
-                    ProductItem.Name(language: "ko", name: "늑대"),
+                    ProductItem.Name(language: "ko", name: NSLocalizedString("wolf", comment: "")),
                 ],
                 category: baseCategory,
-                itemCategory2: "포유류"
+                itemCategory2: NSLocalizedString("mammal", comment: "")
             ),
             ProductItem(
                 id: "dolphin",
                 names: [
                     ProductItem.Name(language: "en", name: "Dolphin"),
-                    ProductItem.Name(language: "ko", name: "돌고래"),
+                    ProductItem.Name(language: "ko", name: NSLocalizedString("dolphin", comment: "")),
                 ],
                 category: baseCategory,
-                itemCategory2: "포유류"
+                itemCategory2: NSLocalizedString("mammal", comment: "")
             ),
             ProductItem(
                 id: "whale",
                 names: [
                     ProductItem.Name(language: "en", name: "Whale"),
-                    ProductItem.Name(language: "ko", name: "고래"),
+                    ProductItem.Name(language: "ko", name: NSLocalizedString("whale", comment: "")),
                 ],
                 category: baseCategory,
-                itemCategory2: "포유류"
+                itemCategory2: NSLocalizedString("mammal", comment: "")
             ),
             
             ProductItem(
                 id: "eagle",
                 names: [
                     ProductItem.Name(language: "en", name: "Eagle"),
-                    ProductItem.Name(language: "ko", name: "독수리"),
+                    ProductItem.Name(language: "ko", name: NSLocalizedString("eagle", comment: "")),
                 ],
                 category: baseCategory,
-                itemCategory2: "조류"
+                itemCategory2: NSLocalizedString("bird", comment: "")
             ),
             ProductItem(
                 id: "sparrow",
                 names: [
                     ProductItem.Name(language: "en", name: "Sparrow"),
-                    ProductItem.Name(language: "ko", name: "참새"),
+                    ProductItem.Name(language: "ko", name: NSLocalizedString("sparrow", comment: "")),
                 ],
                 category: baseCategory,
-                itemCategory2: "조류"
+                itemCategory2: NSLocalizedString("bird", comment: "")
             ),
             ProductItem(
                 id: "penguin",
                 names: [
                     ProductItem.Name(language: "en", name: "Penguin"),
-                    ProductItem.Name(language: "ko", name: "펭귄"),
+                    ProductItem.Name(language: "ko", name: NSLocalizedString("penguin", comment: "")),
                 ],
                 category: baseCategory,
-                itemCategory2: "조류"
+                itemCategory2: NSLocalizedString("bird", comment: "")
             ),
             ProductItem(
                 id: "owl",
                 names: [
                     ProductItem.Name(language: "en", name: "Owl"),
-                    ProductItem.Name(language: "ko", name: "부엉이"),
+                    ProductItem.Name(language: "ko", name: NSLocalizedString("owl", comment: "")),
                 ],
                 category: baseCategory,
-                itemCategory2: "조류"
+                itemCategory2: NSLocalizedString("bird", comment: "")
             ),
             ProductItem(
                 id: "flamingo",
                 names: [
                     ProductItem.Name(language: "en", name: "Flamingo"),
-                    ProductItem.Name(language: "ko", name: "플라밍고"),
+                    ProductItem.Name(language: "ko", name: NSLocalizedString("flamingo", comment: "")),
                 ],
                 category: baseCategory,
-                itemCategory2: "조류"
+                itemCategory2: NSLocalizedString("bird", comment: "")
             ),
             
             ProductItem(
                 id: "crocodile",
                 names: [
                     ProductItem.Name(language: "en", name: "Crocodile"),
-                    ProductItem.Name(language: "ko", name: "악어"),
+                    ProductItem.Name(language: "ko", name: NSLocalizedString("crocodile", comment: "")),
                 ],
                 category: baseCategory,
-                itemCategory2: "파충류"
+                itemCategory2: NSLocalizedString("reptile", comment: "")
             ),
             ProductItem(
                 id: "snake",
                 names: [
                     ProductItem.Name(language: "en", name: "Snake"),
-                    ProductItem.Name(language: "ko", name: "뱀"),
+                    ProductItem.Name(language: "ko", name: NSLocalizedString("snake", comment: "")),
                 ],
                 category: baseCategory,
-                itemCategory2: "파충류"
+                itemCategory2: NSLocalizedString("reptile", comment: "")
             ),
             ProductItem(
                 id: "turtle",
                 names: [
                     ProductItem.Name(language: "en", name: "Turtle"),
-                    ProductItem.Name(language: "ko", name: "거북이"),
+                    ProductItem.Name(language: "ko", name: NSLocalizedString("turtle", comment: "")),
                 ],
                 category: baseCategory,
-                itemCategory2: "파충류"
+                itemCategory2: NSLocalizedString("reptile", comment: "")
             ),
             
             ProductItem(
                 id: "frog",
                 names: [
                     ProductItem.Name(language: "en", name: "Frog"),
-                    ProductItem.Name(language: "ko", name: "개구리"),
+                    ProductItem.Name(language: "ko", name: NSLocalizedString("frog", comment: "")),
                 ],
                 category: baseCategory,
-                itemCategory2: "양서류"
+                itemCategory2: NSLocalizedString("amphibian", comment: "")
             ),
             ProductItem(
                 id: "salamander",
                 names: [
                     ProductItem.Name(language: "en", name: "Salamander"),
-                    ProductItem.Name(language: "ko", name: "도롱뇽"),
+                    ProductItem.Name(language: "ko", name: NSLocalizedString("salamander", comment: "")),
                 ],
                 category: baseCategory,
-                itemCategory2: "양서류"
+                itemCategory2: NSLocalizedString("amphibian", comment: "")
             ),
             
             ProductItem(
                 id: "shark",
                 names: [
                     ProductItem.Name(language: "en", name: "Shark"),
-                    ProductItem.Name(language: "ko", name: "상어"),
+                    ProductItem.Name(language: "ko", name: NSLocalizedString("shark", comment: "")),
                 ],
                 category: baseCategory,
-                itemCategory2: "어류"
+                itemCategory2: NSLocalizedString("fish", comment: "")
             ),
             ProductItem(
                 id: "clownfish",
                 names: [
                     ProductItem.Name(language: "en", name: "Clownfish"),
-                    ProductItem.Name(language: "ko", name: "흰동가리"),
+                    ProductItem.Name(language: "ko", name: NSLocalizedString("clownfish", comment: "")),
                 ],
                 category: baseCategory,
-                itemCategory2: "어류"
+                itemCategory2: NSLocalizedString("fish", comment: "")
             ),
             ProductItem(
                 id: "salmon",
                 names: [
                     ProductItem.Name(language: "en", name: "Salmon"),
-                    ProductItem.Name(language: "ko", name: "연어"),
+                    ProductItem.Name(language: "ko", name: NSLocalizedString("salmon", comment: "")),
                 ],
                 category: baseCategory,
-                itemCategory2: "어류"
+                itemCategory2: NSLocalizedString("fish", comment: "")
             ),
             
             ProductItem(
                 id: "butterfly",
                 names: [
                     ProductItem.Name(language: "en", name: "Butterfly"),
-                    ProductItem.Name(language: "ko", name: "나비"),
+                    ProductItem.Name(language: "ko", name: NSLocalizedString("butterfly", comment: "")),
                 ],
                 category: baseCategory,
-                itemCategory2: "곤충"
+                itemCategory2: NSLocalizedString("insect", comment: "")
             ),
             ProductItem(
                 id: "bee",
                 names: [
                     ProductItem.Name(language: "en", name: "Bee"),
-                    ProductItem.Name(language: "ko", name: "벌"),
+                    ProductItem.Name(language: "ko", name: NSLocalizedString("bee", comment: "")),
                 ],
                 category: baseCategory,
-                itemCategory2: "곤충"
+                itemCategory2: NSLocalizedString("insect", comment: "")
             ),
             ProductItem(
                 id: "ant",
                 names: [
                     ProductItem.Name(language: "en", name: "Ant"),
-                    ProductItem.Name(language: "ko", name: "개미"),
+                    ProductItem.Name(language: "ko", name: NSLocalizedString("ant", comment: "")),
                 ],
                 category: baseCategory,
-                itemCategory2: "곤충"
+                itemCategory2: NSLocalizedString("insect", comment: "")
             ),
             
             ProductItem(
                 id: "spider",
                 names: [
                     ProductItem.Name(language: "en", name: "Spider"),
-                    ProductItem.Name(language: "ko", name: "거미"),
+                    ProductItem.Name(language: "ko", name: NSLocalizedString("spider", comment: "")),
                 ],
                 category: baseCategory,
-                itemCategory2: "절지동물"
+                itemCategory2: NSLocalizedString("arthropod", comment: "")
             ),
             ProductItem(
                 id: "crab",
                 names: [
                     ProductItem.Name(language: "en", name: "Crab"),
-                    ProductItem.Name(language: "ko", name: "게"),
+                    ProductItem.Name(language: "ko", name: NSLocalizedString("crab", comment: "")),
                 ],
                 category: baseCategory,
-                itemCategory2: "절지동물"
+                itemCategory2: NSLocalizedString("arthropod", comment: "")
             ),
             ProductItem(
                 id: "lobster",
                 names: [
                     ProductItem.Name(language: "en", name: "Lobster"),
-                    ProductItem.Name(language: "ko", name: "바닷가재"),
+                    ProductItem.Name(language: "ko", name: NSLocalizedString("lobster", comment: "")),
                 ],
                 category: baseCategory,
-                itemCategory2: "절지동물"
+                itemCategory2: NSLocalizedString("arthropod", comment: "")
             ),
             
             ProductItem(
                 id: "kangaroo",
                 names: [
                     ProductItem.Name(language: "en", name: "Kangaroo"),
-                    ProductItem.Name(language: "ko", name: "캥거루"),
+                    ProductItem.Name(language: "ko", name: NSLocalizedString("kangaroo", comment: "")),
                 ],
                 category: baseCategory,
-                itemCategory2: "포유류"
+                itemCategory2: NSLocalizedString("mammal", comment: "")
             ),
         ]
         

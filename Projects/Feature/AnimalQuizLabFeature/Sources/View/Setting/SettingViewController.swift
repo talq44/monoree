@@ -5,16 +5,16 @@ import FoundationShared
 
 enum SettingViewSection: Int, CaseIterable {
     case imageStyle = 0
-    case 소리설정
-    case 자동넘김
+    case soundSetting
+    case autoScroll
     case version
     
     var title: String {
         switch self {
-        case .imageStyle: return "이미지 스타일"
-        case .자동넘김: return "자동 넘김"
-        case .소리설정: return "소리 설정"
-        case .version: return "버전 정보"
+        case .imageStyle: return NSLocalizedString("image_style", comment: "")
+        case .autoScroll: return NSLocalizedString("auto_scroll_setting", comment: "")
+        case .soundSetting: return NSLocalizedString("sound_setting", comment: "")
+        case .version: return NSLocalizedString("version_info", comment: "")
         }
     }
 }
@@ -27,10 +27,10 @@ enum SettingViewImageStyle: Int, CaseIterable {
     
     var name: String {
         switch self {
-        case .realistic: return "실사형 스타일"
-        case .toy3D: return "3D 장난감 스타일"
-        case .anime2D: return "2D 동화책 스타일"
-        case .plush: return "봉제인형 스타일"
+        case .realistic: return NSLocalizedString("realistic_style", comment: "")
+        case .toy3D: return NSLocalizedString("toy_3d_style", comment: "")
+        case .anime2D: return NSLocalizedString("anime_2d_style", comment: "")
+        case .plush: return NSLocalizedString("plush_style", comment: "")
         }
     }
     
@@ -78,7 +78,7 @@ final class SettingViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "설정"
+        title = NSLocalizedString("setting", comment: "")
         
         view.addSubview(tableView)
         tableView.snp.makeConstraints { make in
@@ -105,9 +105,9 @@ extension SettingViewController: UITableViewDataSource {
         switch section {
         case .imageStyle:
             return 4
-        case .소리설정:
+        case .soundSetting:
             return 1
-        case .자동넘김:
+        case .autoScroll:
             return 4
         case .version:
             return 1
@@ -130,7 +130,7 @@ extension SettingViewController: UITableViewDataSource {
             }
             
             guard let imageStyle = SettingViewImageStyle(rawValue: indexPath.row) else {
-                cell.textLabel?.text = "알수 없음"
+                cell.textLabel?.text = NSLocalizedString("unknown", comment: "")
                 return cell
             }
             
@@ -143,8 +143,8 @@ extension SettingViewController: UITableViewDataSource {
                 cell?.setNeedsLayout()
             }
             
-        case .소리설정:
-            cell.textLabel?.text = "글자 문제 읽어주기"
+        case .soundSetting:
+            cell.textLabel?.text = NSLocalizedString("read_text_problem", comment: "")
             cell.imageView?.image = UIImage(systemName: "speaker.wave.2")
             cell.accessoryType = .none
             
@@ -157,7 +157,7 @@ extension SettingViewController: UITableViewDataSource {
                 for: .valueChanged
             )
             cell.accessoryView = soundSwitch
-        case .자동넘김:
+        case .autoScroll:
             if indexPath.row == selectedAutoScrollRow {
                 cell.accessoryType = .checkmark
             } else {
@@ -168,12 +168,12 @@ extension SettingViewController: UITableViewDataSource {
                 return cell
             }
             
-            cell.textLabel?.text = "\(style.second)초"
+            cell.textLabel?.text = String(format: NSLocalizedString("seconds_format", comment: ""), style.second)
             cell.imageView?.image = UIImage(systemName: style.systemImageName)
             
         case .version:
             cell.textLabel?.text = Bundle.marketingVersion
-            cell.detailTextLabel?.text = "앱스토어로 이동"
+            cell.detailTextLabel?.text = NSLocalizedString("go_to_app_store", comment: "")
             cell.imageView?.image = UIImage(systemName: "calendar.circle")
             cell.accessoryType = .disclosureIndicator
         }
@@ -208,7 +208,7 @@ extension SettingViewController: UITableViewDelegate {
                 ],
                 with: .automatic
             )
-        case .자동넘김:
+        case .autoScroll:
             let beforeSelectedRow = selectedAutoScrollRow
             let afterSelectedRow = indexPath.item
             
@@ -222,7 +222,7 @@ extension SettingViewController: UITableViewDelegate {
                 with: .automatic
             )
             
-        case .소리설정:
+        case .soundSetting:
             break
         case .version:
             break
