@@ -263,4 +263,3 @@ final class GameContentView: UIView {
         return button
     }
 }
-

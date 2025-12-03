@@ -63,12 +63,7 @@ final class GameCategoryComponentView: BaseView {
     
     private func answerButton(type: GameType) -> [UIButton] {
         return type.quizItems.map { item in
-            var config: UIButton.Configuration
-            if #available(iOS 26.0, *) {
-                config = .glass()
-            } else {
-                config = .borderedTinted()
-            }
+            var config: UIButton.Configuration = .borderedTinted()
             
             config.image = UIImage(systemName: item.imageSystemName)
             config.imagePlacement = .top
