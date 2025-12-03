@@ -14,6 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         
         let payload = AQLPayload(
+            bundle: AnimalListDomainResources.bundle,
             listUseCase: AnimalListUseCaseImpl(),
             categoryListUseCase: AnimalCategoryListUseCaseImpl()
         )

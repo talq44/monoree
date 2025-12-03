@@ -2,6 +2,7 @@ import UIKit
 import SnapKit
 import UIKitExtensionShared
 import Kingfisher
+//import AnimalListDomain
 
 enum GameContentStyle {
     case image
@@ -52,6 +53,7 @@ final class GameContentView: UIView {
     }()
     private let bottomStackView = VStackView(spacing: Spacing.m, distribution: .fillEqually)
     private var answerButtons: [UIButton] = []
+//    private let resourceBundle = AnimalListDomainResources.bundle
     
     private var didSelectAnswer: ((Int) -> Void)?
     private var question: String?
@@ -105,12 +107,13 @@ final class GameContentView: UIView {
     internal func bind(state: State) {
         switch state.gameItem.type {
         case .image, .categoryDifferent, .autoScroll:
-            let imageURL = state.gameItem.question.imageURL
-            imageView.kf.setImage(
-                with: URL(string: imageURL),
-                placeholder: UIImage(systemName: "photo"),
-                options: [.transition(.fade(0.2))]
-            )
+//            let imageURL = state.gameItem.question.imageURL
+//            imageView.kf.setImage(
+//                with: URL(string: imageURL),
+//                placeholder: UIImage(systemName: "photo"),
+//                options: [.transition(.fade(0.2))]
+//            )
+            imageView.image = state.gameItem.question.image(type: "toy3d")
             
             questionLabel.isHidden = true
             
@@ -239,7 +242,12 @@ final class GameContentView: UIView {
             configuration = UIButton.Configuration.borderedProminent()
         }
         
-        if type == .image {
+        if type == .text || type == .categoryDifferent {
+            let image = item.image(type: "toy3d")
+            configuration.contentInsets = .zero
+            configuration.imagePadding = 0
+            configuration.image = image
+        } else if type == .image {
             var title = AttributedString(item.name)
             title.font = .preferredFont(forTextStyle: .extraLargeTitle2)
             configuration.attributedTitle = title
@@ -252,27 +260,6 @@ final class GameContentView: UIView {
             }),
             for: .touchUpInside
         )
-        
-        if type == .text || type == .categoryDifferent {
-            let imageURL = item.imageURL
-            let url = URL(string: imageURL)
-            button.imageView?.contentMode = .scaleAspectFit
-            let itemHeight = (UIScreen.main.bounds.height / 2 / 2) - Metric.estimatedHeight
-            let targetSize = CGSize(width: itemHeight, height: itemHeight)
-            let processor = DownsamplingImageProcessor(size: targetSize)
-
-            button.kf.setImage(
-                with: url,
-                for: .normal,
-                placeholder: UIImage(systemName: "photo"),
-                options: [
-                    .processor(processor),
-                    .scaleFactor(UIScreen.main.scale),
-                    .transition(.fade(0.2)),
-                    .cacheOriginalImage
-                ]
-            )
-        }
         
         return button
     }
