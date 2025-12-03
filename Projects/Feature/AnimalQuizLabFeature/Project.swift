@@ -19,6 +19,7 @@ let project = Project.module(
                 .shared(target: .UIThirdKit),
                 .core(target: .RemoteConfigCore, type: .interface),
                 .core(target: .UserDefaultCore, type: .implementation),
+                .domain(target: .GameEntityDomain, type: .interface),
                 .feature(target: .AnimalQuizLabFeature, type: .interface),
             ]
         ),
@@ -38,6 +39,7 @@ let project = Project.module(
         .demo(
             feature: .AnimalQuizLabFeature,
             dependencies: [
+                .domain(target: .AnimalListDomain, type: .implementation),
                 .feature(target: .AnimalQuizLabFeature, type: .implementation),
                 .feature(target: .AnimalQuizLabFeature, type: .testing),
             ]

@@ -41,17 +41,15 @@ jobs:
             tuist install
 
       - run:
-          name: Tuist build Firebase (FirebaseSPMShared)
+          name: Tuist build Firebase
           command: |
             source $BASH_ENV
-            tuist build FirebaseSPMShared
 
       - run:
-          name: Tuist build (monoree_dev)
+          name: Tuist build
           command: |
             source $BASH_ENV
-            tuist build Monoree_dev
-            tuist build AnimalQuizLab_dev
+            tuist build AnimalQuizLabFeatureDemoApp
 
       - run:
           name: Tuist test (optional by env)

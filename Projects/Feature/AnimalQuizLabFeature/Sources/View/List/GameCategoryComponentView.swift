@@ -65,9 +65,9 @@ final class GameCategoryComponentView: BaseView {
         return type.quizItems.map { item in
             var config: UIButton.Configuration
             if #available(iOS 26.0, *) {
-                config = .glass()
+                config = UIButton.Configuration.glass()
             } else {
-                config = .borderedTinted()
+                config = UIButton.Configuration.borderedProminent()
             }
             
             config.image = UIImage(systemName: item.imageSystemName)

@@ -50,6 +50,7 @@ final class GameContentView: UIView {
         button.isSymbolAnimationEnabled = true
         return button
     }()
+    
     private let bottomStackView = VStackView(spacing: Spacing.m, distribution: .fillEqually)
     private var answerButtons: [UIButton] = []
     
@@ -105,12 +106,7 @@ final class GameContentView: UIView {
     internal func bind(state: State) {
         switch state.gameItem.type {
         case .image, .categoryDifferent, .autoScroll:
-            let imageURL = state.gameItem.question.imageURL
-            imageView.kf.setImage(
-                with: URL(string: imageURL),
-                placeholder: UIImage(systemName: "photo"),
-                options: [.transition(.fade(0.2))]
-            )
+            imageView.image = state.gameItem.question.image(type: "toy3d")
             
             questionLabel.isHidden = true
             
@@ -254,24 +250,14 @@ final class GameContentView: UIView {
         )
         
         if type == .text || type == .categoryDifferent {
-            let imageURL = item.imageURL
-            let url = URL(string: imageURL)
-            button.imageView?.contentMode = .scaleAspectFit
-            let itemHeight = (UIScreen.main.bounds.height / 2 / 2) - Metric.estimatedHeight
-            let targetSize = CGSize(width: itemHeight, height: itemHeight)
-            let processor = DownsamplingImageProcessor(size: targetSize)
-
-            button.kf.setImage(
-                with: url,
-                for: .normal,
-                placeholder: UIImage(systemName: "photo"),
-                options: [
-                    .processor(processor),
-                    .scaleFactor(UIScreen.main.scale),
-                    .transition(.fade(0.2)),
-                    .cacheOriginalImage
-                ]
-            )
+            let baseImage = item.image(type: "toy3d")
+            let resized = baseImage?.withSize(width: 150, height: 150, preserveAspectRatio: true)
+            button.setImage(resized?.withRenderingMode(.alwaysOriginal), for: .normal)
+            
+            button.configuration?.contentInsets = .zero
+            button.configuration?.imagePadding = 0
+            button.contentHorizontalAlignment = .center
+            button.contentVerticalAlignment = .center
         }
         
         return button
