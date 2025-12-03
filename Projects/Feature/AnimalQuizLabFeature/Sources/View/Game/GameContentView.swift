@@ -4,6 +4,30 @@ import UIKitExtensionShared
 import Kingfisher
 //import AnimalListDomain
 
+extension UIImage {
+    /// Returns a new image resized to the given size.
+    /// - Parameters:
+    ///   - width: target width in points
+    ///   - height: target height in points
+    ///   - preserveAspectRatio: if true, fits within the box keeping aspect ratio (may add padding); if false, stretches to fill
+    func withSize(width: CGFloat, height: CGFloat, preserveAspectRatio: Bool = true, scale: CGFloat = UIScreen.main.scale) -> UIImage {
+        let target = CGSize(width: width, height: height)
+        let format = UIGraphicsImageRendererFormat.default()
+        format.scale = scale
+        let renderer = UIGraphicsImageRenderer(size: target, format: format)
+        return renderer.image { _ in
+            if preserveAspectRatio {
+                let aspect = min(width / self.size.width, height / self.size.height)
+                let newSize = CGSize(width: self.size.width * aspect, height: self.size.height * aspect)
+                let origin = CGPoint(x: (width - newSize.width) / 2, y: (height - newSize.height) / 2)
+                self.draw(in: CGRect(origin: origin, size: newSize))
+            } else {
+                self.draw(in: CGRect(origin: .zero, size: target))
+            }
+        }
+    }
+}
+
 enum GameContentStyle {
     case image
     case text
@@ -107,12 +131,6 @@ final class GameContentView: UIView {
     internal func bind(state: State) {
         switch state.gameItem.type {
         case .image, .categoryDifferent, .autoScroll:
-//            let imageURL = state.gameItem.question.imageURL
-//            imageView.kf.setImage(
-//                with: URL(string: imageURL),
-//                placeholder: UIImage(systemName: "photo"),
-//                options: [.transition(.fade(0.2))]
-//            )
             imageView.image = state.gameItem.question.image(type: "toy3d")
             
             questionLabel.isHidden = true
@@ -242,12 +260,7 @@ final class GameContentView: UIView {
             configuration = UIButton.Configuration.borderedProminent()
         }
         
-        if type == .text || type == .categoryDifferent {
-            let image = item.image(type: "toy3d")
-            configuration.contentInsets = .zero
-            configuration.imagePadding = 0
-            configuration.image = image
-        } else if type == .image {
+        if type == .image {
             var title = AttributedString(item.name)
             title.font = .preferredFont(forTextStyle: .extraLargeTitle2)
             configuration.attributedTitle = title
@@ -261,6 +274,18 @@ final class GameContentView: UIView {
             for: .touchUpInside
         )
         
+        if type == .text || type == .categoryDifferent {
+            let baseImage = item.image(type: "toy3d")
+            let resized = baseImage?.withSize(width: 150, height: 150, preserveAspectRatio: true)
+            button.setImage(resized?.withRenderingMode(.alwaysOriginal), for: .normal)
+            
+            button.configuration?.contentInsets = .zero
+            button.configuration?.imagePadding = 0
+            button.contentHorizontalAlignment = .center
+            button.contentVerticalAlignment = .center
+        }
+        
         return button
     }
 }
+
