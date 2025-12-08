@@ -10,7 +10,6 @@ import ProjectDescription
 extension TargetDependency {
     public enum SPM: CaseIterable {
         case alamofire
-        case composableArchitecture
         case firebaseAnalytics
         case firebaseCore
         case firebaseRemoteConfig
@@ -31,10 +30,6 @@ extension TargetDependency {
             case .alamofire:
                 return .external(
                     name: "Alamofire"
-                )
-            case .composableArchitecture:
-                return .external(
-                    name: "ComposableArchitecture"
                 )
             case .firebaseAnalytics:
                 return .external(
