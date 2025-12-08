@@ -2,8 +2,10 @@ import Foundation
 import AnimalListDomainInterface
 import GameEntityDomainInterface
 
-final class AnimalCategoryListUseCaseImpl: AnimalCategoryListUseCase {
-    func fetch() async -> [any CategoryEntity] {
+final public class AnimalCategoryListUseCaseImpl: AnimalCategoryListUseCase {
+    public init() { }
+    
+    public func fetch() async -> [any CategoryEntity] {
         guard let url = Bundle.module.url(
             forResource: "categories",
             withExtension: "json"

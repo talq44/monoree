@@ -3,8 +3,10 @@ import AnimalListDomainInterface
 import GameEntityDomainInterface
 
 // MARK: - UseCase Implementation
-final class AnimalListUseCaseImpl: AnimalListUseCase {
-    func fetch() async -> [any GameEntityDomainInterface.GameEntity] {
+final public class AnimalListUseCaseImpl: AnimalListUseCase {
+    public init() { }
+    
+    public func fetch() async -> [any GameEntityDomainInterface.GameEntity] {
         guard let animalListURL = Bundle.module.url(
             forResource: "animal_list",
             withExtension: "json"
