@@ -13,6 +13,10 @@ jobs:
     steps:
       - checkout
 
+      - restore_cache:
+          keys:
+            - v1-tuist-{{ checksum ".mise.toml" }}-{{ arch }}
+
       - run:
           name: Show Xcode & Swift versions
           command: |
@@ -33,6 +37,12 @@ jobs:
             source $BASH_ENV
             mise install tuist@4.36.0
             mise doctor
+
+      - save_cache:
+          key: v1-tuist-{{ checksum ".mise.toml" }}-{{ arch }}
+          paths:
+            - ~/.cache/mise
+            - ~/.tuist
 
       - run:
           name: Tuist install
