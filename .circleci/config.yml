@@ -41,7 +41,11 @@ jobs:
       - save_cache:
           key: v1-tuist-{{ checksum ".mise.toml" }}-{{ arch }}
           paths:
+            # mise installs live under XDG paths; 모두 캐싱
             - ~/.cache/mise
+            - ~/.local/share/mise
+            - ~/.local/state/mise
+            # tuist 자체 및 캐시
             - ~/.tuist
 
       - run:
